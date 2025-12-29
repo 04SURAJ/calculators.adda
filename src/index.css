@@ -1,0 +1,102 @@
+.navbar-brand {
+  letter-spacing: 0.5px;
+}
+
+.nav-link.active {
+  font-weight: 600;
+}
+html, body, #root {
+  height: 100%;
+}
+
+.app-wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+html, body, #root {
+  height: 100%;
+}
+
+.app-wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+/* in index.css or CalculatorWheel.css */
+/* Calculator Wheel background styling */
+/* ============================= */
+/* Calculator Explorer Wheel CSS */
+/* ============================= */
+
+.wheel-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #0d6efd;
+  background: conic-gradient(
+    #0d6efd 0deg 45deg,
+    #6c757d 45deg 90deg,
+    #0d6efd 90deg 135deg,
+    #6c757d 135deg 180deg,
+    #0d6efd 180deg 225deg,
+    #6c757d 225deg 270deg,
+    #0d6efd 270deg 315deg,
+    #6c757d 315deg 360deg
+  );
+  transition: transform 4s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.wheel-container div {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0% 0%;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Optional hover effect for items */
+.wheel-container div:hover {
+  color: #ffdd57;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+/* Pointer / arrow indicator at top */
+.wheel-pointer {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0; 
+  height: 0; 
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid #dc3545;
+  z-index: 20;
+}
+
+/* Spin button styling */
+.wheel-spin-btn {
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+
+
