@@ -1,10 +1,9 @@
-import { Helmet } from "react-helmet-async";
 
 export default function SeoMeta({ title, description }) {
   return (
-    <Helmet>
+    <div>
       <title>{title}</title>
       <meta name="description" content={description} />
-    </Helmet>
+   </div>
   );
 }
