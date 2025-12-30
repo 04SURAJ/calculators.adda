@@ -118,7 +118,7 @@ const seo = calculatorsSeo["age-calculator"];
           </ul>
         </div>
       )}     
-      <button className="btn btn-primary">Calculate</button>
+      
     </CalculatorLayout>
     
   );
