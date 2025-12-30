@@ -5,6 +5,10 @@ import Home from "./pages/Home";
 import CategoryPage from "./pages/CategoryPage";
 import CalculatorPage from "./pages/CalculatorPage";
 import OtherCalculatorsHome from "./pages/OtherCalculatorsHome";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsAndConditions from "./pages/TermsAndConditions";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -17,6 +21,11 @@ function App() {
 
         <Route path="/calculators/other" element={<CategoryPage />} />
         <Route path="/calculators/other/:slug" element={<CalculatorPage />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+<Route path="/terms" element={<TermsAndConditions />} />
+<Route path="/about" element={<About />} />
+<Route path="/contact" element={<Contact />} />
+
       </Routes>
 
          <Footer />
