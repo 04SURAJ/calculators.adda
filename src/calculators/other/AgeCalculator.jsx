@@ -117,7 +117,7 @@ const seo = calculatorsSeo["age-calculator"];
             </li>
           </ul>
         </div>
-      )}      <input type="date" className="form-control mb-3" />
+      )}     
       <button className="btn btn-primary">Calculate</button>
     </CalculatorLayout>
     
