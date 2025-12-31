@@ -53,7 +53,7 @@ export default function CalculatorPage() {
   const seoData = calculatorsSeo[slug];
 
   if (!CalculatorComponent) {
-    return <Navigate to="/404" replace />;
+    return <Navigate to="*" replace />;
   }
 
   return (
