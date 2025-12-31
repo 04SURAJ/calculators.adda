@@ -15,7 +15,7 @@ export default function Home() {
 
         <h5 >
           A collection of smart, accurate, and easy-to-use calculators
-          for daily life, education, finance, construction, and more.
+         
         </h5>
         <br/>
       <SearchBar/>
@@ -35,49 +35,49 @@ export default function Home() {
       {
         title: "Age Calculator",
         desc: "Calculate exact age in years, months & days",
-        link: "/calculators/other/age-calculator"
+        link: "/age-calculator"
       },
       {
         title: "GPA Calculator",
         desc: "Compute semester or cumulative GPA",
-        link: "/calculators/other/gpa-calculator"
+        link: "/gpa-calculator"
       },
       {
         title: "Time Duration Calculator",
         desc: "Find duration between two dates & times",
-        link: "/calculators/other/time-duration-calculator"
+        link: "/time-duration-calculator"
       },
       {
         title: "Time Calculator",
         desc: "Add or subtract hours, minutes and seconds",
-        link: "/calculators/other/time-calculator"
+        link: "/time-calculator"
       },
       {
         title: "Date Calculator",
         desc: "Calculate date difference, add or subtract days",
-        link: "/calculators/other/date-calculator"
+        link: "/date-calculator"
       },
       {
         title: "Fuel Cost Calculator",
         desc: "Estimate trip fuel cost based on mileage",
-        link: "/calculators/other/fuel-cost-calculator"
+        link: "/fuel-cost-calculator"
       },
         {
         title: "Tip Calculator",
         desc: "Quickly calculate restaurant tip & bill split",
-        link: "/calculators/other/tip-calculator"
+        link: "/tip-calculator"
       },
       {
         title: "Speed Calculator",
         desc: "Calculate speed, distance or time instantly",
-        link: "/calculators/other/speed-calculator"
+        link: "/speed-calculator"
       },
       {
         title: "BMI Calculator",
         desc: "Check body mass index using height & weight",
-        link: "/calculators/other/weight-calculator"
+        link: "/weight-calculator"
       }
-      
+
     ].map(tool => (
       <div className="col-md-4 mb-3" key={tool.link}>
         <div className="card p-3 shadow-sm h-100">

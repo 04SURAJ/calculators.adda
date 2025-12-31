@@ -251,3 +251,4 @@ export const calculatorsSeo = {
       "Calculate wind chill temperature based on air temperature and wind speed to understand how cold it really feels."
   }
 };
+

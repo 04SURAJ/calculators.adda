@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import * as Calculators from "../calculators/other";
+import { Navigate } from "react-router-dom";
 
 
 import { calculatorsSeo } from "../seo/calculatorsSeo.config";
@@ -52,11 +53,7 @@ export default function CalculatorPage() {
   const seoData = calculatorsSeo[slug];
 
   if (!CalculatorComponent) {
-    return (
-      <div className="container py-4">
-        <h2>Calculator not found</h2>
-      </div>
-    );
+    return <Navigate to="/404" replace />;
   }
 
   return (

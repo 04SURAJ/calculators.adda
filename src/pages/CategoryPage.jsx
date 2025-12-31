@@ -10,9 +10,11 @@ export default function CategoryPage() {
           <div className="col-md-4 mb-3" key={calc.slug}>
             <div className="card p-3">
               <h5>{calc.name}</h5>
-              <Link to={`/calculators/other/${calc.slug}`} className="btn btn-outline-primary mt-2">
+              {/* Updated Link to top-level slug */}
+              <Link to={`/${calc.slug}`} className="btn btn-outline-primary mt-2">
                 Open
               </Link>
+
             </div>
           </div>
         ))}

@@ -44,7 +44,7 @@ function Navbar() {
                 <li>
                   <NavLink
                     className="dropdown-item"
-                    to="/calculators/other"
+                    to="/calculators"
                   >
                     All Calculators
                   </NavLink>

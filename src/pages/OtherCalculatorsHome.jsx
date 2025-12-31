@@ -8,7 +8,7 @@ export default function OtherCalculatorsHome() {
       <div className="row g-3">
         {otherCalculators.map(calc => (
           <div key={calc.slug} className="col-6 col-md-4 col-lg-3">
-            <Link to={`/calculators/other/${calc.slug}`} className="text-decoration-none">
+            <Link to={`/${calc.slug}`}  className="text-decoration-none">
               <div className="card shadow-sm h-100 text-center p-3 hover-shadow">
                 <div className="mb-2 fs-1">{calc.icon}</div>
                 <h6 className="card-title">{calc.name}</h6>
