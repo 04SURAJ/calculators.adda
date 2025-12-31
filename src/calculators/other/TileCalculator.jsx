@@ -1,9 +1,8 @@
 import { useState } from "react";
-import CalculatorLayout from "../../layouts/CalculatorLayout";
-import { calculatorsSeo } from "../../data/calculatorsSeo.config";
+
 
 function TileCalculator() {
-  const seo = calculatorsSeo["tile-calculator"];
+  
 
   const [floorLength, setFloorLength] = useState("");
   const [floorWidth, setFloorWidth] = useState("");
@@ -46,11 +45,7 @@ function TileCalculator() {
   return (
     
 
-     
- <CalculatorLayout
-      title={seo.title}
-      description={seo.description}
-    >
+ <>
  <div className="row g-2 mb-3">
         <div className="col-md-3">
           <input
@@ -118,7 +113,8 @@ function TileCalculator() {
           <strong>Tiles Needed:</strong> {result}
         </div>
       )}     
-    </CalculatorLayout>  );
+   </>
+     );
 }
 
 export default TileCalculator;

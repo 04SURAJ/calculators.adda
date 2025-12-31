@@ -1,9 +1,7 @@
 import { useState } from "react";
-import CalculatorLayout from "../../layouts/CalculatorLayout";
-import { calculatorsSeo } from "../../data/calculatorsSeo.config";
+
 
 function FuelCostCalculator() {
-  const seo = calculatorsSeo["fuel-cost-calculator"];
 
   const [distance, setDistance] = useState("");
   const [fuelEfficiency, setFuelEfficiency] = useState("");
@@ -51,10 +49,7 @@ function FuelCostCalculator() {
   
 
      
-   <CalculatorLayout
-      title={seo.title}
-      description={seo.description}
-    >
+  <>
  {/* Units */}
       <div className="mb-3">
         <label className="form-label">Select Units</label>
@@ -116,7 +111,8 @@ function FuelCostCalculator() {
           <strong>Estimated Fuel Cost:</strong> ${result}
         </div>
       )}     
-    </CalculatorLayout>  );
+</>
+);
 }
 
 export default FuelCostCalculator;

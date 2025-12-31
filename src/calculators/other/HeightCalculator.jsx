@@ -1,9 +1,8 @@
 import { useState } from "react";
-import CalculatorLayout from "../../layouts/CalculatorLayout";
-import { calculatorsSeo } from "../../data/calculatorsSeo.config";
+
 
 function HeightCalculator() {
-  const seo = calculatorsSeo["height-calculator"];
+  
 
   const [feet, setFeet] = useState("");
   const [inches, setInches] = useState("");
@@ -56,10 +55,7 @@ function HeightCalculator() {
   return (
    
 
-    <CalculatorLayout
-      title={seo.title}
-      description={seo.description}
-    >
+    <>
 
       {/* Feet to CM */}
       <div className="border rounded p-3 mb-3">
@@ -125,7 +121,8 @@ function HeightCalculator() {
         </div>
       )}
      
-    </CalculatorLayout>  );
+  </>
+  );
 }
 
 export default HeightCalculator;

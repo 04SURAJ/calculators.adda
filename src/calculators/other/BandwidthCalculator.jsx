@@ -1,9 +1,6 @@
 import { useState } from "react";
-import CalculatorLayout from "../../layouts/CalculatorLayout";
-import { calculatorsSeo } from "../../data/calculatorsSeo.config";
 
 function BandwidthCalculator() {
-  const seo = calculatorsSeo["bandwidth-calculator"];
 
   const [fileSize, setFileSize] = useState(""); // in MB
   const [time, setTime] = useState(""); // in seconds
@@ -47,11 +44,7 @@ function BandwidthCalculator() {
    
 
       
-       
-        <CalculatorLayout
-      title={seo.title}
-      description={seo.description}
-    >
+       <>
 <div className="row g-2 mb-3">
         <div className="col-md-6">
           <input
@@ -103,8 +96,7 @@ function BandwidthCalculator() {
 
         
       )}     
-    </CalculatorLayout>
-      
+      </>
     
   );
 }

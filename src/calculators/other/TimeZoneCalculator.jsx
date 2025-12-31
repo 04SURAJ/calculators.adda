@@ -1,6 +1,5 @@
 import { useState } from "react";
-import CalculatorLayout from "../../layouts/CalculatorLayout";
-import { calculatorsSeo } from "../../data/calculatorsSeo.config";
+
 
 const timeZones = [
   "UTC",
@@ -16,7 +15,7 @@ const timeZones = [
 ];
 
 function TimeZoneCalculator() {
-  const seo = calculatorsSeo["time-zone-calculator"];
+
 
   const [inputTime, setInputTime] = useState("");
   const [fromZone, setFromZone] = useState("UTC");
@@ -63,10 +62,7 @@ function TimeZoneCalculator() {
    
 
      
-<CalculatorLayout
-      title={seo.title}
-      description={seo.description}
-    >
+<>
  <div className="row g-2 mb-3">
         <div className="col-md-4">
           <label className="form-label">Time</label>
@@ -125,7 +121,9 @@ function TimeZoneCalculator() {
           <strong>Converted Time:</strong> {result}
         </div>
       )}     
-    </CalculatorLayout>  );
+   </>
+   
+  );
 }
 
 export default TimeZoneCalculator;

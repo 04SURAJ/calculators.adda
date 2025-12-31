@@ -1,9 +1,7 @@
 import { useState } from "react";
-import CalculatorLayout from "../../layouts/CalculatorLayout";
-import { calculatorsSeo } from "../../data/calculatorsSeo.config";
+
 
 function DayCounter() {
-  const seo = calculatorsSeo["day-counter"];
 
   const [startDate, setStartDate] = useState("");
   const [endDate, setEndDate] = useState("");
@@ -44,10 +42,7 @@ function DayCounter() {
     
 
      
-<CalculatorLayout
-      title={seo.title}
-      description={seo.description}
-    >
+<>
  <div className="row g-2 mb-3">
         <div className="col-md-6">
           <label className="form-label">Start Date</label>
@@ -85,7 +80,8 @@ function DayCounter() {
           <strong>Days:</strong> {result}
         </div>
       )}     
-    </CalculatorLayout>  );
+</>
+ );
 }
 
 export default DayCounter;

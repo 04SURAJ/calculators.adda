@@ -1,9 +1,8 @@
 import { useState } from "react";
-import CalculatorLayout from "../../layouts/CalculatorLayout";
-import { calculatorsSeo } from "../../data/calculatorsSeo.config";
+
 
 function LoveCalculator() {
-  const seo = calculatorsSeo["love-calculator"];
+  
 
   const [name1, setName1] = useState("");
   const [name2, setName2] = useState("");
@@ -42,11 +41,7 @@ function LoveCalculator() {
   return (
  
 
-  
- <CalculatorLayout
-      title={seo.title}
-      description={seo.description}
-    >
+<>
     <div className="mb-3">
         <input
           type="text"
@@ -80,7 +75,8 @@ function LoveCalculator() {
           <strong>Love Compatibility:</strong> {result}%
         </div>
       )}     
-    </CalculatorLayout>  );
+   </>
+    );
 }
 
 export default LoveCalculator;

@@ -1,10 +1,6 @@
 import { useState } from "react";
-import CalculatorLayout from "../../layouts/CalculatorLayout";
-import { calculatorsSeo } from "../../data/calculatorsSeo.config";
 
 function AgeCalculator() {
-const seo = calculatorsSeo["age-calculator"];
-
 
   const [dob, setDob] = useState("");
   const [result, setResult] = useState(null);
@@ -69,13 +65,8 @@ const seo = calculatorsSeo["age-calculator"];
   };
 
   return (
-   
-     
-      <CalculatorLayout
-      title={seo.title}
-      description={seo.description}
-    >
- <div className="mb-3">
+    <>
+      <div className="mb-3">
         <label className="form-label">Date of Birth</label>
         <input
           type="date"
@@ -117,10 +108,8 @@ const seo = calculatorsSeo["age-calculator"];
             </li>
           </ul>
         </div>
-      )}     
-      
-    </CalculatorLayout>
-    
+      )}
+    </>
   );
 }
 

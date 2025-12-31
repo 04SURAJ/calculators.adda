@@ -1,9 +1,8 @@
 import { useState } from "react";
-import CalculatorLayout from "../../layouts/CalculatorLayout";
-import { calculatorsSeo } from "../../data/calculatorsSeo.config";
+
 
 function TipCalculator() {
-  const seo = calculatorsSeo["tip-calculator"];
+  
 
   const [billAmount, setBillAmount] = useState("");
   const [tipPercent, setTipPercent] = useState(15);
@@ -46,10 +45,7 @@ function TipCalculator() {
   return (
     
      
- <CalculatorLayout
-      title={seo.title}
-      description={seo.description}
-    >
+<>
  <div className="mb-3">
         <input
           type="number"
@@ -92,7 +88,9 @@ function TipCalculator() {
           {numPeople > 1 && <p><strong>Per Person:</strong> ${result.perPerson}</p>}
         </div>
       )}     
-    </CalculatorLayout>  );
+    </>
+    
+  );
 }
 
 export default TipCalculator;

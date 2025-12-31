@@ -1,6 +1,5 @@
 import { useState } from "react";
-import CalculatorLayout from "../../layouts/CalculatorLayout";
-import { calculatorsSeo } from "../../data/calculatorsSeo.config";
+
 
 const gradePointsMap = {
 
@@ -17,7 +16,6 @@ const gradePointsMap = {
 };
 
 function GpaCalculator() {
-  const seo = calculatorsSeo["gpa-calculator"];
 
   const [courses, setCourses] = useState([
     { name: "", credits: "", grade: "" },
@@ -74,10 +72,7 @@ function GpaCalculator() {
  
 
      
- <CalculatorLayout
-      title={seo.title}
-      description={seo.description}
-    >
+<>
  {/* Course Rows */}
       {courses.map((course, index) => (
         <div className="row g-2 mb-2" key={index}>
@@ -159,8 +154,7 @@ function GpaCalculator() {
           <p className="fs-4 fw-bold">{gpa}</p>
         </div>
       )}     
-    </CalculatorLayout>
-    
+</>    
       );
 }
 

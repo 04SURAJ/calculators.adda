@@ -1,9 +1,7 @@
 import { useState } from "react";
-import CalculatorLayout from "../../layouts/CalculatorLayout";
-import { calculatorsSeo } from "../../data/calculatorsSeo.config";
+
 
 function SleepCalculator() {
-    const seo = calculatorsSeo["sleep-calculator"];
 
   const [wakeTime, setWakeTime] = useState("");
   const [sleepTime, setSleepTime] = useState("");
@@ -61,10 +59,7 @@ function SleepCalculator() {
   
 
       
-  <CalculatorLayout
-      title={seo.title}
-      description={seo.description}
-    >
+ <>
 <div className="mb-3">
         <label className="form-label">Mode</label>
         <select
@@ -114,7 +109,8 @@ function SleepCalculator() {
           </ul>
         </div>
       )}     
-    </CalculatorLayout>  );
+   </>
+     );
 }
 
 export default SleepCalculator;

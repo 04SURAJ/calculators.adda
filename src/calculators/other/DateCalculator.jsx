@@ -1,9 +1,7 @@
 import { useState } from "react";
-import CalculatorLayout from "../../layouts/CalculatorLayout";
-import { calculatorsSeo } from "../../data/calculatorsSeo.config";
+
 
 function DateCalculator() {
-  const seo = calculatorsSeo["date-calculator"];
 
   const [startDate, setStartDate] = useState("");
   const [endDate, setEndDate] = useState("");
@@ -95,10 +93,7 @@ function DateCalculator() {
   
 
      
-      <CalculatorLayout
-      title={seo.title}
-      description={seo.description}
-    >
+    <>
  {/* Operation Selector */}
       <div className="mb-3">
         <label className="form-label">Operation</label>
@@ -195,8 +190,7 @@ function DateCalculator() {
           </p>
         </div>
       )}     
-    </CalculatorLayout>
-   
+</>   
   );
 }
 

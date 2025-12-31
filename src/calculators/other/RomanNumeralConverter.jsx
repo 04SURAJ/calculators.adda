@@ -1,9 +1,7 @@
 import { useState } from "react";
-import CalculatorLayout from "../../layouts/CalculatorLayout";
-import { calculatorsSeo } from "../../data/calculatorsSeo.config";
+
 
 function RomanNumeralConverter() {
-  const seo = calculatorsSeo["roman-numeral-converter"];
 
   const [input, setInput] = useState("");
   const [result, setResult] = useState("");
@@ -88,11 +86,7 @@ function RomanNumeralConverter() {
  
 
      
-
-    <CalculatorLayout
-      title={seo.title}
-      description={seo.description}
-    >
+<>
  <div className="mb-3">
         <input
           type="text"
@@ -119,7 +113,7 @@ function RomanNumeralConverter() {
           <strong>Result:</strong> {result}
         </div>
       )}     
-    </CalculatorLayout>  );
+    </>  );
 }
 
 export default RomanNumeralConverter;

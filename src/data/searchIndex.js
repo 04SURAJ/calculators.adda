@@ -1,4 +1,4 @@
-import { calculatorsSeo } from "./calculatorsSeo.config";
+import { calculatorsSeo } from "../seo/calculatorsSeo.config";
 
 export const searchIndex = Object.entries(calculatorsSeo).map(
   ([slug, data]) => ({

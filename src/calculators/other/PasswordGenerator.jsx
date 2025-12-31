@@ -1,9 +1,8 @@
 import { useState } from "react";
-import CalculatorLayout from "../../layouts/CalculatorLayout";
-import { calculatorsSeo } from "../../data/calculatorsSeo.config";
+
 
 function PasswordGenerator() {
-  const seo = calculatorsSeo["password-generator"];
+
 
   const [length, setLength] = useState(12);
   const [includeUpper, setIncludeUpper] = useState(true);
@@ -61,10 +60,7 @@ function PasswordGenerator() {
 
   
 
-    <CalculatorLayout
-      title={seo.title}
-      description={seo.description}
-    >
+  <>
     {/* Length */}
       <div className="mb-3">
         <label className="form-label">Length</label>
@@ -149,7 +145,8 @@ function PasswordGenerator() {
           <strong>Password:</strong> {password}
         </div>
       )}     
-    </CalculatorLayout>  );
+    </>
+      );
 }
 
 export default PasswordGenerator;

@@ -1,9 +1,8 @@
 import { useState } from "react";
-import CalculatorLayout from "../../layouts/CalculatorLayout";
-import { calculatorsSeo } from "../../data/calculatorsSeo.config";
+
 
 function TimeCardCalculator() {
-  const seo = calculatorsSeo["time-card-calculator"];
+ 
 
   const [startTime, setStartTime] = useState("");
   const [endTime, setEndTime] = useState("");
@@ -53,11 +52,7 @@ function TimeCardCalculator() {
   return (
   
 
-  
-  <CalculatorLayout
-      title={seo.title}
-      description={seo.description}
-    >
+   <>
     <div className="row g-2 mb-3">
         <div className="col-md-4">
           <label className="form-label">Start Time</label>
@@ -105,7 +100,9 @@ function TimeCardCalculator() {
           <strong>Total Hours Worked:</strong> {result}
         </div>
       )}     
-    </CalculatorLayout>  );
+   </>
+    
+  );
 }
 
 export default TimeCardCalculator;

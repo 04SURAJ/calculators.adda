@@ -1,9 +1,8 @@
 import { useState } from "react";
-import CalculatorLayout from "../../layouts/CalculatorLayout";
-import { calculatorsSeo } from "../../data/calculatorsSeo.config";
+
 
 function TimeCalculator() {
-  const seo = calculatorsSeo["time-calculator"];
+ 
 
   const [baseTime, setBaseTime] = useState("");
   const [hours, setHours] = useState("");
@@ -62,13 +61,7 @@ function TimeCalculator() {
 
   return (
   
-
-    
-
-    <CalculatorLayout
-      title={seo.title}
-      description={seo.description}
-    >
+<>
   {/* Base Time */}
       <div className="mb-3">
         <label className="form-label">Base Time</label>
@@ -140,7 +133,7 @@ function TimeCalculator() {
           </p>
         </div>
       )}     
-    </CalculatorLayout>  );
+   </> );
 }
 
 export default TimeCalculator;

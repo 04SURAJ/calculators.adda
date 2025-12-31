@@ -1,9 +1,7 @@
 import { useState } from "react";
-import CalculatorLayout from "../../layouts/CalculatorLayout";
-import { calculatorsSeo } from "../../data/calculatorsSeo.config";
+
 
 function GravelCalculator() {
-  const seo = calculatorsSeo["gravel-calculator"];
 
   const [length, setLength] = useState("");
   const [width, setWidth] = useState("");
@@ -47,13 +45,7 @@ function GravelCalculator() {
 
   return (
     
-
-    
-
-    <CalculatorLayout
-      title={seo.title}
-      description={seo.description}
-    >
+<>
   <div className="row g-2 mb-3">
         <div className="col-md-4">
           <input
@@ -112,7 +104,7 @@ function GravelCalculator() {
           <strong>Gravel Required:</strong> {result}
         </div>
       )}     
-    </CalculatorLayout>  
+    </>
     
     );
 }

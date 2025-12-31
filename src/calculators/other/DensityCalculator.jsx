@@ -1,9 +1,7 @@
 import { useState } from "react";
-import CalculatorLayout from "../../layouts/CalculatorLayout";
-import { calculatorsSeo } from "../../data/calculatorsSeo.config";
+
 
 function DensityCalculator() {
-  const seo = calculatorsSeo["density-calculator"];
 
   const [mass, setMass] = useState("");
   const [volume, setVolume] = useState("");
@@ -44,11 +42,7 @@ function DensityCalculator() {
 
   return (
     
-      
-<CalculatorLayout
-      title={seo.title}
-      description={seo.description}
-    >
+<>
 <div className="row g-2 mb-3">
         <div className="col-md-6">
           <input
@@ -98,8 +92,7 @@ function DensityCalculator() {
           <strong>Density:</strong> {result}
         </div>
       )}     
-    </CalculatorLayout>
-    
+</>    
       );
 }
 

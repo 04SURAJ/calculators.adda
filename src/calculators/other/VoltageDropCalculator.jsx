@@ -1,6 +1,5 @@
 import { useState } from "react";
-import CalculatorLayout from "../../layouts/CalculatorLayout";
-import { calculatorsSeo } from "../../data/calculatorsSeo.config";
+
 
 // Approximate resistances in ohms per 1000 ft for copper wires at 75°C
 const wireResistance = {
@@ -16,7 +15,6 @@ const wireResistance = {
 };
 
 function VoltageDropCalculator() {
-  const seo = calculatorsSeo["voltage-drop-calculator"];
 
   const [voltage, setVoltage] = useState("");
   const [current, setCurrent] = useState("");
@@ -79,10 +77,7 @@ function VoltageDropCalculator() {
   return (
    
 
-<CalculatorLayout
-      title={seo.title}
-      description={seo.description}
-    >
+<>
 
       <div className="row g-2 mb-3">
         <div className="col-md-3">
@@ -161,7 +156,9 @@ function VoltageDropCalculator() {
           </p>
         </div>
       )}     
-    </CalculatorLayout>  );
+    </>
+    
+  );
 }
 
 export default VoltageDropCalculator;

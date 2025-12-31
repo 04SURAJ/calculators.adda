@@ -1,9 +1,7 @@
 import { useState } from "react";
-import CalculatorLayout from "../../layouts/CalculatorLayout";
-import { calculatorsSeo } from "../../data/calculatorsSeo.config";
+
 
 function DayOfWeekCalculator() {
-   const seo = calculatorsSeo["day-of-week-calculator"];
 
 
   const [date, setDate] = useState("");
@@ -38,11 +36,7 @@ function DayOfWeekCalculator() {
   return (
   
       
-
-       <CalculatorLayout
-      title="Day of Week Calculator"
-      description={seo.description}
-    >
+<>
       
 
       <div className="mb-3">
@@ -72,8 +66,7 @@ function DayOfWeekCalculator() {
         </div>
       )}
       
-    </CalculatorLayout>
-   
+</>   
     
   );
 }

@@ -1,9 +1,7 @@
 import { useState } from "react";
-import CalculatorLayout from "../../layouts/CalculatorLayout";
-import { calculatorsSeo } from "../../data/calculatorsSeo.config";
+
 
 function TimeDurationCalculator() {
-  const seo = calculatorsSeo["time-duration-calculator"];
 
   const [startTime, setStartTime] = useState("");
   const [endTime, setEndTime] = useState("");
@@ -44,11 +42,7 @@ function TimeDurationCalculator() {
 
   return (
   
-
-    <CalculatorLayout
-      title={seo.title}
-      description={seo.description}
-    >
+<>
 <div className="row g-2 mb-3">
         <div className="col-md-6">
           <label className="form-label">Start Time</label>
@@ -86,7 +80,9 @@ function TimeDurationCalculator() {
           <strong>Duration:</strong> {result}
         </div>
       )}     
-    </CalculatorLayout>  );
+    </>
+    
+  );
 }
 
 export default TimeDurationCalculator;

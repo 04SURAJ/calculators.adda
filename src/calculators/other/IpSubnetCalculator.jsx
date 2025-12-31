@@ -1,9 +1,8 @@
 import { useState } from "react";
-import CalculatorLayout from "../../layouts/CalculatorLayout";
-import { calculatorsSeo } from "../../data/calculatorsSeo.config";
+
 
 function IpSubnetCalculator() {
-  const seo = calculatorsSeo["ip-subnet-calculator"];
+ 
 
   const [ipAddress, setIpAddress] = useState("");
   const [cidr, setCidr] = useState("");
@@ -77,10 +76,7 @@ function IpSubnetCalculator() {
     
 
 
-    <CalculatorLayout
-      title={seo.title}
-      description={seo.description}
-    >
+   <>
 
       <div className="mb-3">
         <label className="form-label">IP Address</label>
@@ -132,7 +128,8 @@ function IpSubnetCalculator() {
           </p>
         </div>
       )}     
-    </CalculatorLayout>  );
+  </>
+      );
 }
 
 export default IpSubnetCalculator;

@@ -1,9 +1,7 @@
 import { useState } from "react";
-import CalculatorLayout from "../../layouts/CalculatorLayout";
-import { calculatorsSeo } from "../../data/calculatorsSeo.config";
+
 
 function MulchCalculator() {
-  const seo = calculatorsSeo["mulch-calculator"];
 
   const [length, setLength] = useState("");
   const [width, setWidth] = useState("");
@@ -49,10 +47,7 @@ function MulchCalculator() {
     
 
       
-<CalculatorLayout
-      title={seo.title}
-      description={seo.description}
-    >
+<>
 <div className="row g-2 mb-3">
         <div className="col-md-4">
           <input
@@ -111,7 +106,8 @@ function MulchCalculator() {
           <strong>Mulch Required:</strong> {result}
         </div>
       )}     
-    </CalculatorLayout>  );
+    </>
+  );
 }
 
 export default MulchCalculator;

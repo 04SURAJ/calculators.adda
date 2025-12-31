@@ -1,9 +1,7 @@
 import { useState } from "react";
-import CalculatorLayout from "../../layouts/CalculatorLayout";
-import { calculatorsSeo } from "../../data/calculatorsSeo.config";
+
 
 function WindChillCalculator() {
-    const seo = calculatorsSeo["wind-chill-calculator"];
 
 
   const [temperature, setTemperature] = useState(""); // in Celsius or Fahrenheit
@@ -66,10 +64,7 @@ function WindChillCalculator() {
    
 
       
- <CalculatorLayout
-      title={seo.title}
-      description={seo.description}
-    >
+<>
 <div className="row g-2 mb-3">
         <div className="col-md-6">
           <input
@@ -119,7 +114,8 @@ function WindChillCalculator() {
           <strong>Wind Chill:</strong> {result}
         </div>
       )}     
-    </CalculatorLayout>  );
+</>    
+  );
 }
 
 export default WindChillCalculator;

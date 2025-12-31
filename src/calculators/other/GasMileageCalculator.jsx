@@ -1,9 +1,7 @@
 import { useState } from "react";
-import CalculatorLayout from "../../layouts/CalculatorLayout";
-import { calculatorsSeo } from "../../data/calculatorsSeo.config";
+
 
 function GasMileageCalculator() {
-  const seo = calculatorsSeo["gas-mileage-calculator"];
 
   const [distance, setDistance] = useState("");
   const [fuel, setFuel] = useState("");
@@ -43,11 +41,7 @@ function GasMileageCalculator() {
   return (
    
 
-     
-      <CalculatorLayout
-      title={seo.title}
-      description={seo.description}
-    >
+   <>
  <div className="row g-2 mb-3">
         <div className="col-md-6">
           <input
@@ -97,7 +91,7 @@ function GasMileageCalculator() {
           <strong>Fuel Efficiency:</strong> {result}
         </div>
       )}     
-    </CalculatorLayout>
+  </>
   );
 }
 

@@ -1,9 +1,12 @@
-
-export default function SeoMeta({ title, description }) {
+export default function SeoMeta({ title, description, subtitle }) {
   return (
-    <div>
+    <>
       <title>{title}</title>
       <meta name="description" content={description} />
-   </div>
+
+      {subtitle && (
+        <meta name="subtitle" content={subtitle} />
+      )}
+    </>
   );
 }

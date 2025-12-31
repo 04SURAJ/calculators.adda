@@ -1,9 +1,8 @@
 import { useState } from "react";
-import CalculatorLayout from "../../layouts/CalculatorLayout";
-import { calculatorsSeo } from "../../data/calculatorsSeo.config";
+
 
 function HoursCalculator() {
-  const seo = calculatorsSeo["hours-calculator"];
+ 
 
   const [entries, setEntries] = useState([""]);
   const [result, setResult] = useState(null);
@@ -68,11 +67,7 @@ function HoursCalculator() {
   return (
    
 
-
-    <CalculatorLayout
-      title={seo.title}
-      description={seo.description}
-    >
+<>
 
       {/* Time Entries */}
       {entries.map((time, index) => (
@@ -125,7 +120,7 @@ function HoursCalculator() {
           </p>
         </div>
       )}     
-    </CalculatorLayout>
+   </>
     
   );
 }

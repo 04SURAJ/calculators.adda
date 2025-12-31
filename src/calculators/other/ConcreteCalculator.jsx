@@ -1,9 +1,7 @@
 import { useState } from "react";
-import CalculatorLayout from "../../layouts/CalculatorLayout";
-import { calculatorsSeo } from "../../data/calculatorsSeo.config";
+
 
 function ConcreteCalculator() {
-  const seo = calculatorsSeo["concrete-calculator"];
 
   const [length, setLength] = useState("");
   const [width, setWidth] = useState("");
@@ -47,10 +45,7 @@ function ConcreteCalculator() {
   return (
   
       
-       <CalculatorLayout
-      title={seo.title}
-      description={seo.description}
-    >
+     <>
 {/* Dimensions */}
       <div className="row g-2 mb-3">
         <div className="col-md-4">
@@ -114,7 +109,7 @@ function ConcreteCalculator() {
           {unit === "meters" ? "m³" : "ft³"}
         </div>
       )}     
-    </CalculatorLayout>
+</>
   );
 }
 

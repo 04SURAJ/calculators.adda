@@ -1,9 +1,8 @@
 import { useState } from "react";
-import CalculatorLayout from "../../layouts/CalculatorLayout";
-import { calculatorsSeo } from "../../data/calculatorsSeo.config";
+
 
 function GradeCalculator() {
-  const seo = calculatorsSeo["grade-calculator"];
+ 
 
   const [items, setItems] = useState([
     { name: "", score: "", max: "", weight: "" },
@@ -77,10 +76,7 @@ function GradeCalculator() {
 
   return (
    
-   <CalculatorLayout
-      title={seo.title}
-      description={seo.description}
-    >
+ <>
  {/* Rows */}
       {items.map((item, index) => (
         <div className="row g-2 mb-2" key={index}>
@@ -172,8 +168,7 @@ function GradeCalculator() {
           </p>
         </div>
       )}     
-    </CalculatorLayout>
-    
+</>    
       );
 }
 
