@@ -1,47 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
 
-<url>
-  <loc>https://www.calculatorsadda.com/</loc>
-  <priority>1.0</priority>
-</url>
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.calculatorsadda.com/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
 
-<url>
-  <loc>https://www.calculatorsadda.com/gpa-calculator</loc>
-</url>
-
-<url>
-  <loc>https://www.calculatorsadda.com/age-calculator</loc>
-</url>
-<url>
-  <loc>https://www.calculatorsadda.com/time-calculator</loc>
-</url>
-<url>
-  <loc>https://www.calculatorsadda.com/hours-calculator</loc>
-</url>
-<url>
-  <loc>https://www.calculatorsadda.com/height-calculator</loc>
-</url>
-<url>
-  <loc>https://www.calculatorsadda.com/ip-subnet-calculator</loc>
-</url>
-<url>
-  <loc>https://www.calculatorsadda.com/password-generator</loc>
-</url>
-<url>
-  <loc>https://www.calculatorsadda.com/fuel-cost-calculator</loc>
-</url>
-<url>
-  <loc>https://www.calculatorsadda.com/square-footage-calculator</loc>
-</url>
-<url>
-  <loc>https://www.calculatorsadda.com/time-zone-calculator</loc>
-</url>
-<url>
-  <loc>https://www.calculatorsadda.com/density-calculator</loc>
-</url>
-<url>
-  <loc>https://www.calculatorsadda.com/speed-calculator</loc>
-</url>
+  <!-- Calculators -->
+  <url><loc>https://www.calculatorsadda.com/calculators/age-calculator</loc></url>
+  <url><loc>https://www.calculatorsadda.com/calculators/date-calculator</loc></url>
+  <url><loc>https://www.calculatorsadda.com/calculators/time-calculator</loc></url>
+  <url><loc>https://www.calculatorsadda.com/calculators/hours-calculator</loc></url>
+  <url><loc>https://www.calculatorsadda.com/calculators/gpa-calculator</loc></url>
+  <url><loc>https://www.calculatorsadda.com/calculators/grade-calculator</loc></url>
+  <url><loc>https://www.calculatorsadda.com/calculators/height-calculator</loc></url>
+  <url><loc>https://www.calculatorsadda.com/calculators/concrete-calculator</loc></url>
+  <url><loc>https://www.calculatorsadda.com/calculators/ip-subnet-calculator</loc></url>
+  <url><loc>https://www.calculatorsadda.com/calculators/password-generator</loc></url>
+  <url><loc>https://www.calculatorsadda.com/calculators/dice-roller</loc></url>
+  <url><loc>https://www.calculatorsadda.com/calculators/fuel-cost-calculator</loc></url>
+  <url><loc>https://www.calculatorsadda.com/calculators/voltage-drop-calculator</loc></url>
+  <url><loc>https://www.calculatorsadda.com/calculators/square-footage-calculator</loc></url>
+  <url><loc>https://www.calculatorsadda.com/calculators/time-card-calculator</loc></url>
+  <url><loc>https://www.calculatorsadda.com/calculators/time-zone-calculator</loc></url>
+  <url><loc>https://www.calculatorsadda.com/calculators/love-calculator</loc></url>
+  <url><loc>https://www.calculatorsadda.com/calculators/gas-mileage-calculator</loc></url>
+  <url><loc>https://www.calculatorsadda.com/calculators/tip-calculator</loc></url>
+  <url><loc>https://www.calculatorsadda.com/calculators/density-calculator</loc></url>
+  <url><loc>https://www.calculatorsadda.com/calculators/weight-calculator</loc></url>
+  <url><loc>https://www.calculatorsadda.com/calculators/speed-calculator</loc></url>
+  <url><loc>https://www.calculatorsadda.com/calculators/roman-numeral-converter</loc></url>
+  <url><loc>https://www.calculatorsadda.com/calculators/sleep-calculator</loc></url>
+  <url><loc>https://www.calculatorsadda.com/calculators/tire-size-calculator</loc></url>
+  <url><loc>https://www.calculatorsadda.com/calculators/roofing-calculator</loc></url>
+  <url><loc>https://www.calculatorsadda.com/calculators/tile-calculator</loc></url>
+  <url><loc>https://www.calculatorsadda.com/calculators/mulch-calculator</loc></url>
+  <url><loc>https://www.calculatorsadda.com/calculators/gravel-calculator</loc></url>
+  <url><loc>https://www.calculatorsadda.com/calculators/heat-index-calculator</loc></url>
+  <url><loc>https://www.calculatorsadda.com/calculators/dew-point-calculator</loc></url>
+  <url><loc>https://www.calculatorsadda.com/calculators/bandwidth-calculator</loc></url>
+  <url><loc>https://www.calculatorsadda.com/calculators/time-duration-calculator</loc></url>
+  <url><loc>https://www.calculatorsadda.com/calculators/day-counter</loc></url>
+  <url><loc>https://www.calculatorsadda.com/calculators/day-of-week-calculator</loc></url>
+  <url><loc>https://www.calculatorsadda.com/calculators/wind-chill-calculator</loc></url>
 
 </urlset>
