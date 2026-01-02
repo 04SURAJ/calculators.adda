@@ -142,7 +142,7 @@ export default function Home() {
           We are continuously expanding our collection of tools.
         </p>
 
-        <a href="/calculators/other" className="btn btn-primary">
+        <a href="/calculators" className="btn btn-primary">
           View All Calculators
         </a>
       </section>
