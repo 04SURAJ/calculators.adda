@@ -5,6 +5,7 @@ import { Navigate } from "react-router-dom";
 
 import { calculatorsSeo } from "../seo/calculatorsSeo.config";
 import CalculatorLayout from "../layouts/CalculatorLayout";   // <-- IMPORTANT
+import { calculatorContent } from "../data/calculatorContent.config";
 
 
 const calculatorsMap = {
@@ -51,6 +52,7 @@ export default function CalculatorPage() {
   const { slug } = useParams();
   const CalculatorComponent = calculatorsMap[slug];
   const seoData = calculatorsSeo[slug];
+    const content = calculatorContent[slug];
 
   if (!CalculatorComponent) {
     return <Navigate to="*" replace />;
@@ -61,6 +63,7 @@ export default function CalculatorPage() {
       title={seoData?.title}
       subtitle={seoData?.subtitle}
       description={seoData?.description}
+       content={content}
     >
       <CalculatorComponent />
     </CalculatorLayout>

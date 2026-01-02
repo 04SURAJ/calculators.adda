@@ -32,7 +32,7 @@ const SearchBar = () => {
   const goTo = (slug) => {
     setQuery("");
     setResults([]);
-    navigate(`/calculators/other/${slug}`);
+    navigate(`/${slug}`);
 
   };
 

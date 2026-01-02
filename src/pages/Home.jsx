@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import SearchBar from "../components/SearchBar";
-import CalculatorWheel from "../components/CalculatorWheel";
 import '../index.css';
 
 export default function Home() {
