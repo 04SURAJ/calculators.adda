@@ -249,6 +249,75 @@ export const calculatorsSeo = {
     subtitle: "Calculate Real Feel Cold Temperature",
     description:
       "Calculate wind chill temperature based on air temperature and wind speed to understand how cold it really feels."
+  },
+
+"basic-calculator": {
+  title: "Basic Calculator",
+  subtitle: "Perform Quick Arithmetic Operations Online",
+  description:
+    "Use this free online basic calculator to perform addition, subtraction, multiplication, and division instantly. Mobile-friendly and easy-to-use interface for fast calculations."
+},
+"percentage-calculator": {
+  title: "Percentage Calculator",
+   subtitle: "Find Percentage of a Number",
+  description:
+    "Use this free online percentage calculator to calculate percentage, find percentage value, percent increase and decrease, and solve percent problems instantly."
+}
+,
+"percentage-increase-decrease-calculator": {
+  title: "Percentage Increase / Decrease Calculator",
+  description: "Calculate the percentage increase or decrease between two values easily with this calculator."
+}
+,
+"ratio-calculator": {
+  title: "Ratio Calculator",
+  description:
+    "Simplify ratios and compare proportional values instantly using this free online Ratio Calculator. Useful for math, percentages, finance, and measurements."
+}
+,
+ "average-calculator": {
+    title: "Average Calculator",
+    description:
+      "Free Average Calculator to find the mean of multiple numbers. Supports adding multiple values, auto calculation, and instant result summary.",
+    
   }
+,
+"mean-calculator": {
+ 
+  title: "Mean Calculator",
+  description:
+    "Free Mean Calculator to find the mean (average) of two or more numbers. Supports multiple values, dynamic inputs, and instant calculation.",
+
+}
+,
+"median-calculator": {
+  title: "Median Calculator",
+  description:
+    "Free Median Calculator to find the median of a set of numbers. Supports multiple values, auto sorting, and even/odd median calculation.",
+
+}
+,
+"mode-calculator": {
+  title: "Mode Calculator",
+  description:
+    "Free Mode Calculator to find the mode(s) of a set of numbers. Supports multiple values, dynamic inputs, and frequency calculation.",
+
+}
+,
+"rounding-calculator": {
+  title: "Rounding Calculator",
+  description:
+    "Free Rounding Calculator to round numbers to nearest integer, floor, ceil, or fixed decimal places. Instant calculation for math, finance, and statistics.",
+  
+}
+,
+"absolute-value-calculator": {
+  title: "Absolute Value Calculator ",
+  description:
+    "Free Absolute Value Calculator to compute the absolute value of any number. Works instantly with integers and decimals.",
+ 
+}
+
+
 };
 

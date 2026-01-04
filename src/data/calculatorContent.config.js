@@ -1,31 +1,34 @@
 export const calculatorContent = {
   "age-calculator": {
-  whyUse: "This Age Calculator helps you accurately calculate your age in years, months, and days based on your date of birth...",
-
   howToUse: [
-    "Enter your date of birth in the input field provided.",
-    "Select the reference date (today or a custom date).",
-    "Click the Calculate Age button.",
-    "View your age in years, months, and days.",
-    "Modify inputs anytime to recalculate."
+    "Enter your date of birth in the input fields provided.",
+    "Optionally, select a reference date to calculate age as of that date.",
+    "Click the 'Calculate' button to see your exact age in years, months, and days.",
+    "The result will be displayed instantly above the input fields."
   ],
 
   features: [
-    "Exact age calculation in years, months, and days",
-    "Instant and accurate results",
-    "Automatically considers leap years",
-    "No registration required",
-    "Mobile-friendly and free"
+    "Calculates age accurately considering leap years and month lengths",
+    "Shows exact years, months, and days elapsed",
+    "Option to calculate age for a future reference date",
+    "Mobile-friendly and responsive design",
+    "Instant and accurate results with a clean interface"
   ],
 
+  whyUse:
+    "This Age Calculator helps you determine your exact age quickly and accurately without manual calculations. It is perfect for legal, educational, financial, or personal purposes, and works on both mobile and desktop devices.",
+
   notes: [
-    "Results depend on the entered date of birth.",
-    "Leap years are included automatically."
+    "The calculation is based on the Gregorian calendar.",
+    "Time zones are not considered in the calculation.",
+    "Results are for general reference and educational purposes only.",
+    "For official age verification, refer to legal documents."
   ]
 }
+
 ,
 
- 
+
   "date-calculator": {
     "whyUse": "This Date Calculator helps you calculate the difference between two dates or add/subtract days from a given date accurately.",
     "howToUse": [
@@ -741,7 +744,274 @@ export const calculatorContent = {
       "Incorrect sizes may affect performance."
     ]
   }
+,
 
 
+"basic-calculator": {
+  howToUse: [
+    "Enter numbers using the input fields or number buttons.",
+    "Tap the operation (+, −, ×, ÷) you want to perform.",
+    "The result will appear instantly above the buttons.",
+    "Use the clear (C) button to reset and start over."
+  ],
+
+  features: [
+    "Supports addition, subtraction, multiplication, and division",
+    "Instant calculation as you input numbers",
+    "Mobile-friendly and responsive design",
+    "Clean, minimal interface for quick calculations"
+  ],
+
+  whyUse:
+    "Perform fast and accurate arithmetic calculations directly in your browser without any extra apps. Perfect for mobile or desktop use.",
+
+  notes: [
+    "Division by zero is not allowed.",
+    "All results are for general reference and educational purposes.",
+    "For precise financial or scientific calculations, verify independently."
+  ]
+}
+,
+"percentage-calculator": {
+  howToUse: [
+    "Enter the base value (the number you want to find percentage of).",
+    "Enter the percentage value in the second field.",
+    "Click the Calculate button to get the percentage result.",
+    "Use the Reset button to clear fields and start a new calculation."
+  ],
+
+  features: [
+    "Calculates percentage value instantly",
+    "Supports decimal and large number inputs",
+    "Ideal for discount, profit, marks, and tax percentage calculations",
+    "Lightweight and mobile-friendly calculator interface"
+  ],
+
+  whyUse:
+    "This percentage calculator helps you quickly find percentage values for discounts, exam scores, salary hikes, business profit margins, GST, and more — without manual calculations.",
+
+  notes: [
+    "Rounding may apply in some percentage calculations.",
+    "Ensure values are entered correctly before calculating.",
+    "This tool is intended for general and educational use."
+  ]
+}
+,
+"percentage-increase-decrease-calculator": {
+  howToUse: [
+    "Enter the original value in the first input field.",
+    "Enter the new value in the second input field.",
+    "Click the 'Calculate' button to see the percentage increase or decrease.",
+    "Use the 'Reset' button to clear the inputs and start over."
+  ],
+
+  features: [
+    "Calculates both percentage increase and decrease",
+    "Displays the exact amount of change along with percentage",
+    "Validates inputs to prevent errors (e.g., division by zero)",
+    "Mobile-friendly and responsive design with clear interface"
+  ],
+
+  whyUse:
+    "Quickly determine the percentage change between two values for financial, statistical, or general purposes, directly in your browser.",
+
+  notes: [
+    "Original value cannot be zero.",
+    "Results are approximate and for reference purposes only.",
+    "For critical calculations, verify results independently."
+  ]
+}
+,
+
+"ratio-calculator": {
+  howToUse: [
+    "Enter the first value in the Value A field.",
+    "Enter the second value in the Value B field.",
+    "If you want to compare more than two values, click the Add Value button to add another field.",
+    "Enter the additional value(s) to extend the ratio sequence.",
+    "Click the Calculate button to generate the simplified ratio for all values.",
+    "Use the Reset button to clear inputs and start again."
+  ],
+
+  features: [
+    "Supports 2-value, 3-value, and 4-value ratio comparison",
+    "Automatically simplifies ratios using GCD method",
+    "Works with integers and decimal values",
+    "Displays clean A : B : C : D formatted results",
+    "Responsive and mobile-friendly calculator interface"
+  ],
+
+  whyUse:
+    "Quickly simplify and compare proportional values across two or more quantities. Useful for mathematics, ingredient scaling, construction measurements, financial ratios, and statistical comparisons.",
+
+  notes: [
+    "All values must be greater than zero.",
+    "Results are simplified to the lowest possible ratio.",
+    "Extremely small decimals may be rounded during simplification.",
+    "For critical technical or financial calculations, verify independently."
+  ]
+}
+,
+
+"average-calculator": {
+  howToUse: [
+    "Enter the first two values in the input fields.",
+    "Click the Add Value button if you want to include more numbers.",
+    "Enter additional values as needed.",
+    "Click the Calculate Average button to generate the result.",
+    "Use the Reset button to clear all values and start again."
+  ],
+
+  features: [
+    "Supports multiple number inputs",
+    "Dynamically add or remove fields",
+    "Displays total count, sum, and calculated average",
+    "Works with integers and decimal values",
+    "Responsive and mobile-friendly calculator design"
+  ],
+
+  whyUse:
+    "Quickly calculate the mean of two or more numbers for mathematics, statistics, academic work, budgeting, or data comparison tasks.",
+
+  notes: [
+    "At least two valid values are required to calculate the average.",
+    "Invalid or empty fields are ignored automatically.",
+    "Very large or highly precise decimals may be rounded.",
+    "For scientific or financial computations, verify independently."
+  ]
+}
+,
+
+"mean-calculator": {
+  howToUse: [
+    "Enter the first two values in the input fields.",
+    "Click the Add Value button to include more numbers if needed.",
+    "Enter additional values to extend the list.",
+    "Click the Calculate Mean button to generate the result.",
+    "Use the Reset button to clear values and start again."
+  ],
+
+  features: [
+    "Supports multiple number inputs",
+    "Dynamically add or remove fields",
+    "Displays total count, sum, and calculated mean",
+    "Works with integers and decimal values",
+    "Mobile-friendly responsive calculator layout"
+  ],
+
+  whyUse:
+    "Quickly calculate the mean (average) of datasets for mathematics, statistics, academics, budgeting, finance, and analytics tasks.",
+
+  notes: [
+    "At least two valid values are required to calculate mean.",
+    "Invalid or empty fields are ignored automatically.",
+    "Extremely precise decimal values may be rounded.",
+    "For scientific or financial analysis, verify independently."
+  ]
+}
+,
+
+"median-calculator": {
+  howToUse: [
+    "Enter at least two numeric values in the input fields.",
+    "Click the Add Value button to include more values if required.",
+    "Click the Calculate Median button to generate the result.",
+    "Use the Reset button to clear all inputs and start again."
+  ],
+
+  features: [
+    "Supports multiple numeric inputs",
+    "Automatically sorts values before calculation",
+    "Calculates median for both even and odd datasets",
+    "Mobile-friendly responsive calculator layout"
+  ],
+
+  whyUse:
+    "Find the median of datasets for mathematics, statistics, academic projects, and data analysis tasks.",
+
+  notes: [
+    "At least two valid numeric values are required.",
+    "Empty or invalid fields are ignored automatically.",
+    "Large decimal values may be rounded.",
+    "For research or financial analysis, verify independently."
+  ]
+}
+,
+"mode-calculator": {
+  howToUse: [
+    "Enter at least two numeric values in the input fields.",
+    "Click Add Value to include more numbers if needed.",
+    "Click Calculate Mode to find the mode(s) of the dataset.",
+    "Use Reset to clear all inputs and start again."
+  ],
+
+  features: [
+    "Supports multiple numeric inputs",
+    "Dynamically add or remove fields",
+    "Finds one or multiple modes",
+    "Displays mode frequency",
+    "Responsive and mobile-friendly design"
+  ],
+
+  whyUse:
+    "Quickly find the mode of a dataset for statistics, academics, math homework, or data analysis tasks.",
+
+  notes: [
+    "At least two valid numbers are required.",
+    "Multiple modes are supported when values repeat equally.",
+    "Empty or invalid inputs are ignored automatically.",
+    "For professional analysis, verify independently."
+  ]
+}
+,
+"rounding-calculator": {
+  howToUse: [
+    "Enter the number you want to round.",
+    "Select a rounding method: Nearest, Floor, Ceil, or Fixed Decimals.",
+    "If using Fixed Decimals, enter the number of decimal places.",
+    "Click Calculate to get the rounded value.",
+    "Use Reset to clear the input and start over."
+  ],
+
+  features: [
+    "Supports multiple rounding methods",
+    "Instant calculation",
+    "Works with integers and decimals",
+    "Mobile-friendly responsive design"
+  ],
+
+  whyUse:
+    "Quickly round numbers for math, statistics, finance, or general calculations with precise control over decimal places.",
+
+  notes: [
+    "Decimal places must be a non-negative number when using Fixed Decimals.",
+    "All results are for general use and reference purposes.",
+    "For precise financial or scientific calculations, verify independently."
+  ]
+}
+,
+"absolute-value-calculator": {
+  howToUse: [
+    "Enter the number in the input field.",
+    "Click Calculate Absolute Value to find its absolute value.",
+    "Use Reset to clear the input and start again."
+  ],
+
+  features: [
+    "Works for integers and decimal numbers",
+    "Instant calculation",
+    "Simple, responsive, and mobile-friendly UI"
+  ],
+
+  whyUse:
+    "Quickly find the absolute value of any number for math, algebra, or data analysis tasks.",
+
+  notes: [
+    "Negative numbers will return their positive equivalent.",
+    "Zero remains unchanged.",
+    "Results are for reference; verify for critical calculations."
+  ]
+}
+,
 
 };

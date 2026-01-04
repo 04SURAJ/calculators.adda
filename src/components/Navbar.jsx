@@ -1,9 +1,37 @@
 import { Link, NavLink } from "react-router-dom";
+import { useRef, useEffect } from "react";
 
 function Navbar() {
+  const collapseRef = useRef(null);
+  const containerRef = useRef(null);
+
+  // Close menu when any link inside the navbar is clicked
+  const handleLinkClick = (e) => {
+    const target = e.target.closest("a");
+    if (target && collapseRef.current.classList.contains("show")) {
+      collapseRef.current.classList.remove("show");
+    }
+  };
+
+  // Close menu when clicking outside
+  const handleClickOutside = (e) => {
+    if (
+      collapseRef.current &&
+      collapseRef.current.classList.contains("show") &&
+      !containerRef.current.contains(e.target)
+    ) {
+      collapseRef.current.classList.remove("show");
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", handleClickOutside);
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, []);
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-      <div className="container">
+      <div className="container" ref={containerRef} onClick={handleLinkClick}>
         {/* Brand */}
         <Link className="navbar-brand fw-bold" to="/">
           CalculatorsAdda
@@ -23,7 +51,7 @@ function Navbar() {
         </button>
 
         {/* Navbar Links */}
-        <div className="collapse navbar-collapse" id="mainNavbar">
+        <div className="collapse navbar-collapse" id="mainNavbar" ref={collapseRef}>
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <NavLink className="nav-link" to="/">
@@ -42,19 +70,18 @@ function Navbar() {
 
               <ul className="dropdown-menu">
                 <li>
-                  <NavLink
-                    className="dropdown-item"
-                    to="/calculators"
-                  >
+                  <NavLink className="dropdown-item" to="/calculators">
                     All Calculators
                   </NavLink>
                 </li>
+                <li>
+                  <NavLink className="dropdown-item" to="/math-calculators">
+                    Math Calculators
+                  </NavLink>
+                </li>
                 {/* Future categories */}
-                {/* <li><NavLink className="dropdown-item" to="/calculators/financial">Financial</NavLink></li> */}
               </ul>
             </li>
-
-           
           </ul>
         </div>
       </div>

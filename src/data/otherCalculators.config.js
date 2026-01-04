@@ -293,4 +293,21 @@ export const otherCalculators = [
   component: DayOfWeekCalculator,
   description: "Determine the day of the week for a specific date."
 }
+,
+
+
+  { name: "Basic Calculator", slug: "basic-calculator" },
+  { name: "Percentage Calculator", slug: "percentage-calculator" },
+  { name: "Percentage Increase / Decrease Calculator", slug: "percentage-increase-decrease-calculator" },
+  { name: "Ratio Calculator", slug: "ratio-calculator" },
+  { name: "Average Calculator", slug: "average-calculator" },
+  { name: "Mean Calculator", slug: "mean-calculator" },
+  { name: "Median Calculator", slug: "median-calculator" },
+  { name: "Mode Calculator", slug: "mode-calculator" },
+  { name: "Rounding Calculator", slug: "rounding-calculator" },
+  { name: "Absolute Value Calculator", slug: "absolute-value-calculator" }
+
+
+
+
 ];

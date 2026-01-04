@@ -10,6 +10,7 @@ import TermsAndConditions from "./pages/TermsAndConditions";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import MathCalculatorsHome from "./pages/MathCalculatorsHome";
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/*" element={<NotFound />} />
+
+        <Route path="/math-calculators" element={<MathCalculatorsHome />} />
+
       </Routes>
 
       <Footer />
