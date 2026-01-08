@@ -1,49 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- Homepage -->
   <url>
-    <loc>https://www.calculatorsadda.com/</loc>
+    <loc>https://calculatorsadda.com/</loc>
+    <lastmod>2026-01-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Calculators -->
-  <url><loc>https://www.calculatorsadda.com/age-calculator</loc></url>
-  <url><loc>https://www.calculatorsadda.com/date-calculator</loc></url>
-  <url><loc>https://www.calculatorsadda.com/time-calculator</loc></url>
-  <url><loc>https://www.calculatorsadda.com/hours-calculator</loc></url>
-  <url><loc>https://www.calculatorsadda.com/gpa-calculator</loc></url>
-  <url><loc>https://www.calculatorsadda.com/grade-calculator</loc></url>
-  <url><loc>https://www.calculatorsadda.com/height-calculator</loc></url>
-  <url><loc>https://www.calculatorsadda.com/concrete-calculator</loc></url>
-  <url><loc>https://www.calculatorsadda.com/ip-subnet-calculator</loc></url>
-  <url><loc>https://www.calculatorsadda.com/password-generator</loc></url>
-  <url><loc>https://www.calculatorsadda.com/dice-roller</loc></url>
-  <url><loc>https://www.calculatorsadda.com/fuel-cost-calculator</loc></url>
-  <url><loc>https://www.calculatorsadda.com/voltage-drop-calculator</loc></url>
-  <url><loc>https://www.calculatorsadda.com/square-footage-calculator</loc></url>
-  <url><loc>https://www.calculatorsadda.com/time-card-calculator</loc></url>
-  <url><loc>https://www.calculatorsadda.com/time-zone-calculator</loc></url>
-  <url><loc>https://www.calculatorsadda.com/love-calculator</loc></url>
-  <url><loc>https://www.calculatorsadda.com/gas-mileage-calculator</loc></url>
-  <url><loc>https://www.calculatorsadda.com/tip-calculator</loc></url>
-  <url><loc>https://www.calculatorsadda.com/density-calculator</loc></url>
-  <url><loc>https://www.calculatorsadda.com/weight-calculator</loc></url>
-  <url><loc>https://www.calculatorsadda.com/speed-calculator</loc></url>
-  <url><loc>https://www.calculatorsadda.com/roman-numeral-converter</loc></url>
-  <url><loc>https://www.calculatorsadda.com/sleep-calculator</loc></url>
-  <url><loc>https://www.calculatorsadda.com/tire-size-calculator</loc></url>
-  <url><loc>https://www.calculatorsadda.com/roofing-calculator</loc></url>
-  <url><loc>https://www.calculatorsadda.com/tile-calculator</loc></url>
-  <url><loc>https://www.calculatorsadda.com/mulch-calculator</loc></url>
-  <url><loc>https://www.calculatorsadda.com/gravel-calculator</loc></url>
-  <url><loc>https://www.calculatorsadda.com/heat-index-calculator</loc></url>
-  <url><loc>https://www.calculatorsadda.com/dew-point-calculator</loc></url>
-  <url><loc>https://www.calculatorsadda.com/bandwidth-calculator</loc></url>
-  <url><loc>https://www.calculatorsadda.com/time-duration-calculator</loc></url>
-  <url><loc>https://www.calculatorsadda.com/day-counter</loc></url>
-  <url><loc>https://www.calculatorsadda.com/day-of-week-calculator</loc></url>
-  <url><loc>https://www.calculatorsadda.com/wind-chill-calculator</loc></url>
+  <!-- Category Pages -->
+  <url>
+    <loc>https://calculatorsadda.com/calculators</loc>
+    <lastmod>2026-01-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://calculatorsadda.com/math-calculators</loc>
+    <lastmod>2026-01-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Other Calculators -->
+  <url><loc>https://calculatorsadda.com/age-calculator</loc><lastmod>2026-01-08</lastmod><priority>0.7</priority></url>
+  <url><loc>https://calculatorsadda.com/date-calculator</loc><lastmod>2026-01-08</lastmod><priority>0.7</priority></url>
+  <url><loc>https://calculatorsadda.com/time-calculator</loc><lastmod>2026-01-08</lastmod><priority>0.7</priority></url>
+  <url><loc>https://calculatorsadda.com/hours-calculator</loc><lastmod>2026-01-08</lastmod><priority>0.7</priority></url>
+  <url><loc>https://calculatorsadda.com/gpa-calculator</loc><lastmod>2026-01-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://calculatorsadda.com/grade-calculator</loc><lastmod>2026-01-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://calculatorsadda.com/height-calculator</loc><lastmod>2026-01-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://calculatorsadda.com/concrete-calculator</loc><lastmod>2026-01-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://calculatorsadda.com/ip-subnet-calculator</loc><lastmod>2026-01-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://calculatorsadda.com/password-generator</loc><lastmod>2026-01-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://calculatorsadda.com/dice-roller</loc><lastmod>2026-01-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://calculatorsadda.com/fuel-cost-calculator</loc><lastmod>2026-01-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://calculatorsadda.com/voltage-drop-calculator</loc><lastmod>2026-01-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://calculatorsadda.com/square-footage-calculator</loc><lastmod>2026-01-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://calculatorsadda.com/time-card-calculator</loc><lastmod>2026-01-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://calculatorsadda.com/time-zone-calculator</loc><lastmod>2026-01-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://calculatorsadda.com/love-calculator</loc><lastmod>2026-01-08</lastmod><priority>0.5</priority></url>
+  <url><loc>https://calculatorsadda.com/gas-mileage-calculator</loc><lastmod>2026-01-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://calculatorsadda.com/tip-calculator</loc><lastmod>2026-01-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://calculatorsadda.com/density-calculator</loc><lastmod>2026-01-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://calculatorsadda.com/weight-calculator</loc><lastmod>2026-01-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://calculatorsadda.com/speed-calculator</loc><lastmod>2026-01-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://calculatorsadda.com/roman-numeral-converter</loc><lastmod>2026-01-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://calculatorsadda.com/sleep-calculator</loc><lastmod>2026-01-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://calculatorsadda.com/tire-size-calculator</loc><lastmod>2026-01-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://calculatorsadda.com/roofing-calculator</loc><lastmod>2026-01-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://calculatorsadda.com/tile-calculator</loc><lastmod>2026-01-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://calculatorsadda.com/mulch-calculator</loc><lastmod>2026-01-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://calculatorsadda.com/gravel-calculator</loc><lastmod>2026-01-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://calculatorsadda.com/heat-index-calculator</loc><lastmod>2026-01-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://calculatorsadda.com/dew-point-calculator</loc><lastmod>2026-01-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://calculatorsadda.com/bandwidth-calculator</loc><lastmod>2026-01-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://calculatorsadda.com/time-duration-calculator</loc><lastmod>2026-01-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://calculatorsadda.com/day-counter</loc><lastmod>2026-01-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://calculatorsadda.com/day-of-week-calculator</loc><lastmod>2026-01-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://calculatorsadda.com/wind-chill-calculator</loc><lastmod>2026-01-08</lastmod><priority>0.6</priority></url>
+
+  <!-- Math Calculators -->
+  <url><loc>https://calculatorsadda.com/basic-calculator</loc><lastmod>2026-01-08</lastmod><priority>0.7</priority></url>
+  <url><loc>https://calculatorsadda.com/percentage-calculator</loc><lastmod>2026-01-08</lastmod><priority>0.7</priority></url>
 
 </urlset>
