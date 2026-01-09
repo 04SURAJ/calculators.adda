@@ -7,6 +7,7 @@ import { calculatorsSeo } from "../seo/calculatorsSeo.config";
 import CalculatorLayout from "../layouts/CalculatorLayout";
 import { calculatorContent } from "../data/calculatorContent.config";
 
+import { mathCalculatorsMap } from "../data/mathCalculators.config";
 
 
 const calculatorsMap = {
@@ -75,12 +76,32 @@ export default function CalculatorPage() {
     return <Navigate to="*" replace />;
   }
 
+const mathSlugs = new Set(Object.values(mathCalculatorsMap));
+const isMathCalculator = mathSlugs.has(slug);
+
+// SAME CATEGORY ONLY
+const relatedCalculators = Object.keys(calculatorsMap)
+  .filter((key) => key !== slug)
+  .filter((key) =>
+    isMathCalculator
+      ? mathSlugs.has(key)       // show only math
+      : !mathSlugs.has(key)      // show only other
+  )
+  .slice(0, 4)
+  .map((key) => ({
+    slug: key,
+    name: calculatorsSeo[key]?.title || key.replace(/-/g, " "),
+  }));
+
+
+
   return (
     <CalculatorLayout
       title={seoData?.title}
       subtitle={seoData?.subtitle}
       description={seoData?.description}
        content={content}
+       relatedCalculators={relatedCalculators}
     >
       <CalculatorComponent />
     </CalculatorLayout>

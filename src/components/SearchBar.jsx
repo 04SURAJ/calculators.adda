@@ -19,12 +19,14 @@ const SearchBar = () => {
 
     const q = value.toLowerCase();
 
-    const filtered = searchIndex.filter(item =>
-      item.name.toLowerCase().includes(q) ||
-      item.slug.toLowerCase().includes(q) ||
-      item.title?.toLowerCase().includes(q) ||
-      item.description?.toLowerCase().includes(q)
-    );
+   const filtered = searchIndex.filter(item => {
+  const name = item.name.toLowerCase();
+  const slug = item.slug.toLowerCase();
+  
+  // Only match if name or slug starts with query
+  return name.startsWith(q) || slug.startsWith(q);
+});
+
 
     setResults(filtered.slice(0, 8)); // limit results
   };
@@ -54,23 +56,22 @@ const SearchBar = () => {
       />
 
       {results.length > 0 && (
-        <ul
-          className="list-group position-absolute w-100 shadow-sm"
-          style={{ zIndex: 10, top: "100%" }}
-        >
-          {results.map(item => (
-            <li
-              key={item.slug}
-              className="list-group-item list-group-item-action"
-              role="button"
-              onClick={() => goTo(item.slug)}
-            >
-              <strong>{item.name}</strong>
-              <br />
-              <small className="text-muted">{item.description}</small>
-            </li>
-          ))}
-        </ul>
+       <ul
+  className="search-results list-group position-absolute w-100"
+  style={{ zIndex: 10, top: "100%" }}
+>
+  {results.map(item => (
+    <li
+      key={item.slug}
+      className="search-item list-group-item"
+      role="button"
+      onClick={() => goTo(item.slug)}
+    >
+      {item.name}
+    </li>
+  ))}
+</ul>
+
       )}
     </div>
   );

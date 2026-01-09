@@ -31,7 +31,8 @@ function Navbar() {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-      <div className="container" ref={containerRef} onClick={handleLinkClick}>
+      <div className="container-fluid" ref={containerRef} onClick={handleLinkClick}>
+
         {/* Brand */}
         <Link className="navbar-brand fw-bold" to="/">
           CalculatorsAdda

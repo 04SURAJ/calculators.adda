@@ -1,5 +1,28 @@
 export const calculatorContent = {
   "age-calculator": {
+
+    formula: `
+<p>
+The age is calculated by finding the difference between the <strong>date of birth</strong>
+and the <strong>current date</strong>.
+</p>
+
+<p>
+The formula used is:
+</p>
+
+<ul>
+  <li><strong>Years</strong> = Current Year − Birth Year</li>
+  <li><strong>Months</strong> = Current Month − Birth Month</li>
+  <li><strong>Days</strong> = Current Day − Birth Day</li>
+</ul>
+
+<p>
+If the day or month difference becomes negative, adjustments are made by borrowing days
+from the previous month or months from the previous year.
+</p>
+    `,
+
   howToUse: [
     "Enter your date of birth in the input fields provided.",
     "Optionally, select a reference date to calculate age as of that date.",
