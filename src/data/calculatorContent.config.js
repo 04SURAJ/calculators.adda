@@ -52,154 +52,446 @@ from the previous month or months from the previous year.
 ,
 
 
-  "date-calculator": {
-    "whyUse": "This Date Calculator helps you calculate the difference between two dates or add/subtract days from a given date accurately.",
-    "howToUse": [
-      "Select the start date.",
-      "Select the end date or number of days.",
-      "Choose add or subtract if applicable.",
-      "Click the Calculate button.",
-      "View the calculated date or difference."
-    ],
-    "features": [
-      "Accurate date difference calculation",
-      "Supports add and subtract operations",
-      "Automatically handles leap years",
-      "Fast and easy to use",
-      "Free and mobile-friendly"
-    ],
-    "notes": [
-      "Ensure correct date selection.",
-      "Results depend on selected operation."
-    ]
-  },
+ "date-calculator": {
+  formula: `
+<p>
+This calculator performs two main types of date calculations: <strong>date difference</strong> and <strong>date addition/subtraction</strong>.
+</p>
 
-  "time-calculator": {
-    "whyUse": "This Time Calculator allows you to add or subtract hours, minutes, and seconds quickly and accurately.",
-    "howToUse": [
-      "Enter the time values.",
-      "Choose add or subtract option.",
-      "Click Calculate.",
-      "View the final time result."
-    ],
-    "features": [
-      "Precise time calculations",
-      "Supports multiple time units",
-      "Instant results",
-      "No signup required",
-      "Works on all devices"
-    ],
-    "notes": [
-      "Time is calculated in 24-hour format.",
-      "Negative values are not allowed."
-    ]
-  },
+<p>
+For <strong>Date Difference</strong>:
+</p>
+<ul>
+  <li>The difference between the <strong>start date</strong> and <strong>end date</strong> is calculated in days.</li>
+  <li>Weeks are calculated by dividing the total days by 7.</li>
+</ul>
 
+<p>
+For <strong>Add/Subtract Time</strong>:
+</p>
+<ul>
+  <li>A user-selected number of <strong>days, weeks, months, or years</strong> is added to or subtracted from the <strong>start date</strong>.</li>
+  <li>The resulting date is computed by adjusting for month lengths and leap years as needed.</li>
+</ul>
+
+<p>
+This ensures accurate calculations for all date ranges and operations.
+</p>
+`
+,
+
+  howToUse: [
+    "Select the operation you want to perform: Date Difference or Add Time to Date.",
+    "Choose the start date using the date picker.",
+    "If calculating date difference, select the end date as well.",
+    "If adding time, enter a numeric value and select the unit (days, weeks, months, or years).",
+    "Click the Calculate button to view the result instantly.",
+    "Use the Reset button to clear all inputs and start a new calculation."
+  ],
+
+  features: [
+    "Calculate the exact number of days and weeks between two dates.",
+    "Add days, weeks, months, or years to a specific date.",
+    "Mobile-friendly date picker with clean input fields.",
+    "Instant results with no page reload.",
+    "Simple and user-friendly interface for all users."
+  ],
+
+  whyUse:
+    "This Date Calculator helps you quickly find date differences or calculate future and past dates without manual counting. It is ideal for planning events, tracking deadlines, calculating durations, and managing schedules accurately.",
+
+  notes: [
+    "Both start date and end date are required for date difference calculations.",
+    "Only positive numeric values are allowed when adding time to a date.",
+    "Results are calculated based on standard calendar rules, including leap years.",
+    "The calculator uses your device’s local time zone for accurate results."
+  ]
+}
+,
+"time-calculator": {
+  formula: `
+<p>
+This calculator allows you to <strong>add or subtract hours and minutes</strong> from a given base time.
+</p>
+
+<p>
+The calculation works as follows:
+</p>
+<ul>
+  <li>The <strong>base time</strong> is converted into total minutes: <em>totalMinutes = hours × 60 + minutes</em>.</li>
+  <li>The input <strong>hours and minutes</strong> to add or subtract are also converted to minutes and applied to the base time.</li>
+  <li>If subtracting results in negative minutes or adding exceeds 24 hours, the calculation wraps around within a 24-hour clock.</li>
+  <li>The final result is converted back into <strong>hours and minutes</strong> for display.</li>
+</ul>
+
+<p>
+This ensures accurate time arithmetic while accounting for 24-hour time constraints.
+</p>
+`
+,
+
+  howToUse: [
+    "Select a base time using the time picker.",
+    "Choose whether you want to add or subtract time.",
+    "Enter the number of hours and minutes you want to apply.",
+    "Click the Calculate button to get the new time.",
+    "Use the Reset button to clear all fields and start again."
+  ],
+
+  features: [
+    "Add or subtract hours and minutes from a given time.",
+    "Automatic 24-hour time wrap handling.",
+    "Mobile-friendly time picker and input fields.",
+    "Instant calculation with no page reload.",
+    "Clean and easy-to-use interface for all users."
+  ],
+
+  whyUse:
+    "This Time Calculator helps you quickly determine a new time without manual calculations. It is useful for shift planning, travel schedules, alarms, reminders, and time management tasks where accuracy matters.",
+
+  notes: [
+    "Base time must be selected before performing calculations.",
+    "Only positive values are allowed for hours and minutes.",
+    "The calculator uses a 24-hour clock format.",
+    "Results automatically adjust when time crosses midnight.",
+    "Calculated time is based on standard minute conversion logic."
+  ]
+}
+,
   "hours-calculator": {
-    "whyUse": "This Hours Calculator helps you calculate total working hours between start and end times accurately.",
-    "howToUse": [
-      "Enter start time.",
-      "Enter end time.",
-      "Add break time if applicable.",
-      "Click Calculate.",
-      "View total hours worked."
-    ],
-    "features": [
-      "Ideal for work and payroll calculations",
-      "Break time support",
-      "Accurate hourly results",
-      "Simple interface",
-      "Free to use"
-    ],
-    "notes": [
-      "Ensure correct AM/PM selection.",
-      "Break time is optional."
-    ]
-  },
+  formula: `
+<p>
+This calculator is designed to find the <strong>total hours and minutes</strong> from multiple time entries in HH:MM format.
+</p>
 
-  "gpa-calculator": {
-    "whyUse": "This GPA Calculator helps students calculate their Grade Point Average easily based on grades and credits.",
-    "howToUse": [
-      "Enter subject grades.",
-      "Enter credit values.",
-      "Click Calculate GPA.",
-      "View your GPA instantly."
-    ],
-    "features": [
-      "Supports multiple grading systems",
-      "Accurate GPA calculation",
-      "Instant results",
-      "Student-friendly design",
-      "Free and secure"
-    ],
-    "notes": [
-      "Grades must follow selected scale.",
-      "Credit values must be numeric."
-    ]
-  },
+<p>
+The calculation works as follows:
+</p>
+<ul>
+  <li>Each time entry is split into hours and minutes.</li>
+  <li>Hours are converted to minutes and added to the minutes value of the entry: <em>totalMinutes += hours × 60 + minutes</em>.</li>
+  <li>This process is repeated for all entered times to get the <strong>sum of minutes</strong>.</li>
+  <li>The total minutes are then converted back into hours and minutes for the final result:
+    <em>hours = Math.floor(totalMinutes / 60), minutes = totalMinutes % 60</em>.
+  </li>
+</ul>
 
+<p>
+This allows users to accurately calculate the cumulative time across multiple entries, handling any overflow of minutes into hours automatically.
+</p>
+`
+,
+
+  howToUse: [
+    "Enter time values in HH:MM format using the time picker.",
+    "Click Add Entry to include multiple time values.",
+    "Remove any entry if it was added by mistake.",
+    "Click the Calculate button to get the total time.",
+    "Use the Reset button to clear all entries and results."
+  ],
+
+  features: [
+    "Supports multiple time entries.",
+    "Automatic validation for incorrect time values.",
+    "Instant calculation without page reload.",
+    "Mobile-friendly time input fields.",
+    "Displays total hours, minutes, and total minutes."
+  ],
+
+  whyUse:
+    "This Hours Calculator is useful when you need to total multiple time durations accurately. It is ideal for tracking work hours, study time, project effort, or any situation where several time entries must be added together.",
+
+  notes: [
+    "Time must be entered in valid HH:MM format.",
+    "Minutes must be less than 60 for each entry.",
+    "Empty entries are ignored during calculation.",
+    "The calculator adds time values; it does not track dates.",
+    "Results are calculated using standard minute-based conversion."
+  ]
+}
+,
+
+ "gpa-calculator": {
+ formula: `
+<p>
+This calculator computes the <strong>Grade Point Average (GPA)</strong> based on the grades and credit hours of multiple courses.
+</p>
+
+<p>
+The calculation works as follows:
+</p>
+<ul>
+  <li>Each course has a <strong>grade</strong> and <strong>credit hours</strong>.</li>
+  <li>Grades are converted into grade points using a standard scale (e.g., A = 4.0, B+ = 3.3, etc.).</li>
+  <li>The grade points for each course are multiplied by the corresponding credit hours: <em>points = gradePoint × credits</em>.</li>
+  <li>All course points are summed: <em>totalPoints = Σ(points)</em>.</li>
+  <li>All credit hours are summed: <em>totalCredits = Σ(credits)</em>.</li>
+  <li>The GPA is calculated as:
+    <strong>GPA = totalPoints ÷ totalCredits</strong>.
+  </li>
+</ul>
+
+<p>
+This ensures that courses with more credits have a proportionally larger impact on the overall GPA.
+</p>
+`
+,
+
+  howToUse: [
+    "Enter the name of each course (optional, for reference only).",
+    "Enter the number of credits for each course.",
+    "Select the grade received for each course.",
+    "Click Add Course to include more subjects.",
+    "Click Calculate GPA to see your final GPA.",
+    "Use Reset to clear all inputs and start over."
+  ],
+
+  features: [
+    "Supports multiple courses in one calculation.",
+    "Uses standard grade-to-point mapping.",
+    "Automatically validates credits and grades.",
+    "Instant GPA calculation with no page reload.",
+    "Mobile-friendly and easy to use interface."
+  ],
+
+  whyUse:
+    "This GPA Calculator helps students accurately calculate their Grade Point Average based on course credits and grades. It is useful for semester planning, academic tracking, scholarship eligibility checks, and understanding academic performance quickly and reliably.",
+
+  notes: [
+    "Credits must be positive numbers.",
+    "A grade must be selected for every course.",
+    "Courses with missing or invalid data are not calculated.",
+    "The GPA is calculated using a weighted average method.",
+    "Different institutions may use different grading scales."
+  ]
+}
+,
   "grade-calculator": {
-    "whyUse": "This Grade Calculator helps you determine final grades based on scores and weightage.",
-    "howToUse": [
-      "Enter obtained marks.",
-      "Enter total marks or weight.",
-      "Click Calculate Grade.",
-      "View your final grade."
-    ],
-    "features": [
-      "Accurate grade calculation",
-      "Custom weight support",
-      "Instant feedback",
-      "Easy to use",
-      "No login required"
-    ],
-    "notes": [
-      "Marks should be within valid range.",
-      "Grading scale may vary."
-    ]
-  },
+  formula: `
+<p>
+This calculator determines the <strong>final grade</strong> based on individual scores, maximum possible points, and weight of each item or assignment.
+</p>
+
+<p>
+The calculation works as follows:
+</p>
+<ul>
+  <li>For each item, calculate the <strong>percentage score</strong>:
+    <em>percentage = (score ÷ max) × 100</em>.
+  </li>
+  <li>Multiply the percentage score by the item's weight to get the <strong>weighted score</strong>:
+    <em>weightedScore = percentage × (weight ÷ 100)</em>.
+  </li>
+  <li>Sum all weighted scores to get the <strong>total weighted percentage</strong>:
+    <em>totalPercentage = Σ(weightedScore)</em>.
+  </li>
+  <li>Convert the total percentage to a <strong>letter grade</strong> using the standard grading scale:
+    <ul>
+      <li>A: 90–100%</li>
+      <li>B: 80–89%</li>
+      <li>C: 70–79%</li>
+      <li>D: 60–69%</li>
+      <li>F: below 60%</li>
+    </ul>
+  </li>
+</ul>
+
+<p>
+This ensures each item contributes proportionally to the final grade according to its weight.
+</p>
+`
+,
+
+  howToUse: [
+    "Enter the name of each item (assignment, exam, quiz, etc.).",
+    "Enter the score you received for that item.",
+    "Enter the maximum possible score for the item.",
+    "Enter the weight percentage of the item.",
+    "Click Add Item to include more graded components.",
+    "Click Calculate Grade to view your final percentage and letter grade.",
+    "Use Reset to clear all values and start again."
+  ],
+
+  features: [
+    "Supports multiple assignments, exams, or grading items.",
+    "Weighted grade calculation for accurate results.",
+    "Automatically validates scores, maximum values, and weights.",
+    "Instant calculation of percentage and letter grade.",
+    "Mobile-friendly and easy-to-use interface."
+  ],
+
+  whyUse:
+    "This Grade Calculator helps students quickly determine their final grade based on weighted assessments. It is ideal for tracking academic performance, planning study efforts, and understanding how individual scores impact the final result.",
+
+  notes: [
+    "Scores cannot be greater than the maximum score.",
+    "All weights must be positive numbers.",
+    "Every item must include score, maximum value, and weight.",
+    "The total grade is calculated using a weighted average method.",
+    "Letter grade thresholds may vary by institution."
+  ]
+}
+,
 
   "height-calculator": {
-    "whyUse": "This Height Calculator helps convert and estimate height in different units accurately.",
-    "howToUse": [
-      "Enter height value.",
-      "Select input unit.",
-      "Click Calculate.",
-      "View converted height."
-    ],
-    "features": [
-      "Supports feet, inches, and cm",
-      "Fast unit conversion",
-      "Accurate results",
-      "Clean interface",
-      "Free to use"
-    ],
-    "notes": [
-      "Input must be positive.",
-      "Results are approximate."
-    ]
-  },
+  formula: `
+<p>
+This calculator converts height between <strong>feet & inches</strong> and
+<strong>centimeters</strong> using standard measurement formulas.
+</p>
 
-  "password-generator": {
-    "whyUse": "This Password Generator creates strong and secure passwords to protect your online accounts.",
-    "howToUse": [
-      "Select password length.",
-      "Choose character types.",
-      "Click Generate Password.",
-      "Copy the generated password."
-    ],
-    "features": [
-      "Strong and secure passwords",
-      "Custom length and characters",
-      "Instant generation",
-      "No data stored",
-      "Free and safe"
-    ],
-    "notes": [
-      "Generated passwords are random.",
-      "Store passwords securely."
-    ]
-  },
+<p>
+<strong>Feet & Inches to Centimeters:</strong>
+</p>
+
+<ul>
+  <li>Total Inches = (Feet × 12) + Inches</li>
+  <li>Centimeters = Total Inches × 2.54</li>
+</ul>
+
+<p>
+<strong>Centimeters to Feet & Inches:</strong>
+</p>
+
+<ul>
+  <li>Total Inches = Centimeters ÷ 2.54</li>
+  <li>Feet = Floor(Total Inches ÷ 12)</li>
+  <li>Inches = Remaining Inches</li>
+</ul>
+
+<p>
+All results are rounded to provide clear and readable output.
+</p>
+  `,
+
+  howToUse: [
+    "Enter your height in feet and inches, then click Convert to CM.",
+    "Or enter your height in centimeters and click Convert to Feet.",
+    "Only one conversion section needs to be used at a time.",
+    "Click Reset to clear all values and start a new conversion."
+  ],
+
+  features: [
+    "Converts feet & inches to centimeters instantly.",
+    "Converts centimeters to feet & inches accurately.",
+    "Uses standard international conversion values.",
+    "Validates inputs to prevent incorrect results.",
+    "Clean, simple, and mobile-friendly design."
+  ],
+
+  whyUse:
+    "This Height Calculator is useful for students, fitness tracking, medical forms, travel documents, and international measurements. It provides fast and accurate conversions without manual calculations.",
+
+  notes: [
+    "Feet and inches must be non-negative numbers.",
+    "Centimeter values must be greater than zero.",
+    "Results are rounded for better readability.",
+    "This calculator is for general measurement purposes.",
+    "Always use official measurements when required by institutions."
+  ]
+}
+,
+"concrete-calculator": {
+  formula: `
+<p>
+This calculator determines the <strong>volume of concrete</strong> required for a
+rectangular structure based on its length, width, and height.
+</p>
+
+<p>
+The basic volume formula used is:
+</p>
+
+<ul>
+  <li><strong>Volume</strong> = Length × Width × Height</li>
+</ul>
+
+<p>
+The default result is calculated in <strong>cubic meters (m³)</strong>.
+If cubic feet are selected, the result is converted using:
+</p>
+
+<ul>
+  <li><strong>1 cubic meter</strong> = 35.3147 cubic feet</li>
+</ul>
+
+<p>
+The final volume is rounded for clear and practical output.
+</p>
+  `,
+
+  howToUse: [
+    "Enter the length, width, and height of the concrete area.",
+    "Ensure all dimension values are positive numbers.",
+    "Select the desired output unit: cubic meters or cubic feet.",
+    "Click the Calculate button to get the concrete volume.",
+    "Use the Reset button to clear all inputs and results."
+  ],
+
+  features: [
+    "Accurate volume calculation for rectangular concrete structures.",
+    "Supports both cubic meters (m³) and cubic feet (ft³).",
+    "Instant results with clear unit labeling.",
+    "Input validation to prevent incorrect calculations.",
+    "Simple, responsive, and mobile-friendly interface."
+  ],
+
+  whyUse:
+    "This Concrete Calculator helps estimate material requirements for construction projects such as slabs, foundations, columns, and flooring. It saves time, reduces calculation errors, and assists in planning concrete quantities efficiently.",
+
+  notes: [
+    "All dimensions must be greater than zero.",
+    "Measurements should be entered in meters.",
+    "The calculator assumes a rectangular shape.",
+    "Results are approximate and rounded for usability.",
+    "Always consult a professional for critical structural projects."
+  ]
+}
+,
+ "password-generator": {
+  formula: `
+<p>
+This calculator generates a <strong>random, secure password</strong> based on user-selected criteria.
+</p>
+
+<p>
+The password is created using the following logic:
+</p>
+
+<ul>
+  <li>A character set is built depending on which types are selected: <strong>uppercase letters</strong>, <strong>lowercase letters</strong>, <strong>numbers</strong>, and <strong>symbols</strong>.</li>
+  <li>For the desired password length, random characters are picked from the chosen set.</li>
+  <li>The resulting string is the generated password, ensuring randomness and inclusion of selected character types.</li>
+</ul>
+  `,
+
+  howToUse: [
+    "Enter the desired password length (between 4 and 128 characters).",
+    "Select which character types to include: uppercase letters, lowercase letters, numbers, and symbols.",
+    "Click the 'Generate' button to create a password.",
+    "Optionally, click 'Copy' to copy the password to your clipboard.",
+    "Click 'Reset' to clear all fields and selections."
+  ],
+
+  features: [
+    "Generates completely random and secure passwords.",
+    "Supports uppercase, lowercase, numbers, and special symbols.",
+    "Customizable password length.",
+    "Easy copy-to-clipboard functionality.",
+    "User-friendly interface with instant generation."
+  ],
+
+  whyUse:
+    "Using strong, randomly generated passwords is critical for online security. This generator helps create passwords that are difficult to guess or crack, protecting your accounts and personal data.",
+
+  notes: [
+    "Ensure at least one character type is selected; otherwise, a password cannot be generated.",
+    "Passwords shorter than 4 characters are not recommended for security reasons.",
+    "Do not share generated passwords with untrusted parties.",
+    "For maximum security, use unique passwords for each account."
+  ]
+}
+,
 
   "love-calculator": {
     "whyUse": "This Love Calculator estimates compatibility between two people based on names for fun and entertainment.",
@@ -244,47 +536,58 @@ from the previous month or months from the previous year.
   },
 
   
-  "concrete-calculator": {
-    "whyUse": "This Concrete Calculator helps estimate the amount of concrete required for slabs, footings, and columns accurately.",
-    "howToUse": [
-      "Enter length, width, and depth.",
-      "Select measurement unit.",
-      "Click Calculate.",
-      "View required concrete volume."
-    ],
-    "features": [
-      "Accurate volume calculation",
-      "Supports multiple units",
-      "Ideal for construction planning",
-      "Instant results",
-      "Free tool"
-    ],
-    "notes": [
-      "Ensure dimensions are correct.",
-      "Results are estimates."
-    ]
-  },
+  
 
   "ip-subnet-calculator": {
-    "whyUse": "This IP Subnet Calculator helps network engineers calculate subnet masks, IP ranges, and network details.",
-    "howToUse": [
-      "Enter IP address.",
-      "Enter subnet mask or CIDR.",
-      "Click Calculate.",
-      "View network details."
-    ],
-    "features": [
-      "Subnet and CIDR support",
-      "Accurate IP range calculation",
-      "Ideal for networking tasks",
-      "Fast and reliable",
-      "Free to use"
-    ],
-    "notes": [
-      "Input must be a valid IP.",
-      "IPv4 supported."
-    ]
-  },
+  formula: `
+<p>
+This calculator determines key subnet information based on a given <strong>IPv4 address</strong>
+and its <strong>CIDR (Classless Inter-Domain Routing)</strong> notation.
+</p>
+
+<p>
+The calculations include:
+</p>
+
+<ul>
+  <li><strong>Network Address</strong>: The first address in the subnet, representing the subnet itself.</li>
+  <li><strong>Broadcast Address</strong>: The last address in the subnet, used to send packets to all hosts.</li>
+  <li><strong>Subnet Mask</strong>: Converts the CIDR prefix into standard dot-decimal format.</li>
+  <li><strong>Total Hosts</strong>: The number of usable IP addresses in the subnet, calculated as 2^(32 − CIDR) − 2 (except for /32).</li>
+</ul>
+
+<p>
+Binary conversion is used internally to derive network and broadcast addresses, ensuring precise results.
+</p>
+  `,
+
+  howToUse: [
+    "Enter a valid IPv4 address (e.g., 192.168.1.1).",
+    "Enter a CIDR value between 0 and 32 (e.g., 24).",
+    "Click the Calculate button to view subnet details.",
+    "Use the Reset button to clear all fields and start over."
+  ],
+
+  features: [
+    "Instant calculation of Network Address, Broadcast Address, Subnet Mask, and Total Hosts.",
+    "Validates IP addresses and CIDR values to prevent errors.",
+    "Clear and organized output for easy interpretation.",
+    "Mobile-friendly and responsive design.",
+    "Supports any valid IPv4 subnet."
+  ],
+
+  whyUse:
+    "This IP Subnet Calculator helps network administrators, engineers, and students quickly determine subnet information without manual calculation, saving time and reducing errors in network planning.",
+
+  notes: [
+    "Ensure the IP address is a valid IPv4 address.",
+    "CIDR must be between 0 and 32.",
+    "Total hosts calculation excludes network and broadcast addresses except for /32 subnets.",
+    "Results are intended for planning and educational purposes.",
+    "Double-check critical network configurations using proper networking tools."
+  ]
+}
+,
 
   "dice-roller": {
     "whyUse": "This Dice Roller generates random dice rolls for games, simulations, and fun activities.",

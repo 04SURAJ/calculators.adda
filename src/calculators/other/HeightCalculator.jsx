@@ -83,7 +83,7 @@ function HeightCalculator() {
           </div>
         </div>
 
-        <button className="btn btn-primary" onClick={convertToCm}>
+        <button className="btn btn-primary btn-lg w-100" onClick={convertToCm}>
           Convert to CM
         </button>
       </div>
@@ -102,13 +102,13 @@ function HeightCalculator() {
           />
         </div>
 
-        <button className="btn btn-primary" onClick={convertToFeet}>
+        <button className="btn btn-primary btn-lg w-100" onClick={convertToFeet}>
           Convert to Feet
         </button>
       </div>
 
       <div className="d-flex gap-2">
-        <button className="btn btn-outline-secondary" onClick={resetCalculator}>
+        <button className="btn btn-outline-secondary btn-lg w-100" onClick={resetCalculator}>
           Reset
         </button>
       </div>

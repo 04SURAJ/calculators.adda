@@ -79,7 +79,7 @@ function IpSubnetCalculator() {
    <>
 
       <div className="mb-3">
-        <label className="form-label">IP Address</label>
+        <label className="form-label fw-semibold">IP Address</label>
         <input
           type="text"
           className="form-control"
@@ -90,7 +90,7 @@ function IpSubnetCalculator() {
       </div>
 
       <div className="mb-3">
-        <label className="form-label">CIDR (0-32)</label>
+        <label className="form-label fw-semibold">CIDR (0-32)</label>
         <input
           type="number"
           className="form-control"
@@ -100,11 +100,11 @@ function IpSubnetCalculator() {
         />
       </div>
 
-      <div className="d-flex gap-2 mb-3">
-        <button className="btn btn-primary" onClick={calculateSubnet}>
+      <div className="d-grid d-sm-flex gap-2 mb-4">
+        <button className="btn btn-primary btn-lg w-100" onClick={calculateSubnet}>
           Calculate
         </button>
-        <button className="btn btn-outline-secondary" onClick={resetCalculator}>
+        <button className="btn btn-outline-secondary btn-lg w-100" onClick={resetCalculator}>
           Reset
         </button>
       </div>

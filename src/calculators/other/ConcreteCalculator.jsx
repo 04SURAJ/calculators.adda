@@ -47,39 +47,64 @@ function ConcreteCalculator() {
       
      <>
 {/* Dimensions */}
-      <div className="row g-2 mb-3">
-        <div className="col-md-4">
-          <input
-            type="number"
-            className="form-control"
-            placeholder="Length"
-            value={length}
-            onChange={(e) => setLength(e.target.value)}
-          />
-        </div>
-        <div className="col-md-4">
-          <input
-            type="number"
-            className="form-control"
-            placeholder="Width"
-            value={width}
-            onChange={(e) => setWidth(e.target.value)}
-          />
-        </div>
-        <div className="col-md-4">
-          <input
-            type="number"
-            className="form-control"
-            placeholder="Height"
-            value={height}
-            onChange={(e) => setHeight(e.target.value)}
-          />
-        </div>
-      </div>
+    <div className="row g-2 mb-3">
+  {/* Length */}
+  <div className="col-md-4">
+    <label
+      htmlFor="length"
+      className="form-label fw-semibold"
+    >
+      Length
+    </label>
+    <input
+      id="length"
+      type="number"
+      className="form-control"
+      value={length}
+      onChange={(e) => setLength(e.target.value)}
+    />
+  </div>
+
+  {/* Width */}
+  <div className="col-md-4">
+    <label
+      htmlFor="width"
+      className="form-label fw-semibold"
+    >
+      Width
+    </label>
+    <input
+      id="width"
+      type="number"
+      className="form-control"
+      value={width}
+      onChange={(e) => setWidth(e.target.value)}
+    />
+  </div>
+
+  {/* Height */}
+  <div className="col-md-4">
+    <label
+      htmlFor="height"
+      className="form-label fw-semibold"
+    >
+      Height
+    </label>
+    <input
+      id="height"
+      type="number"
+      className="form-control"
+      value={height}
+      onChange={(e) => setHeight(e.target.value)}
+    />
+  </div>
+</div>
+
 
       {/* Unit Selector */}
       <div className="mb-3">
-        <label className="form-label">Output Unit</label>
+        <label htmlFor="height"
+        className="form-label fw-semibold">Output Unit</label>
         <select
           className="form-select"
           value={unit}
@@ -91,11 +116,11 @@ function ConcreteCalculator() {
       </div>
 
       {/* Buttons */}
-      <div className="d-flex gap-2 mb-3">
-        <button className="btn btn-primary" onClick={calculateVolume}>
+      <div className="d-grid d-sm-flex gap-2 mb-4">
+        <button className="btn btn-primary btn-lg w-100" onClick={calculateVolume}>
           Calculate
         </button>
-        <button className="btn btn-outline-secondary" onClick={resetCalculator}>
+        <button className="btn btn-outline-secondary btn-lg w-100" onClick={resetCalculator}>
           Reset
         </button>
       </div>

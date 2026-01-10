@@ -70,37 +70,48 @@ function HoursCalculator() {
 <>
 
       {/* Time Entries */}
-      {entries.map((time, index) => (
-        <div className="row mb-2" key={index}>
-          <div className="col-8">
-            <input
-              type="time"
-              className="form-control"
-              value={time}
-              onChange={(e) => updateEntry(index, e.target.value)}
-            />
-          </div>
-          <div className="col-4">
-            {entries.length > 1 && (
-              <button
-                className="btn btn-outline-danger w-100"
-                onClick={() => removeEntry(index)}
-              >
-                Remove
-              </button>
-            )}
-          </div>
-        </div>
-      ))}
+     {entries.map((time, index) => (
+  <div className="row mb-3" key={index}>
+    <div className="col-8">
+      <label
+        htmlFor={`time-${index}`}
+        className="form-label fw-semibold"
+      >
+        Enter Time {index + 1}
+      </label>
 
-      <div className="d-flex gap-2 my-3">
-        <button className="btn btn-outline-primary" onClick={addEntry}>
+      <input
+        id={`time-${index}`}
+        type="time"
+        className="form-control"
+        value={time}
+        onChange={(e) => updateEntry(index, e.target.value)}
+      />
+    </div>
+
+    <div className="col-4 d-flex align-items-end">
+      {entries.length > 1 && (
+        <button
+          type="button"
+          className="btn btn-outline-danger w-100"
+          onClick={() => removeEntry(index)}
+        >
+          Remove
+        </button>
+      )}
+    </div>
+  </div>
+))}
+
+
+      <div className="d-grid d-sm-flex gap-2 mb-4">
+        <button className="btn btn-outline-primary btn-lg w-100" onClick={addEntry}>
           + Add Entry
         </button>
-        <button className="btn btn-primary" onClick={calculateTotal}>
+        <button className="btn btn-primary btn-lg w-100" onClick={calculateTotal}>
           Calculate
         </button>
-        <button className="btn btn-outline-secondary" onClick={resetCalculator}>
+        <button className="btn btn-outline-secondary btn-lg w-100" onClick={resetCalculator}>
           Reset
         </button>
       </div>

@@ -75,72 +75,100 @@ function GpaCalculator() {
 <>
  {/* Course Rows */}
       {courses.map((course, index) => (
-        <div className="row g-2 mb-2" key={index}>
-          <div className="col-md-4">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Course name"
-              value={course.name}
-              onChange={(e) =>
-                updateCourse(index, "name", e.target.value)
-              }
-            />
-          </div>
+  <div className="row g-2 mb-3" key={index}>
+    {/* Course Name */}
+    <div className="col-md-4">
+      <label
+        htmlFor={`course-name-${index}`}
+        className="form-label fw-semibold"
+      >
+        Course Name
+      </label>
 
-          <div className="col-md-3">
-            <input
-              type="number"
-              min="0"
-              step="0.5"
-              className="form-control"
-              placeholder="Credits"
-              value={course.credits}
-              onChange={(e) =>
-                updateCourse(index, "credits", e.target.value)
-              }
-            />
-          </div>
+      <input
+        id={`course-name-${index}`}
+        type="text"
+        className="form-control"
+        value={course.name}
+        onChange={(e) =>
+          updateCourse(index, "name", e.target.value)
+        }
+      />
+    </div>
 
-          <div className="col-md-3">
-            <select
-              className="form-select"
-              value={course.grade}
-              onChange={(e) =>
-                updateCourse(index, "grade", e.target.value)
-              }
-            >
-              <option value="">Grade</option>
-              {Object.keys(gradePointsMap).map((grade) => (
-                <option key={grade} value={grade}>
-                  {grade}
-                </option>
-              ))}
-            </select>
-          </div>
+    {/* Credits */}
+    <div className="col-md-3">
+      <label
+        htmlFor={`course-credits-${index}`}
+        className="form-label fw-semibold"
+      >
+        Credits
+      </label>
 
-          <div className="col-md-2">
-            {courses.length > 1 && (
-              <button
-                className="btn btn-outline-danger w-100"
-                onClick={() => removeCourse(index)}
-              >
-                Remove
-              </button>
-            )}
-          </div>
-        </div>
-      ))}
+      <input
+        id={`course-credits-${index}`}
+        type="number"
+        min="0"
+        step="0.5"
+        className="form-control"
+        value={course.credits}
+        onChange={(e) =>
+          updateCourse(index, "credits", e.target.value)
+        }
+      />
+    </div>
+
+    {/* Grade */}
+    <div className="col-md-3">
+      <label
+        htmlFor={`course-grade-${index}`}
+        className="form-label fw-semibold"
+      >
+        Grade
+      </label>
+
+      <select
+        id={`course-grade-${index}`}
+        className="form-select"
+        value={course.grade}
+        onChange={(e) =>
+          updateCourse(index, "grade", e.target.value)
+        }
+      >
+        <option value="">Select Grade</option>
+        {Object.keys(gradePointsMap).map((grade) => (
+          <option key={grade} value={grade}>
+            {grade}
+          </option>
+        ))}
+      </select>
+    </div>
+
+    {/* Remove */}
+    <div className="col-md-2 d-flex align-items-end">
+      {courses.length > 1 && (
+        <button
+          type="button"
+          className="btn btn-outline-danger w-100"
+          onClick={() => removeCourse(index)}
+        >
+          Remove
+        </button>
+      )}
+    </div>
+  </div>
+))}
+
 
       {/* Actions */}
-      <div className="d-flex gap-2 my-3 flex-wrap">
-        <button className="btn btn-outline-primary" onClick={addCourse}>
+      <div className="d-grid d-sm-flex gap-2 mb-4">
+        <button className="btn btn-outline-primary btn-lg w-100" onClick={addCourse}>
           + Add Course
         </button>
-        <button className="btn btn-primary" onClick={calculateGpa}>
+        <button className="btn btn-primary btn-lg w-100" onClick={calculateGpa}>
           Calculate GPA
         </button>
-        <button className="btn btn-outline-secondary" onClick={resetCalculator}>
+        <button className="btn btn-outline-secondary btn-lg w-100" onClick={resetCalculator}>
           Reset
         </button>
       </div>

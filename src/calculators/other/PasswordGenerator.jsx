@@ -63,7 +63,7 @@ function PasswordGenerator() {
   <>
     {/* Length */}
       <div className="mb-3">
-        <label className="form-label">Length</label>
+        <label className="form-label fw-semibold">Enter Password Length</label>
         <input
           type="number"
           className="form-control"
@@ -127,14 +127,14 @@ function PasswordGenerator() {
       {error && <div className="alert alert-danger">{error}</div>}
 
       {/* Buttons */}
-      <div className="d-flex gap-2 mb-3 flex-wrap">
-        <button className="btn btn-primary" onClick={generatePassword}>
+      <div className="d-grid d-sm-flex gap-2 mb-4">
+        <button className="btn btn-primary btn-lg w-100" onClick={generatePassword}>
           Generate
         </button>
-        <button className="btn btn-outline-secondary" onClick={copyToClipboard}>
+        <button className="btn btn-outline-secondary btn-lg w-100" onClick={copyToClipboard}>
           Copy
         </button>
-        <button className="btn btn-outline-warning" onClick={resetGenerator}>
+        <button className="btn btn-outline-warning btn-lg w-100" onClick={resetGenerator}>
           Reset
         </button>
       </div>

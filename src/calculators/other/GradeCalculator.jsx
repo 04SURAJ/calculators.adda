@@ -78,78 +78,109 @@ function GradeCalculator() {
    
  <>
  {/* Rows */}
-      {items.map((item, index) => (
-        <div className="row g-2 mb-2" key={index}>
-          <div className="col-md-3">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Item name"
-              value={item.name}
-              onChange={(e) =>
-                updateItem(index, "name", e.target.value)
-              }
-            />
-          </div>
+    {items.map((item, index) => (
+  <div className="row g-2 mb-3" key={index}>
+    {/* Item Name */}
+    <div className="col-md-3">
+      <label
+        htmlFor={`item-name-${index}`}
+        className="form-label fw-semibold"
+      >
+        Item Name
+      </label>
+      <input
+        id={`item-name-${index}`}
+        type="text"
+        className="form-control"
+        value={item.name}
+        onChange={(e) =>
+          updateItem(index, "name", e.target.value)
+        }
+      />
+    </div>
 
-          <div className="col-md-2">
-            <input
-              type="number"
-              className="form-control"
-              placeholder="Score"
-              value={item.score}
-              onChange={(e) =>
-                updateItem(index, "score", e.target.value)
-              }
-            />
-          </div>
+    {/* Score */}
+    <div className="col-md-2">
+      <label
+        htmlFor={`item-score-${index}`}
+        className="form-label fw-semibold"
+      >
+        Score
+      </label>
+      <input
+        id={`item-score-${index}`}
+        type="number"
+        className="form-control"
+        value={item.score}
+        onChange={(e) =>
+          updateItem(index, "score", e.target.value)
+        }
+      />
+    </div>
 
-          <div className="col-md-2">
-            <input
-              type="number"
-              className="form-control"
-              placeholder="Max"
-              value={item.max}
-              onChange={(e) =>
-                updateItem(index, "max", e.target.value)
-              }
-            />
-          </div>
+    {/* Max */}
+    <div className="col-md-2">
+      <label
+        htmlFor={`item-max-${index}`}
+        className="form-label fw-semibold"
+      >
+        Max
+      </label>
+      <input
+        id={`item-max-${index}`}
+        type="number"
+        className="form-control"
+        value={item.max}
+        onChange={(e) =>
+          updateItem(index, "max", e.target.value)
+        }
+      />
+    </div>
 
-          <div className="col-md-3">
-            <input
-              type="number"
-              className="form-control"
-              placeholder="Weight (%)"
-              value={item.weight}
-              onChange={(e) =>
-                updateItem(index, "weight", e.target.value)
-              }
-            />
-          </div>
+    {/* Weight */}
+    <div className="col-md-3">
+      <label
+        htmlFor={`item-weight-${index}`}
+        className="form-label fw-semibold"
+      >
+        Weight (%)
+      </label>
+      <input
+        id={`item-weight-${index}`}
+        type="number"
+        className="form-control"
+        value={item.weight}
+        onChange={(e) =>
+          updateItem(index, "weight", e.target.value)
+        }
+      />
+    </div>
 
-          <div className="col-md-2">
-            {items.length > 1 && (
-              <button
-                className="btn btn-outline-danger w-100"
-                onClick={() => removeItem(index)}
-              >
-                Remove
-              </button>
-            )}
-          </div>
-        </div>
-      ))}
+    {/* Remove */}
+    <div className="col-md-2 d-flex align-items-end">
+      {items.length > 1 && (
+        <button
+          type="button"
+          className="btn btn-outline-danger w-100"
+          onClick={() => removeItem(index)}
+        >
+          Remove
+        </button>
+      )}
+    </div>
+  </div>
+))}
+
 
       {/* Actions */}
-      <div className="d-flex gap-2 my-3 flex-wrap">
-        <button className="btn btn-outline-primary" onClick={addItem}>
+      <div className="d-grid d-sm-flex gap-2 mb-4">
+        <button className="btn btn-outline-primary btn-lg w-100" onClick={addItem}>
           + Add Item
         </button>
-        <button className="btn btn-primary" onClick={calculateGrade}>
+        <button className="btn btn-primary btn-lg w-100" onClick={calculateGrade}>
           Calculate Grade
         </button>
-        <button className="btn btn-outline-secondary" onClick={resetCalculator}>
+        <button className="btn btn-outline-secondary btn-lg w-100" onClick={resetCalculator}>
           Reset
         </button>
       </div>
