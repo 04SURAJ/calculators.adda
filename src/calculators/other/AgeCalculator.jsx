@@ -69,6 +69,9 @@ function AgeCalculator() {
     setError("");
   };
 
+  const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+
   return (
     <>
     <div className="container-fluid px-0">
@@ -77,14 +80,16 @@ function AgeCalculator() {
         <label htmlFor="dob" className="form-label fw-semibold">
           Date of Birth
         </label>
-        <input
-          id="dob"
-          type="date"
-          className="form-control form-control-lg"
-          value={dob}
-          max={todayDate}
-          onChange={(e) => setDob(e.target.value)}
-        />
+      <input
+  id="dob"
+  type={isMobile ? "text" : "date"}
+  className="form-control form-control-lg"
+  placeholder="YYYY-MM-DD"
+  value={dob}
+  onChange={(e) => setDob(e.target.value)}
+  max={!isMobile ? todayDate : undefined}
+/>
+
       </div>
 
       {/* Age at the Date of */}
