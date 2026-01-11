@@ -30,9 +30,12 @@ function Navbar() {
   }, []);
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-      <div className="container-fluid" ref={containerRef} onClick={handleLinkClick}>
-
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top custom-navbar">
+      <div
+        className="container-fluid"
+        ref={containerRef}
+        onClick={handleLinkClick}
+      >
         {/* Brand */}
         <Link className="navbar-brand fw-bold" to="/">
           CalculatorsAdda
@@ -52,40 +55,49 @@ function Navbar() {
         </button>
 
         {/* Navbar Links */}
-        <div className="collapse navbar-collapse" id="mainNavbar" ref={collapseRef}>
+        <div
+          className="collapse navbar-collapse"
+          id="mainNavbar"
+          ref={collapseRef}
+        >
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <NavLink className="nav-link" to="/">
                 Home
               </NavLink>
             </li>
-
-            <li className="nav-item dropdown">
-              <span
-                className="nav-link dropdown-toggle"
-                role="button"
-                data-bs-toggle="dropdown"
-              >
-                Calculators
-              </span>
-
-              <ul className="dropdown-menu">
-                <li>
-                  <NavLink className="dropdown-item" to="/calculators">
-                    All Calculators
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink className="dropdown-item" to="/math-calculators">
-                    Math Calculators
-                  </NavLink>
-                </li>
-                {/* Future categories */}
-              </ul>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/math-calculators">
+                Math Calculators
+              </NavLink>
             </li>
+             <li className="nav-item">
+              <NavLink className="nav-link" to="/calculators">
+                All Calculators
+              </NavLink>
+            </li>
+
+           
           </ul>
         </div>
       </div>
+
+      {/* Styling only */}
+      <style>
+        {`
+        .custom-navbar {
+          background: linear-gradient(135deg, #0f2027, #203a43, #2c5364) !important;
+          border-bottom: 1px solid rgba(255, 193, 7, 0.35);
+        }
+
+        .custom-navbar .nav-link,
+        .custom-navbar .navbar-brand {
+          transition: color 0.3s ease;
+        }
+
+       
+        `}
+      </style>
     </nav>
   );
 }

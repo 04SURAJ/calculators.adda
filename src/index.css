@@ -6,6 +6,10 @@ body,
   overflow-y: visible;
 }
 
+.custom-navbar .navbar-nav {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .navbar-brand {
   letter-spacing: 0.5px;
