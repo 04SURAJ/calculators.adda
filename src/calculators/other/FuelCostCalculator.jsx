@@ -51,55 +51,78 @@ function FuelCostCalculator() {
      
   <>
  {/* Units */}
-      <div className="mb-3">
-        <label className="form-label">Select Units</label>
-        <select
-          className="form-select"
-          value={unit}
-          onChange={(e) => setUnit(e.target.value)}
-        >
-          <option value="mpg">Miles + MPG + $/gallon</option>
-          <option value="lper100">Kilometers + L/100km + $/liter</option>
-        </select>
-      </div>
+     {/* Unit Selector */}
+<div className="mb-3">
+  <label className="form-label fw-semibold">Select Units</label>
+  <select
+    className="form-select"
+    value={unit}
+    onChange={(e) => setUnit(e.target.value)}
+  >
+    <option value="mpg">Miles + MPG + $/gallon</option>
+    <option value="lper100">Kilometers + L/100km + $/liter</option>
+  </select>
+</div>
 
-      {/* Inputs */}
-      <div className="row g-2 mb-3">
-        <div className="col-md-4">
-          <input
-            type="number"
-            className="form-control"
-            placeholder={unit === "mpg" ? "Distance (miles)" : "Distance (km)"}
-            value={distance}
-            onChange={(e) => setDistance(e.target.value)}
-          />
-        </div>
-        <div className="col-md-4">
-          <input
-            type="number"
-            className="form-control"
-            placeholder={unit === "mpg" ? "Fuel Efficiency (MPG)" : "Fuel Efficiency (L/100km)"}
-            value={fuelEfficiency}
-            onChange={(e) => setFuelEfficiency(e.target.value)}
-          />
-        </div>
-        <div className="col-md-4">
-          <input
-            type="number"
-            className="form-control"
-            placeholder={unit === "mpg" ? "Fuel Price $/gallon" : "Fuel Price $/liter"}
-            value={fuelPrice}
-            onChange={(e) => setFuelPrice(e.target.value)}
-          />
-        </div>
-      </div>
+{/* Inputs */}
+<div className="row g-2 mb-3">
+  <div className="col-md-4">
+    <label className="form-label fw-semibold">
+      {unit === "mpg" ? "Distance (Miles)" : "Distance (Kilometers)"}
+    </label>
+    <input
+      type="number"
+      className="form-control"
+      placeholder={unit === "mpg" ? "Enter distance in miles" : "Enter distance in km"}
+      value={distance}
+      onChange={(e) => setDistance(e.target.value)}
+    />
+  </div>
+
+  <div className="col-md-4">
+    <label className="form-label fw-semibold">
+      {unit === "mpg"
+        ? "Fuel Efficiency (MPG)"
+        : "Fuel Efficiency (L/100km)"}
+    </label>
+    <input
+      type="number"
+      className="form-control"
+      placeholder={
+        unit === "mpg" ? "Enter MPG" : "Enter L/100km"
+      }
+      value={fuelEfficiency}
+      onChange={(e) => setFuelEfficiency(e.target.value)}
+    />
+  </div>
+
+  <div className="col-md-4">
+    <label className="form-label fw-semibold">
+      {unit === "mpg"
+        ? "Fuel Price ($ per gallon)"
+        : "Fuel Price ($ per liter)"}
+    </label>
+    <input
+      type="number"
+      className="form-control"
+      placeholder={
+        unit === "mpg"
+          ? "Enter $/gallon"
+          : "Enter $/liter"
+      }
+      value={fuelPrice}
+      onChange={(e) => setFuelPrice(e.target.value)}
+    />
+  </div>
+</div>
+
 
       {/* Buttons */}
-      <div className="d-flex gap-2 mb-3 flex-wrap">
-        <button className="btn btn-primary" onClick={calculateCost}>
+      <div className="d-grid d-sm-flex gap-2 mb-4">
+        <button className="btn btn-primary btn-lg w-100" onClick={calculateCost}>
           Calculate
         </button>
-        <button className="btn btn-outline-secondary" onClick={resetCalculator}>
+        <button className="btn btn-outline-secondary btn-lg w-100" onClick={resetCalculator}>
           Reset
         </button>
       </div>

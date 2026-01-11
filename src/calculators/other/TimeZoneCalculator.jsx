@@ -65,7 +65,7 @@ function TimeZoneCalculator() {
 <>
  <div className="row g-2 mb-3">
         <div className="col-md-4">
-          <label className="form-label">Time</label>
+          <label className="form-label fw-semibold">Time</label>
           <input
             type="time"
             className="form-control"
@@ -75,7 +75,7 @@ function TimeZoneCalculator() {
         </div>
 
         <div className="col-md-4">
-          <label className="form-label">From Time Zone</label>
+          <label className="form-label fw-semibold">From Time Zone</label>
           <select
             className="form-select"
             value={fromZone}
@@ -90,7 +90,7 @@ function TimeZoneCalculator() {
         </div>
 
         <div className="col-md-4">
-          <label className="form-label">To Time Zone</label>
+          <label className="form-label fw-semibold">To Time Zone</label>
           <select
             className="form-select"
             value={toZone}
@@ -105,11 +105,11 @@ function TimeZoneCalculator() {
         </div>
       </div>
 
-      <div className="d-flex gap-2 mb-3">
-        <button className="btn btn-primary" onClick={convertTime}>
+      <div className="d-grid d-sm-flex gap-2 mb-4">
+        <button className="btn btn-primary btn-lg w-100" onClick={convertTime}>
           Convert
         </button>
-        <button className="btn btn-outline-secondary" onClick={resetCalculator}>
+        <button className="btn btn-outline-secondary btn-lg w-100" onClick={resetCalculator}>
           Reset
         </button>
       </div>

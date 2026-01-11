@@ -46,43 +46,53 @@ function SquareFootageCalculator() {
 <>
 
       <div className="row g-2 mb-3">
-        <div className="col-md-6">
-          <input
-            type="number"
-            className="form-control"
-            placeholder={unit === "ft" ? "Length (ft)" : "Length (m)"}
-            value={length}
-            onChange={(e) => setLength(e.target.value)}
-          />
-        </div>
-        <div className="col-md-6">
-          <input
-            type="number"
-            className="form-control"
-            placeholder={unit === "ft" ? "Width (ft)" : "Width (m)"}
-            value={width}
-            onChange={(e) => setWidth(e.target.value)}
-          />
-        </div>
-      </div>
+  {/* Length */}
+  <div className="col-md-6">
+    <label className="form-label fw-semibold">
+      {unit === "ft" ? "Length (Feet)" : "Length (Meters)"}
+    </label>
+    <input
+      type="number"
+      className="form-control"
+      placeholder={unit === "ft" ? "Enter length in ft" : "Enter length in meters"}
+      value={length}
+      onChange={(e) => setLength(e.target.value)}
+    />
+  </div>
 
-      <div className="mb-3">
-        <label className="form-label">Unit</label>
-        <select
-          className="form-select"
-          value={unit}
-          onChange={(e) => setUnit(e.target.value)}
-        >
-          <option value="ft">Feet</option>
-          <option value="m">Meters</option>
-        </select>
-      </div>
+  {/* Width */}
+  <div className="col-md-6">
+    <label className="form-label fw-semibold">
+      {unit === "ft" ? "Width (Feet)" : "Width (Meters)"}
+    </label>
+    <input
+      type="number"
+      className="form-control"
+      placeholder={unit === "ft" ? "Enter width in ft" : "Enter width in meters"}
+      value={width}
+      onChange={(e) => setWidth(e.target.value)}
+    />
+  </div>
+</div>
 
-      <div className="d-flex gap-2 mb-3">
-        <button className="btn btn-primary" onClick={calculateArea}>
+{/* Unit Selector */}
+<div className="mb-3">
+  <label className="form-label fw-semibold">Select Unit</label>
+  <select
+    className="form-select"
+    value={unit}
+    onChange={(e) => setUnit(e.target.value)}
+  >
+    <option value="ft">Feet</option>
+    <option value="m">Meters</option>
+  </select>
+</div>
+
+      <div className="d-grid d-sm-flex gap-2 mb-4">
+        <button className="btn btn-primary btn-lg w-100" onClick={calculateArea}>
           Calculate
         </button>
-        <button className="btn btn-outline-secondary" onClick={resetCalculator}>
+        <button className="btn btn-outline-secondary btn-lg w-100" onClick={resetCalculator}>
           Reset
         </button>
       </div>

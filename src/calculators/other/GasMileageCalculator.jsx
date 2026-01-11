@@ -43,43 +43,54 @@ function GasMileageCalculator() {
 
    <>
  <div className="row g-2 mb-3">
-        <div className="col-md-6">
-          <input
-            type="number"
-            className="form-control"
-            placeholder={unit === "mpg" ? "Distance (miles)" : "Distance (km)"}
-            value={distance}
-            onChange={(e) => setDistance(e.target.value)}
-          />
-        </div>
-        <div className="col-md-6">
-          <input
-            type="number"
-            className="form-control"
-            placeholder={unit === "mpg" ? "Fuel used (gallons)" : "Fuel used (liters)"}
-            value={fuel}
-            onChange={(e) => setFuel(e.target.value)}
-          />
-        </div>
-      </div>
+  {/* Distance Input */}
+  <div className="col-md-6">
+    <label className="form-label fw-semibold">
+      {unit === "mpg" ? "Distance (Miles)" : "Distance (Kilometers)"}
+    </label>
+    <input
+      type="number"
+      className="form-control"
+      placeholder={unit === "mpg" ? "Enter distance in miles" : "Enter distance in km"}
+      value={distance}
+      onChange={(e) => setDistance(e.target.value)}
+    />
+  </div>
 
-      <div className="mb-3">
-        <label className="form-label">Unit</label>
-        <select
-          className="form-select"
-          value={unit}
-          onChange={(e) => setUnit(e.target.value)}
-        >
-          <option value="mpg">Miles per Gallon (MPG)</option>
-          <option value="kmpl">Kilometers per Liter (km/L)</option>
-        </select>
-      </div>
+  {/* Fuel Used Input */}
+  <div className="col-md-6">
+    <label className="form-label fw-semibold">
+      {unit === "mpg" ? "Fuel Used (Gallons)" : "Fuel Used (Liters)"}
+    </label>
+    <input
+      type="number"
+      className="form-control"
+      placeholder={unit === "mpg" ? "Enter fuel used in gallons" : "Enter fuel used in liters"}
+      value={fuel}
+      onChange={(e) => setFuel(e.target.value)}
+    />
+  </div>
+</div>
 
-      <div className="d-flex gap-2 mb-3 flex-wrap">
-        <button className="btn btn-primary" onClick={calculateMileage}>
+{/* Unit Selector */}
+<div className="mb-3">
+  <label className="form-label fw-semibold">Select Unit</label>
+  <select
+    className="form-select"
+    value={unit}
+    onChange={(e) => setUnit(e.target.value)}
+  >
+    <option value="mpg">Miles per Gallon (MPG)</option>
+    <option value="kmpl">Kilometers per Liter (km/L)</option>
+  </select>
+</div>
+
+
+      <div className="d-grid d-sm-flex gap-2 mb-4">
+        <button className="btn btn-primary btn-lg w-100" onClick={calculateMileage}>
           Calculate
         </button>
-        <button className="btn btn-outline-secondary" onClick={resetCalculator}>
+        <button className="btn btn-outline-secondary btn-lg w-100" onClick={resetCalculator}>
           Reset
         </button>
       </div>

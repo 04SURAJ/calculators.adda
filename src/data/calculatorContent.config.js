@@ -494,46 +494,107 @@ The password is created using the following logic:
 ,
 
   "love-calculator": {
-    "whyUse": "This Love Calculator estimates compatibility between two people based on names for fun and entertainment.",
-    "howToUse": [
-      "Enter first name.",
-      "Enter second name.",
-      "Click Calculate Love.",
-      "View compatibility percentage."
-    ],
-    "features": [
-      "Instant love percentage",
-      "Fun and easy to use",
-      "No signup required",
-      "Mobile-friendly",
-      "100% free"
-    ],
-    "notes": [
-      "Results are for entertainment only.",
-      "Not scientifically accurate."
-    ]
-  },
+
+  "formula": `
+<p>
+The love compatibility between two people is calculated by converting each character of their names into its corresponding ASCII code,
+summing these values, and then reducing the total to a percentage between 0 and 100.
+</p>
+
+<p>
+The formula used is:
+</p>
+
+<ul>
+  <li>Convert each character of <strong>First Name</strong> to its ASCII code and sum them → <strong>Sum1</strong></li>
+  <li>Convert each character of <strong>Second Name</strong> to its ASCII code and sum them → <strong>Sum2</strong></li>
+  <li>Add the two sums: <strong>Total = Sum1 + Sum2</strong></li>
+  <li>Find the compatibility percentage: <strong>Percentage = Total % 101</strong> (gives value between 0–100%)</li>
+</ul>
+
+<p>
+This method gives a simple, fun deterministic "love score" based purely on the letters in the names.
+</p>
+  `,
+
+  "howToUse": [
+    "Enter the first person's name in the 'First Name' field.",
+    "Enter the second person's name in the 'Second Name' field.",
+    "Click the 'Calculate' button to see the love compatibility percentage.",
+    "Use the 'Reset' button to clear the fields and enter new names."
+  ],
+
+  "features": [
+    "Instant calculation of love compatibility based on names.",
+    "Fun and interactive way to check name compatibility.",
+    "Works for any combination of names, regardless of length or characters.",
+    "Displays results clearly with a percentage score."
+  ],
+
+  "whyUse": "This calculator is a fun and engaging way to see a playful compatibility score between two names. It's perfect for entertainment, social sharing, or just lighthearted curiosity.",
+
+  "notes": [
+    "This calculation is purely for entertainment and has no scientific basis.",
+    "Results are deterministic; the same names will always yield the same percentage.",
+    "Special characters, spaces, and case of letters are normalized for calculation."
+  ]
+}
+,
 
   "tip-calculator": {
-    "whyUse": "This Tip Calculator helps you calculate tip amounts and total bills quickly.",
-    "howToUse": [
-      "Enter bill amount.",
-      "Select tip percentage.",
-      "Choose number of people.",
-      "View total and per-person amount."
-    ],
-    "features": [
-      "Quick tip calculation",
-      "Bill splitting support",
-      "Accurate totals",
-      "Simple UI",
-      "Free tool"
-    ],
-    "notes": [
-      "Tip percentage is customizable.",
-      "Ensure correct bill amount."
-    ]
-  },
+
+  "formula": `
+<p>
+The tip is calculated based on the <strong>bill amount</strong> and the <strong>tip percentage</strong>. 
+If the bill is split among multiple people, the total is divided equally.
+</p>
+
+<p>
+The formula used is:
+</p>
+
+<ul>
+  <li><strong>Tip Amount</strong> = Bill Amount × (Tip Percentage / 100)</li>
+  <li><strong>Total Bill</strong> = Bill Amount + Tip Amount</li>
+  <li><strong>Per Person</strong> = Total Bill ÷ Number of People</li>
+</ul>
+
+<p>
+If the number of people is 1, the total bill equals the amount to be paid by a single person.
+</p>
+  `,
+
+  "howToUse": [
+    "Enter the total bill amount in dollars.",
+    "Enter the desired tip percentage (for example, 15 for 15%).",
+    "Enter the number of people splitting the bill.",
+    "Click on 'Calculate' to see the tip amount, total bill, and per person amount if applicable.",
+    "Click 'Reset' to clear all inputs and start over."
+  ],
+
+  "features": [
+    "Calculates tip amount automatically based on the entered bill and tip percentage.",
+    "Displays the total bill including tip.",
+    "Shows per person amount if the bill is split among multiple people.",
+    "Supports resetting all inputs for quick recalculation.",
+    "User-friendly interface with clear labels for each input field."
+  ],
+
+  "whyUse": `
+<p>
+Use this Tip Calculator to quickly and accurately calculate the tip amount, total bill, and per person share when dining out. 
+It helps avoid manual errors and saves time, ensuring fairness when splitting the bill.
+</p>
+  `,
+
+  "notes": [
+    "Ensure all input fields have positive numbers.",
+    "Tip percentage can be zero if no tip is to be added.",
+    "Number of people must be at least 1.",
+    "The calculator rounds results to two decimal places for convenience."
+  ]
+}
+,
 
   
   
@@ -589,194 +650,500 @@ Binary conversion is used internally to derive network and broadcast addresses, 
 }
 ,
 
-  "dice-roller": {
-    "whyUse": "This Dice Roller generates random dice rolls for games, simulations, and fun activities.",
-    "howToUse": [
-      "Select number of dice.",
-      "Choose dice type.",
-      "Click Roll Dice.",
-      "View random result."
-    ],
-    "features": [
-      "True random results",
-      "Multiple dice support",
-      "Instant output",
-      "Game-friendly",
-      "Free tool"
-    ],
-    "notes": [
-      "Results are random.",
-      "For entertainment purposes."
-    ]
-  },
+ "dice-roller": {
+
+  formula: `
+<p>
+The dice roll result is generated using a <strong>random number algorithm</strong>
+that simulates the outcome of rolling physical dice.
+</p>
+
+<p>
+For each die, a random integer is produced between <strong>1</strong> and the
+<strong>number of sides</strong> on the die.
+</p>
+
+<p>
+The formula used for each roll is:
+</p>
+
+<ul>
+  <li>
+    <strong>Single Die Roll</strong> = Random number between 1 and Number of Sides
+  </li>
+</ul>
+
+<p>
+When multiple dice are rolled, the calculator generates individual results for
+each die and then computes the <strong>total sum</strong> by adding all outcomes.
+</p>
+  `,
+
+  howToUse: [
+    "Enter the number of dice you want to roll.",
+    "Enter the number of sides for each die (for example, 6 for a standard die).",
+    "Click the Roll Dice button to generate random results.",
+    "View individual dice values and the total sum instantly.",
+    "Use the Reset button to clear all values and roll again."
+  ],
+
+  features: [
+    "Supports rolling multiple dice at the same time.",
+    "Works with any number of sides (D6, D10, D20, and more).",
+    "Instant random results with accurate total calculation.",
+    "Simple, clean, and mobile-friendly interface.",
+    "No page reload required for repeated rolls."
+  ],
+
+  whyUse:
+    "This dice roller is ideal for board games, tabletop RPGs, probability experiments, and quick simulations. It provides fast, fair, and repeatable dice rolls without the need for physical dice.",
+
+  notes: [
+    "The number of dice must be greater than zero.",
+    "The number of sides per die should be at least 2.",
+    "Each roll is generated independently using randomness.",
+    "Results may vary every time the dice are rolled."
+  ]
+}
+,
 
   "fuel-cost-calculator": {
-    "whyUse": "This Fuel Cost Calculator estimates fuel expenses based on distance, mileage, and fuel price.",
-    "howToUse": [
-      "Enter distance.",
-      "Enter vehicle mileage.",
-      "Enter fuel price.",
-      "Click Calculate."
-    ],
-    "features": [
-      "Accurate travel cost estimation",
-      "Supports all vehicles",
-      "Instant results",
-      "Easy to use",
-      "Free calculator"
-    ],
-    "notes": [
-      "Mileage should be realistic.",
-      "Fuel price may vary."
-    ]
-  },
 
-  "voltage-drop-calculator": {
-    "whyUse": "This Voltage Drop Calculator helps calculate voltage loss in electrical circuits accurately.",
-    "howToUse": [
-      "Enter wire length.",
-      "Enter current and voltage.",
-      "Select wire material.",
-      "Click Calculate."
-    ],
-    "features": [
-      "Accurate electrical calculations",
-      "Supports copper and aluminum",
-      "Engineering-friendly",
-      "Fast results",
-      "Free tool"
-    ],
-    "notes": [
-      "Values must be numeric.",
-      "Results are theoretical."
-    ]
-  },
+  formula: `
+<p>
+The fuel cost is calculated based on the <strong>total distance traveled</strong>,
+the vehicle’s <strong>fuel efficiency</strong>, and the <strong>current fuel price</strong>.
+</p>
+
+<p>
+Depending on the selected unit system, the following formulas are used:
+</p>
+
+<ul>
+  <li>
+    <strong>Miles + MPG:</strong><br />
+    Fuel Used = Distance (miles) ÷ Fuel Efficiency (MPG)
+  </li>
+  <li>
+    <strong>Kilometers + L/100km:</strong><br />
+    Fuel Used = (Distance (km) × Fuel Efficiency) ÷ 100
+  </li>
+</ul>
+
+<p>
+Once the fuel used is calculated, the total cost is determined using:
+</p>
+
+<ul>
+  <li>
+    <strong>Total Fuel Cost</strong> = Fuel Used × Fuel Price
+  </li>
+</ul>
+
+<p>
+The final amount represents the estimated fuel expense for the entered journey.
+</p>
+  `,
+
+  howToUse: [
+    "Select the unit system (Miles + MPG or Kilometers + L/100km).",
+    "Enter the total distance you plan to travel.",
+    "Provide your vehicle’s fuel efficiency value.",
+    "Enter the current fuel price per gallon or per liter.",
+    "Click the Calculate button to get the estimated fuel cost.",
+    "Use the Reset button to clear all inputs and start again."
+  ],
+
+  features: [
+    "Supports both US and metric unit systems.",
+    "Instant fuel cost calculation with accurate formulas.",
+    "Mobile-friendly and easy-to-use input fields.",
+    "Clear validation to prevent invalid or negative values.",
+    "Clean and simple result display for quick understanding."
+  ],
+
+  whyUse:
+    "This fuel cost calculator helps you estimate travel expenses in advance, making it easier to plan road trips, daily commutes, or long-distance journeys. It allows better budgeting, fuel planning, and cost comparison between different vehicles or routes.",
+
+  notes: [
+    "Fuel efficiency values should be greater than zero for accurate results.",
+    "Ensure the selected unit system matches the entered values.",
+    "The calculated fuel cost is an estimate and may vary based on driving conditions.",
+    "Fuel prices can fluctuate, so always use the most recent rate."
+  ]
+}
+,
+
+ "voltage-drop-calculator": {
+
+  formula: `
+<p>
+Voltage drop is calculated based on the <strong>current</strong>, 
+<strong>wire resistance</strong>, <strong>wire length</strong>, 
+and the <strong>electrical phase</strong> (single-phase or three-phase).
+</p>
+
+<p>
+The general formulas used are:
+</p>
+
+<ul>
+  <li>
+    <strong>Total Wire Resistance</strong> =
+    (Resistance per 1000 ft × Wire Length / 1000) × 2
+  </li>
+  <li>
+    <strong>Single-phase Voltage Drop</strong> =
+    Current × Total Resistance
+  </li>
+  <li>
+    <strong>Three-phase Voltage Drop</strong> =
+    √3 × Current × Total Resistance
+  </li>
+  <li>
+    <strong>Percentage Voltage Drop</strong> =
+    (Voltage Drop ÷ Source Voltage) × 100
+  </li>
+</ul>
+
+<p>
+The factor of <strong>2</strong> is used to account for the round-trip length
+of the conductor in single circuits.
+</p>
+  `,
+
+  howToUse: [
+    "Enter the system voltage in volts (V).",
+    "Enter the current load in amperes (A).",
+    "Provide the one-way wire length in feet.",
+    "Select the appropriate wire gauge (AWG).",
+    "Choose whether the circuit is single-phase or three-phase.",
+    "Click the Calculate button to view voltage drop results."
+  ],
+
+  features: [
+    "Supports both single-phase and three-phase systems",
+    "Uses standard AWG copper wire resistance values",
+    "Instant voltage drop and percentage calculation",
+    "Clear input validation with error messages",
+    "Mobile-friendly and easy-to-use interface"
+  ],
+
+  whyUse:
+    "This calculator helps electricians, engineers, and installers ensure that voltage drop stays within recommended limits. Proper voltage drop calculation improves system efficiency, prevents equipment damage, and complies with electrical standards.",
+
+  notes: [
+    "Resistance values are based on copper conductors at approximately 75°C.",
+    "Wire length should be entered as one-way distance, not round-trip.",
+    "Excessive voltage drop can lead to overheating and reduced equipment performance.",
+    "Always follow local electrical codes and safety guidelines."
+  ]
+}
+,
 
   "square-footage-calculator": {
-    "whyUse": "This Square Footage Calculator helps calculate area for flooring, painting, and construction needs.",
-    "howToUse": [
-      "Enter length and width.",
-      "Select unit.",
-      "Click Calculate.",
-      "View total area."
-    ],
-    "features": [
-      "Accurate area calculation",
-      "Supports multiple units",
-      "Simple interface",
-      "Instant results",
-      "Free to use"
-    ],
-    "notes": [
-      "Inputs must be positive.",
-      "Area is approximate."
-    ]
-  },
+
+  formula: `
+<p>
+Square footage (area) is calculated by multiplying the <strong>length</strong> and
+<strong>width</strong> of a space.
+</p>
+
+<p>
+The basic formula used is:
+</p>
+
+<ul>
+  <li><strong>Area</strong> = Length × Width</li>
+</ul>
+
+<p>
+If measurements are entered in <strong>feet</strong>, the result is shown in square feet (sq ft).
+</p>
+
+<p>
+If measurements are entered in <strong>meters</strong>, the area is calculated in square meters (m²)
+and also converted to square feet using the conversion:
+</p>
+
+<ul>
+  <li><strong>1 square meter</strong> = 10.7639 square feet</li>
+</ul>
+`,
+
+  howToUse: [
+    "Select the measurement unit (Feet or Meters).",
+    "Enter the length of the area.",
+    "Enter the width of the area.",
+    "Click the Calculate button to get the total area.",
+    "Use the Reset button to clear all inputs and start again."
+  ],
+
+  features: [
+    "Supports both feet and meter units",
+    "Automatically converts square meters to square feet",
+    "Accurate area calculation with decimal precision",
+    "Clean and mobile-friendly input layout",
+    "Instant results without page reload"
+  ],
+
+  whyUse:
+    "This Square Footage Calculator helps you quickly determine the area of rooms, plots, or spaces for construction, flooring, painting, real estate, and interior planning. It removes manual calculation errors and saves time.",
+
+  notes: [
+    "Only positive numeric values are accepted for length and width.",
+    "Results are approximate due to rounding.",
+    "For irregular shapes, divide the area into rectangles and calculate separately.",
+    "Ensure both measurements are in the same unit before calculating."
+  ]
+}
+,
 
   "time-card-calculator": {
-    "whyUse": "This Time Card Calculator helps calculate total working hours for employees and payroll processing.",
-    "howToUse": [
-      "Enter clock-in time.",
-      "Enter clock-out time.",
-      "Add breaks if applicable.",
-      "Click Calculate."
-    ],
-    "features": [
-      "Payroll-friendly",
-      "Accurate time tracking",
-      "Break time support",
-      "Easy to use",
-      "Free tool"
-    ],
-    "notes": [
-      "Time format must be correct.",
-      "Breaks are optional."
-    ]
-  },
+
+  formula: `
+<p>
+Total working time is calculated by finding the difference between the
+<strong>start time</strong> and <strong>end time</strong>, and then subtracting the
+<strong>break duration</strong>.
+</p>
+
+<p>
+The calculation follows these steps:
+</p>
+
+<ul>
+  <li><strong>Total Minutes Worked</strong> = End Time − Start Time</li>
+  <li>If the shift crosses midnight, 24 hours are added automatically</li>
+  <li><strong>Net Work Time</strong> = Total Minutes − Break Minutes</li>
+</ul>
+
+<p>
+The final result is converted into <strong>hours and minutes</strong> for easy reading.
+</p>
+`,
+
+  howToUse: [
+    "Enter your work start time.",
+    "Enter your work end time.",
+    "Add break duration in minutes (if any).",
+    "Click the Calculate button to get total hours worked.",
+    "Use Reset to clear all inputs and start over."
+  ],
+
+  features: [
+    "Supports overnight shifts automatically",
+    "Break time subtraction for accurate results",
+    "Instant calculation in hours and minutes",
+    "Simple and user-friendly time input",
+    "Works on desktop and mobile devices"
+  ],
+
+  whyUse:
+    "This Time Card Calculator helps employees, freelancers, and employers quickly calculate total working hours without manual time tracking. It is ideal for payroll preparation, attendance tracking, and daily work summaries.",
+
+  notes: [
+    "Break time should be entered in minutes only.",
+    "If the end time is earlier than the start time, the calculator assumes an overnight shift.",
+    "Negative work duration is not allowed.",
+    "Results are rounded to the nearest minute."
+  ]
+}
+,
 
   "time-zone-calculator": {
-    "whyUse": "This Time Zone Calculator converts time between different global time zones instantly.",
-    "howToUse": [
-      "Select source time zone.",
-      "Select target time zone.",
-      "Enter time.",
-      "View converted time."
-    ],
-    "features": [
-      "Global time zone support",
-      "Accurate conversion",
-      "Ideal for meetings",
-      "Instant results",
-      "Free tool"
-    ],
-    "notes": [
-      "DST is handled automatically.",
-      "Ensure correct zone selection."
-    ]
-  },
+
+  formula: `
+<p>
+The time zone conversion is performed by taking the selected <strong>input time</strong>
+in the <strong>source time zone</strong> and converting it to the corresponding
+<strong>target time zone</strong>.
+</p>
+
+<p>
+The calculation process works as follows:
+</p>
+
+<ul>
+  <li>The entered time is first interpreted in the <strong>From Time Zone</strong>.</li>
+  <li>The system adjusts the time based on the UTC offset of the source zone.</li>
+  <li>The adjusted time is then converted to the <strong>To Time Zone</strong>.</li>
+</ul>
+
+<p>
+This method automatically accounts for standard time differences between regions.
+</p>
+`,
+
+  howToUse: [
+    "Enter the time you want to convert.",
+    "Select the source (From) time zone.",
+    "Select the destination (To) time zone.",
+    "Click the Convert button to see the converted time.",
+    "Use Reset to clear inputs and start a new conversion."
+  ],
+
+  features: [
+    "Supports multiple international time zones",
+    "Instant and accurate time conversion",
+    "Handles UTC offsets automatically",
+    "Simple and clean user interface",
+    "Works on all modern browsers and devices"
+  ],
+
+  whyUse:
+    "This Time Zone Calculator is ideal for remote workers, international teams, travelers, and businesses that operate across different regions. It helps avoid confusion caused by time differences and ensures accurate scheduling.",
+
+  notes: [
+    "The calculator uses standard time zone offsets for conversion.",
+    "Daylight Saving Time behavior depends on the selected time zone.",
+    "Input time must be in 24-hour format.",
+    "The result shows the converted time only, not the date."
+  ]
+}
+,
 
   "gas-mileage-calculator": {
-    "whyUse": "This Gas Mileage Calculator calculates fuel efficiency of your vehicle accurately.",
-    "howToUse": [
-      "Enter distance traveled.",
-      "Enter fuel consumed.",
-      "Click Calculate.",
-      "View mileage."
-    ],
-    "features": [
-      "Fuel efficiency calculation",
-      "Supports km/l and mpg",
-      "Accurate results",
-      "Easy to use",
-      "Free calculator"
-    ],
-    "notes": [
-      "Fuel value must be greater than zero.",
-      "Results are estimates."
-    ]
-  },
+
+  formula: `
+<p>
+Fuel efficiency or gas mileage measures how far a vehicle can travel per unit of fuel. This calculator determines the efficiency by dividing the distance traveled by the amount of fuel used.
+</p>
+
+<p>
+The formula used is:
+</p>
+
+<ul>
+  <li><strong>Miles per Gallon (MPG)</strong> = Distance (miles) ÷ Fuel Used (gallons)</li>
+  <li><strong>Kilometers per Liter (km/L)</strong> = Distance (kilometers) ÷ Fuel Used (liters)</li>
+</ul>
+
+<p>
+Make sure to enter positive numeric values for both distance and fuel used. The unit selected determines the calculation format.
+</p>
+  `,
+
+  howToUse: [
+    "Select the unit system: Miles per Gallon (MPG) or Kilometers per Liter (km/L).",
+    "Enter the total distance traveled in miles or kilometers, depending on the unit selected.",
+    "Enter the amount of fuel consumed in gallons or liters.",
+    "Click the 'Calculate' button to see the fuel efficiency.",
+    "Click 'Reset' to clear all input fields and start over."
+  ],
+
+  features: [
+    "Supports both MPG and km/L units.",
+    "Provides quick calculation of fuel efficiency based on user input.",
+    "Easy-to-use interface with labeled inputs and unit selection.",
+    "Instant results with error handling for invalid input values."
+  ],
+
+  whyUse:
+    "Knowing your vehicle's fuel efficiency helps in budgeting fuel costs, reducing environmental impact, and comparing vehicle performance.",
+
+  notes: [
+    "Ensure all input values are positive numbers.",
+    "Select the correct unit system before entering values to get accurate results.",
+    "The calculator does not account for variations in driving conditions or fuel quality."
+  ]
+}
+,
 
   "density-calculator": {
-    "whyUse": "This Density Calculator helps calculate density using mass and volume values.",
-    "howToUse": [
-      "Enter mass.",
-      "Enter volume.",
-      "Click Calculate.",
-      "View density."
-    ],
-    "features": [
-      "Accurate physics calculation",
-      "Simple formula-based output",
-      "Instant results",
-      "Educational use",
-      "Free tool"
-    ],
-    "notes": [
-      "Volume cannot be zero.",
-      "Units must be consistent."
-    ]
-  },
+  "formula": `
+<p>
+Density is a measure of how much mass is contained in a given volume. It is calculated by dividing the <strong>mass</strong> of an object by its <strong>volume</strong>.
+</p>
+
+<p>
+The formula used is:
+</p>
+
+<ul>
+  <li><strong>Density</strong> = Mass ÷ Volume</li>
+</ul>
+
+<p>
+The units depend on the system selected:
+<ul>
+  <li><strong>Metric:</strong> Mass in kilograms (kg), Volume in cubic meters (m³), Density in kg/m³</li>
+  <li><strong>Imperial:</strong> Mass in pounds (lbs), Volume in cubic feet (ft³), Density in lbs/ft³</li>
+</ul>
+</p>
+  `,
+  
+  "howToUse": [
+    "Enter the mass of the object in the appropriate unit (kg or lbs) based on the selected unit system.",
+    "Enter the volume of the object in the corresponding unit (m³ or ft³).",
+    "Select the unit system: Metric (kg/m³) or Imperial (lbs/ft³).",
+    "Click the 'Calculate' button to see the density of the object.",
+    "Use the 'Reset' button to clear all inputs and start a new calculation."
+  ],
+
+  "features": [
+    "Supports both Metric and Imperial unit systems.",
+    "Instantly calculates density with proper formatting.",
+    "Displays error messages for invalid or missing inputs.",
+    "Simple and intuitive interface for quick calculations."
+  ],
+
+  "whyUse": 
+    "This calculator is useful for students, engineers, scientists, and anyone needing to determine the density of materials quickly without manual calculations.",
+
+  "notes": [
+    "Ensure that both mass and volume are positive numbers.",
+    "Mixing units (e.g., kg with ft³) will result in incorrect density values.",
+    "For Metric calculations, density is expressed in kg/m³; for Imperial, in lbs/ft³."
+  ]
+}
+,
 
   "weight-calculator": {
-    "whyUse": "This Weight Calculator helps estimate weight based on height and other parameters.",
-    "howToUse": [
-      "Enter height.",
-      "Select formula if applicable.",
-      "Click Calculate.",
-      "View estimated weight."
-    ],
-    "features": [
-      "Health-related estimation",
-      "Fast calculation",
-      "Simple UI",
-      "Free to use",
-      "Mobile-friendly"
-    ],
-    "notes": [
-      "Results are approximate.",
-      "Not medical advice."
-    ]
-  },
+
+  "formula": `
+<p>
+The weight conversion is calculated by using the standard conversion factor between kilograms and pounds.
+</p>
+
+<p>
+The formulas used are:
+</p>
+
+<ul>
+  <li><strong>Kg to Lbs</strong> = Weight in kg × 2.20462</li>
+  <li><strong>Lbs to Kg</strong> = Weight in lbs ÷ 2.20462</li>
+</ul>
+
+<p>
+This allows for quick and accurate conversion between the two commonly used units of mass.
+</p>
+  `,
+
+  "howToUse": [
+    "Enter the weight value you want to convert in the input field.",
+    "Select the unit of the weight you have entered (Kilograms or Pounds).",
+    "Click the 'Convert' button to see the converted result.",
+    "The result will display both the original weight and the converted weight."
+  ],
+
+  "features": [
+    "Instant conversion between kilograms and pounds.",
+    "Supports both metric and imperial units.",
+    "Clear and easy-to-use interface.",
+    "Handles invalid or negative inputs with proper error messages."
+  ],
+
+  "whyUse": 
+    "This calculator is useful for anyone needing to quickly convert weight measurements for cooking, fitness, travel, or scientific purposes without manually calculating the conversion.",
+
+  "notes": [
+    "Ensure the weight value entered is a positive number.",
+    "The result is rounded to two decimal places for clarity.",
+    "Switching the unit will automatically update the input placeholder to match the selected unit."
+  ]
+}
+,
 
   "speed-calculator": {
     "whyUse": "This Speed Calculator calculates speed based on distance and time values.",

@@ -64,11 +64,11 @@ function DiceRoller() {
         </div>
       </div>
 
-      <div className="d-flex gap-2 mb-3 flex-wrap">
-        <button className="btn btn-primary" onClick={rollDice}>
+      <div className="d-grid d-sm-flex gap-2 mb-4">
+        <button className="btn btn-primary btn-lg w-100" onClick={rollDice}>
           Roll Dice
         </button>
-        <button className="btn btn-outline-secondary" onClick={resetRoller}>
+        <button className="btn btn-outline-secondary btn-lg w-100" onClick={resetRoller}>
           Reset
         </button>
       </div>

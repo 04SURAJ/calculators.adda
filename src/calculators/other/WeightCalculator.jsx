@@ -41,34 +41,38 @@ function WeightCalculator() {
       
 <>
 <div className="row g-2 mb-3">
-        <div className="col-md-6">
-          <input
-            type="number"
-            className="form-control"
-            placeholder={`Weight (${unit})`}
-            value={weight}
-            onChange={(e) => setWeight(e.target.value)}
-          />
-        </div>
+  {/* Weight Input */}
+  <div className="col-md-6">
+    <label className="form-label fw-semibold">Weight ({unit})</label>
+    <input
+      type="number"
+      className="form-control"
+      placeholder={`Enter weight in ${unit}`}
+      value={weight}
+      onChange={(e) => setWeight(e.target.value)}
+    />
+  </div>
 
-        <div className="col-md-6">
-          <label className="form-label">Unit</label>
-          <select
-            className="form-select"
-            value={unit}
-            onChange={(e) => setUnit(e.target.value)}
-          >
-            <option value="kg">Kilograms (kg)</option>
-            <option value="lbs">Pounds (lbs)</option>
-          </select>
-        </div>
-      </div>
+  {/* Unit Selector */}
+  <div className="col-md-6">
+    <label className="form-label fw-semibold">Select Unit</label>
+    <select
+      className="form-select"
+      value={unit}
+      onChange={(e) => setUnit(e.target.value)}
+    >
+      <option value="kg">Kilograms (kg)</option>
+      <option value="lbs">Pounds (lbs)</option>
+    </select>
+  </div>
+</div>
 
-      <div className="d-flex gap-2 mb-3">
-        <button className="btn btn-primary" onClick={convertWeight}>
+
+      <div className="d-grid d-sm-flex gap-2 mb-4">
+        <button className="btn btn-primary btn-lg w-100" onClick={convertWeight}>
           Convert
         </button>
-        <button className="btn btn-outline-secondary" onClick={resetCalculator}>
+        <button className="btn btn-outline-secondary btn-lg w-100" onClick={resetCalculator}>
           Reset
         </button>
       </div>

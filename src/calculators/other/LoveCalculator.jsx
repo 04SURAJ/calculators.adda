@@ -43,27 +43,35 @@ function LoveCalculator() {
 
 <>
     <div className="mb-3">
-        <input
-          type="text"
-          className="form-control mb-2"
-          placeholder="Enter first name"
-          value={name1}
-          onChange={(e) => setName1(e.target.value)}
-        />
-        <input
-          type="text"
-          className="form-control"
-          placeholder="Enter second name"
-          value={name2}
-          onChange={(e) => setName2(e.target.value)}
-        />
-      </div>
+  <div className="mb-2">
+    <label className="form-label fw-semibold">First Name</label>
+    <input
+      type="text"
+      className="form-control"
+      placeholder="Enter first name"
+      value={name1}
+      onChange={(e) => setName1(e.target.value)}
+    />
+  </div>
 
-      <div className="d-flex gap-2 mb-3 flex-wrap">
-        <button className="btn btn-primary" onClick={calculateLove}>
+  <div>
+    <label className="form-label fw-semibold">Second Name</label>
+    <input
+      type="text"
+      className="form-control"
+      placeholder="Enter second name"
+      value={name2}
+      onChange={(e) => setName2(e.target.value)}
+    />
+  </div>
+</div>
+
+
+      <div className="d-grid d-sm-flex gap-2 mb-4">
+        <button className="btn btn-primary btn-lg w-100" onClick={calculateLove}>
           Calculate
         </button>
-        <button className="btn btn-outline-secondary" onClick={resetCalculator}>
+        <button className="btn btn-outline-secondary btn-lg w-100" onClick={resetCalculator}>
           Reset
         </button>
       </div>

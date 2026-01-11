@@ -55,7 +55,7 @@ function TimeCardCalculator() {
    <>
     <div className="row g-2 mb-3">
         <div className="col-md-4">
-          <label className="form-label">Start Time</label>
+          <label className="form-label fw-semibold">Start Time</label>
           <input
             type="time"
             className="form-control"
@@ -64,7 +64,7 @@ function TimeCardCalculator() {
           />
         </div>
         <div className="col-md-4">
-          <label className="form-label">End Time</label>
+          <label className="form-label fw-semibold">End Time</label>
           <input
             type="time"
             className="form-control"
@@ -73,7 +73,7 @@ function TimeCardCalculator() {
           />
         </div>
         <div className="col-md-4">
-          <label className="form-label">Break (minutes)</label>
+          <label className="form-label fw-semibold">Break (minutes)</label>
           <input
             type="number"
             className="form-control"
@@ -84,11 +84,11 @@ function TimeCardCalculator() {
         </div>
       </div>
 
-      <div className="d-flex gap-2 mb-3">
-        <button className="btn btn-primary" onClick={calculateHours}>
+      <div className="d-grid d-sm-flex gap-2 mb-4">
+        <button className="btn btn-primary btn-lg w-100" onClick={calculateHours}>
           Calculate
         </button>
-        <button className="btn btn-outline-secondary" onClick={resetCalculator}>
+        <button className="btn btn-outline-secondary btn-lg w-100" onClick={resetCalculator}>
           Reset
         </button>
       </div>

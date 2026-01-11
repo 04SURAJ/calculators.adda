@@ -124,8 +124,10 @@ main {
   font-size: 1.50rem;
   font-weight: 600;
   margin-bottom: 14px;
-  border-left: 4px solid #0d6efd;
+  border-left: 6px solid #0d6efd;
   padding-left: 10px;
+    border-left-color:  #0d6efd;
+
 }
 
 .related-list {
@@ -158,21 +160,25 @@ main {
    ========================= */
 
 .content-section {
-  background: #ffffff; /* SAME background everywhere */
+  background: #ffffff;
   border: 1px solid #e5e7eb;
+  border-left: 5px solid #0d6efd;   /* LEFT COLOR LENGTH + WIDTH */
   border-radius: 14px;
   padding: 22px 24px;
   margin-bottom: 28px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
 }
 
+
 /* Section Titles */
+
+
 .section-title {
   font-size: 1.35rem;
   font-weight: 600;
   margin-bottom: 14px;
   padding-left: 12px;
-  border-left: 5px solid #0d6efd;
+  border-left: 6px solid #0d6efd;
+  
 }
 
 /* Text */
@@ -203,15 +209,12 @@ main {
 .disclaimer {
   border-left: 6px solid #dc3545;
 }
-
+                                        
 .disclaimer .section-title {
   border-left-color: #dc3545;
 }
 
-.disclaimer .section-text {
-  font-size: 0.9rem;
-  color: #6b7280;
-}
+
 /* =========================
    Main Calculator Logic Box
    ========================= */
@@ -389,4 +392,32 @@ section.py-4.text-center a.btn-primary {
   font-size: 1rem;
   padding: 12px 24px;
   border-radius: 12px;
+}
+
+
+.section-body,
+.section-text,
+.section-list li {
+  line-height: 1.8;
+  font-weight: 600;
+}
+
+.section-body p {
+  margin-bottom: 1rem;
+}
+
+.section-list li {
+  margin-bottom: 0.6rem;
+}
+
+.section-body,
+.section-text,
+.section-list {
+  font-size: 1.05rem;
+}
+
+.disclaimer .section-text {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  font-weight: 600;
 }

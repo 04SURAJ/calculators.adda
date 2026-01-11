@@ -47,34 +47,49 @@ function TipCalculator() {
      
 <>
  <div className="mb-3">
-        <input
-          type="number"
-          className="form-control mb-2"
-          placeholder="Bill Amount ($)"
-          value={billAmount}
-          onChange={(e) => setBillAmount(e.target.value)}
-        />
-        <input
-          type="number"
-          className="form-control mb-2"
-          placeholder="Tip Percentage (%)"
-          value={tipPercent}
-          onChange={(e) => setTipPercent(e.target.value)}
-        />
-        <input
-          type="number"
-          className="form-control"
-          placeholder="Number of People"
-          value={numPeople}
-          onChange={(e) => setNumPeople(e.target.value)}
-        />
-      </div>
+  {/* Bill Amount */}
+  <div className="mb-2">
+    <label className="form-label fw-semibold">Bill Amount ($)</label>
+    <input
+      type="number"
+      className="form-control"
+      placeholder="Enter bill amount"
+      value={billAmount}
+      onChange={(e) => setBillAmount(e.target.value)}
+    />
+  </div>
 
-      <div className="d-flex gap-2 mb-3 flex-wrap">
-        <button className="btn btn-primary" onClick={calculateTip}>
+  {/* Tip Percentage */}
+  <div className="mb-2">
+    <label className="form-label fw-semibold">Tip Percentage (%)</label>
+    <input
+      type="number"
+      className="form-control"
+      placeholder="Enter tip percentage"
+      value={tipPercent}
+      onChange={(e) => setTipPercent(e.target.value)}
+    />
+  </div>
+
+  {/* Number of People */}
+  <div>
+    <label className="form-label fw-semibold">Number of People</label>
+    <input
+      type="number"
+      className="form-control"
+      placeholder="Enter number of people"
+      value={numPeople}
+      onChange={(e) => setNumPeople(e.target.value)}
+    />
+  </div>
+</div>
+
+
+      <div className="d-grid d-sm-flex gap-2 mb-4">
+        <button className="btn btn-primary btn-lg w-100" onClick={calculateTip}>
           Calculate
         </button>
-        <button className="btn btn-outline-secondary" onClick={resetCalculator}>
+        <button className="btn btn-outline-secondary btn-lg w-100" onClick={resetCalculator}>
           Reset
         </button>
       </div>

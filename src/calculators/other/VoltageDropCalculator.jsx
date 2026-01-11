@@ -80,65 +80,78 @@ function VoltageDropCalculator() {
 <>
 
       <div className="row g-2 mb-3">
-        <div className="col-md-3">
-          <input
-            type="number"
-            className="form-control"
-            placeholder="Voltage (V)"
-            value={voltage}
-            onChange={(e) => setVoltage(e.target.value)}
-          />
-        </div>
-        <div className="col-md-3">
-          <input
-            type="number"
-            className="form-control"
-            placeholder="Current (A)"
-            value={current}
-            onChange={(e) => setCurrent(e.target.value)}
-          />
-        </div>
-        <div className="col-md-3">
-          <input
-            type="number"
-            className="form-control"
-            placeholder="Wire Length (ft)"
-            value={length}
-            onChange={(e) => setLength(e.target.value)}
-          />
-        </div>
-        <div className="col-md-3">
-          <select
-            className="form-select"
-            value={gauge}
-            onChange={(e) => setGauge(e.target.value)}
-          >
-            {Object.keys(wireResistance).map((g) => (
-              <option key={g} value={g}>
-                AWG {g}
-              </option>
-            ))}
-          </select>
-        </div>
-      </div>
+  {/* Voltage */}
+  <div className="col-md-3">
+    <label className="form-label fw-semibold">Voltage (V)</label>
+    <input
+      type="number"
+      className="form-control"
+      placeholder="Enter Voltage"
+      value={voltage}
+      onChange={(e) => setVoltage(e.target.value)}
+    />
+  </div>
 
-      <div className="mb-3">
-        <label className="form-label">Phase</label>
-        <select
-          className="form-select"
-          value={phase}
-          onChange={(e) => setPhase(e.target.value)}
-        >
-          <option value="single">Single-phase</option>
-          <option value="three">Three-phase</option>
-        </select>
-      </div>
+  {/* Current */}
+  <div className="col-md-3">
+    <label className="form-label fw-semibold">Current (A)</label>
+    <input
+      type="number"
+      className="form-control"
+      placeholder="Enter Current"
+      value={current}
+      onChange={(e) => setCurrent(e.target.value)}
+    />
+  </div>
 
-      <div className="d-flex gap-2 mb-3 flex-wrap">
-        <button className="btn btn-primary" onClick={calculateVoltageDrop}>
+  {/* Wire Length */}
+  <div className="col-md-3">
+    <label className="form-label fw-semibold">Wire Length (ft)</label>
+    <input
+      type="number"
+      className="form-control"
+      placeholder="Enter Length"
+      value={length}
+      onChange={(e) => setLength(e.target.value)}
+    />
+  </div>
+
+  {/* Wire Gauge */}
+  <div className="col-md-3">
+    <label className="form-label fw-semibold">Wire Gauge (AWG)</label>
+    <select
+      className="form-select"
+      value={gauge}
+      onChange={(e) => setGauge(e.target.value)}
+    >
+      {Object.keys(wireResistance).map((g) => (
+        <option key={g} value={g}>
+          AWG {g}
+        </option>
+      ))}
+    </select>
+  </div>
+</div>
+
+{/* Phase Selection */}
+<div className="mb-3">
+  <label className="form-label fw-semibold">Phase Type</label>
+  <select
+    className="form-select"
+    value={phase}
+    onChange={(e) => setPhase(e.target.value)}
+  >
+    <option value="single">Single-phase</option>
+    <option value="three">Three-phase</option>
+  </select>
+</div>
+
+
+      <div className="d-grid d-sm-flex gap-2 mb-4">
+        <button className="btn btn-primary btn-lg w-100" onClick={calculateVoltageDrop}>
           Calculate
         </button>
-        <button className="btn btn-outline-secondary" onClick={resetCalculator}>
+        <button className="btn btn-outline-secondary btn-lg w-100" onClick={resetCalculator}>
           Reset
         </button>
       </div>

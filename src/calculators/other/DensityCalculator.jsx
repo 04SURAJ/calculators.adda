@@ -44,43 +44,54 @@ function DensityCalculator() {
     
 <>
 <div className="row g-2 mb-3">
-        <div className="col-md-6">
-          <input
-            type="number"
-            className="form-control"
-            placeholder={unit === "metric" ? "Mass (kg)" : "Mass (lbs)"}
-            value={mass}
-            onChange={(e) => setMass(e.target.value)}
-          />
-        </div>
-        <div className="col-md-6">
-          <input
-            type="number"
-            className="form-control"
-            placeholder={unit === "metric" ? "Volume (m³)" : "Volume (ft³)"}
-            value={volume}
-            onChange={(e) => setVolume(e.target.value)}
-          />
-        </div>
-      </div>
+  {/* Mass Input */}
+  <div className="col-md-6">
+    <label className="form-label fw-semibold">
+      {unit === "metric" ? "Mass (kg)" : "Mass (lbs)"}
+    </label>
+    <input
+      type="number"
+      className="form-control"
+      placeholder={unit === "metric" ? "Enter mass in kg" : "Enter mass in lbs"}
+      value={mass}
+      onChange={(e) => setMass(e.target.value)}
+    />
+  </div>
 
-      <div className="mb-3">
-        <label className="form-label">Unit System</label>
-        <select
-          className="form-select"
-          value={unit}
-          onChange={(e) => setUnit(e.target.value)}
-        >
-          <option value="metric">Metric (kg/m³)</option>
-          <option value="imperial">Imperial (lbs/ft³)</option>
-        </select>
-      </div>
+  {/* Volume Input */}
+  <div className="col-md-6">
+    <label className="form-label fw-semibold">
+      {unit === "metric" ? "Volume (m³)" : "Volume (ft³)"}
+    </label>
+    <input
+      type="number"
+      className="form-control"
+      placeholder={unit === "metric" ? "Enter volume in m³" : "Enter volume in ft³"}
+      value={volume}
+      onChange={(e) => setVolume(e.target.value)}
+    />
+  </div>
+</div>
 
-      <div className="d-flex gap-2 mb-3 flex-wrap">
-        <button className="btn btn-primary" onClick={calculateDensity}>
+{/* Unit Selector */}
+<div className="mb-3">
+  <label className="form-label fw-semibold">Select Unit System</label>
+  <select
+    className="form-select"
+    value={unit}
+    onChange={(e) => setUnit(e.target.value)}
+  >
+    <option value="metric">Metric (kg/m³)</option>
+    <option value="imperial">Imperial (lbs/ft³)</option>
+  </select>
+</div>
+
+
+      <div className="d-grid d-sm-flex gap-2 mb-4">
+        <button className="btn btn-primary btn-lg w-100" onClick={calculateDensity}>
           Calculate
         </button>
-        <button className="btn btn-outline-secondary" onClick={resetCalculator}>
+        <button className="btn btn-outline-secondary btn-lg w-100" onClick={resetCalculator}>
           Reset
         </button>
       </div>
