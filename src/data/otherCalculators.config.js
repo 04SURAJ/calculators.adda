@@ -304,8 +304,7 @@ export const otherCalculators = [
   { name: "Mean Calculator", slug: "mean-calculator" },
   { name: "Median Calculator", slug: "median-calculator" },
   { name: "Mode Calculator", slug: "mode-calculator" },
-  { name: "Rounding Calculator", slug: "rounding-calculator" },
-  { name: "Absolute Value Calculator", slug: "absolute-value-calculator" }
+  
 
 
 

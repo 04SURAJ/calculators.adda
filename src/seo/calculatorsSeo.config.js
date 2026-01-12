@@ -304,19 +304,7 @@ export const calculatorsSeo = {
 
 }
 ,
-"rounding-calculator": {
-  title: "Rounding Calculator",
-  description:
-    "Free Rounding Calculator to round numbers to nearest integer, floor, ceil, or fixed decimal places. Instant calculation for math, finance, and statistics.",
-  
-}
-,
-"absolute-value-calculator": {
-  title: "Absolute Value Calculator ",
-  description:
-    "Free Absolute Value Calculator to compute the absolute value of any number. Works instantly with integers and decimals.",
- 
-}
+
 
 
 };

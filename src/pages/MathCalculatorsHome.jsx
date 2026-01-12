@@ -13,8 +13,7 @@ const mathCategories = [
       "Mean Calculator",
       "Median Calculator",
       "Mode Calculator",
-      "Rounding Calculator",
-      "Absolute Value Calculator"
+    
     ]
   },
   /*

@@ -45,7 +45,7 @@ function DayCounter() {
 <>
  <div className="row g-2 mb-3">
         <div className="col-md-6">
-          <label className="form-label">Start Date</label>
+          <label className="form-label fw-semibold">Start Date</label>
           <input
             type="date"
             className="form-control"
@@ -54,7 +54,7 @@ function DayCounter() {
           />
         </div>
         <div className="col-md-6">
-          <label className="form-label">End Date</label>
+          <label className="form-label fw-semibold">End Date</label>
           <input
             type="date"
             className="form-control"
@@ -64,11 +64,11 @@ function DayCounter() {
         </div>
       </div>
 
-      <div className="d-flex gap-2 mb-3">
-        <button className="btn btn-primary" onClick={calculateDays}>
+      <div className="d-grid d-sm-flex gap-2 mb-4">
+        <button className="btn btn-primary btn-lg w-100" onClick={calculateDays}>
           Calculate
         </button>
-        <button className="btn btn-outline-secondary" onClick={resetCalculator}>
+        <button className="btn btn-outline-secondary btn-lg w-100" onClick={resetCalculator}>
           Reset
         </button>
       </div>

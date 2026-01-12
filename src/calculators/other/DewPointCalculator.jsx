@@ -55,43 +55,56 @@ function DewPointCalculator() {
       
 <>
 <div className="row g-2 mb-3">
-        <div className="col-md-6">
-          <input
-            type="number"
-            className="form-control"
-            placeholder={`Temperature (${unit === "metric" ? "°C" : "°F"})`}
-            value={temperature}
-            onChange={(e) => setTemperature(e.target.value)}
-          />
-        </div>
-        <div className="col-md-6">
-          <input
-            type="number"
-            className="form-control"
-            placeholder="Relative Humidity (%)"
-            value={humidity}
-            onChange={(e) => setHumidity(e.target.value)}
-          />
-        </div>
-      </div>
+  <div className="col-md-6">
+    <label htmlFor="temperatureInput" className="form-label fw-semibold">
+      Temperature ({unit === "metric" ? "°C" : "°F"})
+    </label>
+    <input
+      id="temperatureInput"
+      type="number"
+      className="form-control"
+      placeholder={`Temperature (${unit === "metric" ? "°C" : "°F"})`}
+      value={temperature}
+      onChange={(e) => setTemperature(e.target.value)}
+    />
+  </div>
 
-      <div className="mb-3">
-        <label className="form-label">Unit System</label>
-        <select
-          className="form-select"
-          value={unit}
-          onChange={(e) => setUnit(e.target.value)}
-        >
-          <option value="metric">Metric (°C)</option>
-          <option value="imperial">Imperial (°F)</option>
-        </select>
-      </div>
+  <div className="col-md-6">
+    <label htmlFor="humidityInput" className="form-label fw-semibold">
+      Relative Humidity (%)
+    </label>
+    <input
+      id="humidityInput"
+      type="number"
+      className="form-control"
+      placeholder="Relative Humidity (%)"
+      value={humidity}
+      onChange={(e) => setHumidity(e.target.value)}
+    />
+  </div>
+</div>
 
-      <div className="d-flex gap-2 mb-3">
-        <button className="btn btn-primary" onClick={calculateDewPoint}>
+<div className="mb-3">
+  <label htmlFor="unitSelect" className="form-label fw-semibold">
+    Unit System
+  </label>
+  <select
+    id="unitSelect"
+    className="form-select"
+    value={unit}
+    onChange={(e) => setUnit(e.target.value)}
+  >
+    <option value="metric">Metric (°C)</option>
+    <option value="imperial">Imperial (°F)</option>
+  </select>
+</div>
+
+
+      <div className="d-grid d-sm-flex gap-2 mb-4">
+        <button className="btn btn-primary btn-lg w-100" onClick={calculateDewPoint}>
           Calculate
         </button>
-        <button className="btn btn-outline-secondary" onClick={resetCalculator}>
+        <button className="btn btn-outline-secondary btn-lg w-100" onClick={resetCalculator}>
           Reset
         </button>
       </div>

@@ -45,7 +45,7 @@ export default function PercentageIncreaseDecreaseCalculator() {
   return (
     <>
       <div className="mb-3">
-        <label className="form-label">Original Value</label>
+        <label className="form-label fw-semibold">Original Value</label>
         <input
           type="number"
           className="form-control"
@@ -56,7 +56,7 @@ export default function PercentageIncreaseDecreaseCalculator() {
       </div>
 
       <div className="mb-3">
-        <label className="form-label">New Value</label>
+        <label className="form-label fw-semibold">New Value</label>
         <input
           type="number"
           className="form-control"
@@ -68,11 +68,11 @@ export default function PercentageIncreaseDecreaseCalculator() {
 
       {error && <div className="alert alert-danger">{error}</div>}
 
-      <div className="d-flex gap-2 mb-4">
-        <button className="btn btn-primary" onClick={calculateChange}>
+      <div className="d-grid d-sm-flex gap-2 mb-4">
+        <button className="btn btn-primary btn-lg w-100" onClick={calculateChange}>
           Calculate
         </button>
-        <button className="btn btn-outline-secondary" onClick={resetCalculator}>
+        <button className="btn btn-outline-secondary btn-lg w-100" onClick={resetCalculator}>
           Reset
         </button>
       </div>

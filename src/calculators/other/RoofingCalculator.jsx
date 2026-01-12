@@ -44,52 +44,70 @@ function RoofingCalculator() {
   
 <>
     <div className="row g-2 mb-3">
-        <div className="col-md-4">
-          <input
-            type="number"
-            className="form-control"
-            placeholder={`Length (${unit})`}
-            value={length}
-            onChange={(e) => setLength(e.target.value)}
-          />
-        </div>
-        <div className="col-md-4">
-          <input
-            type="number"
-            className="form-control"
-            placeholder={`Width (${unit})`}
-            value={width}
-            onChange={(e) => setWidth(e.target.value)}
-          />
-        </div>
-        <div className="col-md-4">
-          <input
-            type="number"
-            className="form-control"
-            placeholder="Pitch (rise/run)"
-            value={pitch}
-            onChange={(e) => setPitch(e.target.value)}
-          />
-        </div>
-      </div>
+  <div className="col-md-4">
+    <label htmlFor="lengthInput" className="form-label fw-semibold">
+      Length ({unit})
+    </label>
+    <input
+      id="lengthInput"
+      type="number"
+      className="form-control"
+      placeholder={`Length (${unit})`}
+      value={length}
+      onChange={(e) => setLength(e.target.value)}
+    />
+  </div>
 
-      <div className="mb-3">
-        <label className="form-label">Unit</label>
-        <select
-          className="form-select"
-          value={unit}
-          onChange={(e) => setUnit(e.target.value)}
-        >
-          <option value="m">Meters</option>
-          <option value="ft">Feet</option>
-        </select>
-      </div>
+  <div className="col-md-4">
+    <label htmlFor="widthInput" className="form-label fw-semibold">
+      Width ({unit})
+    </label>
+    <input
+      id="widthInput"
+      type="number"
+      className="form-control"
+      placeholder={`Width (${unit})`}
+      value={width}
+      onChange={(e) => setWidth(e.target.value)}
+    />
+  </div>
 
-      <div className="d-flex gap-2 mb-3">
-        <button className="btn btn-primary" onClick={calculateRoofArea}>
+  <div className="col-md-4">
+    <label htmlFor="pitchInput" className="form-label fw-semibold">
+      Roof Pitch (rise / run)
+    </label>
+    <input
+      id="pitchInput"
+      type="number"
+      className="form-control"
+      placeholder="Pitch (rise/run)"
+      value={pitch}
+      onChange={(e) => setPitch(e.target.value)}
+    />
+  </div>
+</div>
+
+<div className="mb-3">
+  <label htmlFor="unitSelect" className="form-label fw-semibold">
+    Measurement Unit
+  </label>
+  <select
+    id="unitSelect"
+    className="form-select"
+    value={unit}
+    onChange={(e) => setUnit(e.target.value)}
+  >
+    <option value="m">Meters</option>
+    <option value="ft">Feet</option>
+  </select>
+</div>
+
+
+      <div className="d-grid d-sm-flex gap-2 mb-4">
+        <button className="btn btn-primary btn-lg w-100" onClick={calculateRoofArea}>
           Calculate
         </button>
-        <button className="btn btn-outline-secondary" onClick={resetCalculator}>
+        <button className="btn btn-outline-secondary btn-lg w-100" onClick={resetCalculator}>
           Reset
         </button>
       </div>

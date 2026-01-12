@@ -61,7 +61,7 @@ function SleepCalculator() {
       
  <>
 <div className="mb-3">
-        <label className="form-label">Mode</label>
+        <label className="form-label fw-semibold">Mode</label>
         <select
           className="form-select mb-3"
           value={mode}
@@ -88,11 +88,11 @@ function SleepCalculator() {
         )}
       </div>
 
-      <div className="d-flex gap-2 mb-3">
-        <button className="btn btn-primary" onClick={calculateSleepTimes}>
+      <div className="d-grid d-sm-flex gap-2 mb-4">
+        <button className="btn btn-primary btn-lg w-100" onClick={calculateSleepTimes}>
           Calculate
         </button>
-        <button className="btn btn-outline-secondary" onClick={resetCalculator}>
+        <button className="btn btn-outline-secondary btn-lg w-100" onClick={resetCalculator}>
           Reset
         </button>
       </div>

@@ -46,43 +46,56 @@ function BandwidthCalculator() {
       
        <>
 <div className="row g-2 mb-3">
-        <div className="col-md-6">
-          <input
-            type="number"
-            className="form-control"
-            placeholder="File Size (MB)"
-            value={fileSize}
-            onChange={(e) => setFileSize(e.target.value)}
-          />
-        </div>
-        <div className="col-md-6">
-          <input
-            type="number"
-            className="form-control"
-            placeholder="Transfer Time (seconds)"
-            value={time}
-            onChange={(e) => setTime(e.target.value)}
-          />
-        </div>
-      </div>
+  <div className="col-md-6">
+    <label htmlFor="fileSizeInput" className="form-label fw-semibold">
+      File Size (MB)
+    </label>
+    <input
+      id="fileSizeInput"
+      type="number"
+      className="form-control"
+      placeholder="File Size (MB)"
+      value={fileSize}
+      onChange={(e) => setFileSize(e.target.value)}
+    />
+  </div>
 
-      <div className="mb-3">
-        <label className="form-label">Output Unit</label>
-        <select
-          className="form-select"
-          value={unit}
-          onChange={(e) => setUnit(e.target.value)}
-        >
-          <option value="Mbps">Mbps</option>
-          <option value="MBps">MB/s</option>
-        </select>
-      </div>
+  <div className="col-md-6">
+    <label htmlFor="timeInput" className="form-label fw-semibold">
+      Transfer Time (seconds)
+    </label>
+    <input
+      id="timeInput"
+      type="number"
+      className="form-control"
+      placeholder="Transfer Time (seconds)"
+      value={time}
+      onChange={(e) => setTime(e.target.value)}
+    />
+  </div>
+</div>
 
-      <div className="d-flex gap-2 mb-3">
-        <button className="btn btn-primary" onClick={calculateBandwidth}>
+<div className="mb-3">
+  <label htmlFor="unitSelect" className="form-label fw-semibold">
+    Output Unit
+  </label>
+  <select
+    id="unitSelect"
+    className="form-select"
+    value={unit}
+    onChange={(e) => setUnit(e.target.value)}
+  >
+    <option value="Mbps">Mbps</option>
+    <option value="MBps">MB/s</option>
+  </select>
+</div>
+
+
+      <div className="d-grid d-sm-flex gap-2 mb-4">
+        <button className="btn btn-primary btn-lg w-100" onClick={calculateBandwidth}>
           Calculate
         </button>
-        <button className="btn btn-outline-secondary" onClick={resetCalculator}>
+        <button className="btn btn-outline-secondary btn-lg w-100" onClick={resetCalculator}>
           Reset
         </button>
       </div>

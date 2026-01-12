@@ -6,5 +6,4 @@ export { default as AverageCalculator } from "./AverageCalculator";
 export { default as MeanCalculator } from "./MeanCalculator";
 export { default as MedianCalculator } from "./MedianCalculator";
 export { default as ModeCalculator } from "./ModeCalculator";
-export { default as RoundingCalculator } from "./RoundingCalculator";
-export { default as AbsoluteValueCalculator } from "./AbsoluteValueCalculator";
+

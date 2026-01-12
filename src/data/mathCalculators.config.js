@@ -8,7 +8,6 @@ export const mathCalculatorsMap = {
   "Mean Calculator": "mean-calculator",
   "Median Calculator": "median-calculator",
   "Mode Calculator": "mode-calculator",
-  "Rounding Calculator": "rounding-calculator",
-  "Absolute Value Calculator": "absolute-value-calculator",
+  
   // … add all your math calculators here
 };

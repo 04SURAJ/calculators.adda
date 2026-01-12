@@ -58,8 +58,7 @@ const calculatorsMap = {
      "mean-calculator": MathCalculators.MeanCalculator,
    "median-calculator": MathCalculators.MedianCalculator,
    "mode-calculator": MathCalculators.ModeCalculator,
-   "rounding-calculator": MathCalculators.RoundingCalculator,
-   "absolute-value-calculator": MathCalculators.AbsoluteValueCalculator,
+   
 
 
 };

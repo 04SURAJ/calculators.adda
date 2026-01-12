@@ -44,31 +44,39 @@ function TimeDurationCalculator() {
   
 <>
 <div className="row g-2 mb-3">
-        <div className="col-md-6">
-          <label className="form-label">Start Time</label>
-          <input
-            type="time"
-            className="form-control"
-            value={startTime}
-            onChange={(e) => setStartTime(e.target.value)}
-          />
-        </div>
-        <div className="col-md-6">
-          <label className="form-label">End Time</label>
-          <input
-            type="time"
-            className="form-control"
-            value={endTime}
-            onChange={(e) => setEndTime(e.target.value)}
-          />
-        </div>
-      </div>
+  <div className="col-md-6">
+    <label htmlFor="startTimeInput" className="form-label fw-semibold">
+      Start Time
+    </label>
+    <input
+      id="startTimeInput"
+      type="time"
+      className="form-control"
+      value={startTime}
+      onChange={(e) => setStartTime(e.target.value)}
+    />
+  </div>
 
-      <div className="d-flex gap-2 mb-3">
-        <button className="btn btn-primary" onClick={calculateDuration}>
+  <div className="col-md-6">
+    <label htmlFor="endTimeInput" className="form-label fw-semibold">
+      End Time
+    </label>
+    <input
+      id="endTimeInput"
+      type="time"
+      className="form-control"
+      value={endTime}
+      onChange={(e) => setEndTime(e.target.value)}
+    />
+  </div>
+</div>
+
+
+      <div className="d-grid d-sm-flex gap-2 mb-4">
+        <button className="btn btn-primary btn-lg w-100" onClick={calculateDuration}>
           Calculate
         </button>
-        <button className="btn btn-outline-secondary" onClick={resetCalculator}>
+        <button className="btn btn-outline-secondary btn-lg w-100" onClick={resetCalculator}>
           Reset
         </button>
       </div>

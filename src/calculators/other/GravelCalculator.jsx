@@ -47,52 +47,70 @@ function GravelCalculator() {
     
 <>
   <div className="row g-2 mb-3">
-        <div className="col-md-4">
-          <input
-            type="number"
-            className="form-control"
-            placeholder={`Length (${unit === "metric" ? "m" : "ft"})`}
-            value={length}
-            onChange={(e) => setLength(e.target.value)}
-          />
-        </div>
-        <div className="col-md-4">
-          <input
-            type="number"
-            className="form-control"
-            placeholder={`Width (${unit === "metric" ? "m" : "ft"})`}
-            value={width}
-            onChange={(e) => setWidth(e.target.value)}
-          />
-        </div>
-        <div className="col-md-4">
-          <input
-            type="number"
-            className="form-control"
-            placeholder={`Depth (${unit === "metric" ? "cm" : "in"})`}
-            value={depth}
-            onChange={(e) => setDepth(e.target.value)}
-          />
-        </div>
-      </div>
+  <div className="col-md-4">
+    <label htmlFor="lengthInput" className="form-label fw-semibold">
+      Length ({unit === "metric" ? "m" : "ft"})
+    </label>
+    <input
+      id="lengthInput"
+      type="number"
+      className="form-control"
+      placeholder={`Length (${unit === "metric" ? "m" : "ft"})`}
+      value={length}
+      onChange={(e) => setLength(e.target.value)}
+    />
+  </div>
 
-      <div className="mb-3">
-        <label className="form-label">Unit System</label>
-        <select
-          className="form-select"
-          value={unit}
-          onChange={(e) => setUnit(e.target.value)}
-        >
-          <option value="metric">Metric (m/cm)</option>
-          <option value="imperial">Imperial (ft/in)</option>
-        </select>
-      </div>
+  <div className="col-md-4">
+    <label htmlFor="widthInput" className="form-label fw-semibold">
+      Width ({unit === "metric" ? "m" : "ft"})
+    </label>
+    <input
+      id="widthInput"
+      type="number"
+      className="form-control"
+      placeholder={`Width (${unit === "metric" ? "m" : "ft"})`}
+      value={width}
+      onChange={(e) => setWidth(e.target.value)}
+    />
+  </div>
 
-      <div className="d-flex gap-2 mb-3">
-        <button className="btn btn-primary" onClick={calculateGravel}>
+  <div className="col-md-4">
+    <label htmlFor="depthInput" className="form-label fw-semibold">
+      Depth ({unit === "metric" ? "cm" : "in"})
+    </label>
+    <input
+      id="depthInput"
+      type="number"
+      className="form-control"
+      placeholder={`Depth (${unit === "metric" ? "cm" : "in"})`}
+      value={depth}
+      onChange={(e) => setDepth(e.target.value)}
+    />
+  </div>
+</div>
+
+<div className="mb-3">
+  <label htmlFor="unitSelect" className="form-label fw-semibold">
+    Unit System
+  </label>
+  <select
+    id="unitSelect"
+    className="form-select"
+    value={unit}
+    onChange={(e) => setUnit(e.target.value)}
+  >
+    <option value="metric">Metric (m/cm)</option>
+    <option value="imperial">Imperial (ft/in)</option>
+  </select>
+</div>
+
+
+      <div className="d-grid d-sm-flex gap-2 mb-4">
+        <button className="btn btn-primary btn-lg w-100" onClick={calculateGravel}>
           Calculate
         </button>
-        <button className="btn btn-outline-secondary" onClick={resetCalculator}>
+        <button className="btn btn-outline-secondary btn-lg w-100" onClick={resetCalculator}>
           Reset
         </button>
       </div>

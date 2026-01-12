@@ -42,44 +42,57 @@ function SpeedCalculator() {
     
    
   <>
-   <div className="row g-2 mb-3">
-        <div className="col-md-6">
-          <input
-            type="number"
-            className="form-control"
-            placeholder={unit === "kmh" ? "Distance (km)" : "Distance (miles)"}
-            value={distance}
-            onChange={(e) => setDistance(e.target.value)}
-          />
-        </div>
-        <div className="col-md-6">
-          <input
-            type="number"
-            className="form-control"
-            placeholder="Time (hours)"
-            value={time}
-            onChange={(e) => setTime(e.target.value)}
-          />
-        </div>
-      </div>
+  <div className="row g-2 mb-3">
+  <div className="col-md-6">
+    <label htmlFor="distanceInput" className="form-label fw-semibold">
+      Distance
+    </label>
+    <input
+      id="distanceInput"
+      type="number"
+      className="form-control"
+      placeholder={unit === "kmh" ? "Enter distance in km" : "Enter distance in miles"}
+      value={distance}
+      onChange={(e) => setDistance(e.target.value)}
+    />
+  </div>
 
-      <div className="mb-3">
-        <label className="form-label">Unit</label>
-        <select
-          className="form-select"
-          value={unit}
-          onChange={(e) => setUnit(e.target.value)}
-        >
-          <option value="kmh">Kilometers per hour (km/h)</option>
-          <option value="mph">Miles per hour (mph)</option>
-        </select>
-      </div>
+  <div className="col-md-6">
+    <label htmlFor="timeInput" className="form-label fw-semibold">
+      Time (hours)
+    </label>
+    <input
+      id="timeInput"
+      type="number"
+      className="form-control"
+      placeholder="Enter time in hours"
+      value={time}
+      onChange={(e) => setTime(e.target.value)}
+    />
+  </div>
+</div>
 
-      <div className="d-flex gap-2 mb-3">
-        <button className="btn btn-primary" onClick={calculateSpeed}>
+<div className="mb-3">
+  <label htmlFor="unitSelect" className="form-label fw-semibold">
+    Speed Unit
+  </label>
+  <select
+    id="unitSelect"
+    className="form-select"
+    value={unit}
+    onChange={(e) => setUnit(e.target.value)}
+  >
+    <option value="kmh">Kilometers per hour (km/h)</option>
+    <option value="mph">Miles per hour (mph)</option>
+  </select>
+</div>
+
+
+      <div className="d-grid d-sm-flex gap-2 mb-4">
+        <button className="btn btn-primary btn-lg w-100" onClick={calculateSpeed}>
           Calculate
         </button>
-        <button className="btn btn-outline-secondary" onClick={resetCalculator}>
+        <button className="btn btn-outline-secondary btn-lg w-100" onClick={resetCalculator}>
           Reset
         </button>
       </div>

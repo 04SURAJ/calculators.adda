@@ -100,12 +100,12 @@ export default function MedianCalculator() {
         <div className="alert alert-danger">{error}</div>
       )}
 
-      <div className="d-flex gap-2 mb-4">
-        <button className="btn btn-primary" onClick={calculateMedian}>
+      <div className="d-grid d-sm-flex gap-2 mb-4">
+        <button className="btn btn-primary btn-lg w-100" onClick={calculateMedian}>
           Calculate Median
         </button>
 
-        <button className="btn btn-outline-secondary" onClick={resetCalculator}>
+        <button className="btn btn-outline-secondary btn-lg w-100" onClick={resetCalculator}>
           Reset
         </button>
       </div>

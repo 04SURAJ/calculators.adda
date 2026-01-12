@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function MedianCalculator() {
+export default function MeanCalculator() {
   const [values, setValues] = useState(["", ""]);
   const [result, setResult] = useState(null);
   const [error, setError] = useState("");
@@ -16,11 +16,11 @@ export default function MedianCalculator() {
   };
 
   const removeField = (index) => {
-    if (values.length <= 2) return; // minimum 2 fields
+    if (values.length <= 2) return;
     setValues(values.filter((_, i) => i !== index));
   };
 
-  const calculateMedian = () => {
+  const calculateMean = () => {
     setError("");
     setResult(null);
 
@@ -33,20 +33,13 @@ export default function MedianCalculator() {
       return;
     }
 
-    const sorted = [...validValues].sort((a, b) => a - b);
-    const n = sorted.length;
-
-    let median;
-    if (n % 2 === 1) {
-      median = sorted[Math.floor(n / 2)];
-    } else {
-      median = (sorted[n / 2 - 1] + sorted[n / 2]) / 2;
-    }
+    const sum = validValues.reduce((a, b) => a + b, 0);
+    const mean = sum / validValues.length;
 
     setResult({
-      count: n,
-      sorted,
-      median
+      count: validValues.length,
+      sum,
+      mean
     });
   };
 
@@ -62,7 +55,6 @@ export default function MedianCalculator() {
 
       {values.map((val, index) => (
         <div key={index} className="mb-2">
-
           <label className="form-label fw-semibold">
             Value {index + 1}
           </label>
@@ -94,12 +86,18 @@ export default function MedianCalculator() {
 
       {error && <div className="alert alert-danger">{error}</div>}
 
-      <div className="d-flex gap-2 mb-4">
-        <button className="btn btn-primary" onClick={calculateMedian}>
-          Calculate Median
+      <div className="d-grid d-sm-flex gap-2 mb-4">
+        <button
+          className="btn btn-primary btn-lg w-100"
+          onClick={calculateMean}
+        >
+          Calculate Mean
         </button>
 
-        <button className="btn btn-outline-secondary" onClick={resetCalculator}>
+        <button
+          className="btn btn-outline-secondary btn-lg w-100"
+          onClick={resetCalculator}
+        >
           Reset
         </button>
       </div>
@@ -112,13 +110,11 @@ export default function MedianCalculator() {
             <li className="list-group-item">
               <strong>Total Values:</strong> {result.count}
             </li>
-
             <li className="list-group-item">
-              <strong>Sorted Values:</strong> {result.sorted.join(", ")}
+              <strong>Sum:</strong> {result.sum}
             </li>
-
             <li className="list-group-item">
-              <strong>Median:</strong> {result.median}
+              <strong>Mean (Average):</strong> {result.mean}
             </li>
           </ul>
         </div>

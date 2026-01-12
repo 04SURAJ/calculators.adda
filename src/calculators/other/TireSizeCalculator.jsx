@@ -53,52 +53,70 @@ function TireSizeCalculator() {
 
    <>
  <div className="row g-2 mb-3">
-        <div className="col-md-4">
-          <input
-            type="number"
-            className="form-control"
-            placeholder="Width (mm)"
-            value={width}
-            onChange={(e) => setWidth(e.target.value)}
-          />
-        </div>
-        <div className="col-md-4">
-          <input
-            type="number"
-            className="form-control"
-            placeholder="Aspect Ratio (%)"
-            value={aspectRatio}
-            onChange={(e) => setAspectRatio(e.target.value)}
-          />
-        </div>
-        <div className="col-md-4">
-          <input
-            type="number"
-            className="form-control"
-            placeholder="Wheel Diameter (inches)"
-            value={diameter}
-            onChange={(e) => setDiameter(e.target.value)}
-          />
-        </div>
-      </div>
+  <div className="col-md-4">
+    <label htmlFor="widthInput" className="form-label fw-semibold">
+      Tire Width (mm)
+    </label>
+    <input
+      id="widthInput"
+      type="number"
+      className="form-control"
+      placeholder="Width (mm)"
+      value={width}
+      onChange={(e) => setWidth(e.target.value)}
+    />
+  </div>
 
-      <div className="mb-3">
-        <label className="form-label">Unit</label>
-        <select
-          className="form-select"
-          value={unit}
-          onChange={(e) => setUnit(e.target.value)}
-        >
-          <option value="metric">Millimeters (mm)</option>
-          <option value="imperial">Inches (in)</option>
-        </select>
-      </div>
+  <div className="col-md-4">
+    <label htmlFor="aspectRatioInput" className="form-label fw-semibold">
+      Aspect Ratio (%)
+    </label>
+    <input
+      id="aspectRatioInput"
+      type="number"
+      className="form-control"
+      placeholder="Aspect Ratio (%)"
+      value={aspectRatio}
+      onChange={(e) => setAspectRatio(e.target.value)}
+    />
+  </div>
 
-      <div className="d-flex gap-2 mb-3">
-        <button className="btn btn-primary" onClick={calculateTireDimensions}>
+  <div className="col-md-4">
+    <label htmlFor="diameterInput" className="form-label fw-semibold">
+      Wheel Diameter (inches)
+    </label>
+    <input
+      id="diameterInput"
+      type="number"
+      className="form-control"
+      placeholder="Wheel Diameter (inches)"
+      value={diameter}
+      onChange={(e) => setDiameter(e.target.value)}
+    />
+  </div>
+</div>
+
+<div className="mb-3">
+  <label htmlFor="unitSelect" className="form-label fw-semibold">
+    Measurement Unit
+  </label>
+  <select
+    id="unitSelect"
+    className="form-select"
+    value={unit}
+    onChange={(e) => setUnit(e.target.value)}
+  >
+    <option value="metric">Millimeters (mm)</option>
+    <option value="imperial">Inches (in)</option>
+  </select>
+</div>
+
+
+      <div className="d-grid d-sm-flex gap-2 mb-4">
+        <button className="btn btn-primary btn-lg w-100" onClick={calculateTireDimensions}>
           Calculate
         </button>
-        <button className="btn btn-outline-secondary" onClick={resetCalculator}>
+        <button className="btn btn-outline-secondary btn-lg w-100" onClick={resetCalculator}>
           Reset
         </button>
       </div>

@@ -88,6 +88,7 @@ function RomanNumeralConverter() {
      
 <>
  <div className="mb-3">
+  <label className="form-label fw-semibold">Enter number or Roman numeral</label>
         <input
           type="text"
           className="form-control"
@@ -97,11 +98,11 @@ function RomanNumeralConverter() {
         />
       </div>
 
-      <div className="d-flex gap-2 mb-3">
-        <button className="btn btn-primary" onClick={convert}>
+      <div className="d-grid d-sm-flex gap-2 mb-4">
+        <button className="btn btn-primary btn-lg w-100" onClick={convert}>
           Convert
         </button>
-        <button className="btn btn-outline-secondary" onClick={resetCalculator}>
+        <button className="btn btn-outline-secondary btn-lg w-100" onClick={resetCalculator}>
           Reset
         </button>
       </div>

@@ -1,7 +1,7 @@
 export const calculatorContent = {
   "age-calculator": {
 
-    formula: `
+    "formula": `
 <p>
 The age is calculated by finding the difference between the <strong>date of birth</strong>
 and the <strong>current date</strong>.
@@ -23,14 +23,14 @@ from the previous month or months from the previous year.
 </p>
     `,
 
-  howToUse: [
+  "howToUse": [
     "Enter your date of birth in the input fields provided.",
     "Optionally, select a reference date to calculate age as of that date.",
     "Click the 'Calculate' button to see your exact age in years, months, and days.",
     "The result will be displayed instantly above the input fields."
   ],
 
-  features: [
+  "features": [
     "Calculates age accurately considering leap years and month lengths",
     "Shows exact years, months, and days elapsed",
     "Option to calculate age for a future reference date",
@@ -38,10 +38,10 @@ from the previous month or months from the previous year.
     "Instant and accurate results with a clean interface"
   ],
 
-  whyUse:
+  "whyUse":
     "This Age Calculator helps you determine your exact age quickly and accurately without manual calculations. It is perfect for legal, educational, financial, or personal purposes, and works on both mobile and desktop devices.",
 
-  notes: [
+  "notes": [
     "The calculation is based on the Gregorian calendar.",
     "Time zones are not considered in the calculation.",
     "Results are for general reference and educational purposes only.",
@@ -1145,566 +1145,1382 @@ This allows for quick and accurate conversion between the two commonly used unit
 }
 ,
 
-  "speed-calculator": {
-    "whyUse": "This Speed Calculator calculates speed based on distance and time values.",
-    "howToUse": [
-      "Enter distance.",
-      "Enter time.",
-      "Click Calculate.",
-      "View speed."
-    ],
-    "features": [
-      "Accurate speed calculation",
-      "Supports multiple units",
-      "Instant output",
-      "Educational tool",
-      "Free calculator"
-    ],
-    "notes": [
-      "Time must be greater than zero.",
-      "Units affect result."
-    ]
-  },
+ "speed-calculator": {
+  formula: `
+<p>
+The <strong>Speed Calculator</strong> determines how fast an object is moving by using
+the relationship between <strong>distance</strong> and <strong>time</strong>.
+Speed is a fundamental concept in physics, transportation, sports, and daily travel planning.
+</p>
 
-  "roman-numeral-converter": {
-    "whyUse": "This Roman Numeral Converter converts numbers to Roman numerals and vice versa.",
-    "howToUse": [
-      "Enter number or Roman numeral.",
-      "Select conversion type.",
-      "Click Convert.",
-      "View result."
-    ],
-    "features": [
-      "Two-way conversion",
-      "Accurate results",
-      "Educational use",
-      "Simple interface",
-      "Free tool"
-    ],
-    "notes": [
-      "Valid Roman numerals only.",
-      "Range limits apply."
-    ]
-  },
+<p>
+The basic formula used to calculate speed is:
+</p>
+
+<p>
+<strong>Speed = Distance ÷ Time</strong>
+</p>
+
+<ul>
+  <li><strong>Distance</strong> is the total length covered by the object.</li>
+  <li><strong>Time</strong> is the duration taken to cover that distance.</li>
+  <li><strong>Speed</strong> represents how much distance is covered per unit of time.</li>
+</ul>
+
+<p>
+If distance is measured in <strong>kilometers</strong> and time in <strong>hours</strong>,
+the result is expressed as <strong>kilometers per hour (km/h)</strong>.
+Similarly, when distance is provided in <strong>miles</strong> and time in <strong>hours</strong>,
+the calculated speed is shown in <strong>miles per hour (mph)</strong>.
+</p>
+
+<p>
+This calculator performs the computation instantly once valid inputs are provided,
+ensuring accurate and consistent results without manual calculations.
+</p>
+`,
+
+  howToUse: [
+    "Enter the total distance traveled in the Distance field. Choose kilometers or miles based on your requirement.",
+    "Enter the total time taken in hours. Decimal values (such as 1.5 hours) are supported for greater accuracy.",
+    "Select the appropriate speed unit — kilometers per hour (km/h) or miles per hour (mph).",
+    "Click the “Calculate” button to instantly compute the speed.",
+    "Use the “Reset” button to clear all inputs and start a new calculation."
+  ],
+
+  features: [
+    "Supports both kilometers per hour (km/h) and miles per hour (mph).",
+    "Instant and accurate speed calculation using a standard mathematical formula.",
+    "Simple and clean interface suitable for mobile, tablet, and desktop devices.",
+    "Handles decimal values for precise distance and time inputs.",
+    "No registration or login required — completely free to use.",
+    "All calculations are performed locally in the browser for fast performance."
+  ],
+
+  whyUse: `
+
+The Speed Calculator is useful in many real-world situations where
+understanding motion and travel efficiency is important.
+Whether you are a student, traveler, athlete, or professional,
+this tool helps you calculate speed quickly without manual effort.
+
+Students can use it to verify physics problems, while drivers and travelers
+can estimate average speed during trips. Athletes may use it to analyze performance,
+and professionals can rely on it for accurate planning and reporting.
+
+By eliminating calculation errors and saving time, this calculator ensures
+you get reliable results instantly, making it a practical tool for everyday use.
+
+`,
+
+  notes: [
+    "Both distance and time must be positive numbers to calculate speed correctly.",
+    "Time should always be entered in hours. Convert minutes to hours before entering if required.",
+    "This calculator computes average speed, not instantaneous speed.",
+    "Results are rounded to two decimal places for clarity and readability.",
+    "The calculator is intended for educational and general informational purposes only."
+  ]
+}
+,
+
+ "roman-numeral-converter": {
+  formula: `
+<p>
+The <strong>Roman Numeral Converter</strong> allows you to convert standard numbers
+(Arabic numerals) into <strong>Roman numerals</strong> and also convert Roman numerals
+back into regular numbers.
+</p>
+
+<p>
+Roman numerals are based on a combination of letters from the Latin alphabet,
+each representing a fixed value:
+</p>
+
+<ul>
+  <li><strong>I</strong> = 1</li>
+  <li><strong>V</strong> = 5</li>
+  <li><strong>X</strong> = 10</li>
+  <li><strong>L</strong> = 50</li>
+  <li><strong>C</strong> = 100</li>
+  <li><strong>D</strong> = 500</li>
+  <li><strong>M</strong> = 1000</li>
+</ul>
+
+<p>
+To convert a number into a Roman numeral, the calculator repeatedly subtracts the
+largest possible Roman value and appends its corresponding symbol until the value
+reaches zero. Special subtractive combinations such as <strong>IV</strong> (4),
+<strong>IX</strong> (9), <strong>XL</strong> (40), and <strong>CM</strong> (900)
+are handled automatically.
+</p>
+
+<p>
+When converting from Roman numerals to numbers, the calculator scans the input from
+left to right, matching valid Roman symbols and summing their numeric values.
+If an invalid Roman numeral pattern is detected, an error message is displayed.
+</p>
+
+<p>
+This calculator supports values from <strong>1 to 3999</strong>, which is the
+standard practical range for Roman numerals.
+</p>
+`,
+
+  howToUse: [
+    "Enter a number (between 1 and 3999) to convert it into a Roman numeral.",
+    "Alternatively, enter a valid Roman numeral (such as XIV or MMXXV) to convert it into a number.",
+    "Click the “Convert” button to perform the conversion instantly.",
+    "If the input is invalid or outside the supported range, an error message will appear.",
+    "Click the “Reset” button to clear the input and start a new conversion."
+  ],
+
+  features: [
+    "Converts numbers to Roman numerals and Roman numerals to numbers.",
+    "Supports the full standard Roman numeral range from 1 to 3999.",
+    "Automatically handles subtractive notation such as IV, IX, XL, XC, CD, and CM.",
+    "Instant results with no page reloads or delays.",
+    "Clean and easy-to-use interface optimized for mobile and desktop devices.",
+    "No sign-up, login, or personal data collection required."
+  ],
+
+  whyUse: `
+
+The Roman Numeral Converter is a practical tool for students,
+teachers, historians, and anyone working with classical numbering systems.
+Roman numerals are still commonly used in books, clocks, movie titles,
+legal documents, and academic references.
+
+Manually converting Roman numerals can be confusing, especially when dealing with
+subtractive notation or large values. This calculator eliminates errors by applying
+consistent conversion rules automatically.
+
+
+
+Whether you are learning Roman numerals for the first time, checking homework,
+or verifying a historical reference, this tool saves time and ensures accuracy.
+
+`,
+
+  notes: [
+    "Only numbers between 1 and 3999 are supported for Roman numeral conversion.",
+    "Roman numerals must follow standard formatting rules to be considered valid.",
+    "The calculator automatically converts lowercase Roman numerals to uppercase.",
+    "Results are generated instantly and do not require an internet connection after page load.",
+    "This calculator is intended for educational and general informational purposes only."
+  ]
+}
+,
 
   "sleep-calculator": {
-    "whyUse": "This Sleep Calculator helps determine ideal sleep and wake-up times based on sleep cycles.",
-    "howToUse": [
-      "Enter wake-up or sleep time.",
-      "Click Calculate.",
-      "View recommended sleep times."
-    ],
-    "features": [
-      "Based on sleep cycles",
-      "Health-focused",
-      "Easy to use",
-      "Instant results",
-      "Free calculator"
-    ],
-    "notes": [
-      "Results are suggestions.",
-      "Individual needs may vary."
-    ]
-  },
+  formula: `
+<p>
+The <strong>Sleep Calculator</strong> is based on the concept of <strong>sleep cycles</strong>.
+A typical sleep cycle lasts approximately <strong>90 minutes</strong> and includes
+different stages of light sleep, deep sleep, and REM sleep.
+</p>
 
-  "day-counter": {
-    "whyUse": "This Day Counter calculates the number of days between two dates accurately.",
-    "howToUse": [
-      "Select start date.",
-      "Select end date.",
-      "Click Calculate.",
-      "View total days."
-    ],
-    "features": [
-      "Accurate day counting",
-      "Leap year support",
-      "Instant results",
-      "Simple UI",
-      "Free tool"
-    ],
-    "notes": [
-      "Dates must be valid.",
-      "End date can be earlier."
-    ]
-  },
+<p>
+Instead of focusing only on total sleep duration, this calculator helps you
+<strong>wake up at the end of a sleep cycle</strong>, which usually results in
+feeling more refreshed and alert.
+</p>
+
+<p>
+There are two calculation modes:
+</p>
+
+<ul>
+  <li>
+    <strong>Wake Time → Sleep Time:</strong>
+    The calculator works backward from your desired wake-up time and subtracts
+    multiple 90-minute sleep cycles to suggest ideal times to fall asleep.
+  </li>
+  <li>
+    <strong>Sleep Time → Wake Time:</strong>
+    The calculator works forward from the time you go to bed and adds
+    90-minute cycles to suggest optimal wake-up times.
+  </li>
+</ul>
+
+<p>
+In both modes, the calculator provides multiple options (usually 3 to 6 cycles)
+so you can choose a schedule that best fits your routine.
+</p>
+`,
+
+  howToUse: [
+    "Select the calculation mode based on your needs: wake-up time or sleep time.",
+    "If calculating from wake-up time, enter the time you want to wake up.",
+    "If calculating from sleep time, enter the time you plan to go to bed.",
+    "Click the “Calculate” button to see optimal sleep or wake-up times.",
+    "Review the list of suggested times and choose the one that fits your schedule.",
+    "Use the “Reset” button to clear all inputs and start a new calculation."
+  ],
+
+  features: [
+    "Uses a standard 90-minute sleep cycle model.",
+    "Supports both sleep-to-wake and wake-to-sleep calculations.",
+    "Displays multiple optimal time options instead of a single result.",
+    "Instant calculations with no delays or page reloads.",
+    "Simple and clean interface designed for mobile and desktop users.",
+    "No account creation, login, or personal data collection required."
+  ],
+
+  whyUse: `
+Many people wake up feeling tired even after sleeping for several hours.
+This often happens because they wake up in the middle of a sleep cycle.
+The Sleep Calculator helps reduce this problem by identifying
+times when your body is naturally more ready to wake up.
+
+
+
+By aligning your sleep schedule with natural sleep cycles, you may experience
+better mood, improved focus, and reduced morning grogginess.
+This calculator is especially useful for students, working professionals,
+and anyone trying to optimize their daily routine.
+
+
+
+Whether you need to wake up early for work or want to plan a healthier sleep
+schedule, this tool provides practical guidance without requiring complex
+sleep tracking devices.
+
+`,
+
+  notes: [
+    "The 90-minute sleep cycle is an average; individual sleep cycles may vary.",
+    "The calculator does not account for the time it takes to fall asleep.",
+    "Results are estimates and should be used as general guidance.",
+    "Best results are achieved when combined with consistent sleep habits.",
+    "This calculator is intended for informational and educational purposes only."
+  ]
+}
+,
+"tire-size-calculator": {
+
+  formula: `
+<p>
+The tire size calculation is based on determining the <strong>overall diameter of a tire</strong>
+using three key inputs: <strong>tire width</strong>, <strong>aspect ratio</strong>, and
+<strong>wheel (rim) diameter</strong>.
+</p>
+
+<p>
+Every tire has a sidewall on both the top and bottom of the wheel. The total tire diameter
+includes the wheel diameter plus twice the sidewall height.
+</p>
+
+<p>
+The calculation follows these steps:
+</p>
+
+<ul>
+  <li>
+    <strong>Sidewall Height (mm)</strong> = Tire Width × (Aspect Ratio ÷ 100)
+  </li>
+  <li>
+    <strong>Wheel Diameter (mm)</strong> = Wheel Diameter (inches) × 25.4
+  </li>
+  <li>
+    <strong>Overall Tire Diameter (mm)</strong> = Wheel Diameter + (2 × Sidewall Height)
+  </li>
+</ul>
+
+<p>
+If the selected output unit is inches, the final diameter in millimeters is converted
+to inches by dividing by 25.4.
+</p>
+`,
+
+  howToUse: [
+    "Enter the tire width in millimeters. This is the first number shown in most tire sizes (for example, 205 in 205/55R16).",
+    "Enter the aspect ratio as a percentage. This represents the sidewall height relative to the tire width.",
+    "Enter the wheel (rim) diameter in inches. This is the last number in standard tire markings.",
+    "Select your preferred measurement unit for the final result: millimeters or inches.",
+    "Click the Calculate button to instantly see the overall tire diameter.",
+    "Use the Reset button to clear all inputs and start a new calculation."
+  ],
+
+  features: [
+    "Accurate tire diameter calculation using industry-standard formulas",
+    "Supports both metric (millimeters) and imperial (inches) output",
+    "Simple and clean interface optimized for mobile and desktop users",
+    "Instant results with real-time validation for incorrect inputs",
+    "No registration, no tracking, and no data storage",
+    "Fast calculations performed directly in the browser"
+  ],
+
+  whyUse:
+    "Knowing the exact tire diameter is essential when upgrading wheels, changing tire sizes, or comparing different tire options. An incorrect tire size can affect speedometer accuracy, fuel efficiency, braking performance, suspension geometry, and overall driving comfort. This calculator helps vehicle owners, mechanics, and automotive enthusiasts quickly verify tire dimensions before making purchasing or installation decisions. It is especially useful when switching between metric and imperial measurements or evaluating alternative tire sizes that maintain factory specifications.",
+
+  notes: [
+    "This calculator assumes standard tire construction and does not account for load rating or tire deformation under weight.",
+    "Actual tire dimensions may vary slightly between manufacturers, even for the same labeled size.",
+    "Always verify tire compatibility with your vehicle manufacturer’s recommendations before installation.",
+    "Changing tire diameter can impact speedometer and odometer readings.",
+    "For performance or off-road vehicles, consult a professional before changing tire sizes significantly."
+  ]
+
+}
+,
+
+ "day-counter": {
+  "formula": `
+<p>
+The number of days between two dates is calculated by finding the difference between the <strong>start date</strong> and the <strong>end date</strong>. 
+This calculation accounts for the total days including the start and end dates, regardless of the month or year.
+</p>
+
+<p>
+The formula used is:
+</p>
+
+<ul>
+  <li><strong>Difference in milliseconds</strong> = End Date − Start Date</li>
+  <li><strong>Convert to days</strong> = Difference in milliseconds ÷ (1000 × 60 × 60 × 24)</li>
+  <li><strong>Absolute Value</strong> is taken to ensure the result is always positive</li>
+</ul>
+
+<p>
+The result represents the total number of days between the two dates.
+</p>
+  `,
+  "howToUse": [
+    "Select the start date using the date picker in the first input field.",
+    "Select the end date using the date picker in the second input field.",
+    "Click the 'Calculate' button to determine the total number of days between the two selected dates.",
+    "The result will display in the format '<strong>number of days</strong>'.",
+    "To reset the inputs and perform another calculation, click the 'Reset' button."
+  ],
+  "features": [
+    "Calculates the total number of days between any two dates accurately.",
+    "Supports past and future dates, allowing flexible planning and tracking.",
+    "Automatically handles leap years and varying month lengths.",
+    "Provides immediate results without requiring manual computation.",
+    "User-friendly interface with date pickers for easy input."
+  ],
+  "whyUse": "This calculator is ideal for quickly determining the duration in days between any two dates. It is useful for project planning, calculating deadlines, counting days until an event, vacation planning, or simply tracking the number of days between any two significant dates. It removes the need for manual calculations and minimizes human errors.",
+  "notes": [
+    "Ensure both start and end dates are valid to get an accurate calculation.",
+    "The result is always a positive number of days, regardless of whether the start date is before or after the end date.",
+    "This calculator counts full days and does not consider time of day; partial days are rounded up to full days.",
+    "Leap years and month length variations are automatically handled.",
+    "For long-term planning, verify the dates entered match your local calendar to avoid discrepancies."
+  ]
+}
+,
 
   "day-of-week-calculator": {
-    "whyUse": "This Day of Week Calculator finds the day of the week for any given date.",
-    "howToUse": [
-      "Enter a date.",
-      "Click Calculate.",
-      "View the day of the week."
-    ],
-    "features": [
-      "Accurate weekday detection",
-      "Works for past and future dates",
-      "Instant result",
-      "Easy to use",
-      "Free calculator"
-    ],
-    "notes": [
-      "Date format must be correct.",
-      "Gregorian calendar used."
-    ]
-  },
+  "formula": `
+<p>
+The day of the week for a given date is determined by using the built-in <strong>Date</strong> object in JavaScript, which calculates the day index for a particular date. 
+Each day is assigned a number from 0 to 6, where 0 represents Sunday, 1 represents Monday, and so on up to 6 for Saturday.
+</p>
+
+<p>
+The formula used is:
+</p>
+
+<ul>
+  <li>Create a new date object for the given date: <strong>d = new Date(selectedDate)</strong></li>
+  <li>Retrieve the day index: <strong>dayIndex = d.getDay()</strong></li>
+  <li>Map the index to the corresponding day name:
+    <ul>
+      <li>0 = Sunday</li>
+      <li>1 = Monday</li>
+      <li>2 = Tuesday</li>
+      <li>3 = Wednesday</li>
+      <li>4 = Thursday</li>
+      <li>5 = Friday</li>
+      <li>6 = Saturday</li>
+    </ul>
+  </li>
+</ul>
+
+<p>
+The result gives the exact day of the week for the selected date.
+</p>
+  `,
+  "howToUse": [
+    "Click on the date input field to select a date from the calendar.",
+    "Ensure the date is entered in the correct format (YYYY-MM-DD).",
+    "Click the 'Calculate' button to find out the day of the week for the selected date.",
+    "The result will display the name of the day, such as Sunday, Monday, Tuesday, etc.",
+    "To check another date, click the 'Reset' button to clear the input and enter a new date."
+  ],
+  "features": [
+    "Instantly determines the day of the week for any valid date.",
+    "Supports past, present, and future dates with accurate results.",
+    "User-friendly interface with a simple date picker for easy selection.",
+    "No complex manual calculation required.",
+    "Provides results instantly with minimal input."
+  ],
+  "whyUse": "This calculator is useful for quickly identifying the day of the week for any given date. It is particularly helpful for scheduling events, planning meetings, historical research, or checking birthdays and anniversaries. It eliminates the need for manual calculations and ensures accurate results every time.",
+  "notes": [
+    "Ensure the date entered is valid to avoid errors.",
+    "The calculator relies on the standard Gregorian calendar.",
+    "The result displays only the day name, not the date itself.",
+    "Time zones do not affect the day calculation since only the date portion is used.",
+    "For historical dates prior to 1582, results may vary due to calendar changes in different regions."
+  ]
+}
+,
 
 
-  "roofing-calculator": {
-    "whyUse": "This Roofing Calculator helps estimate roofing materials required based on roof dimensions and slope.",
-    "howToUse": [
-      "Enter roof length and width.",
-      "Select roof pitch or slope.",
-      "Choose roofing unit.",
-      "Click Calculate to view material estimate."
-    ],
-    "features": [
-      "Accurate roofing material estimation",
-      "Supports different roof slopes",
-      "Ideal for contractors and homeowners",
-      "Instant results",
-      "Free to use"
-    ],
-    "notes": [
-      "Measurements should be accurate.",
-      "Results are estimates only."
-    ]
-  },
+ "roofing-calculator": {
+
+  formula: `
+<p>
+The roofing area is calculated by adjusting the flat (base) roof area to account for
+the <strong>roof pitch</strong>, which represents the slope of the roof.
+</p>
+
+<p>
+A sloped roof has more surface area than a flat roof. To find the true roofing area,
+a slope factor is applied to the base area.
+</p>
+
+<p>
+The formula used is:
+</p>
+
+<ul>
+  <li><strong>Base Area</strong> = Length × Width</li>
+  <li><strong>Slope Factor</strong> = √(1 + Pitch²)</li>
+  <li><strong>Total Roof Area</strong> = Base Area × Slope Factor</li>
+</ul>
+
+<p>
+The pitch is entered as a ratio of <strong>rise divided by run</strong>. For example,
+a pitch of 4/12 can be entered as 0.33. This ensures the calculation reflects the
+actual sloped surface rather than just the horizontal footprint.
+</p>
+`,
+
+  howToUse: [
+    "Select the measurement unit you want to use, either meters or feet.",
+    "Enter the length of the roof base in the selected unit.",
+    "Enter the width of the roof base in the same unit.",
+    "Input the roof pitch as a rise-over-run value (for example, 0.25 for a 3/12 pitch).",
+    "Click the Calculate button to instantly see the total roofing area.",
+    "Use the Reset button to clear all fields and start a new calculation."
+  ],
+
+  features: [
+    "Supports both metric (meters) and imperial (feet) units.",
+    "Automatically adjusts roof area based on slope using a mathematical slope factor.",
+    "Instant calculation with clear and readable results.",
+    "Simple input fields designed for homeowners and professionals.",
+    "Responsive layout that works on desktop, tablet, and mobile devices.",
+    "Error handling to prevent invalid or incomplete inputs."
+  ],
+
+  whyUse:
+    "This roofing calculator helps accurately estimate the true surface area of a sloped roof, which is essential for planning roofing materials, budgeting costs, and avoiding waste. Manual calculations can be confusing, especially when roof pitch is involved. This tool eliminates guesswork and provides quick, reliable results for contractors, builders, and homeowners.",
+
+  notes: [
+    "Roof pitch should be entered as a decimal value, not a fraction.",
+    "The calculator estimates total roof surface area but does not account for roof overhangs or complex roof shapes.",
+    "For multi-slope or irregular roofs, calculate each section separately and add the results.",
+    "Material coverage, waste factors, and overlaps should be considered separately when purchasing roofing materials.",
+    "Results are rounded to two decimal places for clarity."
+  ]
+}
+,
 
   "tile-calculator": {
-    "whyUse": "This Tile Calculator helps calculate the number of tiles required for flooring or wall tiling projects.",
-    "howToUse": [
-      "Enter area length and width.",
-      "Enter tile size.",
-      "Include wastage percentage if needed.",
-      "Click Calculate to get tile count."
-    ],
-    "features": [
-      "Precise tile quantity calculation",
-      "Supports wastage adjustment",
-      "Useful for flooring and walls",
-      "Fast results",
-      "Free calculator"
-    ],
-    "notes": [
-      "Always consider extra tiles.",
-      "Tile size must be correct."
-    ]
-  },
+  formula: `
+<p>
+The Tile Calculator determines the number of tiles required to cover a floor area based on the dimensions of the floor and the size of individual tiles.
+</p>
 
-  "mulch-calculator": {
-    "whyUse": "This Mulch Calculator helps estimate how much mulch is needed for landscaping and gardening projects.",
-    "howToUse": [
-      "Enter area dimensions.",
-      "Enter mulch depth.",
-      "Select unit of measurement.",
-      "Click Calculate to view required mulch."
-    ],
-    "features": [
-      "Accurate mulch volume calculation",
-      "Perfect for gardens and landscapes",
-      "Easy to use",
-      "Instant output",
-      "Free tool"
-    ],
-    "notes": [
-      "Depth should be realistic.",
-      "Results are approximate."
-    ]
-  },
+<p>
+The formula used is:
+</p>
 
+<ul>
+  <li><strong>Floor Area</strong> = Floor Length × Floor Width</li>
+  <li><strong>Tile Area</strong> = Tile Length × Tile Width</li>
+  <li><strong>Tiles Needed</strong> = Ceiling(Floor Area ÷ Tile Area)</li>
+</ul>
+
+<p>
+The <strong>ceiling function</strong> ensures that any partial tiles are counted as full tiles, since you cannot use fractions of a tile in practice.
+</p>
+  `,
+
+  howToUse: [
+    "Select the measurement unit (meters or feet) for your floor and tile dimensions.",
+    "Enter the length and width of the floor you want to cover.",
+    "Enter the length and width of a single tile you plan to use.",
+    "Click the 'Calculate' button to find out how many tiles are required.",
+    "Use the 'Reset' button to clear all input fields and perform a new calculation."
+  ],
+
+  features: [
+    "Automatically calculates the total number of tiles needed based on precise measurements.",
+    "Supports both metric (meters) and imperial (feet) units for international use.",
+    "Handles any rectangular floor and tile sizes, including large commercial areas.",
+    "Rounds up fractional tiles to ensure sufficient coverage.",
+    "Responsive and user-friendly interface suitable for desktop and mobile devices."
+  ],
+
+  whyUse:
+    "This calculator helps you avoid both shortages and over-purchasing of tiles by providing an accurate tile count. It saves time, reduces waste, and allows for better budget planning when installing tiles in homes, offices, or commercial spaces. By knowing the exact number of tiles needed, you can plan purchases efficiently and avoid multiple trips to the store.",
+
+  notes: [
+    "Always round up to the nearest whole number since you cannot use partial tiles.",
+    "Consider buying 5–10% extra tiles to account for cutting, breakage, and future repairs.",
+    "Ensure all measurements are accurate and in the same unit before calculating.",
+    "This calculator assumes a standard rectangular layout and does not account for complex patterns, diagonal placements, or grout spacing."
+  ]
+}
+,
+"mulch-calculator": {
+
+  formula: `
+<p>
+The Mulch Calculator helps determine the total volume of mulch required to cover a garden bed, lawn, or landscaping area. The calculation takes into account the <strong>length</strong>, <strong>width</strong>, and <strong>depth</strong> of the area where mulch will be applied.
+</p>
+
+<p>
+The formula used is:
+</p>
+
+<ul>
+  <li><strong>Volume (m³)</strong> = Length × Width × (Depth ÷ 100) for metric units (depth in centimeters)</li>
+  <li><strong>Volume (ft³)</strong> = Length × Width × (Depth ÷ 12) for imperial units (depth in inches)</li>
+</ul>
+
+<p>
+This formula converts depth appropriately depending on the unit system to ensure the resulting volume is accurate, whether in cubic meters or cubic feet.
+</p>
+`,
+
+  howToUse: [
+    "Enter the length of the area you want to cover with mulch. Use meters if the metric system is selected or feet if using imperial units.",
+    "Enter the width of the area using the same unit system.",
+    "Enter the desired depth of mulch. In metric, use centimeters; in imperial, use inches.",
+    "Select the appropriate unit system from the dropdown menu: Metric (m, cm) or Imperial (ft, in).",
+    "Click on the 'Calculate' button to view the total volume of mulch required for your area.",
+    "Use the 'Reset' button to clear all fields and perform a new calculation."
+  ],
+
+  features: [
+    "Quick and accurate calculation of mulch volume required.",
+    "Supports both metric and imperial units for international users.",
+    "Provides clear results in cubic meters or cubic feet depending on the selected unit system.",
+    "Easy-to-use interface with labeled input fields for length, width, and depth.",
+    "Reset option to perform multiple calculations efficiently."
+  ],
+
+  whyUse:
+    `This calculator saves time and effort by automatically calculating the required volume of mulch without manual conversions or guesswork. It helps homeowners, landscapers, and gardeners purchase the correct amount of mulch, minimizing waste and ensuring efficient coverage of garden beds. Using this tool ensures precise planning for landscaping projects, budgeting, and material procurement.`,
+
+  notes: [
+    "Ensure all input values are positive numbers to get accurate results.",
+    "Depth must be entered in centimeters for metric units and inches for imperial units.",
+    "For irregular-shaped areas, calculate the area as length × width approximately or break it into smaller rectangular sections and sum the volumes.",
+    "Always round up the volume slightly to account for compaction or uneven terrain.",
+    "This calculator assumes a consistent depth of mulch; adjust manually if layering varies across the area."
+  ]
+}
+,
+"wind-chill-calculator": {
+  "formula": `
+<p>
+The Wind Chill Calculator estimates the perceived temperature based on actual air temperature and wind speed. Wind chill reflects how cold it feels on human skin when wind accelerates heat loss from the body. The faster the wind blows, the greater the heat loss, making the air feel colder than the measured temperature.
+</p>
+
+<p>
+The formula used depends on the unit system:
+</p>
+
+<ul>
+  <li><strong>Metric (°C, km/h)</strong>:
+    <br>Wind Chill (°C) = 13.12 + 0.6215 × T - 11.37 × V^0.16 + 0.3965 × T × V^0.16
+    <br>Where T = air temperature in °C, V = wind speed in km/h
+  </li>
+  <li><strong>Imperial (°F, mph)</strong>:
+    <br>Wind Chill (°F) = 35.74 + 0.6215 × T - 35.75 × V^0.16 + 0.4275 × T × V^0.16
+    <br>Where T = air temperature in °F, V = wind speed in mph
+  </li>
+</ul>
+
+<p>
+For very low wind speeds (less than 4.8 km/h or 3 mph), wind chill is considered equal to the actual air temperature since the effect of wind is negligible.
+</p>
+  `,
+
+  "howToUse": [
+    "Enter the current air temperature in the appropriate unit (°C or °F) depending on your location or preference.",
+    "Enter the wind speed in km/h for metric units or mph for imperial units.",
+    "Select the unit system from the dropdown: Metric (°C, km/h) or Imperial (°F, mph).",
+    "Click the 'Calculate' button to see the wind chill, which represents the perceived cold due to wind.",
+    "If needed, use the 'Reset' button to clear all fields and enter new values."
+  ],
+
+  "features": [
+    "Supports both Metric and Imperial unit systems for global usability.",
+    "Calculates perceived temperature based on both temperature and wind speed.",
+    "Handles low wind speed conditions accurately by returning actual temperature when wind has negligible effect.",
+    "Displays results instantly with a user-friendly interface using a single click.",
+    "Includes error validation for negative or invalid input to prevent calculation errors."
+  ],
+
+  "whyUse": "Wind chill significantly affects human comfort and safety, especially in cold climates. Understanding wind chill helps you dress appropriately, prevent hypothermia or frostbite, and make informed decisions for outdoor activities. This calculator provides accurate and instant results without manual computation, making it practical for weather-sensitive planning.",
+
+  "notes": [
+    "Wind chill only applies to air temperatures below 10 °C (50 °F); above this, wind has minimal effect on perceived temperature.",
+    "Wind chill does not affect inanimate objects; it only describes the cooling effect on exposed human skin.",
+    "Ensure wind speed is entered correctly; higher than actual wind speeds will overestimate cold perception.",
+    "For safety, consider wind chill along with other factors such as humidity and sunlight exposure when planning outdoor activities."
+  ]
+}
+
+,
   "gravel-calculator": {
-    "whyUse": "This Gravel Calculator estimates the amount of gravel required for driveways, paths, and construction work.",
-    "howToUse": [
-      "Enter area length and width.",
-      "Enter gravel depth.",
-      "Select material density if available.",
-      "Click Calculate."
-    ],
-    "features": [
-      "Accurate gravel estimation",
-      "Supports construction planning",
-      "Simple interface",
-      "Fast calculation",
-      "Free to use"
-    ],
-    "notes": [
-      "Density may vary by material.",
-      "Results are estimates."
-    ]
-  },
+  "formula": `
+<p>
+The volume of gravel required is calculated by multiplying the <strong>length</strong>, <strong>width</strong>, and <strong>depth</strong> of the area to be filled. This gives the total volume in cubic meters for metric units or cubic feet for imperial units.
+</p>
+
+<p>
+The formula used is:
+</p>
+
+<ul>
+  <li><strong>Metric:</strong> Volume (m³) = Length (m) × Width (m) × Depth (cm ÷ 100)</li>
+  <li><strong>Imperial:</strong> Volume (ft³) = Length (ft) × Width (ft) × Depth (in ÷ 12)</li>
+</ul>
+
+<p>
+The calculator converts depth from centimeters to meters for metric units or from inches to feet for imperial units before calculating the total volume. The final result shows the amount of gravel required to fill the specified area.
+</p>
+  `,
+
+  "howToUse": [
+    "Enter the length of the area to be covered with gravel in meters or feet.",
+    "Enter the width of the area in meters or feet.",
+    "Enter the depth of gravel layer in centimeters or inches.",
+    "Select the desired unit system: Metric (m/cm) or Imperial (ft/in).",
+    "Click on 'Calculate' to get the required volume of gravel.",
+    "Click 'Reset' to clear all input fields and start over."
+  ],
+
+  "features": [
+    "Supports both metric and imperial measurement systems.",
+    "Automatically converts depth units to match the calculation system.",
+    "Displays the required gravel volume in cubic meters or cubic feet.",
+    "Easy-to-use input fields with clear labels and placeholders.",
+    "Quick reset option to clear inputs and results."
+  ],
+
+  "whyUse": `
+This calculator helps in accurately estimating the amount of gravel needed for landscaping, driveways, garden paths, or construction projects. By using it, you avoid over-purchasing or under-purchasing gravel, saving both time and money. It simplifies complex manual calculations, ensures precise volume estimates, and accommodates different unit systems for flexibility.
+  `,
+
+  "notes": [
+    "Ensure all input values are positive numbers for accurate results.",
+    "Depth values should represent the actual thickness of the gravel layer.",
+    "For uneven surfaces, consider adjusting the depth to account for slopes or irregularities.",
+    "Always round up to the nearest cubic meter or cubic foot to ensure sufficient material.",
+    "Use consistent units for length, width, and depth to avoid calculation errors."
+  ]
+}
+,
 
   "heat-index-calculator": {
-    "whyUse": "This Heat Index Calculator calculates how hot it feels by combining air temperature and humidity.",
-    "howToUse": [
-      "Enter air temperature.",
-      "Enter relative humidity.",
-      "Click Calculate.",
-      "View heat index value."
-    ],
-    "features": [
-      "Accurate heat index calculation",
-      "Weather and safety focused",
-      "Easy to understand output",
-      "Instant results",
-      "Free calculator"
-    ],
-    "notes": [
-      "Applicable for warm conditions.",
-      "Not valid for extreme cold."
-    ]
-  },
+  "formula": `
+<p>
+The heat index, also known as the "apparent temperature," measures how hot it feels to the human body by combining the effects of air temperature and relative humidity. High humidity reduces the body's ability to cool itself through sweating, making the temperature feel higher than it actually is.
+</p>
+
+<p>
+The formula used for the heat index is based on the National Weather Service's regression equation:
+</p>
+
+<ul>
+  <li><strong>HI</strong> = -42.379 + 2.04901523*T + 10.14333127*RH − 0.22475541*T*RH − 0.00683783*T² − 0.05481717*RH² + 0.00122874*T²*RH + 0.00085282*T*RH² − 0.00000199*T²*RH²</li>
+</ul>
+
+<p>
+Where:
+<ul>
+  <li><strong>T</strong> = Air temperature in degrees Fahrenheit (for metric input in °C, convert to °F first).</li>
+  <li><strong>RH</strong> = Relative Humidity in percent.</li>
+  <li><strong>HI</strong> = Heat Index in °F (convert back to °C if needed).</li>
+</ul>
+</p>
+
+<p>
+For temperatures and humidity values outside the typical range, adjustments or simplified approximations are used.
+</p>
+  `,
+  
+  "howToUse": [
+    "Select your preferred unit system: Metric (°C) or Imperial (°F).",
+    "Enter the current air temperature in the chosen unit.",
+    "Enter the current relative humidity as a percentage (0–100%).",
+    "Click the 'Calculate' button to determine the heat index.",
+    "The result will display how hot it actually feels considering humidity."
+  ],
+
+  "features": [
+    "Calculates the heat index accurately for both metric and imperial units.",
+    "Provides a clear indication of 'feels like' temperature to assess heat stress.",
+    "Instant results with a simple, user-friendly interface.",
+    "Input validation ensures that temperature and humidity values are within a realistic range.",
+    "Supports both °C/°F for temperature and percentage for humidity."
+  ],
+
+  "whyUse": 
+    "This calculator helps you understand the real impact of heat on the human body by combining temperature and humidity. It is particularly useful for outdoor activities, sports, workplace safety, and public health guidance. Using the heat index allows individuals to plan hydration, clothing, and activity levels to prevent heat-related illnesses.",
+
+  "notes": [
+    "The heat index is most reliable for temperatures above 27°C (80°F) and relative humidity above 40%.",
+    "It does not account for wind speed or solar radiation, which can further affect comfort levels.",
+    "For extremely high heat and humidity, caution is advised even if the heat index seems moderate.",
+    "Values calculated are intended for general guidance and should not replace professional weather advisories."
+  ]
+}
+,
 
   "dew-point-calculator": {
-    "whyUse": "This Dew Point Calculator determines the dew point temperature based on air temperature and humidity.",
-    "howToUse": [
-      "Enter air temperature.",
-      "Enter relative humidity.",
-      "Click Calculate.",
-      "View dew point value."
-    ],
-    "features": [
-      "Accurate atmospheric calculation",
-      "Useful for weather analysis",
-      "Instant results",
-      "Simple UI",
-      "Free tool"
-    ],
-    "notes": [
-      "Humidity must be between 0 and 100.",
-      "Values are approximations."
-    ]
-  },
+
+  "formula": `
+<p>
+The dew point is the temperature at which air becomes saturated with moisture and water vapor begins to condense into liquid. It is a key measure of humidity and comfort in meteorology and environmental science.
+</p>
+
+<p>
+This calculator uses the Magnus formula to accurately estimate the dew point based on the current <strong>air temperature</strong> and <strong>relative humidity</strong>.
+</p>
+
+<p>
+The Magnus formula is:
+</p>
+
+<ul>
+  <li><strong>a</strong> = 17.27</li>
+  <li><strong>b</strong> = 237.7</li>
+  <li><strong>α</strong> = (a × T) / (b + T) + ln(RH / 100)</li>
+  <li><strong>Dew Point</strong> = (b × α) / (a − α)</li>
+</ul>
+
+<p>
+Where <strong>T</strong> is the air temperature in °C and <strong>RH</strong> is the relative humidity in percent. If using Imperial units, temperatures are first converted to Celsius, the calculation is performed, and then converted back to °F.
+</p>
+  `,
+
+  "howToUse": [
+    "Enter the current air temperature in Celsius or Fahrenheit, depending on your unit system.",
+    "Enter the relative humidity as a percentage (0–100%).",
+    "Select the unit system: Metric for °C or Imperial for °F.",
+    "Click the 'Calculate' button to get the dew point temperature.",
+    "The result will display the temperature at which condensation occurs, indicating the dew point."
+  ],
+
+  "features": [
+    "Supports both Metric (°C) and Imperial (°F) units.",
+    "Calculates dew point quickly and accurately using the Magnus formula.",
+    "Validates input values to ensure temperature and humidity are within realistic ranges.",
+    "Provides instant results for meteorologists, gardeners, HVAC technicians, and outdoor enthusiasts.",
+    "Responsive design suitable for desktop and mobile devices."
+  ],
+
+  "whyUse": 
+    "Knowing the dew point is important for understanding humidity levels, predicting condensation and fog formation, ensuring comfort in living and working spaces, and preventing moisture-related problems in homes, gardens, and industrial environments.",
+
+  "notes": [
+    "Relative humidity should be entered as a value between 0 and 100.",
+    "For Imperial units, temperature input is in Fahrenheit, and the dew point result is also in Fahrenheit.",
+    "The calculation assumes standard atmospheric pressure; extreme pressure conditions may slightly affect accuracy.",
+    "High dew points indicate muggy conditions, while low dew points indicate dry air."
+  ]
+}
+,
 
   "bandwidth-calculator": {
-    "whyUse": "This Bandwidth Calculator estimates data transfer time and bandwidth usage for files and networks.",
-    "howToUse": [
-      "Enter file size.",
-      "Enter bandwidth speed.",
-      "Select units.",
-      "Click Calculate."
-    ],
-    "features": [
-      "Accurate data transfer estimation",
-      "Supports multiple units",
-      "Useful for IT and networking",
-      "Fast calculation",
-      "Free calculator"
-    ],
-    "notes": [
-      "Actual speed may vary.",
-      "Network conditions affect results."
-    ]
-  },
+
+  "formula": `
+<p>
+The Bandwidth Calculator determines the data transfer speed required to send a file over a network in a given time.
+</p>
+
+<p>
+The formula used depends on the chosen unit:
+</p>
+
+<ul>
+  <li><strong>For Mbps:</strong> Bandwidth (Mbps) = (File Size in MB × 8) ÷ Transfer Time in seconds</li>
+  <li><strong>For MB/s:</strong> Bandwidth (MB/s) = File Size in MB ÷ Transfer Time in seconds</li>
+</ul>
+
+<p>
+Here, 1 byte = 8 bits, so converting megabytes (MB) to megabits (Mb) involves multiplying by 8.
+</p>
+  `,
+
+  "howToUse": [
+    "Enter the size of the file you want to transfer in megabytes (MB).",
+    "Enter the total time in seconds you want the transfer to complete in.",
+    "Select the output unit: either Mbps (megabits per second) or MB/s (megabytes per second).",
+    "Click the 'Calculate' button to find the required bandwidth.",
+    "The result will display the speed needed to transfer the file within the specified time."
+  ],
+
+  "features": [
+    "Supports calculations in both Mbps and MB/s for flexibility.",
+    "Instant calculation after entering file size and time.",
+    "Handles decimal inputs for precise bandwidth requirements.",
+    "Clear error messages for invalid or missing inputs.",
+    "Reset button to quickly start a new calculation."
+  ],
+
+  "whyUse": 
+    "This calculator is useful for anyone planning file transfers over a network, including IT professionals, network engineers, and content creators. It helps estimate the bandwidth required to transfer files efficiently, preventing slow downloads or bottlenecks, and ensures smooth network planning.",
+
+  "notes": [
+    "Ensure the file size and time values are positive numbers.",
+    "Mbps and MB/s are different units: 1 MB/s = 8 Mbps.",
+    "Network overhead and fluctuations are not considered; the calculator provides theoretical required speed.",
+    "For large files or high-speed transfers, consider rounding up the calculated bandwidth to account for real-world conditions."
+  ]
+}
+,
 
   "time-duration-calculator": {
-    "whyUse": "This Time Duration Calculator calculates the total duration between two times or dates.",
-    "howToUse": [
-      "Enter start time or date.",
-      "Enter end time or date.",
-      "Click Calculate.",
-      "View total duration."
-    ],
-    "features": [
-      "Accurate time difference calculation",
-      "Supports date and time inputs",
-      "Instant output",
-      "Simple to use",
-      "Free tool"
-    ],
-    "notes": [
-      "Ensure correct format.",
-      "Time zone not considered."
-    ]
-  },
+  "formula": `
+<p>
+The time duration between two points is calculated by finding the difference between the <strong>start time</strong> and the <strong>end time</strong>. 
+This calculation takes into account hours, minutes, and seconds, and correctly handles cases where the end time is on the next day.
+</p>
 
-  "tire-size-calculator": {
-    "whyUse": "This Tire Size Calculator compares tire dimensions and helps understand size differences accurately.",
-    "howToUse": [
-      "Enter original tire size.",
-      "Enter new tire size.",
-      "Click Calculate.",
-      "View size comparison."
-    ],
-    "features": [
-      "Accurate tire dimension comparison",
-      "Useful for vehicle upgrades",
-      "Easy input format",
-      "Instant results",
-      "Free calculator"
-    ],
-    "notes": [
-      "Follow manufacturer guidelines.",
-      "Incorrect sizes may affect performance."
-    ]
-  }
+<p>
+The formula used is:
+</p>
+
+<ul>
+  <li><strong>Total Seconds</strong> = End Time (in seconds) − Start Time (in seconds)</li>
+  <li>If Total Seconds &lt; 0, add 24 × 3600 to account for crossing midnight</li>
+  <li><strong>Hours</strong> = Floor(Total Seconds ÷ 3600)</li>
+  <li><strong>Minutes</strong> = Floor((Total Seconds mod 3600) ÷ 60)</li>
+  <li><strong>Seconds</strong> = Total Seconds mod 60</li>
+</ul>
+
+<p>
+The final duration is presented in the format <strong>hours:minutes:seconds</strong>.
+</p>
+  `,
+  "howToUse": [
+    "Enter the start time in the first input field. Use the 24-hour format for accuracy.",
+    "Enter the end time in the second input field. If the end time is earlier than the start time, the calculator will automatically assume it is on the following day.",
+    "Click the 'Calculate' button to compute the total duration.",
+    "The result will display the time difference in hours, minutes, and seconds.",
+    "To clear the inputs and start a new calculation, click the 'Reset' button."
+  ],
+  "features": [
+    "Instant calculation of duration between any two times.",
+    "Handles cases where the end time is on the next day (crossing midnight).",
+    "Displays the result in a clear and easy-to-read hours, minutes, and seconds format.",
+    "Supports 24-hour time format for precision.",
+    "Responsive design, suitable for both desktop and mobile devices."
+  ],
+  "whyUse": "This calculator helps quickly determine the exact duration between two times without manual calculations. It is useful for tracking work hours, planning events, calculating elapsed time for projects, or measuring the length of any activity. Unlike manual calculations, it eliminates human errors and saves time.",
+  "notes": [
+    "Ensure you enter valid times in HH:MM format for accurate results.",
+    "If the end time is earlier than the start time, the calculator assumes the event spans into the next day.",
+    "Seconds are calculated based on the difference and may not account for milliseconds.",
+    "This calculator does not consider time zones or daylight saving changes; both times should be in the same time zone.",
+    "For recurring events, calculate each duration separately for accuracy."
+  ]
+}
 ,
 
 
 "basic-calculator": {
-  howToUse: [
-    "Enter numbers using the input fields or number buttons.",
-    "Tap the operation (+, −, ×, ÷) you want to perform.",
-    "The result will appear instantly above the buttons.",
-    "Use the clear (C) button to reset and start over."
+  "formula": `
+<p>
+The basic calculator performs standard arithmetic operations such as addition, subtraction, multiplication, and division. 
+It also supports percentage calculations and negation of numbers. The calculator evaluates the user-entered expression in sequence, following operator precedence.
+</p>
+
+<p>
+The formula used is:
+</p>
+
+<ul>
+  <li><strong>Addition (+)</strong>: Sum of two numbers → <code>a + b</code></li>
+  <li><strong>Subtraction (−)</strong>: Difference between two numbers → <code>a − b</code></li>
+  <li><strong>Multiplication (×)</strong>: Product of two numbers → <code>a × b</code></li>
+  <li><strong>Division (÷)</strong>: Quotient of two numbers → <code>a ÷ b</code></li>
+  <li><strong>Percentage (%)</strong>: Converts a number into its percentage → <code>value ÷ 100</code></li>
+  <li><strong>Negation (+/−)</strong>: Converts a positive number to negative or vice versa → <code>−value</code></li>
+</ul>
+
+<p>
+The calculator evaluates expressions dynamically using JavaScript's <strong>eval()</strong> function after replacing symbolic operators with JavaScript-compatible operators.
+</p>
+  `,
+  "howToUse": [
+    "Click on the numeric buttons to enter the numbers you want to calculate with.",
+    "Use the arithmetic operator buttons (÷, ×, −, +) to perform the desired operation.",
+    "Click the '=' button to evaluate the expression and display the result.",
+    "Use the 'C' button to clear the current expression and reset the display to zero.",
+    "Use the '+/−' button to toggle the sign of the last number entered.",
+    "Use the '%' button to convert the current value to a percentage."
   ],
-
-  features: [
-    "Supports addition, subtraction, multiplication, and division",
-    "Instant calculation as you input numbers",
-    "Mobile-friendly and responsive design",
-    "Clean, minimal interface for quick calculations"
+  "features": [
+    "Supports all basic arithmetic operations including addition, subtraction, multiplication, and division.",
+    "Dynamic display that adjusts font size automatically based on the length of the input.",
+    "Percentage and negation functionality for versatile calculations.",
+    "Responsive design suitable for desktop and mobile devices.",
+    "User-friendly interface with color-coded buttons for easy identification of functions."
   ],
-
-  whyUse:
-    "Perform fast and accurate arithmetic calculations directly in your browser without any extra apps. Perfect for mobile or desktop use.",
-
-  notes: [
-    "Division by zero is not allowed.",
-    "All results are for general reference and educational purposes.",
-    "For precise financial or scientific calculations, verify independently."
+  "whyUse": "This calculator is essential for quick and accurate arithmetic calculations without the need for manual computation. It is perfect for everyday math tasks, homework, budgeting, or any situation requiring instant calculation. The built-in percentage and negation functions simplify common operations that often require additional steps.",
+  "notes": [
+    "Ensure valid numerical input to avoid calculation errors.",
+    "The calculator respects standard operator precedence when evaluating expressions.",
+    "Division by zero will return an error.",
+    "Only one expression can be evaluated at a time; clear the display to start a new calculation.",
+    "Decimal numbers can be entered using the '.' button."
   ]
 }
+
 ,
 "percentage-calculator": {
-  howToUse: [
-    "Enter the base value (the number you want to find percentage of).",
-    "Enter the percentage value in the second field.",
-    "Click the Calculate button to get the percentage result.",
-    "Use the Reset button to clear fields and start a new calculation."
+  "formula": `
+<p>
+The percentage calculator determines the value that corresponds to a given percentage of a number. 
+This is useful in a variety of contexts such as calculating discounts, tax, interest, or performance metrics.
+</p>
+
+<p>
+The formula used is:
+</p>
+
+<ul>
+  <li><strong>Percentage Value</strong> = (Original Value × Percentage) ÷ 100</li>
+</ul>
+
+<p>
+For example, to calculate 20% of 150:
+</p>
+
+<ul>
+  <li>(150 × 20) ÷ 100 = 30</li>
+</ul>
+
+<p>
+The result represents the portion of the original value defined by the specified percentage.
+</p>
+  `,
+  "howToUse": [
+    "Enter the original number in the 'Enter Value' input field.",
+    "Enter the percentage you want to calculate in the 'Percentage (%)' input field.",
+    "Click the 'Calculate' button to get the result.",
+    "The calculator will display the calculated percentage value below the inputs.",
+    "Use the 'Reset' button to clear the inputs and start a new calculation."
   ],
-
-  features: [
-    "Calculates percentage value instantly",
-    "Supports decimal and large number inputs",
-    "Ideal for discount, profit, marks, and tax percentage calculations",
-    "Lightweight and mobile-friendly calculator interface"
+  "features": [
+    "Simple and quick calculation of percentages for any numeric value.",
+    "Supports decimal and whole number inputs.",
+    "Clear and user-friendly interface with labeled input fields.",
+    "Instant result display without requiring manual computation.",
+    "Responsive design suitable for desktop and mobile devices."
   ],
-
-  whyUse:
-    "This percentage calculator helps you quickly find percentage values for discounts, exam scores, salary hikes, business profit margins, GST, and more — without manual calculations.",
-
-  notes: [
-    "Rounding may apply in some percentage calculations.",
-    "Ensure values are entered correctly before calculating.",
-    "This tool is intended for general and educational use."
+  "whyUse": "This calculator eliminates manual calculation errors and saves time when determining the portion of a number represented by a percentage. It is essential for students, professionals, and anyone dealing with financial calculations, discounts, or statistical data.",
+  "notes": [
+    "Ensure that both the original value and percentage are entered to get an accurate result.",
+    "Decimal values are supported for precise calculations.",
+    "Negative numbers can be used if needed, but results will reflect the mathematical sign.",
+    "The percentage value is always calculated as a portion of the original number.",
+    "This calculator does not handle reverse percentage calculations (finding the percentage from a part and the whole)."
   ]
 }
+
 ,
 "percentage-increase-decrease-calculator": {
-  howToUse: [
-    "Enter the original value in the first input field.",
-    "Enter the new value in the second input field.",
-    "Click the 'Calculate' button to see the percentage increase or decrease.",
-    "Use the 'Reset' button to clear the inputs and start over."
+  "formula": `
+<p>
+The percentage increase or decrease calculator determines the change between an original value and a new value, expressed both as an absolute difference and as a percentage.
+</p>
+
+<p>
+The formula used is:
+</p>
+
+<ul>
+  <li><strong>Difference</strong> = New Value − Original Value</li>
+  <li><strong>Percentage Change</strong> = (Difference ÷ Original Value) × 100</li>
+  <li>The type of change is determined as follows:
+    <ul>
+      <li>If Percentage Change ≥ 0 → Increase</li>
+      <li>If Percentage Change &lt; 0 → Decrease</li>
+    </ul>
+  </li>
+</ul>
+
+<p>
+For example, if the original value is 200 and the new value is 250:
+</p>
+
+<ul>
+  <li>Difference = 250 − 200 = 50</li>
+  <li>Percentage Change = (50 ÷ 200) × 100 = 25%</li>
+  <li>Type = Increase</li>
+</ul>
+
+<p>
+This shows that the value increased by 50 units, which is a 25% increase from the original value.
+</p>
+  `,
+  "howToUse": [
+    "Enter the original value in the 'Original Value' input field.",
+    "Enter the new value in the 'New Value' input field.",
+    "Click the 'Calculate' button to see the result.",
+    "The calculator will display both the absolute difference and the percentage change.",
+    "The result also indicates whether it is an increase or decrease.",
+    "Use the 'Reset' button to clear the inputs and perform a new calculation."
   ],
-
-  features: [
-    "Calculates both percentage increase and decrease",
-    "Displays the exact amount of change along with percentage",
-    "Validates inputs to prevent errors (e.g., division by zero)",
-    "Mobile-friendly and responsive design with clear interface"
+  "features": [
+    "Quick calculation of both absolute and percentage change between two numbers.",
+    "Automatically determines if the change is an increase or a decrease.",
+    "Handles decimal and whole number inputs.",
+    "User-friendly interface with clearly labeled input fields and results.",
+    "Responsive design suitable for mobile and desktop screens."
   ],
-
-  whyUse:
-    "Quickly determine the percentage change between two values for financial, statistical, or general purposes, directly in your browser.",
-
-  notes: [
-    "Original value cannot be zero.",
-    "Results are approximate and for reference purposes only.",
-    "For critical calculations, verify results independently."
+  "whyUse": "This calculator helps users quickly determine how much a value has changed in terms of both units and percentage. It is highly useful in financial analysis, business performance tracking, sales monitoring, academic grading comparisons, or any scenario where comparing values over time is important.",
+  "notes": [
+    "Original value cannot be zero as it would make the percentage change undefined.",
+    "Decimal numbers are supported for precise calculations.",
+    "Negative percentage values indicate a decrease.",
+    "Ensure both values are entered to get accurate results.",
+    "The calculator is intended for simple percentage change calculations, not compound growth or sequential changes."
   ]
 }
+
 ,
 
 "ratio-calculator": {
+  formula: `
+<p>
+A ratio compares two or more quantities by showing how many times one value contains or relates to another.
+This calculator simplifies ratios by dividing all values by their <strong>Greatest Common Divisor (GCD)</strong>.
+</p>
+
+<p>
+The calculation works in three main steps:
+</p>
+
+<ul>
+  <li>All entered values are converted into numeric form</li>
+  <li>The <strong>GCD</strong> of all values is calculated</li>
+  <li>Each value is divided by the GCD to produce the simplified ratio</li>
+</ul>
+
+<p>
+For example, if the values are <strong>20, 30, and 40</strong>:
+</p>
+
+<ul>
+  <li>GCD of 20, 30, 40 = 10</li>
+  <li>Simplified values = 2 : 3 : 4</li>
+</ul>
+
+<p>
+This ensures the ratio is expressed in its lowest and most readable form.
+</p>
+  `,
+
   howToUse: [
-    "Enter the first value in the Value A field.",
-    "Enter the second value in the Value B field.",
-    "If you want to compare more than two values, click the Add Value button to add another field.",
-    "Enter the additional value(s) to extend the ratio sequence.",
-    "Click the Calculate button to generate the simplified ratio for all values.",
-    "Use the Reset button to clear inputs and start again."
+    "Enter at least two numeric values in the input fields",
+    "Use the “Add Value” button if you want to compare more than two values (up to four)",
+    "Make sure all values are greater than zero",
+    "Click the “Calculate” button to generate the simplified ratio",
+    "Use the “Reset” button to clear inputs and start a new calculation"
   ],
 
   features: [
-    "Supports 2-value, 3-value, and 4-value ratio comparison",
-    "Automatically simplifies ratios using GCD method",
-    "Works with integers and decimal values",
-    "Displays clean A : B : C : D formatted results",
-    "Responsive and mobile-friendly calculator interface"
+    "Supports ratios with two to four values",
+    "Automatically simplifies ratios using the Greatest Common Divisor",
+    "Prevents invalid inputs such as empty fields, zeros, or non-numeric values",
+    "Instant calculation with no page reload",
+    "Clean and easy-to-read output format"
   ],
 
   whyUse:
-    "Quickly simplify and compare proportional values across two or more quantities. Useful for mathematics, ingredient scaling, construction measurements, financial ratios, and statistical comparisons.",
+    "Ratios are widely used in mathematics, finance, cooking, construction, education, and everyday problem solving. Manually simplifying ratios can be time-consuming and error-prone, especially when working with more than two values. This calculator eliminates guesswork by instantly producing accurate and simplified ratios. It is useful for students learning ratio concepts, professionals dealing with proportions, and anyone who needs quick and reliable ratio comparisons without manual calculations.",
 
   notes: [
-    "All values must be greater than zero.",
-    "Results are simplified to the lowest possible ratio.",
-    "Extremely small decimals may be rounded during simplification.",
-    "For critical technical or financial calculations, verify independently."
+    "All values must be positive numbers greater than zero",
+    "The calculator simplifies ratios based on whole-number divisibility",
+    "Decimals are supported but results are simplified numerically",
+    "A minimum of two values is required to calculate a ratio",
+    "The maximum number of values allowed is four"
   ]
 }
+
 ,
 
 "average-calculator": {
+  formula: `
+<p>
+An average represents the central or typical value of a set of numbers. It is commonly
+calculated using the <strong>arithmetic mean</strong>, which is obtained by adding all values
+together and dividing the total by the number of values.
+</p>
+
+<p>
+This calculator follows a simple and reliable method to determine the average:
+</p>
+
+<ul>
+  <li>All entered values are converted into numeric form</li>
+  <li>The calculator adds all valid numbers to get the total sum</li>
+  <li>The sum is divided by the total count of values</li>
+</ul>
+
+<p>
+The formula used is:
+</p>
+
+<ul>
+  <li><strong>Sum</strong> = Value₁ + Value₂ + Value₃ + …</li>
+  <li><strong>Average</strong> = Sum ÷ Total Number of Values</li>
+</ul>
+
+<p>
+For example, if the values are <strong>10, 20, and 30</strong>, the sum is 60 and the total
+number of values is 3. The calculated average is therefore <strong>20</strong>.
+</p>
+
+<p>
+Only valid numeric values are included in the calculation to ensure accurate results.
+</p>
+  `,
+
   howToUse: [
-    "Enter the first two values in the input fields.",
-    "Click the Add Value button if you want to include more numbers.",
-    "Enter additional values as needed.",
-    "Click the Calculate Average button to generate the result.",
-    "Use the Reset button to clear all values and start again."
+    "Enter at least two numeric values in the input fields provided",
+    "Click the “Add Value” button to include more numbers if needed",
+    "Ensure all values entered are valid numbers",
+    "Click the “Calculate Average” button to view the result",
+    "Use the “Reset” button to clear all inputs and start over"
   ],
 
   features: [
-    "Supports multiple number inputs",
-    "Dynamically add or remove fields",
-    "Displays total count, sum, and calculated average",
-    "Works with integers and decimal values",
-    "Responsive and mobile-friendly calculator design"
+    "Supports multiple input values with dynamic fields",
+    "Automatically calculates sum, count, and average",
+    "Ignores invalid or empty inputs during calculation",
+    "Instant results without page reload",
+    "Simple and clean interface suitable for all users"
   ],
 
   whyUse:
-    "Quickly calculate the mean of two or more numbers for mathematics, statistics, academic work, budgeting, or data comparison tasks.",
+    "Calculating averages is a common requirement in academics, finance, statistics, business analysis, and everyday decision making. Doing this manually becomes tedious and error-prone when working with many values. This calculator simplifies the process by instantly computing the sum, total count, and average in one step. It is ideal for students checking homework, professionals analyzing data, teachers preparing reports, and anyone who needs quick and reliable average calculations without manual effort.",
 
   notes: [
-    "At least two valid values are required to calculate the average.",
-    "Invalid or empty fields are ignored automatically.",
-    "Very large or highly precise decimals may be rounded.",
-    "For scientific or financial computations, verify independently."
+    "A minimum of two valid numeric values is required",
+    "Non-numeric or empty fields are ignored during calculation",
+    "Decimals are fully supported for precise results",
+    "The calculator uses the arithmetic mean method",
+    "Reset clears all entered values and results"
   ]
 }
+
 ,
 
 "mean-calculator": {
+
+  formula: `
+<p>
+The <strong>mean</strong>, commonly known as the <strong>average</strong>, is calculated by
+adding all the given values together and then dividing the total by the number of values.
+</p>
+
+<p>
+This calculator follows the standard arithmetic mean formula:
+</p>
+
+<ul>
+  <li><strong>Sum</strong> = Value₁ + Value₂ + Value₃ + ... + Valueₙ</li>
+  <li><strong>Mean (Average)</strong> = Sum ÷ Total Number of Values</li>
+</ul>
+
+<p>
+Only valid numeric values are included in the calculation. Empty or invalid inputs are ignored,
+ensuring accurate and reliable results.
+</p>
+`,
+
   howToUse: [
-    "Enter the first two values in the input fields.",
-    "Click the Add Value button to include more numbers if needed.",
-    "Enter additional values to extend the list.",
-    "Click the Calculate Mean button to generate the result.",
-    "Use the Reset button to clear values and start again."
+    "Enter at least two numerical values into the input fields provided.",
+    "Use the “Add Value” button if you want to calculate the mean of more than two numbers.",
+    "If you added extra values by mistake, you can remove them using the Remove button.",
+    "Click the “Calculate Mean” button to compute the average of the entered values.",
+    "The result section will display the total count, sum of values, and the calculated mean.",
+    "Use the Reset button to clear all inputs and start a new calculation."
   ],
 
   features: [
-    "Supports multiple number inputs",
-    "Dynamically add or remove fields",
-    "Displays total count, sum, and calculated mean",
-    "Works with integers and decimal values",
-    "Mobile-friendly responsive calculator layout"
+    "Supports calculation of the mean for two or more numbers",
+    "Allows dynamic addition and removal of input fields",
+    "Automatically ignores invalid or empty values",
+    "Displays total count, sum, and average for transparency",
+    "Instant results without page reload",
+    "Simple and clean interface suitable for all users",
+    "Works smoothly on mobile, tablet, and desktop devices"
   ],
 
   whyUse:
-    "Quickly calculate the mean (average) of datasets for mathematics, statistics, academics, budgeting, finance, and analytics tasks.",
+    "The mean is one of the most widely used measures in mathematics, statistics, education, business, and everyday decision-making. This calculator helps you quickly find the average without manual calculations or risk of arithmetic errors. Whether you are a student solving homework problems, a teacher preparing examples, a professional analyzing data, or someone calculating everyday averages like expenses, scores, or measurements, this tool saves time and ensures accuracy. It is especially useful when working with multiple values, as it automatically handles the sum and division process for you.",
 
   notes: [
-    "At least two valid values are required to calculate mean.",
-    "Invalid or empty fields are ignored automatically.",
-    "Extremely precise decimal values may be rounded.",
-    "For scientific or financial analysis, verify independently."
+    "At least two valid numerical values are required to calculate the mean.",
+    "Non-numeric or empty inputs are automatically excluded from the calculation.",
+    "Negative numbers and decimal values are fully supported.",
+    "The mean represents the central value of the dataset but may be affected by very large or very small numbers.",
+    "For datasets with extreme values, consider using median or mode for better insight.",
+    "Results are calculated instantly on the client side without storing any data."
   ]
 }
+
 ,
 
 "median-calculator": {
+  formula: `
+<p>
+The median is a statistical measure that represents the <strong>middle value</strong>
+of a dataset when the values are arranged in ascending or descending order.
+Unlike the average (mean), the median is not affected by extremely large or
+small values, making it a reliable indicator of central tendency.
+</p>
+
+<p>
+This calculator determines the median by following a structured process:
+</p>
+
+<ul>
+  <li>All entered values are converted into numeric form</li>
+  <li>Invalid or empty inputs are ignored</li>
+  <li>The remaining numbers are sorted in ascending order</li>
+</ul>
+
+<p>
+Once the values are sorted, the calculation depends on the total number of values:
+</p>
+
+<ul>
+  <li>If the total count is <strong>odd</strong>, the median is the middle value</li>
+  <li>If the total count is <strong>even</strong>, the median is the average of the two middle values</li>
+</ul>
+
+<p>
+The formulas used are:
+</p>
+
+<ul>
+  <li><strong>Odd count:</strong> Median = Value at position (n + 1) ÷ 2</li>
+  <li><strong>Even count:</strong> Median = (Value at position n ÷ 2 + Value at position (n ÷ 2 + 1)) ÷ 2</li>
+</ul>
+
+<p>
+For example, for the values <strong>3, 7, 9</strong>, the median is <strong>7</strong>.
+For the values <strong>4, 6, 8, 10</strong>, the median is <strong>(6 + 8) ÷ 2 = 7</strong>.
+</p>
+
+<p>
+This approach ensures accurate and consistent results for both small and large datasets.
+</p>
+  `,
+
   howToUse: [
-    "Enter at least two numeric values in the input fields.",
-    "Click the Add Value button to include more values if required.",
-    "Click the Calculate Median button to generate the result.",
-    "Use the Reset button to clear all inputs and start again."
+    "Enter at least two numeric values in the input fields",
+    "Use the “Add Value” button to include additional numbers",
+    "Ensure all values entered are valid numbers",
+    "Click the “Calculate Median” button to see the result",
+    "Use the “Reset” button to clear inputs and start a new calculation"
   ],
 
   features: [
-    "Supports multiple numeric inputs",
+    "Supports multiple input values with dynamic fields",
     "Automatically sorts values before calculation",
-    "Calculates median for both even and odd datasets",
-    "Mobile-friendly responsive calculator layout"
+    "Handles both even and odd numbers of values",
+    "Displays total count, sorted values, and median",
+    "Instant calculation with no page reload"
   ],
 
   whyUse:
-    "Find the median of datasets for mathematics, statistics, academic projects, and data analysis tasks.",
+    "The median is especially useful when analyzing datasets that contain extreme values or outliers, where the average may give a misleading result. This calculator provides a fast and reliable way to find the true center of your data without manual sorting or calculations. It is ideal for students studying statistics, teachers preparing examples, analysts reviewing datasets, and anyone who needs an accurate middle value for informed decision-making.",
 
   notes: [
-    "At least two valid numeric values are required.",
-    "Empty or invalid fields are ignored automatically.",
-    "Large decimal values may be rounded.",
-    "For research or financial analysis, verify independently."
+    "A minimum of two valid numeric values is required",
+    "Non-numeric or empty inputs are excluded from the calculation",
+    "Decimals are supported for precise median values",
+    "The calculator automatically sorts values in ascending order",
+    "Resetting clears all values and calculated results"
   ]
 }
+
 ,
 "mode-calculator": {
+
+  formula: `
+<p>
+The <strong>mode</strong> is the value (or values) that appears most frequently in a given set
+of numbers. Unlike the mean or median, the mode focuses purely on <strong>frequency</strong>
+rather than position or total.
+</p>
+
+<p>
+This calculator determines the mode by counting how many times each value occurs and then
+identifying the value or values with the highest frequency.
+</p>
+
+<ul>
+  <li><strong>Step 1:</strong> Count how many times each value appears</li>
+  <li><strong>Step 2:</strong> Find the highest frequency</li>
+  <li><strong>Step 3:</strong> Select all values that occur with that highest frequency</li>
+</ul>
+
+<p>
+If multiple values share the same highest frequency, the dataset is considered
+<strong>multimodal</strong>, and all such values are returned as modes.
+</p>
+`,
+
   howToUse: [
-    "Enter at least two numeric values in the input fields.",
-    "Click Add Value to include more numbers if needed.",
-    "Click Calculate Mode to find the mode(s) of the dataset.",
-    "Use Reset to clear all inputs and start again."
+    "Enter at least two numerical values into the input fields.",
+    "Use the “Add Value” button to include more numbers in the dataset.",
+    "Ensure all fields contain valid numeric values before calculating.",
+    "Click the “Calculate Mode” button to analyze the frequency of the values.",
+    "The result section will display the total count, entered values, mode(s), and frequency.",
+    "Use the Reset button to clear all inputs and start a new calculation."
   ],
 
   features: [
-    "Supports multiple numeric inputs",
-    "Dynamically add or remove fields",
-    "Finds one or multiple modes",
-    "Displays mode frequency",
-    "Responsive and mobile-friendly design"
+    "Supports calculation of single or multiple modes",
+    "Handles multimodal datasets accurately",
+    "Dynamic input fields with add and remove options",
+    "Displays frequency count for transparency",
+    "Instant client-side calculation with no delays",
+    "Clean, user-friendly interface for quick understanding",
+    "Works seamlessly on desktop and mobile devices"
   ],
 
   whyUse:
-    "Quickly find the mode of a dataset for statistics, academics, math homework, or data analysis tasks.",
+    "The mode is a crucial statistical measure used to identify the most common or most repeated value in a dataset. This calculator is especially useful when analyzing trends, patterns, or popular outcomes, such as exam scores, survey responses, product sizes, or repeated measurements. Unlike manual counting, which becomes tedious and error-prone with larger datasets, this tool instantly calculates the correct mode and clearly displays its frequency. It is ideal for students learning statistics, teachers explaining data concepts, professionals analyzing reports, and anyone who needs a fast and reliable way to determine the most frequent value in a dataset.",
 
   notes: [
-    "At least two valid numbers are required.",
-    "Multiple modes are supported when values repeat equally.",
-    "Empty or invalid inputs are ignored automatically.",
-    "For professional analysis, verify independently."
+    "All input fields must contain valid numeric values before calculation.",
+    "At least two values are required to determine the mode.",
+    "If all values occur the same number of times, every value will be shown as a mode.",
+    "The calculator supports negative numbers and decimal values.",
+    "A dataset may have one mode, multiple modes, or no clear single most frequent value.",
+    "Results are calculated locally and no data is stored or shared."
   ]
 }
-,
-"rounding-calculator": {
-  howToUse: [
-    "Enter the number you want to round.",
-    "Select a rounding method: Nearest, Floor, Ceil, or Fixed Decimals.",
-    "If using Fixed Decimals, enter the number of decimal places.",
-    "Click Calculate to get the rounded value.",
-    "Use Reset to clear the input and start over."
-  ],
 
-  features: [
-    "Supports multiple rounding methods",
-    "Instant calculation",
-    "Works with integers and decimals",
-    "Mobile-friendly responsive design"
-  ],
-
-  whyUse:
-    "Quickly round numbers for math, statistics, finance, or general calculations with precise control over decimal places.",
-
-  notes: [
-    "Decimal places must be a non-negative number when using Fixed Decimals.",
-    "All results are for general use and reference purposes.",
-    "For precise financial or scientific calculations, verify independently."
-  ]
-}
-,
-"absolute-value-calculator": {
-  howToUse: [
-    "Enter the number in the input field.",
-    "Click Calculate Absolute Value to find its absolute value.",
-    "Use Reset to clear the input and start again."
-  ],
-
-  features: [
-    "Works for integers and decimal numbers",
-    "Instant calculation",
-    "Simple, responsive, and mobile-friendly UI"
-  ],
-
-  whyUse:
-    "Quickly find the absolute value of any number for math, algebra, or data analysis tasks.",
-
-  notes: [
-    "Negative numbers will return their positive equivalent.",
-    "Zero remains unchanged.",
-    "Results are for reference; verify for critical calculations."
-  ]
-}
-,
 
 };
