@@ -1,2526 +1,3565 @@
 export const calculatorContent = {
-  "age-calculator": {
+ "age-calculator": {
+  sections: [
+    {
+      type: "html",
+      title: "Why Exact Age Matters",
+      body: `
+        <p>
+          Many people assume that age can be calculated simply by subtracting
+          the birth year from the current year. While this may give a rough
+          idea, it is often inaccurate. Age is not just about years; months
+          and days play an equally important role in determining the correct age.
+        </p>
 
-    "formula": `
-<p>
-The age is calculated by finding the difference between the <strong>date of birth</strong>
-and the <strong>current date</strong>.
-</p>
+        <p>
+          For example, if someone was born in December 2000 and the current
+          year is 2026, subtracting the years gives an age of 26. However,
+          if their birthday has not yet occurred this year, their actual
+          age is still 25. Ignoring this difference can lead to incorrect
+          assumptions and mistakes.
+        </p>
 
-<p>
-The formula used is:
-</p>
+        <p>
+          In real life, such errors commonly occur while filling out forms,
+          estimating eligibility, or planning events. That is why calculating
+          age using the complete date of birth—including day and month
+          is important for accuracy.
+        </p>
+      `
+    },
 
-<ul>
-  <li><strong>Years</strong> = Current Year − Birth Year</li>
-  <li><strong>Months</strong> = Current Month − Birth Month</li>
-  <li><strong>Days</strong> = Current Day − Birth Day</li>
-</ul>
+    {
+      type: "html",
+      title: "How Small Date Differences Affect Age",
+      body: `
+        <p>
+          Even a difference of one day can change the result of an age
+          calculation. This becomes especially noticeable around birthdays.
+          A person who is one day short of their birthday is technically
+          still younger, even if the difference feels small.
+        </p>
 
-<p>
-If the day or month difference becomes negative, adjustments are made by borrowing days
-from the previous month or months from the previous year.
-</p>
-    `,
+        <p>
+          Birthdays that fall at the end of a month can also cause confusion.
+          For example, someone born on the 31st may find it harder to manually
+          calculate age in months where fewer days exist. Mid-month birthdays
+          are often easier to calculate mentally, while month-end birthdays
+          are more prone to errors.
+        </p>
 
-  "howToUse": [
-    "Enter your date of birth in the input fields provided.",
-    "Optionally, select a reference date to calculate age as of that date.",
-    "Click the 'Calculate' button to see your exact age in years, months, and days.",
-    "The result will be displayed instantly above the input fields."
-  ],
+        <p>
+          Leap year birthdays add another layer of complexity. People born on
+          February 29 are often unsure when their age officially increases
+          in non-leap years. Online age calculators handle these edge cases
+          correctly by following standard calendar rules, which manual
+          calculations often fail to do.
+        </p>
+      `
+    },
 
-  "features": [
-    "Calculates age accurately considering leap years and month lengths",
-    "Shows exact years, months, and days elapsed",
-    "Option to calculate age for a future reference date",
-    "Mobile-friendly and responsive design",
-    "Instant and accurate results with a clean interface"
-  ],
+    {
+      type: "html",
+      title: "",
+      body: `
+        <figure class="content-image">
+          <img
+            src="/images/leap-year-age-difference.png"
+            alt="One day age difference example with leap year"
+            loading="lazy"
+            width="800"
+            height="250"
+          />
+          <figcaption>
+            One-day difference between normal year and leap year affecting age calculation
+          </figcaption>
+        </figure>
+      `
+    },
 
-  "whyUse":
-    "This Age Calculator helps you determine your exact age quickly and accurately without manual calculations. It is perfect for legal, educational, financial, or personal purposes, and works on both mobile and desktop devices.",
+    {
+      type: "html",
+      title: "Age for Official vs Personal Use",
+      body: `
+        <p>
+          Age is used differently depending on the situation. For informal
+          purposes, such as personal curiosity or casual conversation, an
+          approximate age is usually sufficient. However, for official
+          purposes, precision becomes critical.
+        </p>
 
-  "notes": [
-    "The calculation is based on the Gregorian calendar.",
-    "Time zones are not considered in the calculation.",
-    "Results are for general reference and educational purposes only.",
-    "For official age verification, refer to legal documents."
+        <p>
+          Government forms, school admissions, job applications, and legal
+          documents often require an exact age based on a specific date. In
+          these cases, even a one-day difference can matter. Eligibility for
+          exams, age-based benefits, or employment criteria frequently depends
+          on meeting a precise age requirement on a fixed date.
+        </p>
+
+        <p>
+          An online age calculator helps remove uncertainty by providing
+          exact values instead of estimates, making it easier to meet official
+          requirements confidently.
+        </p>
+      `
+    },
+
+    {
+      type: "html",
+      title: "Understanding Age Beyond Years",
+      body: `
+        <p>
+          Age is commonly expressed in years, but this does not always provide
+          the full picture. In many situations, age measured in weeks, days,
+          hours, or even minutes can be more meaningful.
+        </p>
+
+        <p>
+          For example, during pregnancy tracking, age is often calculated in
+          weeks rather than years. Event planning, such as anniversaries or
+          milestones, may require knowing the exact number of days between
+          two dates. Fitness tracking and health monitoring may also rely on
+          precise age measurements.
+        </p>
+
+        <p>
+          There is also a psychological aspect to how people perceive age.
+          Seeing age broken down into smaller units can change how one views
+          time and milestones. An age calculator makes it easier to understand
+          age from multiple perspectives, not just as a number of years.
+        </p>
+      `
+    },
+
+    {
+      type: "html",
+      title: "Common Age Calculation Mistakes",
+      body: `
+        <p>
+          Manual age calculation is prone to several common mistakes. One of
+          the most frequent errors is ignoring leap years. Since leap years
+          add an extra day to the calendar, failing to account for them can
+          lead to incorrect results.
+        </p>
+
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Mistake</th>
+              <th>Why It Happens</th>
+              <th>Impact</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ignoring Leap Year</td>
+              <td>Extra day not counted</td>
+              <td>Wrong age</td>
+            </tr>
+            <tr>
+              <td>Assuming 30 Days/Month</td>
+              <td>Month length varies</td>
+              <td>Calculation error</td>
+            </tr>
+            <tr>
+              <td>Birthday Not Occurred</td>
+              <td>Date not checked</td>
+              <td>Age +1 shown</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          Another common mistake is assuming that all months have the same
+          number of days. In reality, month lengths vary, and this variation
+          affects age calculations, especially when calculating months and
+          days manually.
+        </p>
+
+        <p>
+          People also often forget to check whether the birthday has already
+          occurred in the current year. This leads to off-by-one errors, where
+          age is calculated as one year older than it actually is. Online
+          calculators eliminate these mistakes by applying consistent rules
+          automatically.
+        </p>
+      `
+    },
+
+    {
+      type: "html",
+      title: "When to Use an Age Calculator",
+      body: `
+        <p>
+          An online age calculator is especially useful in situations where
+          accuracy matters or where manual calculation would be time-consuming.
+        </p>
+
+        <p>
+          Students and parents often use age calculators for school admissions
+          and academic eligibility checks. Job seekers rely on them to verify
+          age requirements for employment opportunities. Government schemes
+          and benefits frequently have strict age limits that must be met on
+          specific dates.
+        </p>
+
+        <p>
+          Age calculators are also helpful for competitive exams, scholarship
+          applications, and any scenario where precise age information is
+          required. By using an online tool, users can avoid errors and ensure
+          they are working with reliable data.
+        </p>
+      `
+    }
   ]
 }
-
 ,
 
-
+  
  "date-calculator": {
-  formula: `
-<p>
-This calculator performs two main types of date calculations: <strong>date difference</strong> and <strong>date addition/subtraction</strong>.
-</p>
+  sections: [
 
-<p>
-For <strong>Date Difference</strong>:
-</p>
-<ul>
-  <li>The difference between the <strong>start date</strong> and <strong>end date</strong> is calculated in days.</li>
-  <li>Weeks are calculated by dividing the total days by 7.</li>
-</ul>
+    {
+      type: "html",
+      title: "Why Manual Day Counting Fails",
+      body: `
+        <p>
+          Many people believe that calculating the number of days between two dates is easy.
+          At first glance, it may seem like simple subtraction, but in reality, manual date
+          calculation is one of the most common sources of error. The main reason is that our
+          calendar is not uniform. Months do not have the same number of days, and years do not
+          always follow the same pattern.
+        </p>
 
-<p>
-For <strong>Add/Subtract Time</strong>:
-</p>
-<ul>
-  <li>A user-selected number of <strong>days, weeks, months, or years</strong> is added to or subtracted from the <strong>start date</strong>.</li>
-  <li>The resulting date is computed by adjusting for month lengths and leap years as needed.</li>
-</ul>
+        <p>
+          When calculating manually, people often assume that every month has 30 days or forget
+          to account for months with 31 days. February creates even more confusion, especially
+          during leap years. Small miscalculations like these can quickly add up and produce
+          incorrect results.
+        </p>
 
-<p>
-This ensures accurate calculations for all date ranges and operations.
-</p>
-`
-,
+        <p>
+          This is why two people calculating the same date range by hand often end up with
+          different answers. A date calculator removes this uncertainty by handling all calendar
+          rules accurately.
+        </p>
 
-  howToUse: [
-    "Select the operation you want to perform: Date Difference or Add Time to Date.",
-    "Choose the start date using the date picker.",
-    "If calculating date difference, select the end date as well.",
-    "If adding time, enter a numeric value and select the unit (days, weeks, months, or years).",
-    "Click the Calculate button to view the result instantly.",
-    "Use the Reset button to clear all inputs and start a new calculation."
-  ],
+        <figure class="content-image">
+          <img
+            src="/images/manual-vs-online-date-calculator.png"
+            alt="Manual date calculation vs online date calculator accuracy"
+            loading="lazy"
+            width="800"
+            height="250"
+          />
+          <figcaption>
+            Manual date calculation errors compared to accurate online date calculator results
+          </figcaption>
+        </figure>
+      `
+    },
 
-  features: [
-    "Calculate the exact number of days and weeks between two dates.",
-    "Add days, weeks, months, or years to a specific date.",
-    "Mobile-friendly date picker with clean input fields.",
-    "Instant results with no page reload.",
-    "Simple and user-friendly interface for all users."
-  ],
+    {
+      type: "html",
+      title: "How Date difference Is Calculated",
+      body: `
+        <p>
+          A date calculator works by analyzing the exact start date and end date rather than
+          relying on assumptions. It counts every individual day between the two dates,
+          following standard calendar logic. This ensures that month changes, year transitions,
+          and leap years are handled correctly.
+        </p>
 
-  whyUse:
-    "This Date Calculator helps you quickly find date differences or calculate future and past dates without manual counting. It is ideal for planning events, tracking deadlines, calculating durations, and managing schedules accurately.",
+        <p>
+          One important aspect of date calculation is understanding whether the result includes
+          or excludes the start or end date. For example, calculating days between January 1 and
+          January 10 may give different results depending on whether both dates are included.
+          Online date calculators clearly define this logic and apply it consistently, which
+          helps avoid confusion.
+        </p>
 
-  notes: [
-    "Both start date and end date are required for date difference calculations.",
-    "Only positive numeric values are allowed when adding time to a date.",
-    "Results are calculated based on standard calendar rules, including leap years.",
-    "The calculator uses your device’s local time zone for accurate results."
+        <p>
+          Whether the dates fall in the same month or across multiple years, the calculator
+          processes them in the same systematic way. This level of precision is difficult to
+          achieve manually, especially for long date ranges.
+        </p>
+      `
+    },
+
+    {
+      type: "html",
+      title: "Practical Uses of a Date Calculator",
+      body: `
+        <p>
+          Date calculators are useful in many everyday situations. One common use is tracking
+          project deadlines. Knowing the exact number of days left helps with better planning
+          and time management.
+        </p>
+
+        <p>
+          Event planning is another major use case, where people calculate the days remaining
+          for weddings, exams, vacations, or important meetings.
+        </p>
+
+        <p>
+          In professional settings, date calculators are often used to calculate work notice
+          periods, contract durations, or project timelines. Financial scenarios also rely on
+          accurate date calculations, such as loan durations, EMI schedules, and subscription
+          renewals.
+        </p>
+
+        <p>
+          In all these cases, even a small date error can lead to misunderstandings or missed
+          deadlines.
+        </p>
+      `
+    },
+
+    {
+      type: "html",
+      title: "Leap Years and Month-End Date Issues",
+      body: `
+        <p>
+          Certain dates are more challenging to calculate than others. Leap years add an extra
+          day to February, which can affect long-term calculations. Month-end dates, such as
+          the 30th or 31st, also cause confusion when the following month has fewer days.
+        </p>
+
+        <p>
+          These edge cases are easy to overlook during manual calculation. A date calculator
+          automatically adjusts for these variations, ensuring that results remain accurate
+          regardless of complexity.
+        </p>
+
+        <p>
+          This reliability makes online date calculators especially valuable when precision
+          matters. Using a date calculator saves time, reduces errors, and provides confidence
+          that the result is correct.
+        </p>
+
+        <p>
+          Instead of second-guessing manual calculations, users can rely on accurate and
+          consistent results every time.
+        </p>
+
+        <table class="table table-bordered table-striped">
+          <thead class="table-light">
+            <tr>
+              <th>Month</th>
+              <th>Days</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>January</td>
+              <td>31</td>
+            </tr>
+            <tr>
+              <td>February</td>
+              <td>28 / 29</td>
+            </tr>
+            <tr>
+              <td>March</td>
+              <td>31</td>
+            </tr>
+            <tr>
+              <td>April</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <td>May</td>
+              <td>31</td>
+            </tr>
+            <tr>
+              <td>June</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <td>July</td>
+              <td>31</td>
+            </tr>
+            <tr>
+              <td>August</td>
+              <td>31</td>
+            </tr>
+            <tr>
+              <td>September</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <td>October</td>
+              <td>31</td>
+            </tr>
+            <tr>
+              <td>November</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <td>December</td>
+              <td>31</td>
+            </tr>
+          </tbody>
+        </table>
+      `
+    }
+
   ]
 }
 ,
+
 "time-calculator": {
-  formula: `
-<p>
-This calculator allows you to <strong>add or subtract hours and minutes</strong> from a given base time.
-</p>
+  sections: [
+    {
+      type: "html",
+      title: "History of Timekeeping",
+      body: `
+        <p>
+          Humans have been fascinated by time for thousands of years. Early civilizations relied on natural events, such as sunrise, sunset, and the phases of the moon, to measure the passage of time. Ancient Egyptians developed the sundial, which divided the day into segments using shadows cast by the sun. Similarly, early water clocks, or clepsydras, allowed precise measurement of time even when sunlight was unavailable.
+        </p>
+        <p>
+          The invention of mechanical clocks in medieval Europe revolutionized timekeeping. These devices allowed more accurate measurement of hours and minutes, which became essential for navigation, trade, and scientific experiments. Over the centuries, the development of pendulum clocks, quartz watches, and atomic clocks has refined our ability to measure time to astonishing precision. Understanding this history highlights why even small errors in time calculation can have significant consequences in modern life.
+        </p>
 
-<p>
-The calculation works as follows:
-</p>
-<ul>
-  <li>The <strong>base time</strong> is converted into total minutes: <em>totalMinutes = hours × 60 + minutes</em>.</li>
-  <li>The input <strong>hours and minutes</strong> to add or subtract are also converted to minutes and applied to the base time.</li>
-  <li>If subtracting results in negative minutes or adding exceeds 24 hours, the calculation wraps around within a 24-hour clock.</li>
-  <li>The final result is converted back into <strong>hours and minutes</strong> for display.</li>
-</ul>
+        <figure class="content-image">
+          <img
+            src="/images/history-of-timekeeping-timeline.png"
+            alt="Evolution of timekeeping from sundials to digital clocks"
+            loading="lazy"
+            width="800"
+            height="250"
+          />
+          <figcaption>
+            Evolution of timekeeping devices from ancient sundials to modern digital clocks
+          </figcaption>
+        </figure>
+      `
+    },
+    {
+      type: "html",
+      title: "Importance of Accurate Time",
+      body: `
+        <p>
+          Accurate timekeeping is vital for both daily life and professional activities. In personal schedules, precise time helps ensure punctuality for appointments, meetings, and social events. In professional environments, accurate time calculations are essential for shift management, transportation scheduling, and project planning.
+        </p>
+        <p>
+          Even a minor miscalculation in hours or minutes can lead to delays, confusion, or missed deadlines. For example, in financial sectors, interest calculations, loan durations, and payment schedules depend on precise timing. Similarly, healthcare professionals rely on accurate timing for medication schedules and patient care. Time calculators remove the possibility of human error, providing reliable results instantly.
+        </p>
+      `
+    },
+    {
+      type: "html",
+      title: "Applications in Daily Life",
+      body: `
+        <p>
+          Time calculators have become an indispensable tool in many practical scenarios. For students and professionals, they can calculate class schedules, work shifts, or project durations with ease. For event planning, they help determine start and end times, ensuring that all activities fit within a set timeframe.
+        </p>
+        <p>
+          In cooking and other daily routines, knowing the exact time difference between activities can prevent errors and save time. Travelers can calculate arrival times, time zone differences, and layover durations. In fitness and sports, precise timing is critical for training, tracking performance, and competition management. By automating these calculations, a time calculator saves effort, reduces mistakes, and allows people to plan their day more efficiently.
+        </p>
+        <table class="table table-bordered">
+          <caption>Common Time Intervals Reference</caption>
+          <thead class="table-light">
+            <tr>
+              <th scope="col">Activity</th>
+              <th scope="col">Typical Duration</th>
+              <th scope="col">Start Time</th>
+              <th scope="col">End Time</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Work shift</td>
+              <td>8 hours</td>
+              <td>09:00</td>
+              <td>17:00</td>
+            </tr>
+            <tr>
+              <td>Study session</td>
+              <td>2 hours</td>
+              <td>18:00</td>
+              <td>20:00</td>
+            </tr>
+            <tr>
+              <td>Cooking</td>
+              <td>45 minutes</td>
+              <td>12:00</td>
+              <td>12:45</td>
+            </tr>
+            <tr>
+              <td>Travel</td>
+              <td>3 hours</td>
+              <td>06:00</td>
+              <td>09:00</td>
+            </tr>
+          </tbody>
+        </table>
+      `
+    },
+    {
+      type: "html",
+      title: "Time Calculation Challenges",
+      body: `
+        <p>
+          Calculating time may seem simple, but it involves several challenges. One common issue is day wrap, where adding or subtracting hours can cross midnight. Without proper adjustment, this can lead to incorrect results. Another challenge is 12-hour vs 24-hour formats, where users might confuse AM and PM times.
+        </p>
 
-<p>
-This ensures accurate time arithmetic while accounting for 24-hour time constraints.
-</p>
-`
-,
+        <table class="table table-bordered">
+          <caption>12-Hour vs 24-Hour Time Conversion</caption>
+          <thead class="table-light">
+            <tr>
+              <th scope="col">12-Hour Format</th>
+              <th scope="col">24-Hour Format</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>12:00 AM</td>
+              <td>00:00</td>
+            </tr>
+            <tr>
+              <td>01:00 AM</td>
+              <td>01:00</td>
+            </tr>
+            <tr>
+              <td>12:00 PM</td>
+              <td>12:00</td>
+            </tr>
+            <tr>
+              <td>01:00 PM</td>
+              <td>13:00</td>
+            </tr>
+            <tr>
+              <td>11:00 PM</td>
+              <td>23:00</td>
+            </tr>
+          </tbody>
+        </table>
 
-  howToUse: [
-    "Select a base time using the time picker.",
-    "Choose whether you want to add or subtract time.",
-    "Enter the number of hours and minutes you want to apply.",
-    "Click the Calculate button to get the new time.",
-    "Use the Reset button to clear all fields and start again."
-  ],
-
-  features: [
-    "Add or subtract hours and minutes from a given time.",
-    "Automatic 24-hour time wrap handling.",
-    "Mobile-friendly time picker and input fields.",
-    "Instant calculation with no page reload.",
-    "Clean and easy-to-use interface for all users."
-  ],
-
-  whyUse:
-    "This Time Calculator helps you quickly determine a new time without manual calculations. It is useful for shift planning, travel schedules, alarms, reminders, and time management tasks where accuracy matters.",
-
-  notes: [
-    "Base time must be selected before performing calculations.",
-    "Only positive values are allowed for hours and minutes.",
-    "The calculator uses a 24-hour clock format.",
-    "Results automatically adjust when time crosses midnight.",
-    "Calculated time is based on standard minute conversion logic."
+        <p>
+          Additionally, handling hours and minutes simultaneously can be confusing, especially when dealing with durations longer than a day. Manual calculations often result in errors, particularly in professional contexts where accuracy is critical. Time calculators automatically handle these issues, providing instant, precise, and reliable results. They eliminate the risk of mistakes and ensure that all time-related computations account for day wrap, formatting differences, and total minutes.
+        </p>
+      `
+    }
   ]
 }
 ,
-  "hours-calculator": {
-  formula: `
-<p>
-This calculator is designed to find the <strong>total hours and minutes</strong> from multiple time entries in HH:MM format.
+
+
+"hours-calculator": {
+  sections: [
+    {
+      type: "html",
+      title: "Adding Hours Made Easy",
+      body: `
+
+
+        <p>
+          Adding up hours seems easy enough until you actually try to add it up over multiple time entries. When you add job hours, study periods or task time, it's easy for you to become confused. People simply forget to multiply minutes correctly, or, alternatively, they get confused when the total exceeds 60. This is where an hours calculator comes to the rescue.
+        </p>
+  <figure class="content-image">
+          <img
+            src="/images/adding-hours-calculator-illustration.png"
+            alt="Adding multiple time entries to calculate total hours
+"
+            loading="lazy"
+            width="800"
+            height="300"
+          />
+          <figcaption>
+Visual representation of multiple time entries being summed into a total duration using an hours calculator
+</figcaption>
+        </figure>
+        <p>
+          Since a hours calculator is able to add up the time that users have entered and returns automatically totals, you do not need know any math. Then you can concentrate on your work rather than on arithmetical errors. For times when you need to instantly change Minutes to Hours by using a simple format, the tool makes sure that the final result is easy to read. It is particularly great for freelancers, workers and students, who work on the daily basis of time.
+        </p>
+
+        <p>
+          Another advantage is speed. What could possibly be a few minutes if written with pen and paper can easily become seconds when using a calculator. And with no guesswork and the same outcome every time. Whether you drag your short intervals or long durations, it’s easy, straightforward and consistent. For those of us that frequently handle time information, this shortcut becomes completely indispensable.
+        </p>
+
+        <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>User Type</th>
+      <th>Use Case</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Employees</td>
+      <td>Daily work hour tracking</td>
+    </tr>
+    <tr>
+      <td>Freelancers</td>
+      <td>Client billing</td>
+    </tr>
+    <tr>
+      <td>Students</td>
+      <td>Study hour planning</td>
+    </tr>
+    <tr>
+      <td>Contractors</td>
+      <td>Accurate time reporting</td>
+    </tr>
+  </tbody>
+</table>
+
+      `
+    },
+    {
+      type: "html",
+      title: "Avoid Time Mistakes",
+      body: `
+        <p>
+         Time-related errors are more prevalent than many realize. When hours or minutes are off even a little, it can lead to all kinds of headaches down the road - incorrect payroll, missed deadlines and inaccurate reports. These kinds of errors tend to occur because people aren't very good at performing repeated calculations - particularly under pressure or when fatigued.
+        </p>
+
+        <p>
+          Manually computing is usually more time consuming especially when pausing is over sixty or many entries are involved. Extra minutes are easily forgotten, and people leave transition off by a few seconds or enter one of the transition times without thinking that they need both. As we will see, these small errors add up over the years and produce bad results. These risks are eliminated when using an hours calculator by the fact that it follows a set of calculation rules consistently.
+        </p>
+
+        <p>
+          By using an automated mechanism you make sure each entry is handled correctly. With type validation you can reject invalid input straight away and ensure there are no incorrect totals waiting to cause a problem. This level of precision is critical in business environments where attendance records can impact payouts, compliance or performance monitoring. By taking out the human factor, an hours calculator makes people more confident in these final tallies and more willing to trust the numbers.
+        </p>
+
+        <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Task</th>
+      <th>Manual Calculation</th>
+      <th>Hours Calculator</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Multiple entries</td>
+      <td>Error-prone</td>
+      <td>Accurate</td>
+    </tr>
+    <tr>
+      <td>Minute conversion</td>
+      <td>Often missed</td>
+      <td>Automatic</td>
+    </tr>
+    <tr>
+      <td>Calculation speed</td>
+      <td>Slow</td>
+      <td>Instant</td>
+    </tr>
+    <tr>
+      <td>Consistency</td>
+      <td>Varies</td>
+      <td>Always same</td>
+    </tr>
+    <tr>
+      <td>Human effort</td>
+      <td>High</td>
+      <td>Minimal</td>
+    </tr>
+  </tbody>
+</table>
+
+      `
+    },
+    {
+      type: "html",
+      title: "Tracking Daily Work Hours",
+      body: `
+        <p>
+          Keeping track of daily work hours is important for productivity, accountability, and proper time management. Many people work in flexible schedules, split shifts, or multiple sessions throughout the day. Remembering exact durations for each session can be difficult without a proper system in place.
+        </p>
+
+        <p>
+        With an hours calculator, employees can "punch in" and log every work period as it starts, then see exactly what time they've worked for the day. This is a bonus for staff, remote workers, freelancers and contractors who need an accurate account of their efforts. Users need to think about hours at the end of the day.
+        </p>
+
+        <p>
+         Regular time tracking can also help you see patterns. You can understand how much time is invested on particular tasks and make better decisions about workload and scheduling. This in turn will result in increased productivity and better life-work balance. Making it easy to calculate daily hours, an hour calculator helps schedule more effectively and fosters better practice habits.
+        </p>
+
+        <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Work Session</th>
+      <th>Start Time</th>
+      <th>End Time</th>
+      <th>Duration</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Morning</td>
+      <td>09:00 AM</td>
+      <td>11:30 AM</td>
+      <td>2h 30m</td>
+    </tr>
+    <tr>
+      <td>Afternoon</td>
+      <td>01:00 PM</td>
+      <td>04:15 PM</td>
+      <td>3h 15m</td>
+    </tr>
+    <tr>
+      <td>Evening</td>
+      <td>06:00 PM</td>
+      <td>07:00 PM</td>
+      <td>1h 00m</td>
+    </tr>
+    <tr>
+      <td><strong>Total</strong></td>
+      <td></td>
+      <td></td>
+      <td><strong>6h 45m</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+      `
+    }
+  ]
+},
+
+
+
+"gpa-calculator": {
+  sections: [
+    {
+      type: "html",
+      title: "Introduction to GPA",
+      body: `
+        <p>
+        The GPA is computed as a weighted average. Each individual course, and these are courses by the way, they have grade points of a specific number of credit hours. The formula is:
 </p>
 
 <p>
-The calculation works as follows:
-</p>
-<ul>
-  <li>Each time entry is split into hours and minutes.</li>
-  <li>Hours are converted to minutes and added to the minutes value of the entry: <em>totalMinutes += hours × 60 + minutes</em>.</li>
-  <li>This process is repeated for all entered times to get the <strong>sum of minutes</strong>.</li>
-  <li>The total minutes are then converted back into hours and minutes for the final result:
-    <em>hours = Math.floor(totalMinutes / 60), minutes = totalMinutes % 60</em>.
-  </li>
-</ul>
+        <strong>
+GPA = Σ(Grade Points × Credit Hours) ÷ Total Credit Hours
+</strong>
+        </p>
+
 
 <p>
-This allows users to accurately calculate the cumulative time across multiple entries, handling any overflow of minutes into hours automatically.
+This implies that courses with higher credit hours contribute more to the final GPA. For instance a 4 credit subject has higher impact on GPA than a 2 credit subject.
 </p>
-`
-,
 
-  howToUse: [
-    "Enter time values in HH:MM format using the time picker.",
-    "Click Add Entry to include multiple time values.",
-    "Remove any entry if it was added by mistake.",
-    "Click the Calculate button to get the total time.",
-    "Use the Reset button to clear all entries and results."
-  ],
+<figure class="content-image">
+          <img
+            src="/images/GPA_growth.png"
+            alt="Strategic planning helps students steadily improve their GPA."
+            loading="lazy"
+            width="800"
+            height="250"
+          />
+          <figcaption>
+            GPA summarizes academic performance across multiple subjects into a single score.
+          </figcaption>
+        </figure>
 
-  features: [
-    "Supports multiple time entries.",
-    "Automatic validation for incorrect time values.",
-    "Instant calculation without page reload.",
-    "Mobile-friendly time input fields.",
-    "Displays total hours, minutes, and total minutes."
-  ],
+<p>
+Use a simple 3-course meal as an example. If a student's course is worth, 3 and 4 credits respectively then the grade points are multiplied by their shall value. You sum up those results and then divide by the total credits. The result is the final GPA.
+</p>
 
-  whyUse:
-    "This Hours Calculator is useful when you need to total multiple time durations accurately. It is ideal for tracking work hours, study time, project effort, or any situation where several time entries must be added together.",
+<p>
+Manual computation of GPA is vulnerable to errors of omission. Students might fail to account for the weight of course credit, use wrong grade-point values or forget to divide by total credits. Those mistakes could be critical to the end result and that's why 99% is automated.
+</p>
 
-  notes: [
-    "Time must be entered in valid HH:MM format.",
-    "Minutes must be less than 60 for each entry.",
-    "Empty entries are ignored during calculation.",
-    "The calculator adds time values; it does not track dates.",
-    "Results are calculated using standard minute-based conversion."
+        
+        
+      `
+    },
+    {
+      type: "html",
+      title: "How GPA Is Calculated",
+      body: `
+        <p>
+        A GPA calculator frees up your time by doing the math for you. Something that could take a few minutes by hand can be done in seconds. It also limits human errors by correctly handling grade conversions and weighted averages.
+
+
+        </p>
+        <p>
+        There's also the benefit of planning out your academic course. They're using GPA calculators to run the numbers based on different aspects, such as how better grades in courses would translate to their overall GPA. This means it is easier to have a sense of achievable aims, and plan study strategies effectively.
+        </p>
+        <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Course</th>
+      <th>Grade Point</th>
+      <th>Credit Hours</th>
+      <th>Weighted Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Subject A</td>
+      <td>4.0</td>
+      <td>3</td>
+      <td>12.0</td>
+    </tr>
+    <tr>
+      <td>Subject B</td>
+      <td>3.0</td>
+      <td>4</td>
+      <td>12.0</td>
+    </tr>
+    <tr>
+      <td>Subject C</td>
+      <td>3.5</td>
+      <td>2</td>
+      <td>7.0</td>
+    </tr>
+    <tr>
+      <th>Total</th>
+      <th></th>
+      <th>9</th>
+      <th>31.0</th>
+    </tr>
+  </tbody>
+</table>
+
+      `
+    },
+    {
+      type: "html",
+      title: "Benefits of Using a GPA Calculator",
+      body: `
+        <p>
+        A GPA calculator is very easy to utilize. Type in the total number of classes first. Then input the course Grade or Course Grade Points. Then,type in the appropriate number of credit hours. Once you have filled in every section click the Calculate button to see your GPA.
+
+
+        </p>
+<p>
+        There are calculators with target GPA options, as well. These make it possible for students to put in their desired GPA and see what they need on grades in future courses in order to hit that mark.
+        </p>
+
+        <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Factor</th>
+      <th>Manual Calculation</th>
+      <th>GPA Calculator</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Time Required</td>
+      <td>High</td>
+      <td>Instant</td>
+    </tr>
+    <tr>
+      <td>Accuracy</td>
+      <td>Error-prone</td>
+      <td>Reliable</td>
+    </tr>
+    <tr>
+      <td>Credit Handling</td>
+      <td>Often missed</td>
+      <td>Automatic</td>
+    </tr>
+    <tr>
+      <td>Planning Support</td>
+      <td>Not possible</td>
+      <td>Available</td>
+    </tr>
+  </tbody>
+</table>
+
+      `
+    },
+      {
+      type: "html",
+      title: "Common GPA Calculation Challenges",
+      body: `
+        <p>
+        We know students have a hard time with cross grading systems differences between letter grades and percentages. Weighted versus unweighted GPAs are also often confused. Repeats, grade replacement policies, semester GPA versus cumulative GPA-issue : It can get even more confusing.
+
+
+        </p>
+        <p>
+        You can help remedy these problems with the GPA calculator that has  uniform rules and explicit logic.
+        </p>
+        
+        <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Factor</th>
+      <th>Manual Calculation</th>
+      <th>GPA Calculator</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Time Required</td>
+      <td>High</td>
+      <td>Instant</td>
+    </tr>
+    <tr>
+      <td>Accuracy</td>
+      <td>Error-prone</td>
+      <td>Reliable</td>
+    </tr>
+    <tr>
+      <td>Credit Handling</td>
+      <td>Often missed</td>
+      <td>Automatic</td>
+    </tr>
+    <tr>
+      <td>Planning Support</td>
+      <td>Not possible</td>
+      <td>Available</td>
+    </tr>
+  </tbody>
+</table>
+
+      `
+    },
+      {
+      type: "html",
+      title: "How to Use the GPA Calculator",
+      body: `
+        <p>
+        A GPA calculator is easy to use. For the first step, put in all the courses. Then enter the grade or grade point of each course. Then, type the credit hours for that grade. Click the “Calculate” button as soon as you've entered all information to get a snapshot of your GPA.
+
+        </p>
+        
+Some calculators also provide target GPA amenities. These enable students to input a target GPA and then view what grade is required in future courses to achieve that goal.
+         <p>
+        
+        </p>
+        
+      `
+    },
+      {
+      type: "html",
+      title: "Tips for GPA Improvement",
+      body: `
+      <figure class="content-image">
+          <img
+            src="/images/gpa-growth-chart-illustration.png"
+            alt="GPA growth trend showing academic progress over time."
+            loading="lazy"
+            width="800"
+            height="250"
+          />
+          <figcaption>
+            GPA growth trend showing academic progress over time.
+          </figcaption>
+        </figure>
+        <p>
+        In order to bring up your GPA, you need to focus on classes with the most credits because they have a greater effect on your overall performance. This way, identifying weak areas becomes possible at the beginning of each semester. Educational Utility – By computing achievements in advance using a GPA calculator, students can work out how to make smarter choices throughout highschool so that average results incrementally become better ones.
+        </p>
+        
+        
+      `
+    },
   ]
 }
 ,
 
- "gpa-calculator": {
- formula: `
+"grade-calculator": {
+  sections: [
+    {
+      type: "html",
+      title: "History of Grading System",
+      body: `
+
+
+        <p>
+The grading scheme in use today is only about 100 years old, and was developed as a part of the institution of formal schooling. Upon completion of the text, the assessment of learning has traditionally occurred through oral feedback, with teacher observation that relies largely on subjective judgement. As education grew and the volume of students rose, it became necessary for a uniform and matter-of-fact test method.
+        </p>
+  
+        <p>
+          
+In the decades following, secondary and post-secondary institutions implemented formal grading systems. To keep assessment consistent and fair, numerical marking systems and the letter grades were established. These systems helped to standardize the measurement of student performance between different students and between schools.
+        </p>
+
+        <p>
+          Since, then grading systems have evolved to facilitate comparison between academic performances and to monitor learning progress. In today's world, grading is not just for the purpose of informing outcomes but contributes significantly towards educational bribery and malpractice, promotion, admission, scholarship and career development guidancE. The grading system is now a part of the structure of education across much of the world.
+        </p>
+
+        <figure class="content-image">
+          <img
+            src="/images/The_Evolution_of_the_Grading.png"
+            alt="The Evolution of the Grading System"
+            loading="lazy"
+            width="800"
+            height="350"
+          />
+      
+        </figure>
+
+      `
+    },
+    {
+      type: "html",
+      title: "Why Use Grading System",
+      body: `
+        <p>
+         
+
+The goal of any scoring system, after all, is to provide as accurate and unbiased an estimate of student performance as possible. Raw scores themselves are hard to interpret, whereas grades are a succinct and standardized representation of a student's achievement that can be understood by outsiders. This facilitates teachers, parents and institutions to know a student's overall performance standard.
+        </p>
+
+        <p>
+          Scoring methodologies also facilitate comparisons and benchmarks. [0104] Student may be benchmarked within a class, across school or at national and/or international levels on the same common grading scale. This equalization is particularly crucial when it comes to competitive examinations, admission into higher education institutions and for allowing scholarships.
+        </p>
+
+        <p>
+         
+Yet another justification for having a grading system is motivation. Grades motivate students to recognize their strengths and weaknesses, therefore encourage them to strive for better achievements. The criteria for grading are transparent, so students will know how they are being evaluated and what it will take to get a higher grade.
+        </p>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Factor</th>
+      <th>Manual Calculation</th>
+      <th>Online Grade Calculator</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Accuracy</td>
+      <td>Error-prone</td>
+      <td>Highly accurate</td>
+    </tr>
+    <tr>
+      <td>Time Required</td>
+      <td>High</td>
+      <td>Instant</td>
+    </tr>
+    <tr>
+      <td>Ease of Use</td>
+      <td>Complex</td>
+      <td>Very easy</td>
+    </tr>
+    <tr>
+      <td>Reusability</td>
+      <td>Limited</td>
+      <td>Unlimited</td>
+    </tr>
+  </tbody>
+</table>
+
+
+      `
+    },
+    {
+      type: "html",
+      title: "Benefits of Grade Calculation",
+      body: `
+        <p>
+       
+
+Among the most important advantages of grade calculation is precise response and consistency. Hand calculations may result in errors, particularly when there are many subjects or large data. There need be no such mistakes when a Grade Calculator online can do the work for you, and straightaway give you accurate results.
+        </p>
+
+        <p>
+       Grade calculation is also much faster for students and teachers. Instead of wasting time on redundant calculations, you will be able to concentrate your energy on analyzing outcomes and enhancing the learning experience. Teachers are able to have an immediate feedback on the class performance, whereas students can monitor better their own academic achievement.
+        </p>
+
+        <p>
+         Parents, meanwhile, grade calculation is an easily understood tool for them to learn about their child's academic performance. It also prevents institutions from having uneven evaluation standards. In general, it provides greater efficiency for education as a whole system of education and clearer decision-making.
+        </p>
+
+       
+
+      `
+    },
+    {
+      type: "html",
+      title: "Grade Calculation Formula",
+      body: `
+        <p>
+ 
+
+The majority of Grade Calculators employ a percentage as the grading scale. The basic formula is:
+<p><strong>
+       % = (Marks Obtained / Total Marks) × 100
+       </strong>
+        </p>
+
 <p>
-This calculator computes the <strong>Grade Point Average (GPA)</strong> based on the grades and credit hours of multiple courses.
+       After percentage is computed, it maps to pre-defined grades as below: For example:-
+        </p>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Percentage Range</th>
+      <th>Grade</th>
+      <th>Performance Level</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>90% – 100%</td>
+      <td>A</td>
+      <td>Excellent</td>
+    </tr>
+    <tr>
+      <td>75% – 89%</td>
+      <td>B</td>
+      <td>Very Good</td>
+    </tr>
+    <tr>
+      <td>60% – 74%</td>
+      <td>C</td>
+      <td>Good</td>
+    </tr>
+    <tr>
+      <td>40% – 59%</td>
+      <td>D</td>
+      <td>Pass</td>
+    </tr>
+    <tr>
+      <td>Below 40%</td>
+      <td>F</td>
+      <td>Fail</td>
+    </tr>
+  </tbody>
+</table>
+
+
+       
+
+
+        <p>
+        This formula driven solution provides rapid, accurate and consistent grading.
+        </p>
+
+       
+
+      `
+    }
+  ]
+},
+
+"height-calculator": {
+  sections: [
+    {
+      type: "html",
+      title: "Height Growth Tracking Tips",
+      body: `
+      <p>
+For children, adolescents and even adults in some cases, tracking height is important. At the moment, there's no widespread requirement or mechanism for tracking growth and it's information that could benefit parents, doctors and students who wonder how they compare with peers. You'll see the amount of height loss, with a Height Calculator you can immediately remind yourself over time.
 </p>
 
 <p>
-The calculation works as follows:
-</p>
+      <strong>
+Tips for tracking height growth:
+</strong>
 <ul>
-  <li>Each course has a <strong>grade</strong> and <strong>credit hours</strong>.</li>
-  <li>Grades are converted into grade points using a standard scale (e.g., A = 4.0, B+ = 3.3, etc.).</li>
-  <li>The grade points for each course are multiplied by the corresponding credit hours: <em>points = gradePoint × credits</em>.</li>
-  <li>All course points are summed: <em>totalPoints = Σ(points)</em>.</li>
-  <li>All credit hours are summed: <em>totalCredits = Σ(credits)</em>.</li>
-  <li>The GPA is calculated as:
-    <strong>GPA = totalPoints ÷ totalCredits</strong>.
-  </li>
+<li>Measure at the same time of day to minimize variation.</li>
+
+<li>The right tool for the job is with a good, reliable measuring tape or stadiometer and get an accurate measure.</li>
+<li>Trend-spot by the month or quarter for record height.</li>
+<li>Compare to normal standards of age and sex for growth.</li>
+</ul>
+        </p>
+
+<p>
+     This way you can see fast what works and what not, while you monitor growth with a calculator. For instance, if a 10-year-old is growing 3 centimeters a year while the average is 5 centimeters, both parents and doctors can intervene preemptively. 
+        </p>
+
+        
+     <figure class="content-image">
+          <img
+            src="/images/height-growth-tracking-chart.png"
+            alt="height-growth-tracking-chart"
+            loading="lazy"
+            width="800"
+            height="350"
+          />
+      
+        </figure>
+
+      `
+    },
+    {
+      type: "html",
+      title: "Predicting Adult Height Easily ",
+      body: `
+     <p>
+      
+
+Parents and teenagers are often concerned with height prediction. Statistical formulas based on parental heights and growth patterns can predict an adult's final height.
+</p>
+<p>
+<strong>Common formula (Mid-Parental Height Method):</strong>
+</p>
+
+<p><strong>For boys:</strong></p>
+<p>
+  Predicted Height = (Father's Height + Mother's Height + 13) ÷ 2 cm
+</p>
+
+<p><strong>For girls:</strong></p>
+<p>
+  Predicted Height = (Father's Height + Mother's Height - 13) ÷ 2 cm
+</p>
+
+<strong>Example:</strong>
+<ul>
+  <li>Father: 180 cm, Mother: 165 cm</li>
+  <li>Boy’s predicted height = (180 + 165 + 13) ÷ 2 = 179 cm</li>
 </ul>
 
-<p>
-This ensures that courses with more credits have a proportionally larger impact on the overall GPA.
-</p>
-`
-,
-
-  howToUse: [
-    "Enter the name of each course (optional, for reference only).",
-    "Enter the number of credits for each course.",
-    "Select the grade received for each course.",
-    "Click Add Course to include more subjects.",
-    "Click Calculate GPA to see your final GPA.",
-    "Use Reset to clear all inputs and start over."
-  ],
-
-  features: [
-    "Supports multiple courses in one calculation.",
-    "Uses standard grade-to-point mapping.",
-    "Automatically validates credits and grades.",
-    "Instant GPA calculation with no page reload.",
-    "Mobile-friendly and easy to use interface."
-  ],
-
-  whyUse:
-    "This GPA Calculator helps students accurately calculate their Grade Point Average based on course credits and grades. It is useful for semester planning, academic tracking, scholarship eligibility checks, and understanding academic performance quickly and reliably.",
-
-  notes: [
-    "Credits must be positive numbers.",
-    "A grade must be selected for every course.",
-    "Courses with missing or invalid data are not calculated.",
-    "The GPA is calculated using a weighted average method.",
-    "Different institutions may use different grading scales."
-  ]
-}
-,
-  "grade-calculator": {
-  formula: `
-<p>
-This calculator determines the <strong>final grade</strong> based on individual scores, maximum possible points, and weight of each item or assignment.
-</p>
 
 <p>
-The calculation works as follows:
-</p>
-<ul>
-  <li>For each item, calculate the <strong>percentage score</strong>:
-    <em>percentage = (score ÷ max) × 100</em>.
-  </li>
-  <li>Multiply the percentage score by the item's weight to get the <strong>weighted score</strong>:
-    <em>weightedScore = percentage × (weight ÷ 100)</em>.
-  </li>
-  <li>Sum all weighted scores to get the <strong>total weighted percentage</strong>:
-    <em>totalPercentage = Σ(weightedScore)</em>.
-  </li>
-  <li>Convert the total percentage to a <strong>letter grade</strong> using the standard grading scale:
+
+Now you don’t need to be worried, as Height Calculator is the best way to calculate your exact predicted height without any risk of miscalculations.
+        </p>
+
+
+      `
+    },
+    {
+      type: "html",
+      title: " Height Calculation Accuracy Methods",
+      body: `
+       <p>
+      The accurate value of height is important in health, pediatrics, nutrition and sports medicine. The following methods improve accuracy:
+        </p>
+
+    <p>
     <ul>
-      <li>A: 90–100%</li>
-      <li>B: 80–89%</li>
-      <li>C: 70–79%</li>
-      <li>D: 60–69%</li>
-      <li>F: below 60%</li>
+    <li><strong>Stadiometer:</strong> Common clinical medical equipment.</li>
+    <li><strong>Wall Mounted Measuring Tape:</strong> Have the child stand with their knee straight without socks on.</li>
+    <li><strong>Digital Height Calculator Apps:</strong> Many of these apps are based on camera or AI calculation that estimate your height.</li>
+     <li><strong>Repeat the Measure:</strong> Measure height 2–3 times and average the measurements in order to minimize errors.</li>
     </ul>
-  </li>
-</ul>
+   
+ </p> 
+
 
 <p>
-This ensures each item contributes proportionally to the final grade according to its weight.
-</p>
-`
-,
-
-  howToUse: [
-    "Enter the name of each item (assignment, exam, quiz, etc.).",
-    "Enter the score you received for that item.",
-    "Enter the maximum possible score for the item.",
-    "Enter the weight percentage of the item.",
-    "Click Add Item to include more graded components.",
-    "Click Calculate Grade to view your final percentage and letter grade.",
-    "Use Reset to clear all values and start again."
-  ],
-
-  features: [
-    "Supports multiple assignments, exams, or grading items.",
-    "Weighted grade calculation for accurate results.",
-    "Automatically validates scores, maximum values, and weights.",
-    "Instant calculation of percentage and letter grade.",
-    "Mobile-friendly and easy-to-use interface."
-  ],
-
-  whyUse:
-    "This Grade Calculator helps students quickly determine their final grade based on weighted assessments. It is ideal for tracking academic performance, planning study efforts, and understanding how individual scores impact the final result.",
-
-  notes: [
-    "Scores cannot be greater than the maximum score.",
-    "All weights must be positive numbers.",
-    "Every item must include score, maximum value, and weight.",
-    "The total grade is calculated using a weighted average method.",
-    "Letter grade thresholds may vary by institution."
-  ]
-}
-,
-
-  "height-calculator": {
-  formula: `
-<p>
-This calculator converts height between <strong>feet & inches</strong> and
-<strong>centimeters</strong> using standard measurement formulas.
+<strong>Formula for height growth rate:</strong>
 </p>
 
 <p>
-<strong>Feet & Inches to Centimeters:</strong>
+Growth Rate (cm/year) = Current Height – Previous Height Time Period in Years
 </p>
 
+<p>Example:</p>
+
+<ul><li>Initial height: 120 cm, Final height: 125 cm, Duration: 1 year</li><li>Rate of growth = thickness – 120 ÷ 1= 5cm/year</li></ul>
+
+
+<p>Growth rates and trends can be calculated automatically by calculators, therefore the monitoring becomes more simple.</p>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Accuracy Level</th>
+      <th>Common Usage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Stadiometer</td>
+      <td>Very High</td>
+      <td>Hospitals, Clinics</td>
+    </tr>
+    <tr>
+      <td>Wall Measuring Tape</td>
+      <td>Medium</td>
+      <td>Home Use</td>
+    </tr>
+    <tr>
+      <td>Digital Height Calculator</td>
+      <td>High</td>
+      <td>Online Tools</td>
+    </tr>
+    <tr>
+      <td>Multiple Measurements</td>
+      <td>Very High</td>
+      <td>Medical Assessment</td>
+    </tr>
+  </tbody>
+</table>
+
+
+      `
+    },
+    {
+      type: "html",
+      title: "Importance of Height Data",
+      body: `
+        
+        <p>
+Height information is essential for health, education and sports. Knowing height helps:
+</p>
+<p>
 <ul>
-  <li>Total Inches = (Feet × 12) + Inches</li>
-  <li>Centimeters = Total Inches × 2.54</li>
+<li>Follow your child's development against a growth chart.</li>
+<li>Plan nutrition and exercise programs.</li>
+<li>Assess eligibility for certain sports or schools.</li>
+<li>Detect growth disorders early.</li>
 </ul>
-
-<p>
-<strong>Centimeters to Feet & Inches:</strong>
+</p>
+With daily use of a Height Calculator, raw measurements are transformed into significant intelligence. For instance, you know if a child is below average, average or above in height according to standard percentiles which can help determine whether their growth range is normal.
 </p>
 
-<ul>
-  <li>Total Inches = Centimeters ÷ 2.54</li>
-  <li>Feet = Floor(Total Inches ÷ 12)</li>
-  <li>Inches = Remaining Inches</li>
-</ul>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Area</th>
+      <th>Why Height Matters</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Health</td>
+      <td>Growth disorder detection</td>
+    </tr>
+    <tr>
+      <td>Education</td>
+      <td>Age-appropriate development</td>
+    </tr>
+    <tr>
+      <td>Sports</td>
+      <td>Eligibility and performance</td>
+    </tr>
+    <tr>
+      <td>Fitness</td>
+      <td>Body proportion analysis</td>
+    </tr>
+  </tbody>
+</table>
 
-<p>
-All results are rounded to provide clear and readable output.
-</p>
-  `,
+      `
+    },
+     {
+      type: "html",
+      title: "Conclusion",
+      body: `
+        
+        <p>
 
-  howToUse: [
-    "Enter your height in feet and inches, then click Convert to CM.",
-    "Or enter your height in centimeters and click Convert to Feet.",
-    "Only one conversion section needs to be used at a time.",
-    "Click Reset to clear all values and start a new conversion."
-  ],
+A Height Calculator- A quick, easy and convenient way for tracking growth, forecasting adult height during growing years, measuring accuracy and realizing the value of height metric. Students, parents as well as healthcare providers can be provided a higher degree of interpretation using standard growth formulas and regular monitoring to aid in decisions about healthy growth.
+        </p>
 
-  features: [
-    "Converts feet & inches to centimeters instantly.",
-    "Converts centimeters to feet & inches accurately.",
-    "Uses standard international conversion values.",
-    "Validates inputs to prevent incorrect results.",
-    "Clean, simple, and mobile-friendly design."
-  ],
+       
 
-  whyUse:
-    "This Height Calculator is useful for students, fitness tracking, medical forms, travel documents, and international measurements. It provides fast and accurate conversions without manual calculations.",
-
-  notes: [
-    "Feet and inches must be non-negative numbers.",
-    "Centimeter values must be greater than zero.",
-    "Results are rounded for better readability.",
-    "This calculator is for general measurement purposes.",
-    "Always use official measurements when required by institutions."
+      `
+    }
   ]
-}
-,
+},
+
+
 "concrete-calculator": {
-  formula: `
+  sections: [
+    {
+      type: "html",
+      title: "Concrete Volume Estimation Methods",
+      body: `
+      <p>
+         It is the basis for any construction project to get an accurate estimate of concrete volume. Regardless of whether you’re building a small residential slab or all the way up to a large commercial building, having an estimate of exactly how much concrete you’ll need will go a long way in cost control and management as well as keeping the project moving forward. The quantity of concrete needed is dependent on the shape and dimension of the building being constructed: slabs, columns, beams or foundations.
+
+
+      </p>
+      <p>
+The geometric volume formulae is the most widely estimation method. For a rectangular slab, it is:
+      </p>
+      <p>
+<strong>Volume of Concrete = Length x Width x Thickness</strong>
+      </p>
+      <p>
+For example, if a slab is 5m long, 4 m wide and 0.1 meter thick the quantity of concrete needed are:
+      </p>
+      <p>
+<strong>5 × 4 × 0.1 = 2 cubic meters</strong>
+      </p>
+      <p>
+For shapes with an upper and lower surface such as columns, the formula becomes:
+      </p>
+      <p>
+How to Calculate Concrete Volume? 
+<p><strong>Concrete Volume = π × Radius² × Height</strong></p>
+
+      </p>
+      <p>
+Different parts have different equations and if you trying to calculate it manually is the complexity level gets higher which involves multiple shapes. This is where Concrete Calculator is a handy tool! Simply input dimensions and the calculator will automatically calculate the amount of material needed, no more need for paper.
+      </p>
+      <p>
+The other significant method is to determine the concrete volume by using typical construction drawings. Construction Workers or Engineers would then use these blueprints to take measurements and calculate volume. Unfortunately, this is cumbersome and subject to human clerk error. An online Concrete Calculator makes the calculations easy and helps you keep it consistent.
+      </p>
+      <p>
+It is also needed in calculating the quantity of cement, sand and aggregate required for construction, making it an important step in project planning.
+      </p>
+
+ <figure class="content-image">
+          <img
+            src="/images/concrete-volume-estimation-infographic.png"
+            alt="The Evolution of the Grading System"
+            loading="lazy"
+            width="800"
+            height="350"
+          />
+      
+        </figure>
+      `
+    },
+    {
+      type: "html",
+      title: " Avoiding Material Wastage Errors",
+      body: `
+     <p>
+     Waste of materials is a widespread and expensive issue in construction operations. If you overestimate concrete, you end up with wasted materials, excess costs and disposal problems; if you underestimate, your project is delayed while ordering more than one delivery of concrete. Avoiding these mistakes begins with accurate volume measurements.
+     </p>
+      <p>
+     There are a number of reasons for wastage, but perhaps the single most important factor is wrong measurement. As little as thickness or length error can result in large quantity of concrete. The use of a Concrete Calculator mitigates this risk by providing the calculated formulas consistently each and every time.
+     </p>
+      <p>
+     A further cause of wastage comes from failing to allow for construction loss, e.g. spillage, irregular surfaces or leakage through formwork. Calculator numbers give you exact volume, but pros typically add a little bit to allow for loss — 5-10 percent is a good rule of thumb. This safety margin keeps from running out while still keeping waste to a minimum.
+     </p>
+      <p>
+     There is also the likelihood of human error, as manual calculations are carried out multiple times for various segments of a project. Online calculators allow for consistency of calculation between slabs, columns and footings resulting in more efficient material management by contractors.
+     </p>
+      <p>
+     Also, planning ahead according to reliable and real concrete estimates contributes positively to logistics. Congregation of the correct amount of concrete at the right time minimizes excess material, leading to project savings. Concrete Calculator is particularly helpful for DIY users and small builders as it helps calculate the exact amount of concrete required from the start to finish, removing unnecessary guesswork.
+     </p>
+
+     <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Structure Type</th>
+      <th>Length (m)</th>
+      <th>Width / Diameter (m)</th>
+      <th>Thickness / Height (m)</th>
+      <th>Concrete Volume (m³)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Slab</td>
+      <td>5</td>
+      <td>4</td>
+      <td>0.10</td>
+      <td>2.00</td>
+    </tr>
+    <tr>
+      <td>Slab</td>
+      <td>6</td>
+      <td>3</td>
+      <td>0.12</td>
+      <td>2.16</td>
+    </tr>
+    <tr>
+      <td>Column</td>
+      <td>—</td>
+      <td>0.40 (Diameter)</td>
+      <td>3.0</td>
+      <td>0.38</td>
+    </tr>
+    <tr>
+      <td>Footing</td>
+      <td>1.5</td>
+      <td>1.5</td>
+      <td>0.30</td>
+      <td>0.68</td>
+    </tr>
+  </tbody>
+</table>
+
+      `
+    }
+    ]
+},
+
+"ip-subnet-calculator": {
+  sections: [
+    {
+      type: "html",
+      title: "CIDR Notation Explained Visually",
+      body: `
+      <p>
+      CIDR CIDR (Classless Inter-Domain Routing) is a networking technique used in IP addressing and routing. CIDR says “here’s an IP address,” followed by a slash (/) then a number that tells you how portions of the IP address are dedicated to the network side.
+        </p>
+        <p>
+      <strong>Example:</strong>
+     <ul> <li>192.168.1.0/24</li>
+            <ul>
+      <li>/24 signifies that the first 24 bits are used for network, and the last 8 bits represent address.</li>
+      
+    </ul>
+     </ul>
+        </p>
+
+      `
+    },
+    {
+      type: "html",
+      title: " How CIDR Works",
+      body: `
+     <p>
+      An IP address consists of 32 bits. CIDR tells us how many of these bits belong to the network and how many belong to hosts.
+        </p>
+      <p>
+      <strong>Formula to Calculate the Number of Hosts in a Subnet</strong>
+        </p>
+
+        <p>
+      <strong>Example: /24 Subnet</strong>
+        </p>
+
 <p>
-This calculator determines the <strong>volume of concrete</strong> required for a
-rectangular structure based on its length, width, and height.
+2<sup>32 − 24</sup> − 2 = 2<sup>8</sup> − 2 = 256 − 2 = <strong>254 hosts</strong>
+</p>
+<p>
+      <strong>Example: /16 Subnet</strong>
+        </p>
+
+
+<p>
+2<sup>32 − 16</sup> − 2 = 2<sup>16</sup> − 2 = 65536 − 2 = <strong>65534 hosts</strong>
 </p>
 
 <p>
-The basic volume formula used is:
+CIDR significantly reduces IP address wastage compared to traditional classful addressing
+and enables more flexible and efficient subnetting for modern networks.
 </p>
 
-<ul>
-  <li><strong>Volume</strong> = Length × Width × Height</li>
-</ul>
+   <figure class="content-image">
+          <img
+            src="/images/cidr-notation-infographic-network-host-bits.png"
+            alt="CIDR notation diagram showing network and host bits in an IP address"
+            loading="lazy"
+            width="800"
+            height="300"
+          />
+          <figcaption>
+            CIDR visual showing IP address split into network and host bits for /24 and /16 subnets
+          </figcaption>
+        </figure>
+      `
+    },
+    {
+  type: "html",
+  title: "Calculating Subnet Masks Easily",
+  body: `
+    <p>
+      A subnet mask defines which part of an IP address represents the network
+      and which part is reserved for host addresses. Subnet masks are directly
+      derived from the CIDR value.
+    </p>
 
-<p>
-The default result is calculated in <strong>cubic meters (m³)</strong>.
-If cubic feet are selected, the result is converted using:
-</p>
+    <p>
+      <strong>Subnet Mask Formula from CIDR</strong>
+    </p>
 
-<ul>
-  <li><strong>1 cubic meter</strong> = 35.3147 cubic feet</li>
-</ul>
+    <p>
+      <strong>Subnet Mask = First CIDR bits set to 1, remaining bits set to 0</strong>
+    </p>
 
-<p>
-The final volume is rounded for clear and practical output.
-</p>
-  `,
+    <p>
+      <strong>Examples:</strong>
+    </p>
 
-  howToUse: [
-    "Enter the length, width, and height of the concrete area.",
-    "Ensure all dimension values are positive numbers.",
-    "Select the desired output unit: cubic meters or cubic feet.",
-    "Click the Calculate button to get the concrete volume.",
-    "Use the Reset button to clear all inputs and results."
-  ],
+    <ul>
+      <li><strong>/24</strong> → 255.255.255.0</li>
+      <li><strong>/16</strong> → 255.255.0.0</li>
+      <li><strong>/28</strong> → 255.255.255.240</li>
+    </ul>
 
-  features: [
-    "Accurate volume calculation for rectangular concrete structures.",
-    "Supports both cubic meters (m³) and cubic feet (ft³).",
-    "Instant results with clear unit labeling.",
-    "Input validation to prevent incorrect calculations.",
-    "Simple, responsive, and mobile-friendly interface."
-  ],
+    <p>
+      <strong>Steps to Calculate a Subnet Mask</strong>
+    </p>
 
-  whyUse:
-    "This Concrete Calculator helps estimate material requirements for construction projects such as slabs, foundations, columns, and flooring. It saves time, reduces calculation errors, and assists in planning concrete quantities efficiently.",
+    <ol>
+      <li>Take the CIDR value (for example, <strong>/26</strong>).</li>
+      <li>Divide the 32 bits of the IP address into four octets (8 bits each).</li>
+      <li>Set the first CIDR bits to 1 (network bits) and the remaining bits to 0 (host bits).</li>
+      <li>Convert each octet from binary to decimal to get the subnet mask.</li>
+    </ol>
 
-  notes: [
-    "All dimensions must be greater than zero.",
-    "Measurements should be entered in meters.",
-    "The calculator assumes a rectangular shape.",
-    "Results are approximate and rounded for usability.",
-    "Always consult a professional for critical structural projects."
-  ]
+    <p>
+      <strong>CIDR vs Subnet Mask vs Number of Hosts</strong>
+    </p>
+
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>CIDR</th>
+          <th>Subnet Mask</th>
+          <th>Number of Hosts</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>/24</td>
+          <td>255.255.255.0</td>
+          <td>254</td>
+        </tr>
+        <tr>
+          <td>/26</td>
+          <td>255.255.255.192</td>
+          <td>62</td>
+        </tr>
+        <tr>
+          <td>/28</td>
+          <td>255.255.255.240</td>
+          <td>14</td>
+        </tr>
+        <tr>
+          <td>/16</td>
+          <td>255.255.0.0</td>
+          <td>65534</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      Using an <strong>IP Subnet Calculator</strong>, users can instantly calculate
+      the subnet mask, number of hosts, network address, and broadcast address.
+      This eliminates manual errors and significantly speeds up network planning.
+    </p>
+
+    <p>
+      <strong>Why It Matters</strong>
+    </p>
+
+    <ul>
+      <li>Helps network engineers design efficient and scalable subnets.</li>
+      <li>Prevents IP address wastage by allocating only the required host range.</li>
+      <li>Essential for IT students and professionals preparing for CCNA and enterprise networking.</li>
+    </ul>
+  `
 }
 ,
- "password-generator": {
-  formula: `
-<p>
-This calculator generates a <strong>random, secure password</strong> based on user-selected criteria.
-</p>
+ 
+  ]
+},
 
+
+"password-generator": {
+  sections: [
+    {
+      type: "html",
+      title: "How Secure Passwords Are Generated",
+      body: `
+      <p>
+      Unpredictability, adequate length and diversity are the ingredients to strong passwords. On a technical level, password strength is measured in entropy: the amount of unpredictability an attacker would have to overcome. The entropy of a password can be roughly calculated by the formula:
+        </p>
+        <p>
+           <strong>
+          Entropy (bits) = Length × log2(Character set size) to get the required number of bits per possible symbol.
+        </strong>
+        </p>
+         <p>
+      A good password generator strives for maximal entropy by:
+       
+<ul>
+<li>Allowing long passwords (or passphrases).</li>
+<li>Supporting lowercase, uppercase, digits and special characters.</li>
+<li>Elimination of easily guessed patterns36 (dictionary words, keyboard sequences, repetitive or sequential characters).</li>
+</ul>
+        </p>
+     <p>
+      Modern strong password generators have moved to CSPRNGs-based character selection. This guarantees that every generated character is independent and equi-random from the permitted set. For most common use cases, > 60 bits of entropy are sufficient security against offline brute-force attacks; more might be preferred for long term-protection (80 – 128 bits).
+        </p>
+      `
+    },
+    {
+      type: "html",
+      title: "Best Password Length and Complexity Rules ",
+      body: `
+     <p>
+      Length and complexity interact: increasing either raises entropy. Below are typical entropy examples (rounded):
+        </p>
+
+        <p>
+      <ul>
+      <li>8 characters:
+            <ul>
+      <li>lowercase (26): 37.60 bits</li>
+      <li>letters+digits (62): 47.63 bits</li>
+      <li>full printable (≈95): 52.56 bits</li>
+    </ul>
+      </li>
+      <li>12 characters:
+             <ul>
+      <li>lowercase (26): 56.41 bits</li>
+      <li>letters+digits (62): 71.45 bits</li>
+      <li>full printable (95): 78.84 bits</li>
+    </ul>
+      </li>
+      <li>16 characters:
+          <ul>
+      <li>letters+digits (62): 95.27 bits</li>
+      <li>full printable (95): 105.12 bits</li>
+    </ul>
+      </li>
+      </ul>
+        </p>
 <p>
-The password is created using the following logic:
-</p>
+      (Entropy calculated as Length × log₂(R), where R is the character set size: 26, 62, 95 etc.)
+        </p>
+
+        <p>
+      Practical guidance:
+      <ul>
+      <li>For everyday accounts, 12–16 characters with letters, numbers and symbols is a fairly solid benchmark.</li>
+      <li>For high-value, long-lived credentials, aim for longer passwords (16+ characters) or passphrase(s) consisting of several words from a dictionary (picked randomly), resulting in high entropy with the benefit of being memorable.</li>
+      <li>Complexity rules which demand regular, minor updates can lower security (users make predictable variations). Promote reuse of longer, unique passwords rather than regular mandatory changes.</li>
+    </ul>
+        </p>
+
+      `
+    },
+    {
+      type: "html",
+      title: "How Random Passwords Enhances Account Security ",
+      body: `
+       <p>
+    It is the absence of human bias and order. Password's created by humans usually form pattern (name, date, common substituions) and hence have much lower entropy than random sequences. A properly generated random password:
+
+      <ul>
+      <li>Eliminates dictionary and pattern attacks.</li>
+      <li>Prevents reuse by not enabling it across application (critical: reuse multiplies breach risk).</li>
+      <li>Renders targeted guessing and credential-stuffing useless.</li>
+    </ul>
+        </p>
+
+        <p>
+    Complementary protections:
+
+      <ul>
+      <li>Keep long, random passwords stored and automatically entered using a trusted password manager.</li>
+      <li>Turn on multi-factor authentication (MFA), which lessens the effectiveness of stolen passwords.</li>
+      <li>Set different passwords for each account rather than just as easy-to-crack complexity rules.</li>
+    </ul>
+        </p>
+
+       
+
+      `
+    },
+ 
+  ]
+},
+
+
+"dice-roller": {
+  sections: [
+    {
+      type: "html",
+      title: "How Randomness on a Computer Is Generated Using Digital Dice Rolls",
+      body: `
+      <br>
+      Digital dice rolls approximate the real act of rolling a die by generating uniformly distributed integers between 1,61,61,6. The fundamental requirement is evenness: each side must have an according (1/6) probability with no predictable or biased deviations. Here are some of the major pitfalls to avoid as well as recommended practices.
+    <h5>  1. Sources of randomness </h5>
+      <h6>Pseudo-Random Number Generators (PRNGs)</h6>
+          <ul>
+      <li>Deterministic algorithms (for example Mersenne Twister) which generate sequences which look random.</li>
+      <li>A quick one and suitable for most games and simulations, but not secure if the attacker knows the seed.
+
+</li>
+    </ul>
+
+      <h6>Cryptographically Secure PRNGs (CSPRNGs)</h6>
+          <ul>
+      <li>Designed not to give much away even when some of their state is known.</li>
+      <li>Operate them with gambling, for security sensitive applications or if something must be fair provably.
+
+</li>
+    </ul>
+
+
+        <h6>True Random Number Generators (TRNGs)</h6>
+          <ul>
+      <li>Use hardware entropy (noise or timing jitter from a real world event).</li>
+      <li>Highest-quality randomness but slower and typically unnecessary for ordinary games.
+
+</li>
+    </ul>
+      
+
+     <h5>2. Simple mapping: same real domain to integer field</h5>
+     One natural way is to draw a random real r in [0, 1) and map it into a face:
+     </br>
+   <strong>  roll=[r×6]+1    </strong>
+     </br>
+     If (r) is perfectly uniform, then the roll is uniform over {1,..,6}. Since in practice, r is generated from a PRNG --provided pG, and that all computations are done correctly, then this procedure is simple and correct.
+
+ </br>
+      <h5>3. Pitfall: naive modulo method (modulo bias)</h5>
+       A frequent but flawed technique is:
+ </br>
+       <strong>  roll = (rand() % 6) + 1  </strong>
+ </br>
+       This creates a modulo bias if the PRNG range (RAND_MAX + 1) is not evenly divisible by 6. There are some results that we will see just a bit more often.
+ </br>
+   <strong>  Explanation: </strong>    A PRNG will give 0..N-1 and if N is not divisible by 6, the remainder distribution will favour smaller remainders. The power of the bias value depends on N mod 6.
+
+
+       <h5>4. Correct method: rejection sampling</h5>
+       Rejection sampling eliminates modulo bias:
+
+       <ol start="1">
+       <li>Let N be the PRNG range (e.g., 2^32 for a 32-bit generator).</li>
+
+
+       <li>Calculate limit = floor(N / 6) * 6.</li>
+       <li>Draw v from PRNG. If v >= limit, discard & redraw.</li>
+       <li>Return (v % 6) + 1.</li>
+       </ol>
+
+This ensures that each result hits exactly limit/6 times across the accepted values, leading to a uniform distribution.
+        </p>
+
+
+      `
+    },
+   
+ 
+  ]
+},
+
+"fuel-cost-calculator": {
+  sections: [
+    {
+      type: "html",
+      title: "How to calculate fuel cost correctly",
+      body: `
+      <p>
+      It is necessary to accurately estimate fuel cost for planning trip, budgeting and securing the most economical solution. A Fuel Cost Calculator will tell you how much cash you can expect to hand over for gas based on three numbers: miles driven, mpg, and price per gallon. Manual computations are susceptible to mistakes especially when involving different unit systems.
+        </p>
+<p>
+   <strong>   Fuel Cost Formulas  </strong>
+        </p>
+        <p>
+      <strong>For Miles and MPG:</strong>
+        </p>
+        <p>
+      Fuel Used (gal) = Distance (mi) ÷ Fuel Economy(MPG)
+        </p>
+          <p>
+      Total Fuel Cost=Price per Gallon × Fuel Used
+        </p>
+
+       <p>
+      <strong>For Kilometers and L/100km:</strong>
+        </p>
+
+          <p>
+      Fuel Used (litres) = (Distance x Fuel Efficiency)/100
+        </p>
+        <p>
+      Total Cost = Quantity of fuel used × Price per litre.
+        </p>
+
+        <p>
+      By inputting these values into Fuel Cost Calculator available on the web, consumers can get exact figures instantly without bothering about mix up in unit conversion. This is particularly great to help fund long journeys, delivery runs, and for you daily commuting cost estimations.
+        </p>
+
+        <figure class="content-image">
+          <img
+            src="/images/Fuel cost calculator infographic.png"
+            alt="Fuel cost calculator infographic showing a car on a road with labeled inputs for distance, fuel efficiency, fuel price, and the fuel cost formula."
+            loading="lazy"
+            width="800"
+            height="350"
+          />
+          <figcaption>
+    Fuel cost calculation illustrated using distance, mileage, and fuel price.
+          </figcaption>
+        </figure>
+
+      `
+    },
+    {
+      type: "html",
+      title: " Fuel Efficiency and Its Impact on Travel Cost",
+      body: `
+     <p>
+      Fuel efficiency directly determines how much your fuel cost is. Higher efficient vehicles use less fuel for a given distance, so result in lower travel costs. It is usually reported by MPG or L/100km, depending on your location.
+        </p>
+  <p>
+  <strong>    Why Fuel Efficiency Matters
+        </strong>
 
 <ul>
-  <li>A character set is built depending on which types are selected: <strong>uppercase letters</strong>, <strong>lowercase letters</strong>, <strong>numbers</strong>, and <strong>symbols</strong>.</li>
-  <li>For the desired password length, random characters are picked from the chosen set.</li>
-  <li>The resulting string is the generated password, ensuring randomness and inclusion of selected character types.</li>
+<li>The higher the MPG, the fewer gallons consumed for every mile traveled.</li>
+<li>Lower L/100km that means less fuel for more distance.</li>
+<li>Small differences in efficiency can make a huge difference to the cost of getting things from A to B.</li>
 </ul>
-  `,
+        </p>
 
-  howToUse: [
-    "Enter the desired password length (between 4 and 128 characters).",
-    "Select which character types to include: uppercase letters, lowercase letters, numbers, and symbols.",
-    "Click the 'Generate' button to create a password.",
-    "Optionally, click 'Copy' to copy the password to your clipboard.",
-    "Click 'Reset' to clear all fields and selections."
-  ],
-
-  features: [
-    "Generates completely random and secure passwords.",
-    "Supports uppercase, lowercase, numbers, and special symbols.",
-    "Customizable password length.",
-    "Easy copy-to-clipboard functionality.",
-    "User-friendly interface with instant generation."
-  ],
-
-  whyUse:
-    "Using strong, randomly generated passwords is critical for online security. This generator helps create passwords that are difficult to guess or crack, protecting your accounts and personal data.",
-
-  notes: [
-    "Ensure at least one character type is selected; otherwise, a password cannot be generated.",
-    "Passwords shorter than 4 characters are not recommended for security reasons.",
-    "Do not share generated passwords with untrusted parties.",
-    "For maximum security, use unique passwords for each account."
-  ]
-}
-,
-
-  "love-calculator": {
-
-  "formula": `
-<p>
-The love compatibility between two people is calculated by converting each character of their names into its corresponding ASCII code,
-summing these values, and then reducing the total to a percentage between 0 and 100.
-</p>
+          <br>
+      <strong>    Example
+        </strong></br>
+        A carbon based vehicle with 20 miles per gallon (MPG) traveling 
+        for 200 miles would consume:</br>
+200 ÷ 20 = 10 gallons
+</br>
+If your car gets 30 miles to the gallon and drives a similar distance:
+</br>
+200 ÷ 30 ≈ 6.67 gallons
+        </p>
 
 <p>
-The formula used is:
-</p>
+      At the same fuel price, the more efficient vehicle saves money. A Fuel Cost Calculator enables everyone to experiment with various efficiency numbers and see the impact of driving habits, vehicle selection and maintenance have on costs.
+        </p>
+        <p>
+      An increase in fuel economy, obtained through easy driving habits, the correct tire pressure and regular car servicing may save vehicle owners on petrol costs.
+        </p>
 
+        
+        <figure class="content-image">
+          <img
+            src="/images/Fuel efficiency comparison high vs low.png"
+            alt="Fuel efficiency comparison infographic showing two cars traveling the same distance—one high MPG/low L/100km using less fuel and costing less, and one low MPG/high L/100km using more fuel and costing more."
+            loading="lazy"
+            width="800"
+            height="350"
+          />
+          <figcaption>
+    High fuel efficiency means less fuel used and lower cost for the same distance compared to low fuel efficiency.
+          </figcaption>
+        </figure>
+      `
+    },
+    {
+      type: "html",
+      title: "Miles to Kilometers: Choosing the Appropriate Fuel Cost Units ",
+      body: `
+       <p>
+      Countries have different systems of measuring fuel. The US uses miles, MPG and dollars per gallon for the rest of those the world uses kilometers, L/100km and cost per liter. It's very important when doing calculations to use the right unit system.
+        </p>
+<p>
+<strong>Key Differences</strong>
 <ul>
-  <li>Convert each character of <strong>First Name</strong> to its ASCII code and sum them → <strong>Sum1</strong></li>
-  <li>Convert each character of <strong>Second Name</strong> to its ASCII code and sum them → <strong>Sum2</strong></li>
-  <li>Add the two sums: <strong>Total = Sum1 + Sum2</strong></li>
-  <li>Find the compatibility percentage: <strong>Percentage = Total % 101</strong> (gives value between 0–100%)</li>
+<li>MPG focuses on distance per unit of fuel</li>
+<li>L/100km focuses on fuel consumed over distance</li>
+<li>Prices vary by gallon or liter depending on location</li>
 </ul>
-
-<p>
-This method gives a simple, fun deterministic "love score" based purely on the letters in the names.
 </p>
-  `,
+       <p>
+       Dual-unit Fuel Cost Calculator Easily switch among systems to avoid any confusion. This is particularly beneficial for executives, global travelers and businesses with the responsibility of managing fuel costs across various regions.
+       </p>
 
-  "howToUse": [
-    "Enter the first person's name in the 'First Name' field.",
-    "Enter the second person's name in the 'Second Name' field.",
-    "Click the 'Calculate' button to see the love compatibility percentage.",
-    "Use the 'Reset' button to clear the fields and enter new names."
-  ],
+       <p>
+<strong>Advantages of using the two-unit fuel cost calculator
 
-  "features": [
-    "Instant calculation of love compatibility based on names.",
-    "Fun and interactive way to check name compatibility.",
-    "Works for any combination of names, regardless of length or characters.",
-    "Displays results clearly with a percentage score."
-  ],
-
-  "whyUse": "This calculator is a fun and engaging way to see a playful compatibility score between two names. It's perfect for entertainment, social sharing, or just lighthearted curiosity.",
-
-  "notes": [
-    "This calculation is purely for entertainment and has no scientific basis.",
-    "Results are deterministic; the same names will always yield the same percentage.",
-    "Special characters, spaces, and case of letters are normalized for calculation."
-  ]
-}
-,
-
-  "tip-calculator": {
-
-  "formula": `
-<p>
-The tip is calculated based on the <strong>bill amount</strong> and the <strong>tip percentage</strong>. 
-If the bill is split among multiple people, the total is divided equally.
-</p>
-
-<p>
-The formula used is:
-</p>
-
+</strong>
 <ul>
-  <li><strong>Tip Amount</strong> = Bill Amount × (Tip Percentage / 100)</li>
-  <li><strong>Total Bill</strong> = Bill Amount + Tip Amount</li>
-  <li><strong>Per Person</strong> = Total Bill ÷ Number of People</li>
+<li>Accurate cost estimation across regions</li>
+<li>No manual unit conversions required</li>
+<li>Faster and more reliable results</li>
+<li>Better budgeting and route planning</li>
 </ul>
-
-<p>
-If the number of people is 1, the total bill equals the amount to be paid by a single person.
 </p>
-  `,
 
-  "howToUse": [
-    "Enter the total bill amount in dollars.",
-    "Enter the desired tip percentage (for example, 15 for 15%).",
-    "Enter the number of people splitting the bill.",
-    "Click on 'Calculate' to see the tip amount, total bill, and per person amount if applicable.",
-    "Click 'Reset' to clear all inputs and start over."
-  ],
-
-  "features": [
-    "Calculates tip amount automatically based on the entered bill and tip percentage.",
-    "Displays the total bill including tip.",
-    "Shows per person amount if the bill is split among multiple people.",
-    "Supports resetting all inputs for quick recalculation.",
-    "User-friendly interface with clear labels for each input field."
-  ],
-
-  "whyUse": `
-<p>
-Use this Tip Calculator to quickly and accurately calculate the tip amount, total bill, and per person share when dining out. 
-It helps avoid manual errors and saves time, ensuring fairness when splitting the bill.
-</p>
-  `,
-
-  "notes": [
-    "Ensure all input fields have positive numbers.",
-    "Tip percentage can be zero if no tip is to be added.",
-    "Number of people must be at least 1.",
-    "The calculator rounds results to two decimal places for convenience."
+      `
+    },
+ 
   ]
-}
-,
+},
 
+
+
+
+"voltage-drop-calculator": {
+  sections: [
+    {
+      type: "html",
+      title: "Electrical Line Loss Calculation",
+      body: `
+      <br>
+      Electrical Line Loss Calculation
+
+Electrical line loss is the loss in voltage that you can measure as electricity travels from a power source to the load. It is a conductor resistance dominated phenomenon, and it is an important factor in system design, because of its direct influence on equipment performance, efficiency and safety. Line loss is determined by the applied voltage, load current, conductor resistance (a function of the conductors gauge and material), and the one-way length of the conductor. In reality, most calculators double the one-way length to allow for the round trip of current. For single-phase circuits the equation is
+</br>
+ <strong>  V drop = I × R total;  </strong> three phase uses additionally a √3 factor due to geometric phase difference.
+        </p>
+         <p>
+      Regulatory guidelines usually limit voltage drop to the point where it will not affect operation of a device—usually 3% for branch circuits and 5% total in feeder-plus-branch runs—to prevent low motor torque, poor light quality (dim or off-colored lights), and device failure. The more accurately you can calculate electrical line loss, the easier it is for electricians and designers to ensure that these limits will be met prior to installation in addition to allowing them to evaluate when a conductor upsizing may be necessary and how much energy will be lost over time. Use a calculator that looks up standardized resistance values for wire gauges and can switch between single- or three-phase calculations for accurate repeatable results.
+        </p>
+
+          <figure class="content-image">
+          <img
+            src="/images/Voltage-Drop-illustration.png"
+            alt="Infographic showing voltage drop in an electrical circuit with a thick low-resistance wire and a thin high-resistance wire, highlighting energy loss and reduced voltage at the load."
+            loading="lazy"
+            width="800"
+            height="350"
+          />
+          <figcaption>
+ Voltage drop occurs along higher-resistance conductors, reducing the voltage delivered to electrical equipment.
+          </figcaption>
+        </figure>
+
+      `
+    },
+    {
+      type: "html",
+      title: " Conductor Resistance Impact Analysis",
+      body: `
+     <p>
+      The resistance of the conductor is the main characteristic to be considered for voltage drop. Resistance is a property of the material (copper or aluminum) and cross-section (AWG) at conductor temperature, as well as length. Thicker wires (lower AWG numbers) have less resistance per unit length so you get lower voltage drop with the same current. In contrast, thinner conductors have higher resistance and greater voltage losses and power dissipation.
+        </p>
+<p>
+      Conductor resistance impact analysis must take into account the anticipated continuous load current, one-way and round-trip conductor lengths, ambient and operating temperatures, as well as insulation type and installation circumstances that affect ampacity & thermal performance. As resistivity increases with temperature, design margins must cover worst-case operation temperatures to prevent an unscheduled increase in voltage drop. For sensitive loads — motors, HVAC compressors, EV chargers — even a modest amount of resistance can have outsize penalties in performance degradations, high inrush currents and shortened equipment life.
+        </p>
+ <p>
+      Published resistance tables (Ω per 1000 feet) can be used for rapid estimates, but engineering judgment is required if the loads vary or if very long cable runs are unavoidable. It is recommended that the results of these analysis influence conductor size, location of load centers or use of paralleled conductors to reduce both resistance as well as thermal effects which may be attributed.
+        </p>
+
+        <table class="table table-bordered table-striped">
+        <caption>Wire Gauge vs Resistance and Voltage Drop Impact</caption>
+
+  <thead>
+    <tr>
+      <th>Wire Gauge (AWG)</th>
+      <th>Resistance (Ω / 1000 ft)</th>
+      <th>Typical Current (A)</th>
+      <th>Voltage Drop Impact</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>14</td>
+      <td>2.525</td>
+      <td>15</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>1.588</td>
+      <td>20</td>
+      <td>Moderate</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>0.999</td>
+      <td>30</td>
+      <td>Low</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>0.628</td>
+      <td>40</td>
+      <td>Very Low</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>0.395</td>
+      <td>55</td>
+      <td>Minimal</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>0.248</td>
+      <td>70</td>
+      <td>Minimal</td>
+    </tr>
+  </tbody>
+</table>
+      `
+    },
+    {
+      type: "html",
+      title: "Circuit Efficiency Voltage Loss",
+      body: `
+       <p>
+      Voltage drop is a direct measure of the efficiency of circuit performance: energy lost in conductors as heat diminishes the available power at the load, and adds cost to operation. Circuit efficiency can be optimized by reducing voltage drop through proper wire gauge selection, shorter cable lengths, equal load phase balance or low resistance conductors in circuits where the expenditure is justifiable.
+        </p>
+         <p>
+      Uncontrolled voltage drop These real world effects to inoperable equipment and premature aging are high energy use, reduced motor performance with both lower torque and greater risk of stalling, insulation aging well before its time, erratic electronic behavior? For 3 phase systems, voltage drop calculations tend to include geometry of the system – hence √3 and delta (or wye) LOADING is required.
+        </p>
+         <p>
+      Voltage drop calculators can be used as a matter of course in planning in order to estimate endpoint voltages under expected load, and provide fall-back margins for political limits on voltage drops. Taken as a whole, line loss calculation, the effect of conductor resistance and circuit efficiency analysis make up a comprehensive system for low-cost, safe installation fall- ing within code.
+        </p>
+
+        `
+    },
+ 
+  ]
+},
+
+
+"square-footage-calculator": {
+  sections: [
+    {
+      type: "html",
+      title: "How To Calculate Area",
+      body: `
+      <p>
+      Determining the square footage to measure a rectangle room is one of the most important jobs when it comes to planning your new flooring, paint or construction projects. A rectangle's most basic form is written as:
+        </p>
+<p>
+    <strong>  Area = Length × Width  </strong>
+</p>
+
+<p>The two dimensions should be in the same units (feet or meters.). Example calculations:</p>
+<p>When the <strong>  Length = 12 ft and Width = 10 ft:</br> Area = 12 × 10 = 120 sq ft </strong></p>
+
+<p>For <strong>For Length = 4 m and Width = 3 m:</br> Area = 4 × 3 = 12 m²</strong></p>
+
+  <p>Use for any shape that is not a rectangle: Cut into simple shapes (rectangle, triangle or circle) and find the total area by adding. Common formulas:
   
+  <ul>
+  <li>Triangle: A = 0.5 × b × h</li>
+  <li>Circle: Area = π × radius²</li>
+  <li>Trapezoid: Area is 0.5 × (sum of parallel sides) × height</li></ul>
+  </p>
+
+  <p>How to measure area without hassle:
+	<ul>
+  <li>Make two measurements and note the largest measurement when working with uneven walls.</li>
+  <li>Measure out (floor to floor) on the clear instead of around obstructions.</li>
+  <li>Menage recommends accounting for alcoves, cutouts and built-in fixtures individually; you won’t have to approximate a homely cabinet or coat of paint.</li>
+  </ul>
+</p>
+
+<p>The process is automatic if you use a Square Footage Calculator. Enter a number for length and width, change units to feet or meters, and get the area in both of these units (and converted if needed) right away.</p>
+
+
+  <figure class="content-image">
+          <img
+            src="/images/square-footage-calc.png"
+            alt="Diagram showing how to calculate the area of a rectangular room in feet and meters."
+            loading="lazy"
+            width="800"
+            height="350"
+          />
+          <figcaption>
+ Visual representation of calculating room area using length and width with unit conversion between meters and feet.
+          </figcaption>
+        </figure>
+      `
+    },
+    {
+      type: "html",
+      title: "Feet Versus Meters Conversion ",
+      body: `
+     <p>Selecting the right system removes conversion mistakes and leads to precise orders and estimated costs of materials. Two typical units of areas are square feet (sq ft) and square meters (m²). Transformation between the two is given by a fixed factor:</p>
+     <p> <strong> 1 m² = 10.7639 sq ft
+ </br>
+1 sq ft = 0.092903 m²</strong>  </p>
+
+<p>Conversion formulas:
+<ul>
+<li>Square meters to square feet:<strong> Area (sq ft) = Area (m²) × 10.7639</strong></li>
+<li>Convert from sq. ft to sq. m:<strong> Area (m²) = Area (sq ft) × 0.092903</strong></li>
+</ul>
+</p>
+
+<p>Examples:
+<ul>
+<li>Convert 12 m² to sq ft:
+<strong>
+12 × 10.7639 = 129.1668 sq ft →(report as) 129.17 sq ft </strong></li>
+<li>Convert 120 sq ft to m²:
+<strong>
+120 × 0.092903 = 11.14836 m² → could be reported as 11.15 m² </strong></li>
+</ul>
+</p>
+
+<p>In planning out your purchase of tile, laminate, paint coverage (etc.), don't forget to add a waste allowance—usually 5–10%—to account for cutting, breakage and bad layouts. Example for tiles:
+<ul>
+<li>Area needed = estimated area × (1 + the waste factor)</li>
+<li>For 120 sq ft of a room with 7% waste: 120 × 1.07 = 128.4 square feet → round up to ordering units (boxes, etc.).</li>
+</ul>
+</p>
+
+<p>Why consistent units matter:
+<ul>
+<li>Material requirements and costs are typically reported in one unit's units not converted to leads to expensive over or under ordering.</li>
+<li>Contractors frequently quote the local units and this means it’s easier to talk in the same terms than convert everything.</li>
+</ul>
+</p>
+      `
+    },
   
-
-  "ip-subnet-calculator": {
-  formula: `
-<p>
-This calculator determines key subnet information based on a given <strong>IPv4 address</strong>
-and its <strong>CIDR (Classless Inter-Domain Routing)</strong> notation.
-</p>
-
-<p>
-The calculations include:
-</p>
-
-<ul>
-  <li><strong>Network Address</strong>: The first address in the subnet, representing the subnet itself.</li>
-  <li><strong>Broadcast Address</strong>: The last address in the subnet, used to send packets to all hosts.</li>
-  <li><strong>Subnet Mask</strong>: Converts the CIDR prefix into standard dot-decimal format.</li>
-  <li><strong>Total Hosts</strong>: The number of usable IP addresses in the subnet, calculated as 2^(32 − CIDR) − 2 (except for /32).</li>
-</ul>
-
-<p>
-Binary conversion is used internally to derive network and broadcast addresses, ensuring precise results.
-</p>
-  `,
-
-  howToUse: [
-    "Enter a valid IPv4 address (e.g., 192.168.1.1).",
-    "Enter a CIDR value between 0 and 32 (e.g., 24).",
-    "Click the Calculate button to view subnet details.",
-    "Use the Reset button to clear all fields and start over."
-  ],
-
-  features: [
-    "Instant calculation of Network Address, Broadcast Address, Subnet Mask, and Total Hosts.",
-    "Validates IP addresses and CIDR values to prevent errors.",
-    "Clear and organized output for easy interpretation.",
-    "Mobile-friendly and responsive design.",
-    "Supports any valid IPv4 subnet."
-  ],
-
-  whyUse:
-    "This IP Subnet Calculator helps network administrators, engineers, and students quickly determine subnet information without manual calculation, saving time and reducing errors in network planning.",
-
-  notes: [
-    "Ensure the IP address is a valid IPv4 address.",
-    "CIDR must be between 0 and 32.",
-    "Total hosts calculation excludes network and broadcast addresses except for /32 subnets.",
-    "Results are intended for planning and educational purposes.",
-    "Double-check critical network configurations using proper networking tools."
+ 
   ]
+},
+
+"time-card-calculator": {
+  sections: [
+    {
+      type: "html",
+      title: "Calculating Worked Hours Accurately",
+      body: `
+      <p>
+      Precise calculation of worked hours begins with all lights in the work site being pegged as time at a regular interval into a common denominated and rounded quantity. Basic formula using minutes:
+        </p>
+
+         <p><strong> Total Minutes = ((EndTime − StartTime) in minutes) − BreakMinutes</strong> </p>
+
+         <p>Convert minutes to hours: </p>
+         
+       <p>  <strong> Hours Worked = Total Minutes ÷ 60</strong> </p>
+       <p> Example: Begin 09:15, End 17:45, Break 30 min.</p>
+       <p> Total minutes = (17:45 – 09:15) = 510 minutes → 510 – 30 = 480 </p>
+       <p>minutes → Hours worked = 480 ÷60 =8.00 hours. </p>
+       <p> Rounding and presentation guidelines: Include both H hr M min and decimal hours (e.g., 2.5). This assists in payroll; Decimal Hours = Hours + Minutes / 60. Give specific feedback for invalid input (non-numbers, negative duration) and handle edge cases like start and end being the same.</p>
+
+       <figure class="content-image">
+          <img
+            src="/images/how-time-card-calculator-works-infographic.png"
+            alt="Time card calculator diagram showing start time end time break duration and total hours worked"
+            loading="lazy"
+            width="800"
+            height="350"
+          />
+          <figcaption>
+Visual explanation of how a time card calculator computes total working hours including breaks and overnight shifts.
+          </figcaption>
+        </figure>
+
+
+      `
+    },
+    {
+      type: "html",
+      title: "Handling Overnight Shifts & Breaks",
+      body: `
+     <p> Overnight/cross midnight shifts requires adding 24 hours if end time is before start time. Enforce this rule consistently, and no-one will have negative time periods:</p>
+
+     <p> If end < start, let end = end + 24h.</p>
+     <p> Example: Begin 22.30, End 06.15 45 minutes break</p>
+     <p>Raw minutes = ((06:15 + 24:00) − 22:30) = 585 minutes → 585 − 45 = 540 minutes → 9.00 hours. </p>
+     <p> Break handling best practices:
+     <ul>
+     <li>Accept break in minutes, can be a float (e.g. 7.5).</li>
+     <li>Ensure that break ≤ raw duration, otherwise report a human book error.</li>
+     <li>For the sake of compliance, have an option to automatically deduct unpaid breaks.</li>
+     </ul>
+     </p>
+
+     <p> Add tests for edge cases: start = end, ie 0 or 24 hours as per business rules), very long breaks and minute rounding. Show the raw minutes calculation publicly and final rounded value so it can be audited.</p>
+
+
+      `
+    },
+    {
+      type: "html",
+      title: "Overtime Rules and Pay Calculation ",
+      body: `
+       <p> Process computed hours into payroll values with customizable overtime regulations. Typical structure:
+       <ul>
+       <li>Definition of Regular Hours per Day (e.g., 8 hours)</li>
+       <li>Overtime multiplier (e.g., 1.5×)</li>
+       </ul>
+       </p>
+
+       <p>Overtime calculation formula: </p>
+       <p> If TotalHours > RegularHours:</p>
+       <p><strong> OvertimeHours = TotalHours − RegularHours</strong> </p>
+       <p><strong> OvertimePay = OvertimeHours × HourlyRate × OvertimeFactor</strong> </p>
+       <p><strong> TotalPay = (RegularHours * HourlyRate) + OvertimePay</strong> </p>
+
+       <br> Example: TotalHours = 10 HourlyRate = $15 RegularHours = 8 Multiplier = 1.5
+</br>
+OvertimeHours = 2 → OvertimePay = 2 ×15×1.5= $45 → TotalPay = (8 × 15)+45= $165.</p>
+       <p> Also include: weekly threshold settings (for example, >40 hrs/week), Double time-multipliers for special-days and automatic consolidation of hours across shifts. Here is a little table to show people some common multipliers.</p>
+
+       
+
+      `
+    },
+ 
+  ]
+},
+
+
+"time-zone-calculator": {
+  sections: [
+    {
+      type: "html",
+      title: "How time zone conversion works",
+      body: `
+      <p>
+      Time zone conversion basically converts a local time to two representations of the same date and time: UTC and the target TimeZone. Follow these three steps to prevent mistakes:
+      <ul>
+      <li>Normalize to UTC: convert the source local time to Coordinated Universal Time (UTC) and subtracting the offset from them.</li>
+      <li>Target apply offset: Combine the target zone’s UTc offset with UTC time to get the target local time.</li>
+      <li>Add day changes, i.e. in case the resulting time is crossing the midnight boundary - set correct calendar date as well.</li>
+      </ul>
+
+        </p>
+
+<p>  Simple formula </br><strong>TargetTime = SourceTime + (UTC_offset_target − UTC_offset_source)
+</strong></br>
+Times are in hours (decimal or hh:mm format). For instance: IST = +5:30 (5.5) EST = −5, EDT = −4.
+</p>
+
+ <p><strong>Practical example</strong></br>
+ What is 2:30 PM IST(UTC + 5.30) In America/New_York timezone?
+
+ <ul>
+ <li>UTC = 14:30 − 5:30 = 09:00 UTC</li>
+ <li>If New York is in standard time (UTC − 5) then → Target = 09:00 − 5 :00 = 04:00 (EST)</li>
+ <li>If NY is on Daylight Time (UTC − 4) → Target = 09:00 − 4:00 = 05:00 (EDT)</li></ul></br>
+ Note: DST (Daylight Saving Time) offsets will be reset to the target offset; refer to the IANA time zone database for data in a specific time zone, such as America/New_York.
+ </p>
+
+      `
+    },
+   {
+  type: "html",
+  title: "Calculating Global Time Difference",
+  body: `
+    <p>
+      To calculate the difference (span) between two time zones:
+    </p>
+
+    <p>
+      <strong>Formula:</strong><br />
+TimeDifference = UTC_offset_target − UTC_offset_source    </p>
+
+    <ul>
+      <li><strong>Positive answer</strong> implies the target is in the future</li>
+      <li><strong>A negative result</strong>indicates that the target "lies behind" the source (lower time).</li>
+    </ul>
+
+    <p>
+      <strong>Example:</strong><br />
+     IST (UTC+5:30) to CET (UTC+1:00):
+
+
+    </p>
+
+    <p>
+      +1.0 − +5.5 = −4.5 hours<br />
+      <strong>Result:</strong> CET is 4 hours 30 minutes behind IST.
+    </p>
+
+    <p>
+      This calculation helps users quickly understand how far apart two regions are in time
+      without converting exact clock values.
+    </p>
+
+    <p>
+      <strong>DST, IANA Zones, and Edge Cases</strong>
+    </p>
+
+    <ul>
+      <li>
+        <strong>Summer Time (DST)</strong>
+        For details please read the article about Summer Time DST rules are different in every country. Fixed offsets work (e.g. “UTC+2”) but can be incorrect for DST transitions. In production, always use IANA timezone identifiers (Europe/london, America ,Los_Angeles).
+      </li>
+      <li>
+        <strong>Ambiguous Times:</strong>
+        During DST fallbacks, the same local time may occur twice. Accurate conversion
+        requires a clear UTC reference or disambiguation.
+      </li>
+      <li>
+        <strong>Leap Seconds:</strong>
+       Generally not something you need to worry about in human scheduling; don’t bother with it if you need to get down under a second.
+      </li>
+      <li>
+        <strong>Limits of date:</strong>
+       Conversions can push the calendar date when adding days or shifting in reverse—display both as formatted and prefer time.
+      </li>
+    </ul>
+  `
 }
 ,
-
- "dice-roller": {
-
-  formula: `
-<p>
-The dice roll result is generated using a <strong>random number algorithm</strong>
-that simulates the outcome of rolling physical dice.
-</p>
-
-<p>
-For each die, a random integer is produced between <strong>1</strong> and the
-<strong>number of sides</strong> on the die.
-</p>
-
-<p>
-The formula used for each roll is:
-</p>
-
-<ul>
-  <li>
-    <strong>Single Die Roll</strong> = Random number between 1 and Number of Sides
-  </li>
-</ul>
-
-<p>
-When multiple dice are rolled, the calculator generates individual results for
-each die and then computes the <strong>total sum</strong> by adding all outcomes.
-</p>
-  `,
-
-  howToUse: [
-    "Enter the number of dice you want to roll.",
-    "Enter the number of sides for each die (for example, 6 for a standard die).",
-    "Click the Roll Dice button to generate random results.",
-    "View individual dice values and the total sum instantly.",
-    "Use the Reset button to clear all values and roll again."
-  ],
-
-  features: [
-    "Supports rolling multiple dice at the same time.",
-    "Works with any number of sides (D6, D10, D20, and more).",
-    "Instant random results with accurate total calculation.",
-    "Simple, clean, and mobile-friendly interface.",
-    "No page reload required for repeated rolls."
-  ],
-
-  whyUse:
-    "This dice roller is ideal for board games, tabletop RPGs, probability experiments, and quick simulations. It provides fast, fair, and repeatable dice rolls without the need for physical dice.",
-
-  notes: [
-    "The number of dice must be greater than zero.",
-    "The number of sides per die should be at least 2.",
-    "Each roll is generated independently using randomness.",
-    "Results may vary every time the dice are rolled."
+    
+ 
   ]
-}
-,
+},
 
-  "fuel-cost-calculator": {
-
-  formula: `
-<p>
-The fuel cost is calculated based on the <strong>total distance traveled</strong>,
-the vehicle’s <strong>fuel efficiency</strong>, and the <strong>current fuel price</strong>.
+"love-calculator": {
+  sections: [
+    {
+      type: "html",
+      title: "How Love Calculator Works",
+      body: `
+      <p>
+      A Love Calculator is a device which will calculate love between two people, based on their astrology signs or names. Love Calculator is a lot of fun!Here are questions some people ask about the Love Calculator- What is it? How does it work? Knowledge of its rationale enables the user to interpret results in a realistic and responsible manner.
+        </p>
+<p><strong> Input Collection</strong></br>
+Commonly, a love calculator will start off by taking down straightforward information, including:
+<ul><li>First name and partner’s name</li><li>Date of birth or astrological sign</li></ul>
+These inputs are normalized before feeding into the model. This may involve normalizing text to lowercase, stripping spaces or special characters, and unifying formatting as a whole. This makes the calculation consistent for all users.
 </p>
 
-<p>
-Depending on the selected unit system, the following formulas are used:
+<p><strong> Core Calculation Methods</strong></br>
+Love meters generally involve the following:
+
+<ol start="1">
+<li><strong> Letter-to-number mapping</strong></br>The value of letters in a name is calculated as (A=1, B=2, …). Adding and decreasing these values arrive at a foundational compatibility value.</li>
+<li><strong>Name similarity logic </strong></br>A few calculators compare the shared letters/letters—which is how they estimate character frequency or graph and then match up patterns two names have in common. More similarity may lead to high compatibility score.</li>
+<li><strong> Numerology techniques</strong></br>Name or date values are assigned single-digit numbers, and those results impact your life.</li>
+<li><strong>Algorithmic hashing </strong></br>Now-a-days, the names are transformed into numbers via a hash or a checksum algorithm (or simpler), the names are combined via an algebraic operation and then output is scaled to give it a value between 0 and 100.</li>
+</ol>
+</p>
+<p><strong> Percentage Generation</strong> </br>
+When the internal value is found, it is then converted to a percentage. Unofficial cut value (i.e., for output feeling challenging but not infeasible). Some calculators incorporate a small amount of sentence-by-sentence knowledge randomization to keep repeated checks sounding new.
 </p>
 
-<ul>
-  <li>
-    <strong>Miles + MPG:</strong><br />
-    Fuel Used = Distance (miles) ÷ Fuel Efficiency (MPG)
-  </li>
-  <li>
-    <strong>Kilometers + L/100km:</strong><br />
-    Fuel Used = (Distance (km) × Fuel Efficiency) ÷ 100
-  </li>
-</ul>
+ <figure class="content-image">
+          <img
+            src="/images/love-calculator-percentage-illustration.png"
+            alt="Illustration showing a love calculator with name compatibility and percentage result"
+            loading="lazy"
+            width="800"
+            height="350"
+          />
+          <figcaption>
+            A visual representation of how a love calculator analyzes names to generate a compatibility percentage
+          </figcaption>
+        </figure>
+      `
+    },
+    {
+      type: "html",
+      title: "Love Percentage Meaning Explained ",
+      body: `
+     <p>Love percentage is hence the result of any love calculator. Its power is derived more from how it’s calculated and what one might infer based on that number. This article clarifies what a love percentage is, and how users should interpret it. </p>
 
-<p>
-Once the fuel used is calculated, the total cost is determined using:
+<p><strong> What a Love Percentage Represents</strong></br>
+The percentage of love is the result of an actual calculation that’s applied to the users input. This may correspond to, depending of the calculator:
+
+	<ul><li>Text similarity between names</li><li>Numerical alignment using numerology</li><li>A heuristic compatibility score</li></ul>
+
+  It's not a measure of feeling, caring, commitment, or relationship quality.
 </p>
 
-<ul>
-  <li>
-    <strong>Total Fuel Cost</strong> = Fuel Used × Fuel Price
-  </li>
-</ul>
+<p><strong>Understanding Percentage Ranges</strong></br>
+OK so those love figures are far from precise but come on...
+	<ul>
+  <li><strong>0–30%: </strong>Low algorithmic alignment. Oh, that doesn't mean they aren't compatible in reality.</li>
+  <li><strong>31–60%: </strong>Moderate alignment. Frequently displayed for balanced or neutral combinations of input.</li>
+  <li><strong> 61–85%:</strong>Major alignment as per the logic of the calculator.</li>
+  <li><strong> 86–100%:</strong> Very high alignment, often as a prelude for experiencing exciting and sharing.</li>
+  </ul>
 
-<p>
-The final amount represents the estimated fuel expense for the entered journey.
-</p>
-  `,
-
-  howToUse: [
-    "Select the unit system (Miles + MPG or Kilometers + L/100km).",
-    "Enter the total distance you plan to travel.",
-    "Provide your vehicle’s fuel efficiency value.",
-    "Enter the current fuel price per gallon or per liter.",
-    "Click the Calculate button to get the estimated fuel cost.",
-    "Use the Reset button to clear all inputs and start again."
-  ],
-
-  features: [
-    "Supports both US and metric unit systems.",
-    "Instant fuel cost calculation with accurate formulas.",
-    "Mobile-friendly and easy-to-use input fields.",
-    "Clear validation to prevent invalid or negative values.",
-    "Clean and simple result display for quick understanding."
-  ],
-
-  whyUse:
-    "This fuel cost calculator helps you estimate travel expenses in advance, making it easier to plan road trips, daily commutes, or long-distance journeys. It allows better budgeting, fuel planning, and cost comparison between different vehicles or routes.",
-
-  notes: [
-    "Fuel efficiency values should be greater than zero for accurate results.",
-    "Ensure the selected unit system matches the entered values.",
-    "The calculated fuel cost is an estimate and may vary based on driving conditions.",
-    "Fuel prices can fluctuate, so always use the most recent rate."
-  ]
-}
-,
-
- "voltage-drop-calculator": {
-
-  formula: `
-<p>
-Voltage drop is calculated based on the <strong>current</strong>, 
-<strong>wire resistance</strong>, <strong>wire length</strong>, 
-and the <strong>electrical phase</strong> (single-phase or three-phase).
+  These are descriptive, not predictive ranges.
 </p>
 
-<p>
-The general formulas used are:
-</p>
 
-<ul>
-  <li>
-    <strong>Total Wire Resistance</strong> =
-    (Resistance per 1000 ft × Wire Length / 1000) × 2
-  </li>
-  <li>
-    <strong>Single-phase Voltage Drop</strong> =
-    Current × Total Resistance
-  </li>
-  <li>
-    <strong>Three-phase Voltage Drop</strong> =
-    √3 × Current × Total Resistance
-  </li>
-  <li>
-    <strong>Percentage Voltage Drop</strong> =
-    (Voltage Drop ÷ Source Voltage) × 100
-  </li>
-</ul>
 
-<p>
-The factor of <strong>2</strong> is used to account for the round-trip length
-of the conductor in single circuits.
-</p>
-  `,
-
-  howToUse: [
-    "Enter the system voltage in volts (V).",
-    "Enter the current load in amperes (A).",
-    "Provide the one-way wire length in feet.",
-    "Select the appropriate wire gauge (AWG).",
-    "Choose whether the circuit is single-phase or three-phase.",
-    "Click the Calculate button to view voltage drop results."
-  ],
-
-  features: [
-    "Supports both single-phase and three-phase systems",
-    "Uses standard AWG copper wire resistance values",
-    "Instant voltage drop and percentage calculation",
-    "Clear input validation with error messages",
-    "Mobile-friendly and easy-to-use interface"
-  ],
-
-  whyUse:
-    "This calculator helps electricians, engineers, and installers ensure that voltage drop stays within recommended limits. Proper voltage drop calculation improves system efficiency, prevents equipment damage, and complies with electrical standards.",
-
-  notes: [
-    "Resistance values are based on copper conductors at approximately 75°C.",
-    "Wire length should be entered as one-way distance, not round-trip.",
-    "Excessive voltage drop can lead to overheating and reduced equipment performance.",
-    "Always follow local electrical codes and safety guidelines."
-  ]
-}
-,
-
-  "square-footage-calculator": {
-
-  formula: `
-<p>
-Square footage (area) is calculated by multiplying the <strong>length</strong> and
-<strong>width</strong> of a space.
-</p>
-
-<p>
-The basic formula used is:
-</p>
-
-<ul>
-  <li><strong>Area</strong> = Length × Width</li>
-</ul>
-
-<p>
-If measurements are entered in <strong>feet</strong>, the result is shown in square feet (sq ft).
-</p>
-
-<p>
-If measurements are entered in <strong>meters</strong>, the area is calculated in square meters (m²)
-and also converted to square feet using the conversion:
-</p>
-
-<ul>
-  <li><strong>1 square meter</strong> = 10.7639 square feet</li>
-</ul>
-`,
-
-  howToUse: [
-    "Select the measurement unit (Feet or Meters).",
-    "Enter the length of the area.",
-    "Enter the width of the area.",
-    "Click the Calculate button to get the total area.",
-    "Use the Reset button to clear all inputs and start again."
-  ],
-
-  features: [
-    "Supports both feet and meter units",
-    "Automatically converts square meters to square feet",
-    "Accurate area calculation with decimal precision",
-    "Clean and mobile-friendly input layout",
-    "Instant results without page reload"
-  ],
-
-  whyUse:
-    "This Square Footage Calculator helps you quickly determine the area of rooms, plots, or spaces for construction, flooring, painting, real estate, and interior planning. It removes manual calculation errors and saves time.",
-
-  notes: [
-    "Only positive numeric values are accepted for length and width.",
-    "Results are approximate due to rounding.",
-    "For irregular shapes, divide the area into rectangles and calculate separately.",
-    "Ensure both measurements are in the same unit before calculating."
-  ]
-}
-,
-
-  "time-card-calculator": {
-
-  formula: `
-<p>
-Total working time is calculated by finding the difference between the
-<strong>start time</strong> and <strong>end time</strong>, and then subtracting the
-<strong>break duration</strong>.
-</p>
-
-<p>
-The calculation follows these steps:
-</p>
-
-<ul>
-  <li><strong>Total Minutes Worked</strong> = End Time − Start Time</li>
-  <li>If the shift crosses midnight, 24 hours are added automatically</li>
-  <li><strong>Net Work Time</strong> = Total Minutes − Break Minutes</li>
-</ul>
-
-<p>
-The final result is converted into <strong>hours and minutes</strong> for easy reading.
-</p>
-`,
-
-  howToUse: [
-    "Enter your work start time.",
-    "Enter your work end time.",
-    "Add break duration in minutes (if any).",
-    "Click the Calculate button to get total hours worked.",
-    "Use Reset to clear all inputs and start over."
-  ],
-
-  features: [
-    "Supports overnight shifts automatically",
-    "Break time subtraction for accurate results",
-    "Instant calculation in hours and minutes",
-    "Simple and user-friendly time input",
-    "Works on desktop and mobile devices"
-  ],
-
-  whyUse:
-    "This Time Card Calculator helps employees, freelancers, and employers quickly calculate total working hours without manual time tracking. It is ideal for payroll preparation, attendance tracking, and daily work summaries.",
-
-  notes: [
-    "Break time should be entered in minutes only.",
-    "If the end time is earlier than the start time, the calculator assumes an overnight shift.",
-    "Negative work duration is not allowed.",
-    "Results are rounded to the nearest minute."
-  ]
-}
-,
-
-  "time-zone-calculator": {
-
-  formula: `
-<p>
-The time zone conversion is performed by taking the selected <strong>input time</strong>
-in the <strong>source time zone</strong> and converting it to the corresponding
-<strong>target time zone</strong>.
-</p>
-
-<p>
-The calculation process works as follows:
-</p>
-
-<ul>
-  <li>The entered time is first interpreted in the <strong>From Time Zone</strong>.</li>
-  <li>The system adjusts the time based on the UTC offset of the source zone.</li>
-  <li>The adjusted time is then converted to the <strong>To Time Zone</strong>.</li>
-</ul>
-
-<p>
-This method automatically accounts for standard time differences between regions.
-</p>
-`,
-
-  howToUse: [
-    "Enter the time you want to convert.",
-    "Select the source (From) time zone.",
-    "Select the destination (To) time zone.",
-    "Click the Convert button to see the converted time.",
-    "Use Reset to clear inputs and start a new conversion."
-  ],
-
-  features: [
-    "Supports multiple international time zones",
-    "Instant and accurate time conversion",
-    "Handles UTC offsets automatically",
-    "Simple and clean user interface",
-    "Works on all modern browsers and devices"
-  ],
-
-  whyUse:
-    "This Time Zone Calculator is ideal for remote workers, international teams, travelers, and businesses that operate across different regions. It helps avoid confusion caused by time differences and ensures accurate scheduling.",
-
-  notes: [
-    "The calculator uses standard time zone offsets for conversion.",
-    "Daylight Saving Time behavior depends on the selected time zone.",
-    "Input time must be in 24-hour format.",
-    "The result shows the converted time only, not the date."
-  ]
-}
-,
-
-  "gas-mileage-calculator": {
-
-  formula: `
-<p>
-Fuel efficiency or gas mileage measures how far a vehicle can travel per unit of fuel. This calculator determines the efficiency by dividing the distance traveled by the amount of fuel used.
-</p>
-
-<p>
-The formula used is:
-</p>
-
-<ul>
-  <li><strong>Miles per Gallon (MPG)</strong> = Distance (miles) ÷ Fuel Used (gallons)</li>
-  <li><strong>Kilometers per Liter (km/L)</strong> = Distance (kilometers) ÷ Fuel Used (liters)</li>
-</ul>
-
-<p>
-Make sure to enter positive numeric values for both distance and fuel used. The unit selected determines the calculation format.
-</p>
-  `,
-
-  howToUse: [
-    "Select the unit system: Miles per Gallon (MPG) or Kilometers per Liter (km/L).",
-    "Enter the total distance traveled in miles or kilometers, depending on the unit selected.",
-    "Enter the amount of fuel consumed in gallons or liters.",
-    "Click the 'Calculate' button to see the fuel efficiency.",
-    "Click 'Reset' to clear all input fields and start over."
-  ],
-
-  features: [
-    "Supports both MPG and km/L units.",
-    "Provides quick calculation of fuel efficiency based on user input.",
-    "Easy-to-use interface with labeled inputs and unit selection.",
-    "Instant results with error handling for invalid input values."
-  ],
-
-  whyUse:
-    "Knowing your vehicle's fuel efficiency helps in budgeting fuel costs, reducing environmental impact, and comparing vehicle performance.",
-
-  notes: [
-    "Ensure all input values are positive numbers.",
-    "Select the correct unit system before entering values to get accurate results.",
-    "The calculator does not account for variations in driving conditions or fuel quality."
-  ]
-}
-,
-
-  "density-calculator": {
-  "formula": `
-<p>
-Density is a measure of how much mass is contained in a given volume. It is calculated by dividing the <strong>mass</strong> of an object by its <strong>volume</strong>.
-</p>
-
-<p>
-The formula used is:
-</p>
-
-<ul>
-  <li><strong>Density</strong> = Mass ÷ Volume</li>
-</ul>
-
-<p>
-The units depend on the system selected:
-<ul>
-  <li><strong>Metric:</strong> Mass in kilograms (kg), Volume in cubic meters (m³), Density in kg/m³</li>
-  <li><strong>Imperial:</strong> Mass in pounds (lbs), Volume in cubic feet (ft³), Density in lbs/ft³</li>
-</ul>
-</p>
-  `,
+      `
+    },
   
-  "howToUse": [
-    "Enter the mass of the object in the appropriate unit (kg or lbs) based on the selected unit system.",
-    "Enter the volume of the object in the corresponding unit (m³ or ft³).",
-    "Select the unit system: Metric (kg/m³) or Imperial (lbs/ft³).",
-    "Click the 'Calculate' button to see the density of the object.",
-    "Use the 'Reset' button to clear all inputs and start a new calculation."
-  ],
-
-  "features": [
-    "Supports both Metric and Imperial unit systems.",
-    "Instantly calculates density with proper formatting.",
-    "Displays error messages for invalid or missing inputs.",
-    "Simple and intuitive interface for quick calculations."
-  ],
-
-  "whyUse": 
-    "This calculator is useful for students, engineers, scientists, and anyone needing to determine the density of materials quickly without manual calculations.",
-
-  "notes": [
-    "Ensure that both mass and volume are positive numbers.",
-    "Mixing units (e.g., kg with ft³) will result in incorrect density values.",
-    "For Metric calculations, density is expressed in kg/m³; for Imperial, in lbs/ft³."
+ 
   ]
-}
-,
+},
 
-  "weight-calculator": {
+"gas-mileage-calculator": {
+  sections: [
+    {
+      type: "html",
+      title: "How Gas Mileage Is Calculated",
+      body: `
+      <p>
+      Gas mileage (the term is synonymous with ‘fuel efficiency’) describes how far a vehicle will travel on given amount of fuel. It’s one of the most significant factors in a vehicle’s performance, and running cost, and environmental impact. Since the way in which gas mileage is measured can be confusing, it helps to know how people track this rating so you don't overuse gasoline.
+        </p>
 
-  "formula": `
-<p>
-The weight conversion is calculated by using the standard conversion factor between kilograms and pounds.
+<p><strong> What Is Gas Mileage?</strong> </br>
+Car gas mileage is the distance a car can travel on 1 gallon of gasoline. They are most regularly measured using units of miles per gallon (MPG) or kilometers per liter (km/L). The higher it is, the more miles to the gallon that the vehicle gets, meaning you can drive further on less fuel.
+</p>
+<p><strong> Basic Formula</strong> </br>
+The fuel economy equation is pretty straightforward:</br></br>
+<strong> Gas Mileage = Distance you go/ Amount of gas used</strong>
+</br>
+	<ul><li>You can measure the distance in miles or kilometers.</li><li>Measurement of fuel The quantity of fuel is measured in gallons or liters.</li></ul>
+
+  For example:
+  <ul><li>If you just drove 300 miles on 10 gallons, then you are doing 30 MPG</li><li>If you can go 450 km when using 30 litres, then your fuel consumption is 15 km/L</li>
+  </ul>
+  The above simple formula is what most gas mileage calculators, both online and offline, use to get the right answers.
+</p>
+ 
+<p><strong> Why Accurate Inputs Matter</strong> </br></br>
+The correct way to figure gas mileage has to:
+<ul><li>Use odometer or trip meter to measure distance accurately</li><li>Use the same unit  (miles w/ gallons, kilometers w/ liters)</li><li>Provide positive real values for both distance and fuel</li>
+</ul>Small input errors can cause outsize results.
+</p>
+ <figure class="content-image">
+          <img
+            src="/images/Gas Mileage Calculation Illustration.png"
+            alt="Illustration showing how gas mileage is calculated using distance and fuel"
+            loading="lazy"
+            width="800"
+            height="350"
+          />
+          <figcaption>
+           Gas mileage calculated from distance and fuel used.
+          </figcaption>
+        </figure>
+
+      `
+    },
+    {
+      type: "html",
+      title: "MPG vs km/L: Which Fuel Economy Unit Is Better ",
+      body: `
+     <p>
+      Fuel economy is calculated in various ways around the world; the most common are MPG (miles per gallon) and km/L (kilometers per litre). Both are used for the same purpose: To determine how efficiently a vehicle uses fuel, but different regions use their preferred version.
+        </p>
+<p><strong>What Is MPG? </strong> </br>
+Miles per gallon (MPG) tells you the number of miles a vehicle can travel with just one gallon of fuel. It is primarily used in:
+<ul><li>United States</li><li>United Kingdom (with imperial gallons)</li></ul>
+A higher MPG rating equals greater fuel efficiency. For instance, a 40-MPG car is more fuel-efficient than a 25-MPG one.
 </p>
 
-<p>
-The formulas used are:
+<p><strong>What Is km/L? </strong></br>
+Kilometers per liter (km/L) determines how far an automobile can travel with one liter of fuel. It is commonly used in:
+<ul><li>India</li><li>Europe</li><li>Most Asian and African countries</li></ul>Like MPG, higher km/L values mean better fuel efficiency.
 </p>
 
+<p><strong>MPG and km/L Differences</strong></br>
+The only difference between MPG and km/L is the units of measurement:
+<ul><li>MPG uses miles and gallons</li><li>km/L uses kilometers and liters</li></ul>The difference in the size of the two units means thatMPG and km/L values cannot be directly compared without a conversion.
+</p>
+
+<p><strong>Which Unit Is Better? </strong></br>
+Neither unit is inherently better. The “better” unit depends on:
+<ul><li>Your country’s standard measurement system</li><li>Your vehicle’s dashboard and documentation</li><li>Simplicity and familiarity to the reader.</li></ul>For example, in India most drivers use km/L since fuel is sold by the liter and road distances are marked in kilometers.
+</p>
+
+<p><strong>Why Dual-Unit Calculators Are Useful </strong></br>
+With a calculator that does both MPG and km/L, you can:
+<ul><li>Compare vehicles across regions</li><li>Understand international fuel efficiency ratings</li><li>Swap units to your liking.</li></ul>This amount of flexibility helps in the usability and accuracy for a worldwide audience.
+
+ <figure class="content-image">
+          <img
+            src="/images/MPG vs kmL Comparison Graphic.png"
+            alt="Comparison graphic explaining MPG versus km per liter fuel efficiency"
+            loading="lazy"
+            width="800"
+            height="350"
+          />
+          <figcaption>
+                     Comparison of MPG and km/L fuel efficiency units.
+
+          </figcaption>
+        </figure>
+      `
+    },
+     
+ 
+  ]
+},
+"tip-calculator": {
+  sections: [
+    {
+      type: "html",
+      title: "How to Tip and Split the Bill",
+      body: `
+
+       <figure class="content-image">
+          <img
+            src="/images/tip-calculation-bill-splitting.png"
+            alt="Illustration showing tip calculation and bill splitting among multiple people"
+            loading="lazy"
+            width="800"
+            height="350"
+          />
+          <figcaption>
+Tip calculation and bill splitting made easy
+          </figcaption>
+        </figure>
+      <p>
+      Working out tips and sharing bills can be confusing, particularly when you’re dining out with friends, or in a large group. A tip is an optional sum of money offered to service workers as a reward for their services, with the amount given being higher than the original price. Knowing how to add tips properly, as well as distribute the total among a group of friends or family members, promotes fairness and reduces awkwardness when dining out together.
+        </p>
+
+<p><strong>What Is a Tip? </strong> </br>
+A tip, also called a gratuity, is typically a small percentage of your total bill that you give to servers, bartenders and other service staff. The standard tipping rate depends on the country and type of service but tends to be 15% to 20% of the entire bill for restaurants. Tipping serves as a nod to good service and is customary in many areas.
+</p>
+<p><strong>How to Calculate the Tip </strong></br>
+Figuring a tip is easy on your own. The basic formula is:</br></br>
+<strong>Tip Amount = (Bill Amount × Tip Percentage) ÷ 100</strong></br></br>
+
+For example, if your bill is $80 and you want to leave a 15% tip:
+<ul><li>TIP AMOUNT = (8O × 15) ÷ 1OO =$12</li><li>Total Bill — Bill Amount + Tip Amount = 80 + 12=92$</li></ul>This can easily be accomplished using a calculator, or better yet…place it in the hands of an online tip calculator.
+</p>
+<p><strong> Splitting the Bill with More than One Person</strong></br>
+For you and your friends it may just be easier to split the bill, where everyone pays for what they ordered. After you add the tip in (or even before), we just divide total by number of people:</br></br>
+<strong>Total Bill ÷ Number of People = Amount Per Person </strong></br></br>
+With this past example, let's say 4 friends have a $92 to split:
+<ul><li>Amount Per Person = 92 ÷ 4 = $23</li></ul>This is to make certain that all equally participate and to reduce complexity in payment.
+</p>
+<p><strong> Tips On Using A Tip Calculator</strong></br>
+A Tip Calculator Key Features Keep track of your tab quickly with the help of a handy tip calculator!
+<ul><li>Enter the bill amount</li><li>Choose a tip percentage or enter your own</li><li>Select people to split the bill.</li><li>Receive instant outputs for the tip percentage, total bill and amount per person</li></ul>
+Most of the tip calculators also have other features like rounding the amount up, setting a different percentage on your tips and they can even change currencies so it is flexible in any dining occasion.
+</p>
+<p><strong>Why Calculating Tips Matters </strong></br>
+Calculating tips properly can make both the guest and service staff happy. Over-tipping is not really needed, under-tipping can be offensive. For groups, an equal splitting of the bill avoids disputes and provides clarity.
+</p>
+
+      `
+    }, ]
+},
+"density-calculator": {
+  sections: [
+    {
+      type: "html",
+      title: "What is Density and How to Calculate it",
+      body: `
+
+       <figure class="content-image">
+          <img
+            src="/images/density-formula-mass-volume-illustration.png"
+            alt="Density formula illustration showing mass divided by volume with metric units kg and m³"
+            loading="lazy"
+            width="800"
+            height="350"
+          />
+          <figcaption>
+Visual explanation of the density formula using mass and volume.
+          </figcaption>
+        </figure>
+      <p>
+      Density is a basic physical property which shows the amount of mass contained in a specific volume. In basic terms, density is what allows us to figure out whether something is light or heavy for its size. Two items of the same volume may be perceived as being of similar size but if one is more massive than the other it will also be denser.
+        </p>
+        <p><strong> Definition of Density</strong></br>
+        Density is mass per unit volume. It facilitates the mean values to be taken up for different materials in their individual shapes and sizes.
+        </p>
+        <p><strong> Density Formula</strong></br>
+        The formula that will derive the density should be, just:</br></br><strong>  Density = Mass ÷ Volume </strong>
+        </br>Where:
+<ul><li> Mass is the measure of how much matter an object contains</li><li>Volume is the area that substance has to use.
+</li></ul>
+The formula does work for solids, liquids and gases, which makes it a universal number in both science and everyday use.
+ </p>
+<p><strong>Example of Density Calculation </strong> </br>
+<ul><li>Mass = 10 kilograms</li><li>Volume = 2 cubic meters</li></ul>
+Then:</br>Density = 10 ÷ 2 = 5 kg/m³   </br>
+This therefore suggests that in every cubic meter of the object there are 5 kilograms of mass.
+</p>
+<p><strong>Why Density Matters </strong></br>
+Density has significance in many practical cases.
 <ul>
-  <li><strong>Kg to Lbs</strong> = Weight in kg × 2.20462</li>
-  <li><strong>Lbs to Kg</strong> = Weight in lbs ÷ 2.20462</li>
-</ul>
-
-<p>
-This allows for quick and accurate conversion between the two commonly used units of mass.
+<li><strong> Float or sink: </strong>Anything less dense than water will float and anything denser than water sinks.</li>
+<li><strong>Material identification: </strong>Density can be used to identify a material such as metal, liquid or gas.</li>
+<li><strong>Engineering and building: </strong>Density is utilized in selecting materials for buildings and machinery.</li>
+<li><strong> Science & Education: </strong>It’s no stranger for physics and chemistry formulas.</li>
+<li><strong>Manufacturers: </strong>Frequently, quality assurance makes use of density readings.</li>
+</ul></p>
+<p><strong>Using a Density Calculator </strong> </br>
+Even tho the above is easy to calculate manually you risk mixing up units at x and v or rounding errors. With a density calculator, you can:
+<ul><li>Enter mass and volume easily</li><li>Get instant and accurate results</li><li>Convert density in various measurement units</li></ul>
+This has the advantage of being faster, clearer and simpler.
 </p>
-  `,
+      `
+    },
+    {
+      type: "html",
+      title: "Explanation of Metric vs Imperial Density Units",
+      body: `
+      <figure class="content-image">
+          <img
+            src="/images/metric-vs-imperial-density-units-comparison.png"
+            alt="Metric vs imperial density units comparison showing kg per cubic meter and lbs per cubic foot"
+            loading="lazy"
+            width="800"
+            height="350"
+          />
+          <figcaption>
+Comparison of metric and imperial density measurement units.
+          </figcaption>
+        </figure>
+     <p>
+      Density values are not only mass and volume dependent, but also unit system dependent. Although the two most popular systems are between the metric system and the imperial system.
+        </p>
+        <p><strong>Metric Density Units (kg/m³) </strong></br>
+        The metre is the international standard for length. It is used for science, education and engineering.
+        </p>
+<p><strong>Metric density unit: </strong></br>
+<strong>kilograms per cubic meter (kg/m³) </strong>
+</p>
+<p><strong>Where metric units are used: </strong>
+	<ul><li>Scientific research</li><li>Schools and universities
+</li><li>Engineering and technical fields</li><li>Most countries worldwide
+</li></ul>
+</p>
+<p><strong>Example values: </strong><ul><li>Water ≈ 1000 kg/m³</li><li>Aluminum ≈ 2700 kg/m³</li></ul> Metric units are easy to convert and consistent, thus they are widely used throughout the world.</p>
+<p><strong> Imperial Density Units (lbs/ft³)</strong> </br>
+The imperial system is predominantly used in America and some other areas.
+</p>
+<p><strong>Imperial density unit: </strong></br>
+<strong>pounds per cubic foot (lbs/ft³) </strong>
+ </p>
+ <p><strong> Where imperial units are used:</strong>
+ <ul><li>US-based construction projects</li><li>Local engineering references</li><li>Traditional measurement systems</li></ul>Although imperial units are still in use in the UK and US, they are generally used less now than metric units.
+ </p>
+  <p><strong> Metric and Imperial: When Should You Use Them?</strong></br>
+    There is no one “better” system. The best pick is up to you:
+    <ul><li><strong>Academic, scientific or foreign work: </strong>SI system</li><li><strong>US or local usage: </strong>Imperial system</li></ul>A nice density calculator should support them each, and should return the result for the desired unit without any need of manual conversion.
+    </p>
+<p><strong>Why Dual-Unit Support Is Useful </strong> </br>
+A calculator with metric and imperial units:
+<ul><li>Reduces calculation errors</li><li>Saves time</li><li>Makes results easier to understand</li><li>Serves a wider audience</li></ul>
+</p>
 
-  "howToUse": [
-    "Enter the weight value you want to convert in the input field.",
-    "Select the unit of the weight you have entered (Kilograms or Pounds).",
-    "Click the 'Convert' button to see the converted result.",
-    "The result will display both the original weight and the converted weight."
-  ],
-
-  "features": [
-    "Instant conversion between kilograms and pounds.",
-    "Supports both metric and imperial units.",
-    "Clear and easy-to-use interface.",
-    "Handles invalid or negative inputs with proper error messages."
-  ],
-
-  "whyUse": 
-    "This calculator is useful for anyone needing to quickly convert weight measurements for cooking, fitness, travel, or scientific purposes without manually calculating the conversion.",
-
-  "notes": [
-    "Ensure the weight value entered is a positive number.",
-    "The result is rounded to two decimal places for clarity.",
-    "Switching the unit will automatically update the input placeholder to match the selected unit."
+      `
+    },
+ 
   ]
-}
-,
-
- "speed-calculator": {
-  formula: `
-<p>
-The <strong>Speed Calculator</strong> determines how fast an object is moving by using
-the relationship between <strong>distance</strong> and <strong>time</strong>.
-Speed is a fundamental concept in physics, transportation, sports, and daily travel planning.
+},
+"weight-calculator": {
+  sections: [
+    {
+      type: "html",
+      title: "How to Convert Between Pounds and Kilograms.",
+      body: `
+    
+      <p>
+      Weight change, from kg to pounds, is a common application in various environments such as daily life, study and travel. Various countries and various industries all have their own systems of units, therefore weight feature conversion is a normal thing here. A weight calculator that does the math for you, in form of easy 2 clicks.
+        </p>
+<p><strong>Understanding Kilograms and Pounds </strong></br>Kilograms (kg), the metric system, and is the base unit of mass in science and schools worldwide. Kilograms are the only known unit to be used in most countries to measure objects such as body weight, food and industrial materials. </p>
+ <p>
+      Pounds (lbs) imperial system which is commonly used in the United States and a few other areas. Body weight, fitness tracking and other products in these categories are often measured in pounds.
+        </p>
+        <p>
+      Since both are extremely prevalent, conversions from kilograms to pounds (and vice versa) are necessary all the time.
+        </p>
+        <p><strong> Why Weight Conversion Is Important</strong></br>Weight conversion is useful in many real-life situations:
+        <ul><li><strong>Health and fitness: </strong> Body weight may be measured in kilograms or pounds depending on the country or device.</li>
+        <li><strong>Travel and luggage: </strong>Airline baggage limits can be written in kilograms or pounds.</li>
+        <li><strong>Education: </strong>Physics and science problems frequently requires the conversion of units by students.</li>
+        <li><strong>Shopping and shipping: </strong>Packaging weights are also displayed in a variety of units.</li>
+        <li><strong>Medical and professional use: </strong>True weight measurement matters in health and engineering.</li>
+        </ul>Being able to convert weight of steel products may be helpful when you are operating with a one-time delivery to satisfy your special needs.
+        </p>
+<p><strong> Weight Conversion Formula</strong></br>The corresponding value between kg and lb results from a mathematical equation: 
+<ul><li>1 kilogram = 2.20462 pounds</li><li>1 pound = 0.453592 kilograms</li></ul>
 </p>
-
-<p>
-The basic formula used to calculate speed is:
+<p><strong>Kilograms to Pounds </strong></br>To convert kilograms to pounds:
+<p><strong>Weight in pounds = Weight in kilograms × 2.20462
+ </strong> </p> 
 </p>
-
-<p>
-<strong>Speed = Distance ÷ Time</strong>
+<p><strong>Pounds to Kilograms </strong></br>To convert pounds to kilograms:
+<p><strong>Weight in kilograms = Weight in pounds ÷ 2.20462
+ </strong> </p> 
 </p>
+<p><strong>Example Conversions </strong>
+<ul><li>50 kg × 2.20462 = 110.23 lbs
 
-<ul>
-  <li><strong>Distance</strong> is the total length covered by the object.</li>
-  <li><strong>Time</strong> is the duration taken to cover that distance.</li>
-  <li><strong>Speed</strong> represents how much distance is covered per unit of time.</li>
+</li><li>150 lbs ÷ 2.20462 = 68.04 kg
+</li></ul>Although such calculations are not complicated, manual conversions could be approximated by rounding error or repeated errors and performed incorrectly.
+</p>
+   <figure class="content-image">
+          <img
+            src="/images/kg-to-lbs-conversion illustration.png"
+            alt="Weight conversion illustration showing kilograms converted to pounds with a weighing scale and conversion formula 1 kg = 2.20462 lbs
+"
+            loading="lazy"
+            width="800"
+            height="350"
+          />
+          <figcaption>
+Visual representation of converting weight from kilograms to pounds.
+          </figcaption>
+        </figure>
+<p><strong>Why Use a Weight Calculator </strong></br>No more guessing how much weight you are putting on your shaft or making the wrong calculation. With a calculator, you can: 
+<ul><li>Convert kilograms to pounds instantly</li>
+<li>Easily convert lbs to kg accurately</li>
+<li>Avoid mathematical errors</li>
+<li>Save time and effort</li>
+<li>Receive results in an easy to read format</li>
+</ul>This is especially handy when dealing with non integer numbers or high digit counts.
+</p>
+<p><strong> Metric vs Imperial Weight Systems</strong></br>
+Because it is easy to do a scientific conversion and one size fits all!!! It is frequently used in science and education, and most of the world uses the 24-hour system.</br>
+The imperial system, while less widely used around the world, is still vital in these regions as well as within everyday life and official records.</br>
+A nice weight calculator will have support for both so personal trainers and nutritionists can toggle units if need be.
+</p>
+ <figure class="content-image">
+          <img
+            src="/images/metric-vs-imperial-density-units-comparison.png"
+            alt="Comparison of metric and imperial weight units showing kilograms (kg) versus pounds (lbs) with icons and a balance scale"
+            loading="lazy"
+            width="800"
+            height="350"
+          />
+          <figcaption>
+Side-by-side comparison of metric and imperial weight units.
+          </figcaption>
+        </figure>
+<p><strong>Who Could Benefit from a Weight Calculator </strong>
+<ul><li>Students learning unit conversions</li>
+<li>Fitness enthusiasts tracking body weight</li>
+<li>Travelers checking baggage limits</li>
+<li>Professionals handling international data</li>
+<li>Everyday users needing quick conversions</li>
 </ul>
-
-<p>
-If distance is measured in <strong>kilometers</strong> and time in <strong>hours</strong>,
-the result is expressed as <strong>kilometers per hour (km/h)</strong>.
-Similarly, when distance is provided in <strong>miles</strong> and time in <strong>hours</strong>,
-the calculated speed is shown in <strong>miles per hour (mph)</strong>.
 </p>
+<p><strong> Conclusion</strong></br>Being able to calculate the weight for pounds and kilograms is a simple skill, but an important one in our increasingly global world. On the health meter, or crafting your packing list or solving some math problems, weight conversion will always matter. You can make quick and accurate conversions with a weight calculator, that way there's no need to worry about mixing up the numbers.Why convert weights using our weight calculator?It is simple to use - nobody wants to spend all day trying to convert numbers between kilos and pounds without an accurate tool. </p>
 
-<p>
-This calculator performs the computation instantly once valid inputs are provided,
-ensuring accurate and consistent results without manual calculations.
-</p>
-`,
-
-  howToUse: [
-    "Enter the total distance traveled in the Distance field. Choose kilometers or miles based on your requirement.",
-    "Enter the total time taken in hours. Decimal values (such as 1.5 hours) are supported for greater accuracy.",
-    "Select the appropriate speed unit — kilometers per hour (km/h) or miles per hour (mph).",
-    "Click the “Calculate” button to instantly compute the speed.",
-    "Use the “Reset” button to clear all inputs and start a new calculation."
-  ],
-
-  features: [
-    "Supports both kilometers per hour (km/h) and miles per hour (mph).",
-    "Instant and accurate speed calculation using a standard mathematical formula.",
-    "Simple and clean interface suitable for mobile, tablet, and desktop devices.",
-    "Handles decimal values for precise distance and time inputs.",
-    "No registration or login required — completely free to use.",
-    "All calculations are performed locally in the browser for fast performance."
-  ],
-
-  whyUse: `
-
-The Speed Calculator is useful in many real-world situations where
-understanding motion and travel efficiency is important.
-Whether you are a student, traveler, athlete, or professional,
-this tool helps you calculate speed quickly without manual effort.
-
-Students can use it to verify physics problems, while drivers and travelers
-can estimate average speed during trips. Athletes may use it to analyze performance,
-and professionals can rely on it for accurate planning and reporting.
-
-By eliminating calculation errors and saving time, this calculator ensures
-you get reliable results instantly, making it a practical tool for everyday use.
-
-`,
-
-  notes: [
-    "Both distance and time must be positive numbers to calculate speed correctly.",
-    "Time should always be entered in hours. Convert minutes to hours before entering if required.",
-    "This calculator computes average speed, not instantaneous speed.",
-    "Results are rounded to two decimal places for clarity and readability.",
-    "The calculator is intended for educational and general informational purposes only."
+      `
+    }, 
   ]
-}
-,
-
- "roman-numeral-converter": {
-  formula: `
-<p>
-The <strong>Roman Numeral Converter</strong> allows you to convert standard numbers
-(Arabic numerals) into <strong>Roman numerals</strong> and also convert Roman numerals
-back into regular numbers.
+},
+"speed-calculator": {
+  sections: [
+    {
+      type: "html",
+      title: "Speed From Distance And Time",
+      body: `
+      <p>
+Speed is a very important concept in physics and everyday life that can be defined as how fast an object covers some distance by using. The concept of speed is important for travel, sports activities, traffic planning and science.
+        </p>
+        <figure class="content-image">
+          <img
+            src="/images/calculating-speed-distance-time-illustration.png"
+            alt="Illustration showing speed calculation using distance and time with a car and clock"
+            loading="lazy"
+            width="800"
+            height="350"
+          />
+          <figcaption>
+Visual guide to calculating speed from distance and time.
+          </figcaption>
+        </figure>
+ <p>
+ The fundamental equation is straightforward in the determination of speed:</br></br>
+    <strong>   Speed = Distance ÷ Time </strong></br>
+    Where:</br>
+    <ul><li>Distance is the amount of ground covered by an object.</li><li>The amount of time is the length of time that it takes for an object to move a certain distance.</li></ul>
+        </p>
+<p>To make it a little more concrete, if a car is travels 120 km in 2 hours then the speed is: </br>
+120 ÷ 2 = 60 km/h   </br>
+Likewise, if a runner runs 10 miles in 1 hour their speed is:</br>
+10 ÷ 1 = 10 mph
 </p>
+<p>Downloading and using a speed calculator do it all for you. Travelers can type in the distance and time, choose what unit they would like to use (km/h or mph) and receive immediate accurate results. This prevents manual input errors, and also reduces chances of miscalculations especially in the case of decimal routing or long distances.</p>
+<p>Understanding how to calculate speed is also important when exploring motion in hands-on science experiments, traffic safety planning and tracking activity levels. When you’ve done it a dozen or so times, both students and pros can develop a much better sense for what qualifies as fast and just how far the puck has traveled.</p>
+      `
+    },
+    {
+      type: "html",
+      title: " Km/h vs Mph: Which Should You Use?",
+      body: `
+      <figure class="content-image">
+          <img
+            src="/images/kmh-vs-mph-speed-units-comparison.png"
+            alt="Comparison of speed units showing kilometers per hour (km/h) and miles per hour (mph)"
+            loading="lazy"
+            width="800"
+            height="350"
+          />
+          <figcaption>
+Side-by-side comparison of km/h and mph speed units.
+          </figcaption>
+        </figure>
+     <p>
+      Various are units for measuring speed in the different regions and at doing various measurements we can use knots. The most frequently used units are kilometers per hour (km/h) and miles per hour (mph).
 
+      <ul>
+      <li><strong> Kilometer per hour (km/h) </strong>is a metric system and is most commonly used standard for the speed limit on roads in European countries; otherwise a kilometers per hour speed unit on the UK's instance road signs. Kilometers per hour is the unit of velocity in terms of which speed limits are given, and car speedometers indicate vehicle speed.</li>
+      <li><strong> Miles per hour (mph) </strong>Miles per hour (mph) is a unit of speed most commonly used in the United States, the United Kingdom and elsewhere in the Commonwealth of Nations. And here, vehicle speed limits and road signs tend to use mph rather than kph.</li>
+      </ul>
+        </p>
+<p>It's good to know the distinction between these units when you travel abroad, read speed limits or compare technical specs. For example, 60 miles per hour is almost (or approximately) equal to 96.56 kilometers per hour and it becomes necessary to estimate accurately from one measure to another in these cases also. </p>
+<p>Including a speed calculator that is capable of switching between km/h and mph. This is particularly useful for travelers, runners, and anyone who comes up against quantities of data in different unit types. Unit Transmission-support is easy to read without confusion for conversion. </p>
+
+      `
+    },
+    
+ 
+  ]
+},
+"roman-numeral-converter": {
+  sections: [
+    {
+      type: "html",
+      title: "Understanding Roman Number System",
+      body: `
+      <p>
+      The Roman numeral system is one of the oldest record numeric systems used in the human history, which represents all natural numbers. It was born centuries ago in Rome and now it is spread everywhere from Europe to America decades ago until today. While our contemporary decimal system, first recorded by the Hellenize Egyptians in the 2nd millennium B.C., uses place value and zero to represent numbers (indicating only that there are “none” of something), Roman numerals use combinations of letters to express numbers. And, modern society still uses Roman numerals in cases like clocks, book chapters, movie titles, monuments and official numbering systems.
+        </p>
+  <p>
+      A complete set of roman numerals: Roman numerals are formed by combining seven letters which is used to record the maximum whole number, they become a sequence of combinations that we call ”Roman numerals”. For instance,<strong> I=1, V=5, X=10, L=50, C=100, D=500, M=1000. </strong>These symbols can be combined to write any number, according to certain rules.
+        </p>
 <p>
-Roman numerals are based on a combination of letters from the Latin alphabet,
-each representing a fixed value:
-</p>
+ The Romans used addition and subtraction in their number system There is the sign. If a smaller number comes after one that’s larger, the small is added to the large. For example, VI means 6(5+1). A smaller number in front of a larger takes it away. For instance, IV is 4 (5 − 1). This will prevent the same symbol from appearing in a row 4 times.     
+        </p>
+<p>
+  Also, one more distinctive feature of Roman numerals is that there is no concept of zero. With no real concept of zero, Roman numerals aren't really effective for more complex mathematics or calculations. Later, this constraint resulted in the use of a far more efficient number system that enables arithmetic to be readily performed: Hindu-Arabic.    
+        </p>
+ <p>
+The Roman system is not perfect, but it's still useful for learning and expressing values in a symbolic way! Learning Roman numerals is a way to develop number sense, a feel for language and the basis of pattern recognition. It also let's people read dates, outlines, and the occasional numbering systems we still use all the time today. 
+        </p>
+        <table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>Roman Numeral</th>
+      <th>Decimal Value</th>
+      <th>Common Usage Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>I</td>
+      <td>1</td>
+      <td>Lists, outlines</td>
+    </tr>
+    <tr>
+      <td>IV</td>
+      <td>4</td>
+      <td>Clock faces</td>
+    </tr>
+    <tr>
+      <td>V</td>
+      <td>5</td>
+      <td>Book chapters</td>
+    </tr>
+    <tr>
+      <td>IX</td>
+      <td>9</td>
+      <td>Movie sequels</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>10</td>
+      <td>Event editions</td>
+    </tr>
+    <tr>
+      <td>XL</td>
+      <td>40</td>
+      <td>Historical dates</td>
+    </tr>
+    <tr>
+      <td>L</td>
+      <td>50</td>
+      <td>Anniversaries</td>
+    </tr>
+    <tr>
+      <td>XC</td>
+      <td>90</td>
+      <td>Formal numbering</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>100</td>
+      <td>Documents</td>
+    </tr>
+    <tr>
+      <td>CD</td>
+      <td>400</td>
+      <td>Inscriptions</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>500</td>
+      <td>Architecture</td>
+    </tr>
+    <tr>
+      <td>CM</td>
+      <td>900</td>
+      <td>Milestones</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>1000</td>
+      <td>Year notation</td>
+    </tr>
+  </tbody>
+</table>
 
-<ul>
-  <li><strong>I</strong> = 1</li>
-  <li><strong>V</strong> = 5</li>
-  <li><strong>X</strong> = 10</li>
-  <li><strong>L</strong> = 50</li>
-  <li><strong>C</strong> = 100</li>
-  <li><strong>D</strong> = 500</li>
-  <li><strong>M</strong> = 1000</li>
+      `
+    },
+    {
+      type: "html",
+      title: "Convert Numbers To Roman ",
+      body: `
+<p>Roman numerals are actually a set of rules that describe how to write numbers in Roman and there is only one right way to do it. So if you convert regular 1,2 etc. into Roman Numerals we use the commonly accepted values and orders. The conversion works by dividing the number into various denominations and using the matching Roman symbols for each of them that rest from top down.</p>
+<p>Take the number 1987, for instance. It is broken down into thousands, hundreds, tens, and ones. The individual parts are then added together: 1000 + 900 + 80 +7 = 1987. Putting them together, we get the Roman numeral MCMLXXXVII. This gradual process ensures that both precision and consistency are maintained throughout.
+
+</p>
+<p>You convert roman numerals, a LOT of people don't get that. In general, the symbol may only appear at most three times in a row (because that is their value of the nearest larger unit, after which you would go to the next multiple thereof), which explains why 4, 9, 40 and 90 are represented as IV, IX, XL and XC. They keep reading clean and provide a semantic check.</p>
+<p>Contemporary Roman numeral calculators simply mechanize this logic, enabling anyone to quickly calculate without having to remember how the figure used to be created. The tools are particularly helpful for students, designers, historians or anyone using traditional numbering on their daily routines. They help you get the right answer quickly, and also help reduce mistakes.</p>
+<p>It’s also good to be aware of the usual extent Roman numerals are used. Standard Roman numerals only reflect the numbers between 1 and 3999 37; values above this range make use of additional notation that is not very common in modern times. Inside that interval, Roman digits are constant and predictable, and they are universally understood.</p>
+<p>Reducing numbers to Roman numerals is more than just an exercise in coding—it's a link between old and new. Whether it’s for education, to create a design or simply nostalgia, roman numerals have made a substantial return in the world of mathematics and design.</p>
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>Decimal Number</th>
+      <th>Roman Numeral</th>
+      <th>Breakdown</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>7</td>
+      <td>VII</td>
+      <td>5 + 2</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>XIV</td>
+      <td>10 + (5 − 1)</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>XXIX</td>
+      <td>20 + (10 − 1)</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>XLIV</td>
+      <td>(50 − 10) + (5 − 1)</td>
+    </tr>
+    <tr>
+      <td>68</td>
+      <td>LXVIII</td>
+      <td>50 + 10 + 8</td>
+    </tr>
+    <tr>
+      <td>99</td>
+      <td>XCIX</td>
+      <td>(100 − 10) + (10 − 1)</td>
+    </tr>
+    <tr>
+      <td>202</td>
+      <td>CCII</td>
+      <td>200 + 2</td>
+    </tr>
+    <tr>
+      <td>399</td>
+      <td>CCCXCIX</td>
+      <td>300 + 90 + 9</td>
+    </tr>
+    <tr>
+      <td>846</td>
+      <td>DCCCXLVI</td>
+      <td>800 + 40 + 6</td>
+    </tr>
+    <tr>
+      <td>1987</td>
+      <td>MCMLXXXVII</td>
+      <td>1000 + 900 + 80 + 7</td>
+    </tr>
+  </tbody>
+</table>
+      `
+    },
+  ]
+},
+"sleep-calculator": {
+  sections: [
+    {
+      type: "html",
+      title: "Optimizing Sleep Cycle Timing",
+      body: `
+      <p>
+      To make the most of sleep cycle timing, you should aim to go to bed and wake up at times that allow for aligning your light, deep and REM sleep cycles. Healthy adults proceed through sleep in approximately 90-minute cycles. Each cycle has phases which perform various forms of restoration: light sleep (transition), deep sleep (physical repair), and REM sleep (memory processing, emotional recovery). In contrast, Proper timing of sleep in order to best end a period of sleep in REM or NREM stage 2 causes relatively rapid entry into and exit from the said mode.
+        </p>
+<p><strong>The 90-Minute Cycle Principle </strong></br>A useful rule is to schedule total sleep in 90-min multiples. These values are usually 4.5 hours (3 cycles), 6 hours (4 cycles), 7.5 hours (5 cycles) or 9 hours (6 cycles). For instance, if you have to get up at 7:00 am (Assuming an average 90 minutes).
+<ul><li>Try to sleep by 11:30 PM for 7.5 hours (5 cycles)Or</li><li>1 a.m.for six hours (four cycles).</li></ul>You can therefore consider how long it takes to fall asleep (10-20 minutes generally), and add a buffer into your target bedtime.
+</p>
+<p><strong>How a Sleep Calculator Helps</strong></br>
+And there’s a sleep-cycle calculator to do it all for you. Plug in the time you want to wake up (and then go to bed) and it offers options that align with complete cycles as well. Good calculators have multiple options (3 – 6 cycles) and offer fall-asleep buffers while showing bed and wake times so users can select a schedule that works for them.
+</p>
+<p><strong>Practical Recommendations </strong>
+<ul><li><strong>Do a sleep latency calculation: </strong>If it typically takes you 15 minutes to drift off, subtract that from the time you’re aiming for.</li><li><strong>Consistency is important: </strong> Do your best to go to bed and wake up about 30–60 minutes at the same time every day, even on weekends, in order to regulate circadian rhythms.</li><li><strong>Think about naps: </strong>Short naps (10- to 20-minute power naps) restore alertness. Do not take long naps late in the afternoon.</li><li><strong>Pick something you can commit to:  </strong> Choose one of the plans that works with your lifestyle and allows total sleep, not just a “cycled aligned” short amount.</li></ul>
+</p>
+<p><strong>Special Considerations </strong>
+<ul><li><strong>Shift workers and odd hours: </strong>It can be more difficult to adhere to the strict timing of the cycle. Focus on overall sleep, and focused light exposure to solidify circadian rhythm.</li>
+<li><strong>Insomnia or sleep problems: </strong>Much cycle-based guidance can be harmful if you have trouble falling asleep. Rather let's get a professional assessment and not push schedules.</li>
+<li><strong>Children and the elderly: </strong>Sleep architecture varies by age, children may require more or differently structured sleep and older adults may experience interrupted sleep. Use age-appropriate guidance.</li>
 </ul>
-
-<p>
-To convert a number into a Roman numeral, the calculator repeatedly subtracts the
-largest possible Roman value and appends its corresponding symbol until the value
-reaches zero. Special subtractive combinations such as <strong>IV</strong> (4),
-<strong>IX</strong> (9), <strong>XL</strong> (40), and <strong>CM</strong> (900)
-are handled automatically.
 </p>
-
-<p>
-When converting from Roman numerals to numbers, the calculator scans the input from
-left to right, matching valid Roman symbols and summing their numeric values.
-If an invalid Roman numeral pattern is detected, an error message is displayed.
+<p><strong>Fast Summary to Help with Your Timing System </strong> 
+<ol start="1">
+<li>Prioritize time for wake (obligations to work/school). </li>
+<li>3–6 cycles that provide sufficient total sleep.</li>
+<li>Set bedtime back by 10–20 minutes for a fall-asleep buffer.</li>
+<li>Dim lights and avoid screens 30 to 60 minutes before bed.</li>
+<li>Maintain consistent wake time daily</li>
+</ol>
 </p>
-
-<p>
-This calculator supports values from <strong>1 to 3999</strong>, which is the
-standard practical range for Roman numerals.
+<figure class="content-image">
+          <img
+            src="/images/sleep-cycle-timing-90-minute-cycles.png"
+            alt="Sleep cycle timing illustration showing 90-minute sleep stages and ideal wake-up points"
+            loading="lazy"
+            width="800"
+            height="350"
+          />
+          <figcaption>
+Visual breakdown of 90-minute sleep cycles and optimal wake-up timing.
+          </figcaption>
+        </figure>
+      `
+    },
+    {
+      type: "html",
+      title: "Understanding Ideal Sleep Duration",
+      body: `
+     <p>
+      Optimal sleep duration refers to the amount of nightly sleep that is necessary for peak performance, physical health and cognitive function during the day. It depends on age, personal biology, lifestyle and health. Public health authorities suggest ranges; yet ideal sleep for any individual varies and should be measured by how you feel and function the next day.
+        </p>
+<p><strong>How Much Sleep You Need By Age (Guideline) </strong>
+<ul><li><strong>Newborns (0–3 months): </strong>14–17 hours</li>
+<li><strong>Infants (4–12 months): </strong>12–16 hours</li>
+<li><strong>Children (age 1–12): </strong>9-14 hours, up to age 9 or depending on the child’s age</li>
+<li><strong>Teenagers (13–18 years): </strong>8–10 hours</li>
+<li><strong>Adults (18–64 years): </strong>7–9 hours</li>
+<li><strong>For seniors (65+ years): </strong>7–8 hours</li>
+</ul>This range is based on evidence and starting point numbers. [Double pointed needs may be slightly outside these ranges.]
 </p>
-`,
-
-  howToUse: [
-    "Enter a number (between 1 and 3999) to convert it into a Roman numeral.",
-    "Alternatively, enter a valid Roman numeral (such as XIV or MMXXV) to convert it into a number.",
-    "Click the “Convert” button to perform the conversion instantly.",
-    "If the input is invalid or outside the supported range, an error message will appear.",
-    "Click the “Reset” button to clear the input and start a new conversion."
-  ],
-
-  features: [
-    "Converts numbers to Roman numerals and Roman numerals to numbers.",
-    "Supports the full standard Roman numeral range from 1 to 3999.",
-    "Automatically handles subtractive notation such as IV, IX, XL, XC, CD, and CM.",
-    "Instant results with no page reloads or delays.",
-    "Clean and easy-to-use interface optimized for mobile and desktop devices.",
-    "No sign-up, login, or personal data collection required."
-  ],
-
-  whyUse: `
-
-The Roman Numeral Converter is a practical tool for students,
-teachers, historians, and anyone working with classical numbering systems.
-Roman numerals are still commonly used in books, clocks, movie titles,
-legal documents, and academic references.
-
-Manually converting Roman numerals can be confusing, especially when dealing with
-subtractive notation or large values. This calculator eliminates errors by applying
-consistent conversion rules automatically.
-
-
-
-Whether you are learning Roman numerals for the first time, checking homework,
-or verifying a historical reference, this tool saves time and ensures accuracy.
-
-`,
-
-  notes: [
-    "Only numbers between 1 and 3999 are supported for Roman numeral conversion.",
-    "Roman numerals must follow standard formatting rules to be considered valid.",
-    "The calculator automatically converts lowercase Roman numerals to uppercase.",
-    "Results are generated instantly and do not require an internet connection after page load.",
-    "This calculator is intended for educational and general informational purposes only."
-  ]
-}
-,
-
-  "sleep-calculator": {
-  formula: `
-<p>
-The <strong>Sleep Calculator</strong> is based on the concept of <strong>sleep cycles</strong>.
-A typical sleep cycle lasts approximately <strong>90 minutes</strong> and includes
-different stages of light sleep, deep sleep, and REM sleep.
-</p>
-
-<p>
-Instead of focusing only on total sleep duration, this calculator helps you
-<strong>wake up at the end of a sleep cycle</strong>, which usually results in
-feeling more refreshed and alert.
-</p>
-
-<p>
-There are two calculation modes:
-</p>
-
-<ul>
-  <li>
-    <strong>Wake Time → Sleep Time:</strong>
-    The calculator works backward from your desired wake-up time and subtracts
-    multiple 90-minute sleep cycles to suggest ideal times to fall asleep.
-  </li>
-  <li>
-    <strong>Sleep Time → Wake Time:</strong>
-    The calculator works forward from the time you go to bed and adds
-    90-minute cycles to suggest optimal wake-up times.
-  </li>
+<figure class="content-image">
+          <img
+            src="/images/ideal-sleep-duration-by-age-chart.png"
+            alt="Ideal sleep duration chart showing recommended hours of sleep by age group"
+            loading="lazy"
+            width="800"
+            height="420"
+          />
+          <figcaption>
+Recommended sleep duration ranges for different age groups.
+          </figcaption>
+        </figure>
+<p><strong>Signs You’re Getting It Right </strong> 
+<ul><li>Wake up alert and well rested without the need to load up on caffeine.</li>
+<li>Stabilize your mood and focus for an even day.</li>
+<li>Be able to fall asleep 15–30 minutes after getting in bed.</li>
+<li>Do not have excessive daytime sleepiness or episodic micro sleeps.
+</li>
+<li>The Potential Harms of Too Little or Too Much Sleep</li>
 </ul>
-
-<p>
-In both modes, the calculator provides multiple options (usually 3 to 6 cycles)
-so you can choose a schedule that best fits your routine.
 </p>
-`,
-
-  howToUse: [
-    "Select the calculation mode based on your needs: wake-up time or sleep time.",
-    "If calculating from wake-up time, enter the time you want to wake up.",
-    "If calculating from sleep time, enter the time you plan to go to bed.",
-    "Click the “Calculate” button to see optimal sleep or wake-up times.",
-    "Review the list of suggested times and choose the one that fits your schedule.",
-    "Use the “Reset” button to clear all inputs and start a new calculation."
-  ],
-
-  features: [
-    "Uses a standard 90-minute sleep cycle model.",
-    "Supports both sleep-to-wake and wake-to-sleep calculations.",
-    "Displays multiple optimal time options instead of a single result.",
-    "Instant calculations with no delays or page reloads.",
-    "Simple and clean interface designed for mobile and desktop users.",
-    "No account creation, login, or personal data collection required."
-  ],
-
-  whyUse: `
-Many people wake up feeling tired even after sleeping for several hours.
-This often happens because they wake up in the middle of a sleep cycle.
-The Sleep Calculator helps reduce this problem by identifying
-times when your body is naturally more ready to wake up.
-
-
-
-By aligning your sleep schedule with natural sleep cycles, you may experience
-better mood, improved focus, and reduced morning grogginess.
-This calculator is especially useful for students, working professionals,
-and anyone trying to optimize their daily routine.
-
-
-
-Whether you need to wake up early for work or want to plan a healthier sleep
-schedule, this tool provides practical guidance without requiring complex
-sleep tracking devices.
-
-`,
-
-  notes: [
-    "The 90-minute sleep cycle is an average; individual sleep cycles may vary.",
-    "The calculator does not account for the time it takes to fall asleep.",
-    "Results are estimates and should be used as general guidance.",
-    "Best results are achieved when combined with consistent sleep habits.",
-    "This calculator is intended for informational and educational purposes only."
-  ]
-}
-,
+      `
+    },
+ ]
+},
 "tire-size-calculator": {
-
-  formula: `
-<p>
-The tire size calculation is based on determining the <strong>overall diameter of a tire</strong>
-using three key inputs: <strong>tire width</strong>, <strong>aspect ratio</strong>, and
-<strong>wheel (rim) diameter</strong>.
-</p>
-
-<p>
-Every tire has a sidewall on both the top and bottom of the wheel. The total tire diameter
-includes the wheel diameter plus twice the sidewall height.
-</p>
-
-<p>
-The calculation follows these steps:
-</p>
-
+  sections: [
+    {
+      type: "html",
+      title: "Decoding Tire Size Codes",
+      body: `
+      <p>
+Tire size description (e.g. <strong>205/55 R16</strong>) is a shorthand way to describe some important tire dimensions and characteristics. Knowing this code comes in handy when purchasing new tires or comparing different options, as well as when verifying fitment.
+        </p>
+<p><strong>How to read the components </strong>
 <ul>
-  <li>
-    <strong>Sidewall Height (mm)</strong> = Tire Width × (Aspect Ratio ÷ 100)
-  </li>
-  <li>
-    <strong>Wheel Diameter (mm)</strong> = Wheel Diameter (inches) × 25.4
-  </li>
-  <li>
-    <strong>Overall Tire Diameter (mm)</strong> = Wheel Diameter + (2 × Sidewall Height)
-  </li>
+<li><strong>205 - </strong>Tire width in millimeters. Below is the nominal width of the tire when measured from sidewall to sidewall (e.g. 205 mm).</li>
+<li><strong>55 - </strong>Aspect ratio (sidewall height as a percentage of width). The sidewall height being 55% of 205mm in this case. Smaller aspect ratios mean the sidewalls are shorter, and that usually equates to sportier handling.</li>
+<li><strong>R - </strong>Construction type. “R” is for radial construction (the industry standard). In specialty tires, you might also see “D” (diagonal/bias) or “B” (bias-belted).</li>
+<li><strong>16 - </strong>Wheel size in diameter of wheel rim, inches. This is the inside diameter of a wheel that the tire is designed to fit on (i.e…. 16 inch)</li>
 </ul>
-
-<p>
-If the selected output unit is inches, the final diameter in millimeters is converted
-to inches by dividing by 25.4.
+<figure class="content-image">
+          <img
+            src="/images/tire-size-code-205-55-r16-explained.png"
+            alt="Tire size code 205/55 R16 explained with width, aspect ratio, construction, and wheel diameter"
+            loading="lazy"
+            width="800"
+            height="450"
+          />
+          <figcaption>
+Visual breakdown of tire size codes and overall tire dimensions.
+          </figcaption>
+        </figure>
 </p>
-`,
-
-  howToUse: [
-    "Enter the tire width in millimeters. This is the first number shown in most tire sizes (for example, 205 in 205/55R16).",
-    "Enter the aspect ratio as a percentage. This represents the sidewall height relative to the tire width.",
-    "Enter the wheel (rim) diameter in inches. This is the last number in standard tire markings.",
-    "Select your preferred measurement unit for the final result: millimeters or inches.",
-    "Click the Calculate button to instantly see the overall tire diameter.",
-    "Use the Reset button to clear all inputs and start a new calculation."
-  ],
-
-  features: [
-    "Accurate tire diameter calculation using industry-standard formulas",
-    "Supports both metric (millimeters) and imperial (inches) output",
-    "Simple and clean interface optimized for mobile and desktop users",
-    "Instant results with real-time validation for incorrect inputs",
-    "No registration, no tracking, and no data storage",
-    "Fast calculations performed directly in the browser"
-  ],
-
-  whyUse:
-    "Knowing the exact tire diameter is essential when upgrading wheels, changing tire sizes, or comparing different tire options. An incorrect tire size can affect speedometer accuracy, fuel efficiency, braking performance, suspension geometry, and overall driving comfort. This calculator helps vehicle owners, mechanics, and automotive enthusiasts quickly verify tire dimensions before making purchasing or installation decisions. It is especially useful when switching between metric and imperial measurements or evaluating alternative tire sizes that maintain factory specifications.",
-
-  notes: [
-    "This calculator assumes standard tire construction and does not account for load rating or tire deformation under weight.",
-    "Actual tire dimensions may vary slightly between manufacturers, even for the same labeled size.",
-    "Always verify tire compatibility with your vehicle manufacturer’s recommendations before installation.",
-    "Changing tire diameter can impact speedometer and odometer readings.",
-    "For performance or off-road vehicles, consult a professional before changing tire sizes significantly."
-  ]
-
-}
-,
-
- "day-counter": {
-  "formula": `
-<p>
-The number of days between two dates is calculated by finding the difference between the <strong>start date</strong> and the <strong>end date</strong>. 
-This calculation accounts for the total days including the start and end dates, regardless of the month or year.
+<p><strong>Additional markings to watch </strong>
+<ul><li><strong>The load index </strong>(numeric code) and speed rating (letter) will generally follow the size (e.g., 91V). They provide load-carrying capacity and maximum rated speed.</li>
+<li><strong>Vehicle type prefixes </strong>such as LT (for Light Truck) or T (Temporary/spare) change the meaning of interpretation and use.</li></ul>
 </p>
-
-<p>
-The formula used is:
-</p>
-
+<p><strong>Practical tips for shopping </strong>
 <ul>
-  <li><strong>Difference in milliseconds</strong> = End Date − Start Date</li>
-  <li><strong>Convert to days</strong> = Difference in milliseconds ÷ (1000 × 60 × 60 × 24)</li>
-  <li><strong>Absolute Value</strong> is taken to ensure the result is always positive</li>
-</ul>
-
-<p>
-The result represents the total number of days between the two dates.
+<li>That of the manufacturer’s recommended size indicated on the door placard or in the owner’s manual.</li>
+<li>Load index and speed rating after size change must be equivalent to or higher than before size change.</li>
+<li>Employed in the size code to compare tire profiles from different brands – codes are the same for nominally identical dimensions even if tread patterns vary.</li></ul>
 </p>
-  `,
-  "howToUse": [
-    "Select the start date using the date picker in the first input field.",
-    "Select the end date using the date picker in the second input field.",
-    "Click the 'Calculate' button to determine the total number of days between the two selected dates.",
-    "The result will display in the format '<strong>number of days</strong>'.",
-    "To reset the inputs and perform another calculation, click the 'Reset' button."
-  ],
-  "features": [
-    "Calculates the total number of days between any two dates accurately.",
-    "Supports past and future dates, allowing flexible planning and tracking.",
-    "Automatically handles leap years and varying month lengths.",
-    "Provides immediate results without requiring manual computation.",
-    "User-friendly interface with date pickers for easy input."
-  ],
-  "whyUse": "This calculator is ideal for quickly determining the duration in days between any two dates. It is useful for project planning, calculating deadlines, counting days until an event, vacation planning, or simply tracking the number of days between any two significant dates. It removes the need for manual calculations and minimizes human errors.",
-  "notes": [
-    "Ensure both start and end dates are valid to get an accurate calculation.",
-    "The result is always a positive number of days, regardless of whether the start date is before or after the end date.",
-    "This calculator counts full days and does not consider time of day; partial days are rounded up to full days.",
-    "Leap years and month length variations are automatically handled.",
-    "For long-term planning, verify the dates entered match your local calendar to avoid discrepancies."
+<p><strong>Why it matters </strong></br>This is why reading tire codes is important for the end user, to guarantee fitment, handling and speedometer accuracy. For quick reference, the size can be compared to what you would find on a matching tire by visiting an online tire calculator or a tire service professional prior to purchase. </p>
+      `
+    },
+    {
+      type: "html",
+      title: "Tire Diameter and Performance",
+      body: `
+     <p>
+ Total tire diameter, or overall size from tread to tread across the wheel, directly affects vehicle performance and capability at a very basic level. Even slight increases in its diameter produce detectable effects in everyday use.     
+        </p>
+<p><strong>Why overall diameter matters </strong>
+	<ul><li><strong>Accuracy: </strong>As with any bike computer, the speed and distance readings are based on wheel rotations. If the diameter of the overall wheel, rim or tyre is increased (or conversely reduced), then more distance will be travelled per revolution and therefore your speedometer will under read actual vehicle speed (and vice versa). A 3 –4% variation in the diameter is sufficient to make a significant difference in the readings.</li>
+  <li><strong>Ride height and clearance: </strong>Larger size increases the radius of the tire which can elevate the vehicle, leading to potential rubbing on fender wells or other suspension components. Increasing the diameter of the wheel has the opposite effect as smaller diameters help in reducing ride height and may lead to tire rubbing against wheel arch.</li>
+  <li><strong>Ride and handling: </strong>Height of the tyre sidewall (or otherwise diameter in case of same size rim) : the taller it is, the more bumps are absorbed but they reduce steering response. Smaller sidewall ("lower profile") tends to have better cornering response, but more harsh ride characteristics.</li>
+  <li><strong>Gear and performance effects: </strong>Diameter changes are a form of effective gearing change; larger diameters can slightly decrease acceleration while increasing top end potential.</li></ul>
+</p>
+<p><strong>Safe swap guidelines </strong> 
+<ul><li>Try to maintain total diameter differences within + or - 3% of the vehicle's original tire diameters in order to properly calibrate speedometer differences, gain proper clearance requirements etc.</li>
+<li>When adjusting diameter, modify tire width, aspect ratio and rim diameter together as a "package" rather than modifying each one individually.</li>
+<li>Please make sure you confirm load index, speed rating and brake/ABS fitment prior to purchasing.Children's Books</li></ul>
+</p>
+      `
+    },
+     
   ]
-}
-,
-
-  "day-of-week-calculator": {
-  "formula": `
+},
+"roofing-calculator": {
+  sections: [
+    {
+      type: "html",
+      title: "Calculating Roof Surface Area",
+      body: `
+      <p>
+      Measuring the roof area is an elementary yet crucial part of material estimate process, estimation of materials such as roofing, and cost planning of roofing along with the roof logistics. The roof footprint that most vendors, builders use is a flat footprint of the building not even including overhangs. For a straight gabled roof with consistent pitch, the calculation utilizes plan (base) dimensions and a fall factor based on the pitch.
+ </p>
 <p>
-The day of the week for a given date is determined by using the built-in <strong>Date</strong> object in JavaScript, which calculates the day index for a particular date. 
-Each day is assigned a number from 0 to 6, where 0 represents Sunday, 1 represents Monday, and so on up to 6 for Saturday.
+    Good overall base dimensions to begin with: length of the roof plan (L), width (W). These are the horizontal dimensions calculated in plan of the building footprint. The area of a symmetrical gable or hip roof is equal to L × W. To obtain the surface area sloping factor, multiply the base area by slope rate called rise over run.  
+        </p>
+<p>
+  The factor is derived from the pitch (rise/run) with Pythagorean relation:  </br>  <strong>slopeFactor = √(1 + pitch²)</strong></br>
+  where a <strong>"pitch"</strong> is actually riding/run. Calculate the sloped surface area by multiplying the base area by the slope factor:
+        </p>
+<p><strong>Roof area = L × W × Sf </strong></br>where L is the length of a building, perhaps along the eaves; W is width and Sf is slope factor. </p>
+<figure class="content-image">
+          <img
+            src="/images/roof-surface-area-calculation-diagram.png"
+            alt="Roof surface area calculation diagram showing length, width, and pitch with formula"
+            loading="lazy"
+            width="800"
+            height="400"
+          />
+          <figcaption>
+Roof area calculated using length, width, and roof pitch.  
+ </figcaption>
+        </figure>
+<p>
+For instance a 10m by 6m roof at 0.25 pitch results in area base = 60 m², slope factor √(1 + (0.25)²) ≈ 1.0308 and sloped area ≈ 61.85 m² themselves multiplied out clearly to give the values above. 
+        </p>
+<p><strong>Key considerations: </strong>
+<ul><li>Use the same units (meters or feet) for all inputs.</li>
+<li>For odd shaped roofs, break the roof down to a few simple rectangles or triangles, calculate each sloped area and add them up.  </li>
+<li>Add a material waste factor (5-15%) for overlaps, cuts, and waste depending on material type and roof complexity.</li></ul>
+Accurate roof area calculation simplifies ordering of roofing materials such as membranes, shingles, underlay and fasteners and minimizes shortages or expensive surplus.
 </p>
 
-<p>
-The formula used is:
-</p>
+      `
+    },
+    {
+      type: "html",
+      title: "How Roof Pitch Affects ",
+      body: `
+      <figure class="content-image">
+          <img
+            src="/images/roof-pitch-impact-comparison.png"
+            alt="Comparison of low, medium, and steep roof pitch showing surface area differences"
+            loading="lazy"
+            width="800"
+            height="400"
+          />
+          <figcaption>
+Roof pitch directly affects total surface area and material requirements. </figcaption>
+        </figure>
+<p>Common roof slopes—as rise-to-run ratio or slope angle—are critical to structure, allowable material options for wall grout placement, water shedding and amount of effective roof area. Recognizing these effects enables homeowners and home builders to make informed design, maintenance, and remodelling decisions.</p>
+<p>Pertaining to the structure of roofs, with steeper angles, loads are distributed differently. Higher pitch will also generate more pounds of load due to snow and wind; framing and fasteners should be selected based on these requirements. Drawing on the other hand may be necessary to accommodate pooling and leaks, which will mean a higher capacity membrane or special flashing.</p>
 
-<ul>
-  <li>Create a new date object for the given date: <strong>d = new Date(selectedDate)</strong></li>
-  <li>Retrieve the day index: <strong>dayIndex = d.getDay()</strong></li>
-  <li>Map the index to the corresponding day name:
-    <ul>
-      <li>0 = Sunday</li>
-      <li>1 = Monday</li>
-      <li>2 = Tuesday</li>
-      <li>3 = Wednesday</li>
-      <li>4 = Thursday</li>
-      <li>5 = Friday</li>
-      <li>6 = Saturday</li>
-    </ul>
-  </li>
-</ul>
+<p>As far as materials go, roof pitch impacts the types of roofing that can be applied. Low-slope roofs that are nearly flat rely on a series of membranes to reduce water infiltration. Briefly, sloped roof technology is ideally suited for asphalt shingle, metal panel and tile systems where the water-shedding or snow-sliding capability are improved as compared to recommended minimum slopes.</p>
+<p>Pitch also affects the effective area. For a given plan area, an increase in pitch increases the slope factor (√(1 + pitch²)) and hence increases the sloped area. This adds to the material in place amount and weight per roof run. When pitch increases from, say, 0.20 to 0.40 (in any case of course), the slope factor and material roof space will increase (for cost estimation purposes) all being a critical issue when it comes to frequency of application because not every support system may withstand the extra load.</p>
+<p>Last but not least, pitch impacts maintenance and safety. The steeper the roof, the harder — and more dangerous — it is to work on them, driving up labor costs and requiring fall-protection systems. They also affect the need for attic ventilation and interior headroom in some designs.</p>
+<p>In considering a roof option, one should weigh the aesthetic value; how well it works with weather conditions (wind, snow, and rain); material compatibility; how much weight it puts on the structure below; and how much maintenance is required. For non-standard pitches, major modifications and in some localities where codes apply to pitch, seek advice from a professional roofer or structural engineer.</p>
 
-<p>
-The result gives the exact day of the week for the selected date.
-</p>
-  `,
-  "howToUse": [
-    "Click on the date input field to select a date from the calendar.",
-    "Ensure the date is entered in the correct format (YYYY-MM-DD).",
-    "Click the 'Calculate' button to find out the day of the week for the selected date.",
-    "The result will display the name of the day, such as Sunday, Monday, Tuesday, etc.",
-    "To check another date, click the 'Reset' button to clear the input and enter a new date."
-  ],
-  "features": [
-    "Instantly determines the day of the week for any valid date.",
-    "Supports past, present, and future dates with accurate results.",
-    "User-friendly interface with a simple date picker for easy selection.",
-    "No complex manual calculation required.",
-    "Provides results instantly with minimal input."
-  ],
-  "whyUse": "This calculator is useful for quickly identifying the day of the week for any given date. It is particularly helpful for scheduling events, planning meetings, historical research, or checking birthdays and anniversaries. It eliminates the need for manual calculations and ensures accurate results every time.",
-  "notes": [
-    "Ensure the date entered is valid to avoid errors.",
-    "The calculator relies on the standard Gregorian calendar.",
-    "The result displays only the day name, not the date itself.",
-    "Time zones do not affect the day calculation since only the date portion is used.",
-    "For historical dates prior to 1582, results may vary due to calendar changes in different regions."
+ `
+    },
   ]
-}
-,
+},
+"tile-calculator": {
+  sections: [
+    {
+      type: "html",
+      title: "Tile Quantity Calculation Guide",
+      body: `
+<p>Estimating the number of tiles needed for a floor is an important part of any construction, renovation, or redecorating project. Inaccurate estimates may result in material shortfall, budget overrun, and unnecessary waste. A tile quantity calculation chart enables homeowners, contractors and designers to effectively plan for a remodeling project by converting room dimensions and tile sizes into an accurate tile count.</p>
+<figure class="content-image">
+          <img
+            src="/images/tile-area-calculation-floor-vs-tile-size.png"
+            alt="Illustration showing how floor area is divided by tile area to calculate total tiles needed."
+            width="800"
+            height="400"
+          />
+          <figcaption>
+Floor area divided by tile size determines the total number of tiles required. </figcaption>
+        </figure>
+<p>One way to calculate tiles is using a measurement of area. To begin with, calculate total floor area – multiply the length and width of the floor. This is the size of the area that will need to be blocked off. Then the area of a single tile is determined given the length and width. The number of tiles needed to cover the area is obtained by dividing the total floor area by the tile area. Since you can’t buy a portion of a tile, the result of this formula is always rounded up to nearest integer.</p>
+<p>Consistency of units is very important for obtaining the correct result. Floor and tile measurements must be within the same system of units (either meters or feet). Using the wrong units can result in disastrous and expensive errors. A high-quality tile calculator ensures unit alignment by itself, or automatically and potential errors caused by man-made.</p>
+<p>The choice of size of tile is very influential in the final counting. Larger tiles cover more surface area, meaning fewer total pieces are required and smaller ones means more. This is particularly important when you are comparing or measuring tile designs, and also an estimate of what to budget for. For instance, installing large format tiles over small mosaic tiles will typically use less material and installation time but require more cutting and alignment.</p>
+<figure class="content-image">
+          <img
+            src="/images/tile-quantity-estimation-waste-allowance.png"
+            alt="Graphic illustrating tile quantity estimation with extra tiles added for waste and cutting."
+            width="800"
+            height="400"
+          />
+          <figcaption>
+Adding extra tiles helps account for cutting, breakage, and future repairs. </figcaption>
+        </figure>
+<p>A tile calculator will make this process easier. Rather than crunching numbers the old fashioned way, users simply input room and tile dimensions, choose a measurement unit (factors in inches included) and in one gestural swipe can work out the total number of tiles needed. It is also a time-saver and an accuracy-improver for planning, as well as making purchasing decisions better.</p>
 
-
- "roofing-calculator": {
-
-  formula: `
-<p>
-The roofing area is calculated by adjusting the flat (base) roof area to account for
-the <strong>roof pitch</strong>, which represents the slope of the roof.
-</p>
-
-<p>
-A sloped roof has more surface area than a flat roof. To find the true roofing area,
-a slope factor is applied to the base area.
-</p>
-
-<p>
-The formula used is:
-</p>
-
-<ul>
-  <li><strong>Base Area</strong> = Length × Width</li>
-  <li><strong>Slope Factor</strong> = √(1 + Pitch²)</li>
-  <li><strong>Total Roof Area</strong> = Base Area × Slope Factor</li>
-</ul>
-
-<p>
-The pitch is entered as a ratio of <strong>rise divided by run</strong>. For example,
-a pitch of 4/12 can be entered as 0.33. This ensures the calculation reflects the
-actual sloped surface rather than just the horizontal footprint.
-</p>
-`,
-
-  howToUse: [
-    "Select the measurement unit you want to use, either meters or feet.",
-    "Enter the length of the roof base in the selected unit.",
-    "Enter the width of the roof base in the same unit.",
-    "Input the roof pitch as a rise-over-run value (for example, 0.25 for a 3/12 pitch).",
-    "Click the Calculate button to instantly see the total roofing area.",
-    "Use the Reset button to clear all fields and start a new calculation."
-  ],
-
-  features: [
-    "Supports both metric (meters) and imperial (feet) units.",
-    "Automatically adjusts roof area based on slope using a mathematical slope factor.",
-    "Instant calculation with clear and readable results.",
-    "Simple input fields designed for homeowners and professionals.",
-    "Responsive layout that works on desktop, tablet, and mobile devices.",
-    "Error handling to prevent invalid or incomplete inputs."
-  ],
-
-  whyUse:
-    "This roofing calculator helps accurately estimate the true surface area of a sloped roof, which is essential for planning roofing materials, budgeting costs, and avoiding waste. Manual calculations can be confusing, especially when roof pitch is involved. This tool eliminates guesswork and provides quick, reliable results for contractors, builders, and homeowners.",
-
-  notes: [
-    "Roof pitch should be entered as a decimal value, not a fraction.",
-    "The calculator estimates total roof surface area but does not account for roof overhangs or complex roof shapes.",
-    "For multi-slope or irregular roofs, calculate each section separately and add the results.",
-    "Material coverage, waste factors, and overlaps should be considered separately when purchasing roofing materials.",
-    "Results are rounded to two decimal places for clarity."
+      `
+    },
   ]
-}
-,
-
-  "tile-calculator": {
-  formula: `
-<p>
-The Tile Calculator determines the number of tiles required to cover a floor area based on the dimensions of the floor and the size of individual tiles.
-</p>
-
-<p>
-The formula used is:
-</p>
-
-<ul>
-  <li><strong>Floor Area</strong> = Floor Length × Floor Width</li>
-  <li><strong>Tile Area</strong> = Tile Length × Tile Width</li>
-  <li><strong>Tiles Needed</strong> = Ceiling(Floor Area ÷ Tile Area)</li>
-</ul>
-
-<p>
-The <strong>ceiling function</strong> ensures that any partial tiles are counted as full tiles, since you cannot use fractions of a tile in practice.
-</p>
-  `,
-
-  howToUse: [
-    "Select the measurement unit (meters or feet) for your floor and tile dimensions.",
-    "Enter the length and width of the floor you want to cover.",
-    "Enter the length and width of a single tile you plan to use.",
-    "Click the 'Calculate' button to find out how many tiles are required.",
-    "Use the 'Reset' button to clear all input fields and perform a new calculation."
-  ],
-
-  features: [
-    "Automatically calculates the total number of tiles needed based on precise measurements.",
-    "Supports both metric (meters) and imperial (feet) units for international use.",
-    "Handles any rectangular floor and tile sizes, including large commercial areas.",
-    "Rounds up fractional tiles to ensure sufficient coverage.",
-    "Responsive and user-friendly interface suitable for desktop and mobile devices."
-  ],
-
-  whyUse:
-    "This calculator helps you avoid both shortages and over-purchasing of tiles by providing an accurate tile count. It saves time, reduces waste, and allows for better budget planning when installing tiles in homes, offices, or commercial spaces. By knowing the exact number of tiles needed, you can plan purchases efficiently and avoid multiple trips to the store.",
-
-  notes: [
-    "Always round up to the nearest whole number since you cannot use partial tiles.",
-    "Consider buying 5–10% extra tiles to account for cutting, breakage, and future repairs.",
-    "Ensure all measurements are accurate and in the same unit before calculating.",
-    "This calculator assumes a standard rectangular layout and does not account for complex patterns, diagonal placements, or grout spacing."
-  ]
-}
-,
+},
 "mulch-calculator": {
+  sections: [
+    {
+      type: "html",
+      title: "Estimate Mulch Coverage Quickly",
+      body: `
+      <p>
+Accurate estimation of mulch coverage means no over or under-purchasing and no wasted trips to the store. The target is to get the amount of mulch you need for covering an area with a certain size and depth. To calculate the amount simple area × depth will suffice, but having an apt unit measure system, material compaction and an allowance for a slight waste is necessary to get reliable results.  
+        </p>
 
-  formula: `
-<p>
-The Mulch Calculator helps determine the total volume of mulch required to cover a garden bed, lawn, or landscaping area. The calculation takes into account the <strong>length</strong>, <strong>width</strong>, and <strong>depth</strong> of the area where mulch will be applied.
-</p>
-
-<p>
-The formula used is:
-</p>
-
+<p>Simple formula </br><strong> Mulch volume = Area × Depth</strong> </p>
+<p>Where:
 <ul>
-  <li><strong>Volume (m³)</strong> = Length × Width × (Depth ÷ 100) for metric units (depth in centimeters)</li>
-  <li><strong>Volume (ft³)</strong> = Length × Width × (Depth ÷ 12) for imperial units (depth in inches)</li>
-</ul>
-
-<p>
-This formula converts depth appropriately depending on the unit system to ensure the resulting volume is accurate, whether in cubic meters or cubic feet.
+<li>Area is length × width (in metres or feet)</li>
+<li>Depth is the mulch depth in optimal (density, resistance) turned into the same linear measure unit.</li></ul>
 </p>
-`,
-
-  howToUse: [
-    "Enter the length of the area you want to cover with mulch. Use meters if the metric system is selected or feet if using imperial units.",
-    "Enter the width of the area using the same unit system.",
-    "Enter the desired depth of mulch. In metric, use centimeters; in imperial, use inches.",
-    "Select the appropriate unit system from the dropdown menu: Metric (m, cm) or Imperial (ft, in).",
-    "Click on the 'Calculate' button to view the total volume of mulch required for your area.",
-    "Use the 'Reset' button to clear all fields and perform a new calculation."
-  ],
-
-  features: [
-    "Quick and accurate calculation of mulch volume required.",
-    "Supports both metric and imperial units for international users.",
-    "Provides clear results in cubic meters or cubic feet depending on the selected unit system.",
-    "Easy-to-use interface with labeled input fields for length, width, and depth.",
-    "Reset option to perform multiple calculations efficiently."
-  ],
-
-  whyUse:
-    `This calculator saves time and effort by automatically calculating the required volume of mulch without manual conversions or guesswork. It helps homeowners, landscapers, and gardeners purchase the correct amount of mulch, minimizing waste and ensuring efficient coverage of garden beds. Using this tool ensures precise planning for landscaping projects, budgeting, and material procurement.`,
-
-  notes: [
-    "Ensure all input values are positive numbers to get accurate results.",
-    "Depth must be entered in centimeters for metric units and inches for imperial units.",
-    "For irregular-shaped areas, calculate the area as length × width approximately or break it into smaller rectangular sections and sum the volumes.",
-    "Always round up the volume slightly to account for compaction or uneven terrain.",
-    "This calculator assumes a consistent depth of mulch; adjust manually if layering varies across the area."
+<p>For metric:
+<ul>
+<li>Depth/cm → depth/m: Depth (m) = depth_cm / 100</li>
+<li>Volume (m³) = length_m x width_m x depth_m</li></ul>
+</p>
+<p>For imperial:
+<ul>
+<li>depth in inches → feet: depth_ft = depth_in / 12</li>
+<li>Volume (ft³) = length_ft × width_ft × height_ft</li></ul>
+</p>
+<p><strong>Quick example </strong> </br>
+You need to put down some mulch on a 10 m × 4 m garden bed at a depth of 5 cm:
+<ul>
+<li>Area = 10 × 4 = 40 m²</li>
+<li>Depth = 5 cm = 0.05 m</li>
+<li>Volume = 40 × 0.05 = 2.0 m³</li></ul>If mulch is delivered in cubic metres, hire ~2.0 m³ plus contingency. When selling to customers,    calculate: 1 common bag = 0.05 m³ → 2.0 ÷ 0.05 = 40 bags (round up and add allowance).
+</p>
+<p><strong>Practical considerations </strong> 
+<ul>
+<li><strong>Waste / overage factor: </strong>Consider 5–10% add-on for cutting, compaction and a small degree of measurement error. For irregular beds, or very heavy contouring, a 10–15% would be perfect.</li>
+<li><strong>Material compaction: </strong>Organic mulches decompose and compact over time. If you want a 5 cm depth cover that's long-term, plan for an initial depth slightly higher to also anticipate settling.</li>
+<li><strong>Bag vs bulk: </strong>Compare price per cubic metre (or yard) vs per bag. A bigger job is cheaper to buy in bulk — bags are helpful when you have very small or precise placements.</li>
+<li><strong>Delivery logistics: </strong>In order to be able to receive the delivery, bulk deliveries must be placed on a flat, driveway accessible by truck. And — confirm how is it delivered and if there are any extra charges.</li>
+</ul>
+</p>
+<p><strong>Unit tips and conversions </strong>
+<ul><li>1 m 3 ≈ 35.3 ft 3.</li><li>1 CY = 0.7646 cubic meters.</li><li>When converting units, make sure all dimensions are in the same system before exiting the formula.</li></ul>
+</p>
+<p><strong>Ordering checklist </strong> 
+<ol start="1">
+<li>Measure area accurately -- divide up uneven beds into rectangles/triangles and 'total' them!</li>
+<li>Determine depth of target for your intended use.</li>
+<li>Calculate volume and incorporate an allowance of 5–10%.</li>
+<li>Select bagged or bulk according to quantity, availability and budget.</li>
+<li>Verify where you'd like the items to be delivered and how they should be arranged.</li>
+</ol>
+</p>
+    
+      `
+    },
   ]
-}
-,
+},
 "wind-chill-calculator": {
-  "formula": `
-<p>
-The Wind Chill Calculator estimates the perceived temperature based on actual air temperature and wind speed. Wind chill reflects how cold it feels on human skin when wind accelerates heat loss from the body. The faster the wind blows, the greater the heat loss, making the air feel colder than the measured temperature.
+  sections: [
+    {
+      type: "html",
+      title: "Understanding Wind Chill Effect",
+      body: `
+      <figure class="content-image">
+          <img
+            src="/images/wind-chill-effect-human-body-diagram.png"
+            alt="Illustration showing wind chill effect on the human body, with cold wind arrows increasing heat loss on exposed skin like face, hands, and ears, comparing air temperature and feels-like temperature."
+            width="800"
+            height="400"
+          />
+          <figcaption>
+Wind chill lowers the “feels like” temperature by accelerating heat loss from exposed skin.</figcaption>
+        </figure>
+      <p>
+      Wind chill is the decrease in air temperature felt by the body on exposed skin due to the flow of air. It does NOT directly cause the thermometer to read colder; instead it reflects the RATE at which heat is being removed from your body due to wind increased convective heat loss. The faster the wind, the more quickly heat is evacuated from skin and a shallow layer of insulating warm air covering it, making an average air temperature feel that much colder.
+        </p>
+<p><strong>How it’s calculated (conceptually) </strong> </br>
+Many of today’s wind-chill equations are an equation with one value for air temperature and another value for wind speed and produce a single number (in °C or °F). The index provides an approximation of the effective, or "feels like," air temperature due to humidity. Critical thresholds — such as the point at which frostbite risk spikes sharply upward — are based on these index values, rather than air temperature alone.
 </p>
-
-<p>
-The formula used depends on the unit system:
-</p>
-
+<p><strong>Key points to know </strong>
 <ul>
-  <li><strong>Metric (°C, km/h)</strong>:
-    <br>Wind Chill (°C) = 13.12 + 0.6215 × T - 11.37 × V^0.16 + 0.3965 × T × V^0.16
-    <br>Where T = air temperature in °C, V = wind speed in km/h
-  </li>
-  <li><strong>Imperial (°F, mph)</strong>:
-    <br>Wind Chill (°F) = 35.74 + 0.6215 × T - 35.75 × V^0.16 + 0.4275 × T × V^0.16
-    <br>Where T = air temperature in °F, V = wind speed in mph
-  </li>
+<li>Wind chill is a measure of how cold people feel, not the actual temperature; it’s affected by not just wind and air temperature but also by humidity. “For humans and animals with skin (or hide), exposure to low temperatures can produce varying degrees of freezing or frostbite injury,” the National Weather Service says in its explanation of wind chill. Wind Chill Index falling to lower values does not directly lower body temperature, rather it causes heat loss at a faster rate.</li>
+<li>Frostbite risk is higher in extreme cold (as low as 30 degrees below zero or colder), especially when it's very windy.</li>
+<li>The wind chill index is not meaningful for winds below certain speeds (typically below the range of very light breezes) because cooling due to wind takes place above and beyond any actual temperature reduction.</li>
+<li>There are different wind chill charts depending on what country you’re in (americas use imperial, UK and rest of the world uses metric) but it’s exactly the same basic principle!</li>
 </ul>
-
-<p>
-For very low wind speeds (less than 4.8 km/h or 3 mph), wind chill is considered equal to the actual air temperature since the effect of wind is negligible.
 </p>
-  `,
-
-  "howToUse": [
-    "Enter the current air temperature in the appropriate unit (°C or °F) depending on your location or preference.",
-    "Enter the wind speed in km/h for metric units or mph for imperial units.",
-    "Select the unit system from the dropdown: Metric (°C, km/h) or Imperial (°F, mph).",
-    "Click the 'Calculate' button to see the wind chill, which represents the perceived cold due to wind.",
-    "If needed, use the 'Reset' button to clear all fields and enter new values."
-  ],
-
-  "features": [
-    "Supports both Metric and Imperial unit systems for global usability.",
-    "Calculates perceived temperature based on both temperature and wind speed.",
-    "Handles low wind speed conditions accurately by returning actual temperature when wind has negligible effect.",
-    "Displays results instantly with a user-friendly interface using a single click.",
-    "Includes error validation for negative or invalid input to prevent calculation errors."
-  ],
-
-  "whyUse": "Wind chill significantly affects human comfort and safety, especially in cold climates. Understanding wind chill helps you dress appropriately, prevent hypothermia or frostbite, and make informed decisions for outdoor activities. This calculator provides accurate and instant results without manual computation, making it practical for weather-sensitive planning.",
-
-  "notes": [
-    "Wind chill only applies to air temperatures below 10 °C (50 °F); above this, wind has minimal effect on perceived temperature.",
-    "Wind chill does not affect inanimate objects; it only describes the cooling effect on exposed human skin.",
-    "Ensure wind speed is entered correctly; higher than actual wind speeds will overestimate cold perception.",
-    "For safety, consider wind chill along with other factors such as humidity and sunlight exposure when planning outdoor activities."
+<p><strong>Everyday implications </strong>
+<ul><li>Determination of clothing and exposure (planning outdoor activity) should be based on wind-chill.</li>
+<li>Man made devices have no wind chill affect when it comes to electrical or mechanical systems, though they have on people.</li>
+<li>Shelter, windbreaks and insulating clothing slow convection and reduce effective wind chill.</li></ul>
+</p>
+<p><strong>Practical tip: </strong>to make weather-related decisions be sure to note the reported air temperature and the wind-chill; dress and pace outdoor activity according to the lower value (more conservative) to minimize risk of cold injury. </p>
+      `
+    },
+    {
+      type: "html",
+      title: "Wind Chill Safety Guide",
+      body: `
+     <p>Wind chill accelerates the rate at which exposed skin cools, intensifying immediate dangers such as frostbite and hypothermia. A safety-first approach calculates wind-chill indices to establish exposure limits, clothing benchmarks and operational guidelines for outdoor activities and work.
+</p>
+<p><strong>Immediate hazards </strong>
+<ul>
+<li><strong>Frostbite: </strong>The freezing of the skin and superficial tissues. The colder the wind-chill, the greater the danger; cheeks, nose, fingers and toes are most susceptible.</li>
+<li><strong>Hypothermia: </strong>Reduction of core body temperature by a decrease in heat production and/or an excess of heat loss. Wind speeds up the process of getting hypothermia.</li>
+</ul>
+</p>
+<p><strong>Practical safety measures </strong> 
+<ol start="1">
+<li><strong>Layer: </strong>Layers are your best friend so wear a few (or seven) of them, with something windproof on the outside. Warmth is trapped by layers; an outer layer prevents heat loss through convection.</li>
+<li><strong>Protect your exposed skin: </strong>Put on a hat, balaclava, gloves and face protection. Even thin windproof layers attenuate risk of frostbite over skin.</li>
+<li><strong>Restrain time exposure: </strong>Use wind-chill tables to set safe limits for the duration of exposure; reduce work intervals and use warm-up shelters during breaks.</li>
+<li><strong>Buddy system: </strong>Keep an eye on buddies for early signs — numbness, white/gray skin patches, slurry speech, distraction. Immediate warming is critical.</li>
+<li><strong>Plan and communicate: </strong> Look out for warnings on temperature and wind; make sure you know what to do in case of an emergency (including blankets, hot drinks, heating pads).</li>
+</ol>
+ <figure class="content-image">
+          <img
+            src="/images/wind-chill-safety-protection-guide-infographic.png"
+            alt="Infographic comparing wind chill safety showing frostbite risk on poorly dressed person and proper winter clothing protection with layers, gloves, hat, and face cover."
+            width="800"
+            height="400"
+          />
+          <figcaption>
+Proper winter clothing significantly reduces wind chill and frostbite risk.
+</figcaption>
+        </figure>
+</p>
+<p><strong>Occupational considerations </strong>
+<ul><li>Employers can establish wind-chill temperature thresholds that will prompt modified work practices (e.g., cessation of work, rotation of workers and provision of heated breaks).</li>
+<li>Training should include recognizing cold injuries and the initial steps for first aid.</li></ul>
+</p>
+      `
+    },
+     
   ]
-}
+},
+"gravel-calculator": {
+  sections: [
+    {
+      type: "html",
+      title: "Estimate Gravel Volume Accurately",
+      body: `
+      <p>
+      Precise calculation of aggregate volumes ensures not to order too much or too little and thus avoids wastage, cost overruns and delayed site progression. Volume is a result of three specific known measurements: length, width, and depth. The basic formula is also simple — standardize all dimensions into a single unit, multiply to yield cubic volume and add 10 Per cent for compaction and hand placement.
+        </p>
+<p><strong>Practical steps: </strong>
+<ol start="1">
+<li><strong>Measure area precisely: </strong>Measure your surface area with a tape or laser measure for length and width. If the shape is irregular, break it into rectangles/triangles and add them up.</li>
+<li><strong>Decide target depth: </strong>Very loosely compacted gravel is planted between beds and walkways which are composed of 25 – 50 millimeters (1-2 inches) of mulch, lanes about 50–75 mm (2-3 inches), and driveways with 100–150 mm (4-6 inches). Depth will be recorded in the same unit as area.</li>
+<li><strong>Apply the formula: </strong>
+<ul><li>For metric:<strong>  Volume (m³) = length (m) × width (m) × height (m).</strong></li>
+<li>For imperial:<strong>  Volume (cu ft) = length (ft) × width (ft) × depth (ft). </strong></li></ul>
 
-,
-  "gravel-calculator": {
-  "formula": `
-<p>
-The volume of gravel required is calculated by multiplying the <strong>length</strong>, <strong>width</strong>, and <strong>depth</strong> of the area to be filled. This gives the total volume in cubic meters for metric units or cubic feet for imperial units.
+Just use m/ft after converting cm/in.</li>
+<li><strong>Adjust for compaction and waste: </strong>Factor 5–15% more for site conditions, delivery method, and compaction. Heavy use surfaces and rough materials generally require more of a threshold.</li>
+</ol>
+ <figure class="content-image">
+          <img
+            src="/images/gravel-volume-calculation-diagram-length-width-depth.png"
+            alt="Infographic comparing wind chill safety showing frostbite risk on poorly dressed person and proper winter clothing protection with layers, gloves, hat, and face cover.Gravel volume calculation diagram showing length, width, and depth with a cross-section view of gravel thickness over soil"
+            width="800"
+            height="350"
+          />
+          <figcaption>
+Diagram illustrating how gravel volume is calculated using length, width, and depth measurements.
+</figcaption>
+        </figure>
+</p>
+<p><strong>Supplier considerations: </strong>
+<ul><li>Bulk deliveries are priced in cubic meters or cubic yards, check with the supplier.</li>
+<li>If buying by the bag, convert the amount of cubic feet to total volume and ensure whole bags (round it up).</li></ul>
+</p>
+<p><strong>Quality control: </strong>
+<ul><li>Check delivered items for the right material grade and moisture, since saturated sand weighs more, but occupies the same space.</li>
+<li>Keep a small stock for future top-ups and repairs.</li></ul>
+When the amount of material is calculated accurately, you can procure and install your project with ease: Measure calculate and add a buffer to be confident that your project will not run short.
 </p>
 
-<p>
-The formula used is:
-</p>
-
+      `
+    },
+    {
+      type: "html",
+      title: "Plan Gravel Coverage Efficiently ",
+      body: `
+     <p>
+Gravel is an economical material choice that can cover existing driveway surfaces, offering maintenance free options to the home owner. Thinking ahead involves adequately estimating use case and matching the type and depth of gravel, coordinating site logistics as well as reducing waste. Begin by determining what you’re aiming for: decorative surfacing, pedestrian walkways or vehicle driveways — these share very little in common when it comes to material size and depth requirements.
+        </p>
+<p><strong>Design considerations: </strong>
 <ul>
-  <li><strong>Metric:</strong> Volume (m³) = Length (m) × Width (m) × Depth (cm ÷ 100)</li>
-  <li><strong>Imperial:</strong> Volume (ft³) = Length (ft) × Width (ft) × Depth (in ÷ 12)</li>
-</ul>
-
-<p>
-The calculator converts depth from centimeters to meters for metric units or from inches to feet for imperial units before calculating the total volume. The final result shows the amount of gravel required to fill the specified area.
+<li><strong>Aggregate grading: </strong>Fines are a plus for compacted sub-base, 10–20 mm is standard for driveways, and larger angular stone provides the drainage layer. Choose a grade that combines aesthetics and functionality.</li>
+<li><strong>Depth in use: </strong>For decorative areas 25–50 mm is usually sufficient, whilst walkways will need 50–75 mm to remain stable and driveways should be a minimum of 100-150 mm including compacted sub-base. Check local standards in terms of load for vehicles.</li>
+<li><strong>Construction of the sub-base: </strong>For bearing surfaces, lay and compact a sub-base (crushed stone or crushed gravel) to avoid imprinting into the ground and absorb subsidence.</li></ul>
 </p>
-  `,
 
-  "howToUse": [
-    "Enter the length of the area to be covered with gravel in meters or feet.",
-    "Enter the width of the area in meters or feet.",
-    "Enter the depth of gravel layer in centimeters or inches.",
-    "Select the desired unit system: Metric (m/cm) or Imperial (ft/in).",
-    "Click on 'Calculate' to get the required volume of gravel.",
-    "Click 'Reset' to clear all input fields and start over."
-  ],
+<p><strong>Logistics and efficiency </strong>
+<ul>
+<li><strong>Calculate smart quantities: </strong>Keep your job-site filled and save money by calculating the volume of material you need, then order just the right quantity in bulk to minimize delivery fees and reduce per-unit cost. Coordinate delivery time and give a drop location to ensure no double handling.</li>
+<li><strong>Layout of the site: </strong>Clearly delineate the area, provide access for machinery if necessary and plan out pathways to address where installers can off-load with small walks.</li>
+<li><strong>Edge restraint and water management: </strong>Include an edging to restrict gravel and slope the bed for runoff so there’s no pooling or erosion.</li></ul>
+</p>
+<figure class="content-image">
+          <img
+            src="/images/gravel-coverage-planning-good-vs-bad.png"
+            alt="Infographic comparing poor and proper gravel coverage planning, showing uneven thin gravel on one side and even depth with compacted base and edge restraints on the other"
+            width="800"
+            height="350"
+          />
+          <figcaption>
+Proper gravel planning ensures even coverage, correct depth, and long-lasting stability.
+</figcaption>
+        </figure>
 
-  "features": [
-    "Supports both metric and imperial measurement systems.",
-    "Automatically converts depth units to match the calculation system.",
-    "Displays the required gravel volume in cubic meters or cubic feet.",
-    "Easy-to-use input fields with clear labels and placeholders.",
-    "Quick reset option to clear inputs and results."
-  ],
-
-  "whyUse": `
-This calculator helps in accurately estimating the amount of gravel needed for landscaping, driveways, garden paths, or construction projects. By using it, you avoid over-purchasing or under-purchasing gravel, saving both time and money. It simplifies complex manual calculations, ensures precise volume estimates, and accommodates different unit systems for flexibility.
-  `,
-
-  "notes": [
-    "Ensure all input values are positive numbers for accurate results.",
-    "Depth values should represent the actual thickness of the gravel layer.",
-    "For uneven surfaces, consider adjusting the depth to account for slopes or irregularities.",
-    "Always round up to the nearest cubic meter or cubic foot to ensure sufficient material.",
-    "Use consistent units for length, width, and depth to avoid calculation errors."
+      `
+    },
   ]
-}
-,
-
-  "heat-index-calculator": {
-  "formula": `
+},
+"heat-index-calculator": {
+  sections: [
+    {
+      type: "html",
+      title: "Heat Index Basics Explained",
+      body: `
+      <p>
+The Heat Index (HI) or "apparent temperature" is a measure of how hot it really feels when relative humidity is factored with the actual air temperature. The index was physically analogous to the reduced evaporation model, which diminishes evaporative cooling from sweat at higher humidity and then reduces sensible effect (or the apparent temperature) of the same actual atmospheric temperature. Practically, meteorologists and others either calculate or estimate heat index from regressed arithmetic expressions of temperature and the dew point; these are introduced by regression from actual measured data for the specific location.National Weather Service offices in the United States make use of a heat index scheme developed in 1978, determined from work carried out by R.G.uttie of the USA Human biometeorological database supplemented with work published on perceived temperatures at standard operative temperatures.In New Zealand an approximation (in Celsius) is published by M.Ludlam-Bupp.) which makes use of relative humidity, wind speed. For those using metric contexts, its a simple matter for practitioners to, convert the % Celsius to Fahrenheit first, run the calculation with the above formula and then re-convert from Fahrenheit back when displaying.
+        </p>
 <p>
-The heat index, also known as the "apparent temperature," measures how hot it feels to the human body by combining the effects of air temperature and relative humidity. High humidity reduces the body's ability to cool itself through sweating, making the temperature feel higher than it actually is.
-</p>
-
+The heat index is useful only when the dry-bulb temperature exceeds approximately 80°F (26.7°C) and relative humidity is significant. Below those numbers the index provides little added value and may mischaracterize human comfort. Further, the index assumes no wind and a standard amount of clothing; deviations from these assumptions can cause the heat index to have a higher or lower perceived temperature. That's why the simple calculators on web pages ought to note the assumptions and acceptable input ranges.    
+        </p>
 <p>
-The formula used for the heat index is based on the National Weather Service's regression equation:
-</p>
-
-<ul>
-  <li><strong>HI</strong> = -42.379 + 2.04901523*T + 10.14333127*RH − 0.22475541*T*RH − 0.00683783*T² − 0.05481717*RH² + 0.00122874*T²*RH + 0.00085282*T*RH² − 0.00000199*T²*RH²</li>
-</ul>
-
-<p>
-Where:
-<ul>
-  <li><strong>T</strong> = Air temperature in degrees Fahrenheit (for metric input in °C, convert to °F first).</li>
-  <li><strong>RH</strong> = Relative Humidity in percent.</li>
-  <li><strong>HI</strong> = Heat Index in °F (convert back to °C if needed).</li>
-</ul>
-</p>
-
-<p>
-For temperatures and humidity values outside the typical range, adjustments or simplified approximations are used.
-</p>
-  `,
-  
-  "howToUse": [
-    "Select your preferred unit system: Metric (°C) or Imperial (°F).",
-    "Enter the current air temperature in the chosen unit.",
-    "Enter the current relative humidity as a percentage (0–100%).",
-    "Click the 'Calculate' button to determine the heat index.",
-    "The result will display how hot it actually feels considering humidity."
-  ],
-
-  "features": [
-    "Calculates the heat index accurately for both metric and imperial units.",
-    "Provides a clear indication of 'feels like' temperature to assess heat stress.",
-    "Instant results with a simple, user-friendly interface.",
-    "Input validation ensures that temperature and humidity values are within a realistic range.",
-    "Supports both °C/°F for temperature and percentage for humidity."
-  ],
-
-  "whyUse": 
-    "This calculator helps you understand the real impact of heat on the human body by combining temperature and humidity. It is particularly useful for outdoor activities, sports, workplace safety, and public health guidance. Using the heat index allows individuals to plan hydration, clothing, and activity levels to prevent heat-related illnesses.",
-
-  "notes": [
-    "The heat index is most reliable for temperatures above 27°C (80°F) and relative humidity above 40%.",
-    "It does not account for wind speed or solar radiation, which can further affect comfort levels.",
-    "For extremely high heat and humidity, caution is advised even if the heat index seems moderate.",
-    "Values calculated are intended for general guidance and should not replace professional weather advisories."
-  ]
-}
-,
-
-  "dew-point-calculator": {
-
-  "formula": `
-<p>
-The dew point is the temperature at which air becomes saturated with moisture and water vapor begins to condense into liquid. It is a key measure of humidity and comfort in meteorology and environmental science.
-</p>
-
-<p>
-This calculator uses the Magnus formula to accurately estimate the dew point based on the current <strong>air temperature</strong> and <strong>relative humidity</strong>.
-</p>
-
-<p>
-The Magnus formula is:
-</p>
-
-<ul>
-  <li><strong>a</strong> = 17.27</li>
-  <li><strong>b</strong> = 237.7</li>
-  <li><strong>α</strong> = (a × T) / (b + T) + ln(RH / 100)</li>
-  <li><strong>Dew Point</strong> = (b × α) / (a − α)</li>
-</ul>
-
-<p>
-Where <strong>T</strong> is the air temperature in °C and <strong>RH</strong> is the relative humidity in percent. If using Imperial units, temperatures are first converted to Celsius, the calculation is performed, and then converted back to °F.
-</p>
-  `,
-
-  "howToUse": [
-    "Enter the current air temperature in Celsius or Fahrenheit, depending on your unit system.",
-    "Enter the relative humidity as a percentage (0–100%).",
-    "Select the unit system: Metric for °C or Imperial for °F.",
-    "Click the 'Calculate' button to get the dew point temperature.",
-    "The result will display the temperature at which condensation occurs, indicating the dew point."
-  ],
-
-  "features": [
-    "Supports both Metric (°C) and Imperial (°F) units.",
-    "Calculates dew point quickly and accurately using the Magnus formula.",
-    "Validates input values to ensure temperature and humidity are within realistic ranges.",
-    "Provides instant results for meteorologists, gardeners, HVAC technicians, and outdoor enthusiasts.",
-    "Responsive design suitable for desktop and mobile devices."
-  ],
-
-  "whyUse": 
-    "Knowing the dew point is important for understanding humidity levels, predicting condensation and fog formation, ensuring comfort in living and working spaces, and preventing moisture-related problems in homes, gardens, and industrial environments.",
-
-  "notes": [
-    "Relative humidity should be entered as a value between 0 and 100.",
-    "For Imperial units, temperature input is in Fahrenheit, and the dew point result is also in Fahrenheit.",
-    "The calculation assumes standard atmospheric pressure; extreme pressure conditions may slightly affect accuracy.",
-    "High dew points indicate muggy conditions, while low dew points indicate dry air."
-  ]
-}
-,
-
-  "bandwidth-calculator": {
-
-  "formula": `
-<p>
-The Bandwidth Calculator determines the data transfer speed required to send a file over a network in a given time.
-</p>
-
-<p>
-The formula used depends on the chosen unit:
-</p>
-
-<ul>
-  <li><strong>For Mbps:</strong> Bandwidth (Mbps) = (File Size in MB × 8) ÷ Transfer Time in seconds</li>
-  <li><strong>For MB/s:</strong> Bandwidth (MB/s) = File Size in MB ÷ Transfer Time in seconds</li>
-</ul>
-
-<p>
-Here, 1 byte = 8 bits, so converting megabytes (MB) to megabits (Mb) involves multiplying by 8.
-</p>
-  `,
-
-  "howToUse": [
-    "Enter the size of the file you want to transfer in megabytes (MB).",
-    "Enter the total time in seconds you want the transfer to complete in.",
-    "Select the output unit: either Mbps (megabits per second) or MB/s (megabytes per second).",
-    "Click the 'Calculate' button to find the required bandwidth.",
-    "The result will display the speed needed to transfer the file within the specified time."
-  ],
-
-  "features": [
-    "Supports calculations in both Mbps and MB/s for flexibility.",
-    "Instant calculation after entering file size and time.",
-    "Handles decimal inputs for precise bandwidth requirements.",
-    "Clear error messages for invalid or missing inputs.",
-    "Reset button to quickly start a new calculation."
-  ],
-
-  "whyUse": 
-    "This calculator is useful for anyone planning file transfers over a network, including IT professionals, network engineers, and content creators. It helps estimate the bandwidth required to transfer files efficiently, preventing slow downloads or bottlenecks, and ensures smooth network planning.",
-
-  "notes": [
-    "Ensure the file size and time values are positive numbers.",
-    "Mbps and MB/s are different units: 1 MB/s = 8 Mbps.",
-    "Network overhead and fluctuations are not considered; the calculator provides theoretical required speed.",
-    "For large files or high-speed transfers, consider rounding up the calculated bandwidth to account for real-world conditions."
-  ]
-}
-,
-
-  "time-duration-calculator": {
-  "formula": `
-<p>
-The time duration between two points is calculated by finding the difference between the <strong>start time</strong> and the <strong>end time</strong>. 
-This calculation takes into account hours, minutes, and seconds, and correctly handles cases where the end time is on the next day.
-</p>
-
-<p>
-The formula used is:
-</p>
-
-<ul>
-  <li><strong>Total Seconds</strong> = End Time (in seconds) − Start Time (in seconds)</li>
-  <li>If Total Seconds &lt; 0, add 24 × 3600 to account for crossing midnight</li>
-  <li><strong>Hours</strong> = Floor(Total Seconds ÷ 3600)</li>
-  <li><strong>Minutes</strong> = Floor((Total Seconds mod 3600) ÷ 60)</li>
-  <li><strong>Seconds</strong> = Total Seconds mod 60</li>
-</ul>
-
-<p>
-The final duration is presented in the format <strong>hours:minutes:seconds</strong>.
-</p>
-  `,
-  "howToUse": [
-    "Enter the start time in the first input field. Use the 24-hour format for accuracy.",
-    "Enter the end time in the second input field. If the end time is earlier than the start time, the calculator will automatically assume it is on the following day.",
-    "Click the 'Calculate' button to compute the total duration.",
-    "The result will display the time difference in hours, minutes, and seconds.",
-    "To clear the inputs and start a new calculation, click the 'Reset' button."
-  ],
-  "features": [
-    "Instant calculation of duration between any two times.",
-    "Handles cases where the end time is on the next day (crossing midnight).",
-    "Displays the result in a clear and easy-to-read hours, minutes, and seconds format.",
-    "Supports 24-hour time format for precision.",
-    "Responsive design, suitable for both desktop and mobile devices."
-  ],
-  "whyUse": "This calculator helps quickly determine the exact duration between two times without manual calculations. It is useful for tracking work hours, planning events, calculating elapsed time for projects, or measuring the length of any activity. Unlike manual calculations, it eliminates human errors and saves time.",
-  "notes": [
-    "Ensure you enter valid times in HH:MM format for accurate results.",
-    "If the end time is earlier than the start time, the calculator assumes the event spans into the next day.",
-    "Seconds are calculated based on the difference and may not account for milliseconds.",
-    "This calculator does not consider time zones or daylight saving changes; both times should be in the same time zone.",
-    "For recurring events, calculate each duration separately for accuracy."
-  ]
-}
-,
-
-
-"basic-calculator": {
-  "formula": `
-<p>
-The basic calculator performs standard arithmetic operations such as addition, subtraction, multiplication, and division. 
-It also supports percentage calculations and negation of numbers. The calculator evaluates the user-entered expression in sequence, following operator precedence.
-</p>
-
-<p>
-The formula used is:
-</p>
-
-<ul>
-  <li><strong>Addition (+)</strong>: Sum of two numbers → <code>a + b</code></li>
-  <li><strong>Subtraction (−)</strong>: Difference between two numbers → <code>a − b</code></li>
-  <li><strong>Multiplication (×)</strong>: Product of two numbers → <code>a × b</code></li>
-  <li><strong>Division (÷)</strong>: Quotient of two numbers → <code>a ÷ b</code></li>
-  <li><strong>Percentage (%)</strong>: Converts a number into its percentage → <code>value ÷ 100</code></li>
-  <li><strong>Negation (+/−)</strong>: Converts a positive number to negative or vice versa → <code>−value</code></li>
-</ul>
-
-<p>
-The calculator evaluates expressions dynamically using JavaScript's <strong>eval()</strong> function after replacing symbolic operators with JavaScript-compatible operators.
-</p>
-  `,
-  "howToUse": [
-    "Click on the numeric buttons to enter the numbers you want to calculate with.",
-    "Use the arithmetic operator buttons (÷, ×, −, +) to perform the desired operation.",
-    "Click the '=' button to evaluate the expression and display the result.",
-    "Use the 'C' button to clear the current expression and reset the display to zero.",
-    "Use the '+/−' button to toggle the sign of the last number entered.",
-    "Use the '%' button to convert the current value to a percentage."
-  ],
-  "features": [
-    "Supports all basic arithmetic operations including addition, subtraction, multiplication, and division.",
-    "Dynamic display that adjusts font size automatically based on the length of the input.",
-    "Percentage and negation functionality for versatile calculations.",
-    "Responsive design suitable for desktop and mobile devices.",
-    "User-friendly interface with color-coded buttons for easy identification of functions."
-  ],
-  "whyUse": "This calculator is essential for quick and accurate arithmetic calculations without the need for manual computation. It is perfect for everyday math tasks, homework, budgeting, or any situation requiring instant calculation. The built-in percentage and negation functions simplify common operations that often require additional steps.",
-  "notes": [
-    "Ensure valid numerical input to avoid calculation errors.",
-    "The calculator respects standard operator precedence when evaluating expressions.",
-    "Division by zero will return an error.",
-    "Only one expression can be evaluated at a time; clear the display to start a new calculation.",
-    "Decimal numbers can be entered using the '.' button."
-  ]
-}
-
-,
-"percentage-calculator": {
-  "formula": `
-<p>
-The percentage calculator determines the value that corresponds to a given percentage of a number. 
-This is useful in a variety of contexts such as calculating discounts, tax, interest, or performance metrics.
-</p>
-
-<p>
-The formula used is:
-</p>
-
-<ul>
-  <li><strong>Percentage Value</strong> = (Original Value × Percentage) ÷ 100</li>
-</ul>
-
-<p>
-For example, to calculate 20% of 150:
-</p>
-
-<ul>
-  <li>(150 × 20) ÷ 100 = 30</li>
-</ul>
-
-<p>
-The result represents the portion of the original value defined by the specified percentage.
-</p>
-  `,
-  "howToUse": [
-    "Enter the original number in the 'Enter Value' input field.",
-    "Enter the percentage you want to calculate in the 'Percentage (%)' input field.",
-    "Click the 'Calculate' button to get the result.",
-    "The calculator will display the calculated percentage value below the inputs.",
-    "Use the 'Reset' button to clear the inputs and start a new calculation."
-  ],
-  "features": [
-    "Simple and quick calculation of percentages for any numeric value.",
-    "Supports decimal and whole number inputs.",
-    "Clear and user-friendly interface with labeled input fields.",
-    "Instant result display without requiring manual computation.",
-    "Responsive design suitable for desktop and mobile devices."
-  ],
-  "whyUse": "This calculator eliminates manual calculation errors and saves time when determining the portion of a number represented by a percentage. It is essential for students, professionals, and anyone dealing with financial calculations, discounts, or statistical data.",
-  "notes": [
-    "Ensure that both the original value and percentage are entered to get an accurate result.",
-    "Decimal values are supported for precise calculations.",
-    "Negative numbers can be used if needed, but results will reflect the mathematical sign.",
-    "The percentage value is always calculated as a portion of the original number.",
-    "This calculator does not handle reverse percentage calculations (finding the percentage from a part and the whole)."
-  ]
-}
-
-,
-"percentage-increase-decrease-calculator": {
-  "formula": `
-<p>
-The percentage increase or decrease calculator determines the change between an original value and a new value, expressed both as an absolute difference and as a percentage.
-</p>
-
-<p>
-The formula used is:
-</p>
-
-<ul>
-  <li><strong>Difference</strong> = New Value − Original Value</li>
-  <li><strong>Percentage Change</strong> = (Difference ÷ Original Value) × 100</li>
-  <li>The type of change is determined as follows:
-    <ul>
-      <li>If Percentage Change ≥ 0 → Increase</li>
-      <li>If Percentage Change &lt; 0 → Decrease</li>
-    </ul>
-  </li>
-</ul>
-
-<p>
-For example, if the original value is 200 and the new value is 250:
-</p>
-
-<ul>
-  <li>Difference = 250 − 200 = 50</li>
-  <li>Percentage Change = (50 ÷ 200) × 100 = 25%</li>
-  <li>Type = Increase</li>
-</ul>
-
-<p>
-This shows that the value increased by 50 units, which is a 25% increase from the original value.
-</p>
-  `,
-  "howToUse": [
-    "Enter the original value in the 'Original Value' input field.",
-    "Enter the new value in the 'New Value' input field.",
-    "Click the 'Calculate' button to see the result.",
-    "The calculator will display both the absolute difference and the percentage change.",
-    "The result also indicates whether it is an increase or decrease.",
-    "Use the 'Reset' button to clear the inputs and perform a new calculation."
-  ],
-  "features": [
-    "Quick calculation of both absolute and percentage change between two numbers.",
-    "Automatically determines if the change is an increase or a decrease.",
-    "Handles decimal and whole number inputs.",
-    "User-friendly interface with clearly labeled input fields and results.",
-    "Responsive design suitable for mobile and desktop screens."
-  ],
-  "whyUse": "This calculator helps users quickly determine how much a value has changed in terms of both units and percentage. It is highly useful in financial analysis, business performance tracking, sales monitoring, academic grading comparisons, or any scenario where comparing values over time is important.",
-  "notes": [
-    "Original value cannot be zero as it would make the percentage change undefined.",
-    "Decimal numbers are supported for precise calculations.",
-    "Negative percentage values indicate a decrease.",
-    "Ensure both values are entered to get accurate results.",
-    "The calculator is intended for simple percentage change calculations, not compound growth or sequential changes."
-  ]
-}
-
-,
-
-"ratio-calculator": {
-  formula: `
-<p>
-A ratio compares two or more quantities by showing how many times one value contains or relates to another.
-This calculator simplifies ratios by dividing all values by their <strong>Greatest Common Divisor (GCD)</strong>.
-</p>
-
-<p>
-The calculation works in three main steps:
-</p>
-
-<ul>
-  <li>All entered values are converted into numeric form</li>
-  <li>The <strong>GCD</strong> of all values is calculated</li>
-  <li>Each value is divided by the GCD to produce the simplified ratio</li>
-</ul>
-
-<p>
-For example, if the values are <strong>20, 30, and 40</strong>:
-</p>
-
-<ul>
-  <li>GCD of 20, 30, 40 = 10</li>
-  <li>Simplified values = 2 : 3 : 4</li>
-</ul>
-
-<p>
-This ensures the ratio is expressed in its lowest and most readable form.
-</p>
-  `,
-
-  howToUse: [
-    "Enter at least two numeric values in the input fields",
-    "Use the “Add Value” button if you want to compare more than two values (up to four)",
-    "Make sure all values are greater than zero",
-    "Click the “Calculate” button to generate the simplified ratio",
-    "Use the “Reset” button to clear inputs and start a new calculation"
-  ],
-
-  features: [
-    "Supports ratios with two to four values",
-    "Automatically simplifies ratios using the Greatest Common Divisor",
-    "Prevents invalid inputs such as empty fields, zeros, or non-numeric values",
-    "Instant calculation with no page reload",
-    "Clean and easy-to-read output format"
-  ],
-
-  whyUse:
-    "Ratios are widely used in mathematics, finance, cooking, construction, education, and everyday problem solving. Manually simplifying ratios can be time-consuming and error-prone, especially when working with more than two values. This calculator eliminates guesswork by instantly producing accurate and simplified ratios. It is useful for students learning ratio concepts, professionals dealing with proportions, and anyone who needs quick and reliable ratio comparisons without manual calculations.",
-
-  notes: [
-    "All values must be positive numbers greater than zero",
-    "The calculator simplifies ratios based on whole-number divisibility",
-    "Decimals are supported but results are simplified numerically",
-    "A minimum of two values is required to calculate a ratio",
-    "The maximum number of values allowed is four"
-  ]
-}
-
-,
-
-"average-calculator": {
-  formula: `
-<p>
-An average represents the central or typical value of a set of numbers. It is commonly
-calculated using the <strong>arithmetic mean</strong>, which is obtained by adding all values
-together and dividing the total by the number of values.
-</p>
-
-<p>
-This calculator follows a simple and reliable method to determine the average:
-</p>
-
-<ul>
-  <li>All entered values are converted into numeric form</li>
-  <li>The calculator adds all valid numbers to get the total sum</li>
-  <li>The sum is divided by the total count of values</li>
-</ul>
-
-<p>
-The formula used is:
-</p>
-
-<ul>
-  <li><strong>Sum</strong> = Value₁ + Value₂ + Value₃ + …</li>
-  <li><strong>Average</strong> = Sum ÷ Total Number of Values</li>
-</ul>
-
-<p>
-For example, if the values are <strong>10, 20, and 30</strong>, the sum is 60 and the total
-number of values is 3. The calculated average is therefore <strong>20</strong>.
-</p>
-
-<p>
-Only valid numeric values are included in the calculation to ensure accurate results.
-</p>
-  `,
-
-  howToUse: [
-    "Enter at least two numeric values in the input fields provided",
-    "Click the “Add Value” button to include more numbers if needed",
-    "Ensure all values entered are valid numbers",
-    "Click the “Calculate Average” button to view the result",
-    "Use the “Reset” button to clear all inputs and start over"
-  ],
-
-  features: [
-    "Supports multiple input values with dynamic fields",
-    "Automatically calculates sum, count, and average",
-    "Ignores invalid or empty inputs during calculation",
-    "Instant results without page reload",
-    "Simple and clean interface suitable for all users"
-  ],
-
-  whyUse:
-    "Calculating averages is a common requirement in academics, finance, statistics, business analysis, and everyday decision making. Doing this manually becomes tedious and error-prone when working with many values. This calculator simplifies the process by instantly computing the sum, total count, and average in one step. It is ideal for students checking homework, professionals analyzing data, teachers preparing reports, and anyone who needs quick and reliable average calculations without manual effort.",
-
-  notes: [
-    "A minimum of two valid numeric values is required",
-    "Non-numeric or empty fields are ignored during calculation",
-    "Decimals are fully supported for precise results",
-    "The calculator uses the arithmetic mean method",
-    "Reset clears all entered values and results"
-  ]
-}
-
-,
-
-"mean-calculator": {
-
-  formula: `
-<p>
-The <strong>mean</strong>, commonly known as the <strong>average</strong>, is calculated by
-adding all the given values together and then dividing the total by the number of values.
-</p>
-
-<p>
-This calculator follows the standard arithmetic mean formula:
-</p>
-
-<ul>
-  <li><strong>Sum</strong> = Value₁ + Value₂ + Value₃ + ... + Valueₙ</li>
-  <li><strong>Mean (Average)</strong> = Sum ÷ Total Number of Values</li>
-</ul>
-
-<p>
-Only valid numeric values are included in the calculation. Empty or invalid inputs are ignored,
-ensuring accurate and reliable results.
-</p>
-`,
-
-  howToUse: [
-    "Enter at least two numerical values into the input fields provided.",
-    "Use the “Add Value” button if you want to calculate the mean of more than two numbers.",
-    "If you added extra values by mistake, you can remove them using the Remove button.",
-    "Click the “Calculate Mean” button to compute the average of the entered values.",
-    "The result section will display the total count, sum of values, and the calculated mean.",
-    "Use the Reset button to clear all inputs and start a new calculation."
-  ],
-
-  features: [
-    "Supports calculation of the mean for two or more numbers",
-    "Allows dynamic addition and removal of input fields",
-    "Automatically ignores invalid or empty values",
-    "Displays total count, sum, and average for transparency",
-    "Instant results without page reload",
-    "Simple and clean interface suitable for all users",
-    "Works smoothly on mobile, tablet, and desktop devices"
-  ],
-
-  whyUse:
-    "The mean is one of the most widely used measures in mathematics, statistics, education, business, and everyday decision-making. This calculator helps you quickly find the average without manual calculations or risk of arithmetic errors. Whether you are a student solving homework problems, a teacher preparing examples, a professional analyzing data, or someone calculating everyday averages like expenses, scores, or measurements, this tool saves time and ensures accuracy. It is especially useful when working with multiple values, as it automatically handles the sum and division process for you.",
-
-  notes: [
-    "At least two valid numerical values are required to calculate the mean.",
-    "Non-numeric or empty inputs are automatically excluded from the calculation.",
-    "Negative numbers and decimal values are fully supported.",
-    "The mean represents the central value of the dataset but may be affected by very large or very small numbers.",
-    "For datasets with extreme values, consider using median or mode for better insight.",
-    "Results are calculated instantly on the client side without storing any data."
-  ]
-}
-
-,
-
-"median-calculator": {
-  formula: `
-<p>
-The median is a statistical measure that represents the <strong>middle value</strong>
-of a dataset when the values are arranged in ascending or descending order.
-Unlike the average (mean), the median is not affected by extremely large or
-small values, making it a reliable indicator of central tendency.
-</p>
-
-<p>
-This calculator determines the median by following a structured process:
-</p>
-
-<ul>
-  <li>All entered values are converted into numeric form</li>
-  <li>Invalid or empty inputs are ignored</li>
-  <li>The remaining numbers are sorted in ascending order</li>
-</ul>
-
-<p>
-Once the values are sorted, the calculation depends on the total number of values:
-</p>
-
-<ul>
-  <li>If the total count is <strong>odd</strong>, the median is the middle value</li>
-  <li>If the total count is <strong>even</strong>, the median is the average of the two middle values</li>
-</ul>
-
-<p>
-The formulas used are:
-</p>
-
-<ul>
-  <li><strong>Odd count:</strong> Median = Value at position (n + 1) ÷ 2</li>
-  <li><strong>Even count:</strong> Median = (Value at position n ÷ 2 + Value at position (n ÷ 2 + 1)) ÷ 2</li>
-</ul>
-
-<p>
-For example, for the values <strong>3, 7, 9</strong>, the median is <strong>7</strong>.
-For the values <strong>4, 6, 8, 10</strong>, the median is <strong>(6 + 8) ÷ 2 = 7</strong>.
-</p>
-
-<p>
-This approach ensures accurate and consistent results for both small and large datasets.
-</p>
-  `,
-
-  howToUse: [
-    "Enter at least two numeric values in the input fields",
-    "Use the “Add Value” button to include additional numbers",
-    "Ensure all values entered are valid numbers",
-    "Click the “Calculate Median” button to see the result",
-    "Use the “Reset” button to clear inputs and start a new calculation"
-  ],
-
-  features: [
-    "Supports multiple input values with dynamic fields",
-    "Automatically sorts values before calculation",
-    "Handles both even and odd numbers of values",
-    "Displays total count, sorted values, and median",
-    "Instant calculation with no page reload"
-  ],
-
-  whyUse:
-    "The median is especially useful when analyzing datasets that contain extreme values or outliers, where the average may give a misleading result. This calculator provides a fast and reliable way to find the true center of your data without manual sorting or calculations. It is ideal for students studying statistics, teachers preparing examples, analysts reviewing datasets, and anyone who needs an accurate middle value for informed decision-making.",
-
-  notes: [
-    "A minimum of two valid numeric values is required",
-    "Non-numeric or empty inputs are excluded from the calculation",
-    "Decimals are supported for precise median values",
-    "The calculator automatically sorts values in ascending order",
-    "Resetting clears all values and calculated results"
-  ]
-}
-
-,
-"mode-calculator": {
-
-  formula: `
-<p>
-The <strong>mode</strong> is the value (or values) that appears most frequently in a given set
-of numbers. Unlike the mean or median, the mode focuses purely on <strong>frequency</strong>
-rather than position or total.
-</p>
-
-<p>
-This calculator determines the mode by counting how many times each value occurs and then
-identifying the value or values with the highest frequency.
-</p>
-
-<ul>
-  <li><strong>Step 1:</strong> Count how many times each value appears</li>
-  <li><strong>Step 2:</strong> Find the highest frequency</li>
-  <li><strong>Step 3:</strong> Select all values that occur with that highest frequency</li>
-</ul>
-
-<p>
-If multiple values share the same highest frequency, the dataset is considered
-<strong>multimodal</strong>, and all such values are returned as modes.
-</p>
-`,
-
-  howToUse: [
-    "Enter at least two numerical values into the input fields.",
-    "Use the “Add Value” button to include more numbers in the dataset.",
-    "Ensure all fields contain valid numeric values before calculating.",
-    "Click the “Calculate Mode” button to analyze the frequency of the values.",
-    "The result section will display the total count, entered values, mode(s), and frequency.",
-    "Use the Reset button to clear all inputs and start a new calculation."
-  ],
-
-  features: [
-    "Supports calculation of single or multiple modes",
-    "Handles multimodal datasets accurately",
-    "Dynamic input fields with add and remove options",
-    "Displays frequency count for transparency",
-    "Instant client-side calculation with no delays",
-    "Clean, user-friendly interface for quick understanding",
-    "Works seamlessly on desktop and mobile devices"
-  ],
-
-  whyUse:
-    "The mode is a crucial statistical measure used to identify the most common or most repeated value in a dataset. This calculator is especially useful when analyzing trends, patterns, or popular outcomes, such as exam scores, survey responses, product sizes, or repeated measurements. Unlike manual counting, which becomes tedious and error-prone with larger datasets, this tool instantly calculates the correct mode and clearly displays its frequency. It is ideal for students learning statistics, teachers explaining data concepts, professionals analyzing reports, and anyone who needs a fast and reliable way to determine the most frequent value in a dataset.",
-
-  notes: [
-    "All input fields must contain valid numeric values before calculation.",
-    "At least two values are required to determine the mode.",
-    "If all values occur the same number of times, every value will be shown as a mode.",
-    "The calculator supports negative numbers and decimal values.",
-    "A dataset may have one mode, multiple modes, or no clear single most frequent value.",
-    "Results are calculated locally and no data is stored or shared."
-  ]
-}
-
+Interpretation of the heat index includes a categorical boundary at which microclimatic conditions are likely to result in physiological reactions such as mild distress (any value), risk of muscular cramps and syncope (≥37°C), risk of heat exhaustion (≥41) and high likelihood of sun stroke (>50). Applications range from public announcements, work safety management, sports schedules and HVAC load forecasting. For all use cases, state limitations clearly so that the users know when to reach for more powerful thermal indices. Recommendations are to track trends (rather than individual measurements), caution in stages, emphasize water and shade availability, work-rest alternation and integrate heat-index data with local vulnerability profiles (age, health, infrastructure) into multilevel-based mitigation strategies. These are the activities that make heat advice actionable and measurable.
+        </p>
+<figure class="content-image">
+          <img
+            src="/images/heat-index-chart.png"
+            alt="Heat index chart showing temperature and humidity impact on perceived heat"
+            width="800"
+            height="350"
+          />
+          <figcaption>
+    Heat index chart illustrating how air temperature and relative humidity combine to create “feels like” temperatures.
+</figcaption>
+        </figure>
+      `
+    },
+    {
+      type: "html",
+      title: "Heat Index Health Risks",
+      body: `
+     <p>
+Health threats associated with heat indexes result from the body’s inability to shed excess metabolic and environmental heat when apparent temperatures are high. Key mechanisms are decreased sweat evaporation at high relative humidity, increased cardiovascular stress to maintain skin blood flow, and on-going water loss to an extent that compromises circulating volume. In combination these raise the core temperature of the body and cause a range of heat disorders from minor heat rash and cramps to dangerous heat exhaustion and potentially fatal heat stroke.
+        </p>
+<p>Heat cramps and syncope represent early symptoms: the mechanism involves shifts in electrolytes with peripheral vasodilatation as well as to exertion. Heat exhaustion is characterized by profuse sweating, weakness, nausea, headache, and occasionally orthostatic hypotension; it represents a state of significant physiological stress that is frequently relieved with rest, cooling and hydration. Heat stroke is characterized by profound central nervous system dysfunction, an elevated core temperature often in excess of 40°C (104°F) and needs emergency medical attention; signs include confusion, collapse, seizures or loss of consciousness in classic exertional cases there may also be a lack of sweating.</p>
+<figure class="content-image">
+          <img
+            src="/images/human-heat-stress.png"
+            alt="Diagram of human body under heat stress showing sweat evaporation, rising core temperature, and sun exposure"
+            width="800"
+            height="500"
+          />
+          <figcaption>
+    Human body heat stress diagram illustrating physiological strain caused by high heat index.
+</figcaption>
+        </figure>
+      `
+    },
+]
+},
 
 };

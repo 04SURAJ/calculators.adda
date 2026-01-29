@@ -1,11 +1,12 @@
 import { useState } from "react";
 
 function AgeCalculator() {
+  const todayISO = new Date().toISOString().split("T")[0];
+
   const [dob, setDob] = useState("");
+  const [targetDate, setTargetDate] = useState(todayISO);
   const [result, setResult] = useState(null);
   const [error, setError] = useState("");
-
-  const todayDate = new Date().toISOString().split("T")[0];
 
   const calculateAge = () => {
     if (!dob) {
@@ -14,26 +15,32 @@ function AgeCalculator() {
       return;
     }
 
-    const birthDate = new Date(dob);
-    const today = new Date();
+    if (!targetDate) {
+      setError("Please select the age calculation date.");
+      setResult(null);
+      return;
+    }
 
-    if (birthDate > today) {
-      setError("Date of birth cannot be in the future.");
+    const birthDate = new Date(dob);
+    const target = new Date(targetDate);
+
+    if (birthDate > target) {
+      setError("Date of birth cannot be after the selected date.");
       setResult(null);
       return;
     }
 
     setError("");
 
-    let years = today.getFullYear() - birthDate.getFullYear();
-    let months = today.getMonth() - birthDate.getMonth();
-    let days = today.getDate() - birthDate.getDate();
+    let years = target.getFullYear() - birthDate.getFullYear();
+    let months = target.getMonth() - birthDate.getMonth();
+    let days = target.getDate() - birthDate.getDate();
 
     if (days < 0) {
       months--;
       const daysInPrevMonth = new Date(
-        today.getFullYear(),
-        today.getMonth(),
+        target.getFullYear(),
+        target.getMonth(),
         0
       ).getDate();
       days += daysInPrevMonth;
@@ -44,7 +51,7 @@ function AgeCalculator() {
       months += 12;
     }
 
-    const diffTime = today - birthDate;
+    const diffTime = target - birthDate;
     const totalDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
     const totalWeeks = Math.floor(totalDays / 7);
     const totalMonths = years * 12 + months;
@@ -65,12 +72,12 @@ function AgeCalculator() {
 
   const resetCalculator = () => {
     setDob("");
+    setTargetDate(todayISO);
     setResult(null);
     setError("");
   };
 
   return (
-    <>
     <div className="container-fluid px-0">
       {/* Date of Birth */}
       <div className="mb-3">
@@ -82,22 +89,32 @@ function AgeCalculator() {
           type="date"
           className="form-control form-control-lg"
           value={dob}
-          max={todayDate}
+          max={todayISO}
           onChange={(e) => setDob(e.target.value)}
+          style={{ cursor: "pointer" }}
         />
+        <small className="text-muted">
+          Tap to open date picker
+        </small>
       </div>
 
       {/* Age at the Date of */}
       <div className="mb-3">
-        <label className="form-label fw-semibold">
+        <label htmlFor="targetDate" className="form-label fw-semibold">
           Age at the Date of
         </label>
         <input
+          id="targetDate"
           type="date"
-          className="form-control form-control-lg bg-light"
-          value={todayDate}
-          readOnly
+          className="form-control form-control-lg"
+          value={targetDate}
+          onChange={(e) => setTargetDate(e.target.value)}
+          style={{ cursor: "pointer" }}
+          {...(dob ? { min: dob } : {})}
         />
+        <small className="text-muted">
+          Select any past or future date
+        </small>
       </div>
 
       {/* Error */}
@@ -127,7 +144,7 @@ function AgeCalculator() {
       {result && (
         <div className="border-top pt-3">
           <h2 className="h5 fw-bold mb-3 text-center text-sm-start">
-            Your Age
+            Age Result
           </h2>
 
           <ul className="list-group list-group-flush">
@@ -159,13 +176,7 @@ function AgeCalculator() {
           </ul>
         </div>
       )}
-      
     </div>
-
-
-
-    </>
-    
   );
 }
 

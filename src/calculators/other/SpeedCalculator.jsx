@@ -86,8 +86,6 @@ function SpeedCalculator() {
     <option value="mph">Miles per hour (mph)</option>
   </select>
 </div>
-
-
       <div className="d-grid d-sm-flex gap-2 mb-4">
         <button className="btn btn-primary btn-lg w-100" onClick={calculateSpeed}>
           Calculate
