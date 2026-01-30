@@ -3561,5 +3561,125 @@ Health threats associated with heat indexes result from the body’s inability t
     },
 ]
 },
+"dew-point-calculator": {
+  sections: [
+    {
+      type: "html",
+      title: "Condensation Onset Temperature Threshold",
+      body: `
+  <p><strong>Definition & principle. </strong></br>CondensationInceptionTemperature the temperature of the surface or air at which ambient water vapor becomes saturated and begins to deposit as liquid water. In a practical sense, this is the temperature at which the local air temperature is equal to that individual parcel's dew point (when an air parcel cools to its dew point temperature the relative humidity is 100% and condensation begins). What's important (from an engineering and/or building-science perspective) is the temperature of the surface (wall, window, pipe): CH will be present when the surface temperature ≤ ambient dew point. </p>
+  <figure class="content-image">
+          <img
+            src="/images/condensation-onset-diagram.png"
+            alt="Diagram showing condensation forming when a cool surface temperature falls below the air dew point in warm humid conditions"
+            width="800"
+            height="400"
+          />
+          <figcaption>Technical illustration showing warm humid air contacting a cool surface.
+ </figcaption>
+        </figure>
+  <p><strong>Physical drivers. </strong></br>The process of condensation is by pressure, temperature controlled. Furthermore, the saturation vapor pressure is temperature sensitive at a given water-vapor partial pressure (Clausius–Clapeyron law). As cooling continues, saturation vapor pressure decreases and so when it equals actual vapor pressure, there is phase change. Surface emissivity, convection cooling and radiative cooling determine the rate at which a surface approaches this threshold. 'Downstream' local air movement plays a role in delaying condensation by mixing warmer air while, on the other hand still air and radiative night cooling contribute to its acceleration. </p>
+    
+<p><strong>Practical thresholds & context. </strong></br>There is no one-size-fits-all number — the threshold is calculated based on temperature and humidity readings. Example: air at 25°C with 60% RH has a dew point ≈ 16.7°C, any surface below ≈16.7°C will attract dew. In HVAC design, the inside surface temperature is above usual interior dew point to protect against mold and degradation. Then, also the control specs in process engineering may require a minimum surface temperature margin (e.g., 2–3°C above dew point) to prevent intermittent condensation during transients. </p>
+ <p><strong>Applications & mitigation. </strong></br>Desired for envelope construction, glazing, cold pipes, insulation design, painting/coating and electronics enclosures. Remediation options: surface temperature increase (insulation, heating), decrease in indoor moisture load (ventilation, dehumidification), air mixing improvements, vapor barriers. To ensure reliable control, the air dew point and temperature of hot spots can be monitored and if needed a safety range be applied not to saturate under extremely unfavorable conditions. </p>
+
+
+      `
+    },
+    {
+      type: "html",
+      title: "Atmospheric Moisture Equilibrium Point ",
+      body: `
+<p><strong>Concept & scope. </strong></br>The point of atmospheric moisture equilibrium is the thermodynamic state at which air parcel partial pressure, pwtv = ewb(p), over a reference surface (liquid water, ice, or hygroscopic substrate). In practice this is the dew point for a perfect liquid, and the frost point for ice. It’s the tipping point at which condensation, evaporation, or sublimation fluxes hold steady under quiescent conditions.  </p>
+
+<p><strong>Thermodynamics & governing relations. </strong></br>Equilibrium is temperature-, total pressure- and solute effect (if hygroscopic surfaces are concerned)-dependent. The fundamental relationship is the exponential temperature dependence of the saturation vapor pressure (Clausius–Clapeyron). For solutions under aerosol conditions, Raoult’s and Kelvin effects alter the definition of equilibrium vapor pressure; small droplets or solute-coated surfaces need modified vapor pressures to establish this equilibrium. The “moisture equilibrium point” therefore may vary at micro-scales (i.e., droplet vs film vs hygroscopic surface).</p>
+  <figure class="content-image">
+          <img
+            src="/images/atmospheric-moisture-equilibrium-infographic.png"
+            alt="Infographic showing cooling air parcel where actual vapor pressure meets saturation vapor pressure at the dew or frost point, causing condensation and cloud formation"
+            width="800"
+            height="400"
+          />
+          <figcaption>Infographic illustrating the atmospheric moisture equilibrium process.
+ </figcaption>
+        </figure>
+<p><strong>Meteorological and practical significance. </strong></br>This is the basis of cloud production, fog, and steady layers of humidity. Once an air parcel has cooled to its moisture equilibrium, condensation nuclei begin to charge and cloud droplets develop. In agriculture, dew is created overnight when the soil reaches equilibrium and impacts plant disease dynamics. In measurement, reaching equilibrium is used to calibrate sensors: choked-mirror hygrometers measure liquid dew/frost points by directly bringing a mirror reflecting surface into equilibrium and identifying when condensation starts. </p>
+
+<p><strong>Measurement, limitations & implications. </strong></br>The measurement technique includes chilled-mirror dew point sensors, psychrometers and chilled-surface observations. Constraints arise from non equilibrium (non-ideal surfaces, contamination, solutes), supersaturation relaxation kinetics and turbulent transport that precludes local equilibrium. For applied applications – architecture, meteorology, process control – develop and combine equilibrium considerations with kinetics and transport; apply conservative safety margins; validate modeled equilibrium conditions in-situ with sensors during operation. </p>
+
+
+      `
+    },
+    
+  ]
+},
+"bandwidth-calculator": {
+  sections: [
+    {
+      type: "html",
+      title: "Throughput Latency Tradeoff Analysis",
+      body: `
+      <p>
+Both throughput and latency are two most important and also conflicting performance indicators applied in network systems and distributed systems. Throughput is a measure of the amount of useful data processed or transmitted per unit time, with latency being the time it takes for a single operation or packet (ms). Systems design must strike a balance here, as techniques that increase throughput (batching, pipelining, and large TCP window sizes) can drive per-operation delay in the other direction, while those that reduce latency (small requests, immediate ACKs, aggressive prioritization) may do so for the worse overall due to greater protocol overhead.      
+        </p>
+<p>
+ Quantitatively, for a pipeline processing N items with pipeline depth D and per-stage service time s: achievable throughput ≈ 1/s (when saturated), end-to-end latency ≈ D·s, plus queuing delays. In storage and network I/O, Amdahl-like effects and head-of-line blocking lead to “non-vanilla” tradeoffs: e.g. large request batching amortizes overhead leading to a higher throughput, but also a longer waiting time for each individual request and hence leads to higher latency. Likewise, TCP congestion control favors latency over throughput: It can achieve higher throughput with a large congestion window that may result in queuing delay and tail delay under buffer bloat.     
+        </p>
+<p>
+  Potential design solutions to the tradeoff include prioritization and QoS (classify traffic so that latency-sensitive flows cut ahead of bulks), adaptive batching (adjust batch sizes in response to queue depth or SLA targets), parallelism with tail-latency control (concurrency up for throughput, bound latency per request via admission control and backpressure), and rate limiting/pacing (smooth out traffic, which ameliorates queuing phenomena such as burstiness and long tails). Instrument data captures need to cover both central tendency and tails: mean bandwidth and median latency are not enough; monitor 95th/99th percentile latencies, as well as queue length distributions.    
+        </p>
+ <figure class="content-image">
+          <img
+            src="/images/throughput-latency-tradeoff-diagram.png"
+            alt="Diagram showing the tradeoff between network throughput and latency, where increasing throughput leads to higher delay due to packet queues and buffering"
+            width="800"
+            height="400"
+          />
+          <figcaption>    Technical diagram illustrating the throughput–latency tradeoff in networks.
+
+ </figcaption>
+        </figure>
+
+      `
+    },
+    {
+      type: "html",
+      title: "Bandwidth Measurement Unit Conversions ",
+      body: `
+<p>Proper bandwidth reporting is only possible using precise unit definitions and adequate conversions between bits, bytes and time. Bandwidth is often described in bits per second (bps) or bytes per second (B/s), using the standard metric prefixes: kilobits (kb), megabits (Mb), gigabits (Gb) and their byte equivalents. Apply decimal (SI) multiples (k = 10³, M = 10⁶) separately from direct powers of two prefixes (Ki = 2¹⁰, Mi = 2²⁰). Network products often indicate speed in decimal fractions of bytes per second (e.g., 100 megabit ethernet = 100,000,000 bit/s), while some software contexts refer to the traditional binary units; clarify where necessary.</p>
+<p>Base conversions and formulas: 1 byte = 8 bits. 1 kb10 3 BITS (DECIMAL KILOBIT) = 1000 bits; 1 KiB = 1024 bytes. For a file transfer, convert the result into megabits per second:
+</br>
+Mbps = (MB * 8) / seconds. Example: transferring 250MB file in 20 seconds → 250 MB × 8 = 2000 megabits; throughput = 2000 Mb /20 s =100 Mbps.</p>
+<figure class="content-image">
+          <img
+            src="/images/bandwidth-unit-conversion-infographic.png"
+            alt="Infographic showing bandwidth unit conversions including bytes to bits, megabytes per second to megabits per second, and a sample data transfer calculation"
+            width="800"
+            height="400"
+          />
+          <figcaption>Bandwidth unit conversion infographic explaining how bytes convert to bits.
+</figcaption>
+        </figure>
+<p>Point about precision: always use bits and seconds as the base units and use prefix semantics consistently. For small transfers, because of protocol overhead (headers, handshakes, TLS), effective throughput is significantly reduced; therefore the application payload level must be measured to report user facing metrics. Instrumentation hints: sample counters at high enough rate to not alias effects, take into account NIC features offload (checksum offload, TSO/LRO) changing host counter state, and discount retransmissions when reporting effective payload throughput.</p>
+
+
+      `
+    },
+     {
+      type: "html",
+      title: "",
+      body: `
+       <p>
+        <p> </p>
+<p><strong> </strong> </p>
+        </p>
+
+       
+
+      `
+    },
+ 
+  ]
+},
 
 };
