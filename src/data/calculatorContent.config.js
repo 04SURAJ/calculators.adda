@@ -3665,19 +3665,245 @@ Mbps = (MB * 8) / seconds. Example: transferring 250MB file in 20 seconds → 25
 
       `
     },
-     {
+     
+  ]
+},
+"time-duration-calculator": {
+  sections: [
+    {
       type: "html",
-      title: "",
+      title: "Overnight Time Calculations Explained",
       body: `
-       <p>
-        <p> </p>
-<p><strong> </strong> </p>
-        </p>
+<p>It's no challenge computing the time difference between two times on the same day, but it can be a little trickier if they cross midnight. That is called<strong> Calculating time over night</strong>. This situation is relevant to many real-world scenarios (for example, night shifts, frequent traveling across time zones, servers being offline during maintenance widows or sleep tracking).</p>
 
-       
+<p>When you analyze something that occurs overnight the end can appear to be before the start when it is displayed on a clock. If, for example, work begins at<strong> 10:30 PM</strong> and ends at<strong> 1:15 AM</strong> on a lot of days or nights the clock time changes at midnight; however the activity continues. To get the correct number of days, the end time is considered to reach at the morning of<strong> next day</strong>.</p>
+
+<p>This calculator can automatically round the end- and start-time values so there's no need to do that when you fill in the time card. This is to guarantee precision results without user intervention for date or time. The approach closely approximates how people intuitively consider intervals of time in day­to­day life.</p>
+
+<p>The overnight calculation is particularly well suited for shift schedules, time tracking, travel logs or exercise plans. For instance, a security guard working from<strong> 11:00 PM to 7:00 AM</strong> would still have an 8-hour shift, even though the applicable clock times have two days." Likewise, for overnight flights or train trips arriving the next day, you frequently need to propagate durations over midnight.</p>
+
+<table class="table table-bordered table-striped mt-3">
+<caption class="caption-top fw-semibold">
+    Overnight Time Duration Examples
+  </caption>
+  <thead class="table-light">
+    <tr>
+      <th>Start Time</th>
+      <th>End Time</th>
+      <th>Scenario</th>
+      <th>Total Duration</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>10:30 PM</td>
+      <td>1:15 AM</td>
+      <td>Late-night work shift</td>
+      <td>2h 45m</td>
+    </tr>
+    <tr>
+      <td>11:00 PM</td>
+      <td>7:00 AM</td>
+      <td>Night security duty</td>
+      <td>8h 0m</td>
+    </tr>
+    <tr>
+      <td>9:45 PM</td>
+      <td>12:30 AM</td>
+      <td>Study session</td>
+      <td>2h 45m</td>
+    </tr>
+    <tr>
+      <td>8:00 PM</td>
+      <td>5:30 AM</td>
+      <td>Overnight travel</td>
+      <td>9h 30m</td>
+    </tr>
+    <tr>
+      <td>12:15 AM</td>
+      <td>6:45 AM</td>
+      <td>Early morning sleep</td>
+      <td>6h 30m</td>
+    </tr>
+  </tbody>
+</table>
+
+<figure class="content-image">
+          <img
+            src="/images/overnight-time-duration-example.png"
+            alt="Timeline illustration showing overnight time duration from 10:30 PM to 1:15 AM crossing midnight with a highlighted duration bar"
+            width="800"
+            height="300"
+          />
+          <figcaption>Overnight time duration example illustrating how an activity starting at 10:30 PM and ending at 1:15 AM crosses midnight.
+</figcaption>
+        </figure>
 
       `
     },
+    {
+      type: "html",
+      title: "Precision Time Parsing Challenges ",
+      body: `
+<p>Time computations may seem innocuous, but interpreting time inputs properly is trickier than most people think. Time can be represented differently depending on devices, browsers, user behavior and so forth. Accurate times matter when you’re totaling hours worked for billing, scheduling, or analytics purposes.</p>
+
+<p>The time those inputs must be in the<strong> 24-hour format (HH:MM)</strong>, so that there is no confusion of AM or PM. But some what support for seconds, and others want only hour-minute precision. Even minor deviations may have an impact when tasks are brief or particularly time-bound.</p>
+
+<p>Another difficulty stems from the way in which systems manage time irrespective of dates. You are only comparing times, so the calculator must decide whether both times are on the same day as a time which spans midnight. Without this logic, a negative or zero duration may be incorrectly displayed.</p>
+
+<p>Time zones and daylight saving time shifts can also affect the math in more advanced scenarios. Although the user is to consider these limitations, if they are available for input and desires more or less precision than this calculator offers then careful adjustments may be necessary to avoid due error in calculations related to seasonal changes of the clock.</p>
+
+<p>True time parsing maintains consistency, fairness and reliability. At the workplace, accurate duration recording contributes to accurate payroll and compliance. I use it personally to track productivity, analyze sleep and plan activity. In technical and nautical applications, "computational" does not suffer the problem of uncertainties due to intra-system time-delay errors; these are "cumulative" in that they approximately add as time passes (e.g. one second per year).</p>
+
+<p>By concentrating on simplicity and clear time interpretation, this calculator will produce reliable duration output which is consistent with common sense and easy to use.</p>
+
+<table class="table table-bordered table-striped mt-4">
+  <caption class="caption-top fw-semibold">
+    Common Time Duration Use Cases
+  </caption>
+
+  <thead class="table-light">
+    <tr>
+      <th>Use Case</th>
+      <th>Start Time</th>
+      <th>End Time</th>
+      <th>Why Accurate Duration Matters</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>Night shift payroll</td>
+      <td>10:00 PM</td>
+      <td>6:00 AM</td>
+      <td>Correct salary calculation</td>
+    </tr>
+    <tr>
+      <td>Sleep tracking</td>
+      <td>11:30 PM</td>
+      <td>7:00 AM</td>
+      <td>Health & recovery analysis</td>
+    </tr>
+    <tr>
+      <td>Server maintenance</td>
+      <td>1:00 AM</td>
+      <td>4:30 AM</td>
+      <td>Downtime planning</td>
+    </tr>
+    <tr>
+      <td>Travel timing</td>
+      <td>9:15 PM</td>
+      <td>2:45 AM</td>
+      <td>Arrival & connection planning</td>
+    </tr>
+    <tr>
+      <td>Exam preparation</td>
+      <td>8:00 PM</td>
+      <td>12:00 AM</td>
+      <td>Time management accuracy</td>
+    </tr>
+  </tbody>
+</table>
+
+      `
+    },
+    
+  ]
+},
+"day-counter": {
+  sections: [
+    {
+      type: "html",
+      title: "Elapsed Days Between Dates",
+      body: `
+<p>Days between two dates This is the simplest way to measure how much time spans across calendar days. Usually people want either the number of full 24-hour days or the number of calendar days that some time interval touches — and these are different. Full days are treated as a continuous range of time (eg, for billing, rentals or logs). Calendar day count is the number of different days affected (useful for setting events, attendance, schedule).</p>
+
+<p><strong>Common use case: </strong></br>when you specify a start date and an end date, you typically want the absolute difference in days (end - start). To the extent that end is after start, it's positive; otherwise (subtracting from zero), we still see how far before start we are. Some users expect the “favorite” form of counting, others expect the exclusive form (that is only to count days actually between) when we talk about leave requests or schedules. Specify which convention your tool uses. </p>
+
+<p><strong>Practicalities: </strong></br>leap years, month lengths and the rearranging of the clocks are irrelevant for calendar day counting (a day is a unit of time). But when users provide full timestamps, the offsets and DST can make it a question of whether an interval crosses a date boundary — so keep your input and output aligned with what the user means by their local date. </p>
+
+<p><strong>examples: </strong>
+<ul><li>2026-02-01 → 2026-02-10 = 9 days (exclusive) or Inclusive count: 10 days.</li>
+<li>Leave from Mar 10 to Mar 12 — inclusive = 3 days; exclusive = 2 days.</li></ul>
+Make that choice clear near input lines: show both exclusive and inclusive counts or a little toggle. That eliminates uncertainty and allows the calculator to be practically immediately useful for payroll, planning but also personal tracking.
+</p>
+<figure class="content-image">
+          <img
+            src="/images/calendar-date-range-highlight.png"
+            alt="Calendar illustration highlighting a selected date range between a start date and end date with total elapsed days clearly shown."
+            width="800"
+            height="400"
+          />
+          <figcaption>Calendar date range visualization showing how elapsed days are counted between a selected start date and end date.
+</figcaption>
+        </figure>
+      `
+    },
+    {
+      type: "html",
+      title: "Date Difference Practical Uses",
+      body: `
+<p>Date differences drive many day-to-day and business flows because it changes the date into something we can work with. Here are some common real-world uses in which correct day counts make a difference, and why each one needs clarity. </p>
+<figure class="content-image">
+          <img
+            src="/images/date-difference-practical-uses-infographic.png"
+            alt="Infographic showing practical uses of date difference calculations including payroll, project planning, travel, and deadlines."
+            width="800"
+            height="400"
+          />
+          <figcaption>Infographic demonstrating real-world applications of date difference calculations across work, travel, planning, and personal use.
+</figcaption>
+        </figure>
+<ul>
+<li><strong>Payroll & leave management — </strong>Employers calculate payable leave and overtime from elapsed days. Inclusion/exclusion in counting turns anchors to entitlement; mixed conventions can cause disputes in timecard debits. Always present the convention and display some samples.</li>
+<li><strong>Project schedules & milestones — </strong>Task lengths, sprint days and release dates rely on exact day counts. PMs require: Start/End semantics, Weekend rules and holiday calendar to be able to calculate a realistic finish date and resource allocation.</li>
+<li><strong>Subscriptions & billing — </strong>Many services either charge by calendar days or prorate based on the number of days you’ve had a service. Billing teams also need to standardize around decimal-day versus whole-day policies and specify rounding rules to help eliminate customer disputes.</li>
+<li><strong>Legal & compliance deadlines — </strong>Deadlines for filing and statutes of limitations are date-based. Lawyers need to use authoritative (usually inclusive) counting while taking into account the rules for leap years and jurisdictional holidays.</li>
+<li><strong>Travel & logistics — </strong>Booking windows, visa validity and being able to determine layovers all require precise day spans. A one-day miscount might mean a missed flight or visa overstay.</li>
+<li><strong>Personal planning —  </strong>Track how long you sleep, run your fitness goals, plan out study sessions. The sum of all days and also the day-of-week division is popular with the users.</li>
+
+</ul>
+
+      `
+    },
+    ]
+},
+"day-of-week-calculator": {
+  sections: [
+    {
+      type: "html",
+      title: "Determining Weekday From Date",
+      body: `
+<p>In many common situations it is also useful to know the day of the week for a particular date! Whether scheduling a trip or event, recording to do lists, tracking project deadlines, or simply needing a reminder of what day it is while on the go, this small desktop calendar makes all the difference with minimal space.</p>
+
+<p>A simple date-to-weekday calculator and users type in a calendar date — they immediately see it’s on a Monday, Tuesday or any other day. This is incredibly useful when browsing through previous and upcoming dates, without having to hand-counting days from a calendar. </p>
+
+  <p>This kind of calculation are widely used for:
+      <ul><li><strong>Event organization – </strong>checking when events are on weekends.</li>
+      <li><strong>Office scheduling – </strong>tracking working days and deadlines.</li>
+    <li><strong>Education –  </strong>reminder of exam or assignment dates.</li>
+    <li><strong>Personal planning – </strong>Birthdays, anniversaries or travel dates.</li>
+      </ul>Contemporary date systems automatically adjust for leap years and month length, making sure your results are always accurate. The calculator eliminates human error and prevents having to double-check printed calendars.
+        </p>
+        <p>
+      A good layout, however, should result in something like:</br>
+
+<strong>“January 15, 2026 is a Thursday” </strong>
+        </p>
+
+        <figure class="content-image">
+          <img
+            src="/images/calendar-weekday-highlight.png"
+            alt="Calendar page highlighting January 15, 2026 with a badge showing the weekday Thursday."
+            width="800"
+            height="400"
+          />
+          <figcaption>Illustration showing how a specific date corresponds to its weekday using a highlighted calendar page.
+</figcaption>
+        </figure>
+      `
+    },
+    
  
   ]
 },
