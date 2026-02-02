@@ -83,14 +83,23 @@ const relatedCalculators = Object.keys(calculatorsMap)
   .filter((key) => key !== slug)
   .filter((key) =>
     isMathCalculator
-      ? mathSlugs.has(key)       // show only math
-      : !mathSlugs.has(key)      // show only other
+      ? mathSlugs.has(key)
+      : !mathSlugs.has(key)
   )
+  .sort((a, b) => a.localeCompare(b)) // stable base
+  .sort((a, b) => {
+    // deterministic pseudo-random based on slug
+    const hash = (str) =>
+      str.split("").reduce((acc, c) => acc + c.charCodeAt(0), 0);
+
+    return (hash(a + slug) % 10) - (hash(b + slug) % 10);
+  })
   .slice(0, 4)
   .map((key) => ({
     slug: key,
     name: calculatorsSeo[key]?.title || key.replace(/-/g, " "),
   }));
+
 
 
 

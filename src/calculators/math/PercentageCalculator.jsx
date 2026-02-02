@@ -8,14 +8,23 @@ export default function PercentageCalculator() {
 
   const calculatePercentage = () => {
     setError("");
-    if (!value || !percent) {
-      setError("Please enter both value and percentage.");
-      setResult(null);
+    setResult(null);
+
+    const val = parseFloat(value);
+    const pct = parseFloat(percent);
+
+    if (isNaN(val) || isNaN(pct)) {
+      setError("Please enter valid numbers.");
       return;
     }
 
-    const res = (parseFloat(value) * parseFloat(percent)) / 100;
-    setResult(res);
+    if (val < 0 || pct < 0) {
+      setError("Negative values are not allowed.");
+      return;
+    }
+
+    const res = (val * pct) / 100;
+    setResult(res.toFixed(2));
   };
 
   const resetCalculator = () => {
@@ -28,13 +37,13 @@ export default function PercentageCalculator() {
   return (
     <>
       <div className="mb-3">
-        <label className="form-label fw-semibold">Enter Value</label>
+        <label className="form-label fw-semibold">Value</label>
         <input
           type="number"
           className="form-control"
           value={value}
           onChange={(e) => setValue(e.target.value)}
-          placeholder="Enter a number"
+          placeholder="e.g. 200"
         />
       </div>
 
@@ -45,31 +54,34 @@ export default function PercentageCalculator() {
           className="form-control"
           value={percent}
           onChange={(e) => setPercent(e.target.value)}
-          placeholder="Enter percentage"
+          placeholder="e.g. 15"
         />
       </div>
 
       {error && <div className="alert alert-danger">{error}</div>}
 
       <div className="d-grid d-sm-flex gap-2 mb-4">
-        <button className="btn btn-primary btn-lg w-100" 
-        
-        onClick={calculatePercentage}>
+        <button
+          className="btn btn-primary btn-lg w-100"
+          onClick={calculatePercentage}
+        >
           Calculate
         </button>
-        <button className="btn btn-outline-secondary btn-lg w-100" onClick={resetCalculator}>
+        <button
+          className="btn btn-outline-secondary btn-lg w-100"
+          onClick={resetCalculator}
+        >
           Reset
         </button>
       </div>
 
       {result !== null && (
         <div className="border-top pt-3">
-          <h2 className="h5 mb-3">Result</h2>
-          <ul className="list-group">
-            <li className="list-group-item">
-              <strong>{result}</strong> is {percent}% of {value}
-            </li>
-          </ul>
+          <h2 className="h5 mb-2">Result</h2>
+          <p className="fs-5">
+            <strong>{percent}%</strong> of <strong>{value}</strong> is{" "}
+            <strong>{result}</strong>
+          </p>
         </div>
       )}
     </>

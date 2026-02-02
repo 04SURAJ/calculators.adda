@@ -3907,5 +3907,221 @@ Make that choice clear near input lines: show both exclusive and inclusive count
  
   ]
 },
+"basic-calculator": {
+  sections: [
+    {
+      type: "html",
+      title: "Simple Math Calculator",
+      body: `
+<p>A Simply Math Calculator that is capable allows you to add, subtract, multiply and divide faster than ever! It's made for people that want to see results quickly instead of just drawing attention. Its a calculator for basic and general use, is built with the same idea as a real one. No need to work things out by hand, just enter the numbers and the operators, and this calculator will give you a quick answer in seconds.</p>
+
+<p>This tool is essential in many real-life applications. You can add with it while shopping, divide bills, track expenses or solve simple math problems for school/work. The clean and user-friendly layout is ideal for all, including students, scholars, teachers and professionals.</p>
+
+<p>It also supports ergonomic notational expressions from normal markup expression by holding NSeq button: In the determine, can continuously calculate without having to start up each time. It makes calculations more flexible and practical such as clearing values, changing number signs, and working with percentages.</p>
+<figure class="content-image">
+          <img
+            src="/images/minimal-math-symbols.png"
+            alt="Minimal flat illustration of basic math symbols (+ − × ÷ =) on a dark background for a simple calculator interface"
+            width="800"
+            height="300"
+          />
+          <figcaption>A clean and minimal illustration of basic math symbols designed for a simple online calculator interface.
+</figcaption>
+        </figure>
+
+<p>It is a simple calculator, so it tries to be fast and easy to use rather than beautiful or loaded with math functions. It's significantly faster and more reliable than web searching and is perfect for every day use when you do not have the time to spend finding a response. Whether you’re verifying numbers or doing quick sums, this comes in handy and saves time -not to mention calculation errors.</p>
+
+<p>To sum it up, simple math calculator is a reliable piece of software dedicated to helping you perform basic mathematical operations very easily.</p>
+
+
+      `
+    },
+    {
+      type: "html",
+      title: "Fast Number Calculations",
+      body: `
+      <figure class="content-image">
+          <img
+            src="/images/fast-number-calculations.png"
+            alt="Concept illustration of fast number calculations with moving numbers and math symbols on a dark digital calculator interface"
+            width="800"
+            height="300"
+          />
+          <figcaption>An illustration showing dynamic numbers and math symbols representing fast and efficient calculations on a modern calculator interface.</figcaption>
+        </figure>
+<p>Fast Number Calculations have to be consulted whenever you want to do an on-the-fly and precise calculation. The calculator is designed to solve problems and it does so promptly, allowing users to achieve results with minimal effort. Small numbers or expression are no problem with this calculator - just as long as you can type quickly!</p>
+
+<p>Speed is crucial for everyday computations. Now you don’t have to pause to compute in your head or jot down values: Let this tool do the work. "It's great for those calculations where you absolutely can't afford to punch in the wrong" number, she says -- e.g., when you're on a time crunch and need to slap totals together, confirm results or process information at lightning speed.</p>
+
+<p>The calculator reacts instantly for each entry and provides a seamless work flow. It supports commonly used operators, and Decimal numbers so you can do real-world calculations. There are definitely error handling in place so that it will try not to divide by zero, making the result clean and reliable.</p>
+
+<p>Quick calculations are handy for all sort of purposes such as budgeting, academic practice, business estimates, and some down right repetitive office work. Thanks to its straightforward design, users are able to concentrate on input as opposed to calculating how the tool works.
+</p>
+
+<p>Power Speed RatioBy providing speed, accuracy and ease of use, this calculator makes you do the numbers quick and easy without sacrificing results.</p>
+
+  `
+    },
+  ]
+},
+"percentage-calculator": {
+  sections: [
+    {
+      type: "html",
+      title: "What Is a Percentage?",
+      body: `
+<p>A percentage is a number r expressed as a fraction of 100. The word “percentage” is derived from the Latin term per centum, which also translates to “per hundred.” We use percents all the time in our lives as a way to compare numbers, represent change or as a way of describing proportions by making them easy-to-understand.</p>
+
+<p>That is, if you say 25%, it means 25 parts out of a total of 100. Percentages are a way of comparing unintuitive large numbers and also interpreting them. </p>
+
+      `
+    },
+    {
+      type: "html",
+      title: "Percentage Formula Used in This Calculator",
+      body: `
+     <p>This calculator uses the most common and practical percentage formula:</br>
+      <div style="border:1px solid #ccc;padding:10px;border-radius:6px;background:#f9f9f9;margin-bottom:16px;">
+      
+  <strong>Percentage Value = (Value × Percentage) ÷ 100</strong><br>
+  
+</div>
+
+      This formula determines what a percentage of an amount is.
+        </p>
+
+<p><strong>Example Formula </strong></br>For example, to find 15% of 200.
+  <div style="border:1px solid #ccc;padding:10px;border-radius:6px;background:#f9f9f9;margin-bottom:16px;">
+  <strong>(200 × 15) ÷ 100 = 30</strong><br>
+  
+</div>So, 15% of 200 is 30.
+</p>
+
+      `
+    },
+     {
+      type: "html",
+      title: "How to Use this Percentages Calculator",
+      body: `
+       <p>This calculator is easy to use and fast:
+<ol start="1">
+<li>This is where the Value (the base number) is input.</li>
+<li>Type in the Percentage (%) you want to work with.</li>
+<li>Click the Calculate button.</li>
+<li>The output will appear immediately below.</li>
+</ol>If you’d like to start a completely new calculation, click Reset, which will remove all of the inputs.</br>Calculator has a decimal point and yields fully accurate results with two decimal places.
+        </p>
+
+      `
+    },
+     {
+      type: "html",
+      title: "Common Types of Percentage Calculations",
+      body: `
+
+<h3>1. Percentage of a Number</h3>
+<p>This is the most common percentage calculation.</p>
+
+<div style="border:1px solid #ccc;padding:10px;border-radius:6px;background:#f9f9f9;margin-bottom:16px;">
+ <strong> (Value × Percentage) ÷ 100   </strong>
+</div>
+
+<p>
+Example:<br>
+20% of 450<br>
+(450 × 20) ÷ 100 = <strong>90</strong>
+</p>
+
+<hr>
+
+<h3>2. Discount Calculation</h3>
+<p>Percentages are commonly used to calculate discounts during shopping.</p>
+
+<div style="border:1px solid #ccc;padding:10px;border-radius:6px;background:#f9f9f9;margin-bottom:16px;">
+ <strong> Discount = (Original Price × Discount %) ÷ 100  </strong>
+</div>
+
+<p>
+Example:<br>
+Original Price = 1200<br>
+Discount = 25%<br>
+Final Price = 1200 − 300 = <strong>900</strong>
+</p>
+
+<hr>
+
+<h3>3. Marks and Exam Percentage</h3>
+<p>Students often use percentages to calculate exam results.</p>
+
+<div style="border:1px solid #ccc;padding:10px;border-radius:6px;background:#f9f9f9;margin-bottom:16px;">
+ <strong> (Marks Obtained ÷ Total Marks) × 100</strong>
+</div>
+
+<p>
+Example:<br>
+420 out of 600 = <strong>70%</strong>
+</p>
+
+<hr>
+
+<h3>4. Profit Percentage</h3>
+<p>Businesses use percentage calculations to determine profit.</p>
+
+<div style="border:1px solid #ccc;padding:10px;border-radius:6px;background:#f9f9f9;margin-bottom:16px;">
+ <strong> (Profit ÷ Cost Price) × 100</strong>
+</div>
+
+<p>
+Example:<br>
+Profit = 200, Cost Price = 800<br>
+Profit % = <strong>25%</strong>
+</p>
+
+<hr>
+
+<h3>5. Tax or GST Calculation</h3>
+<p>Percentages are used to calculate taxes such as GST or VAT.</p>
+
+<div style="border:1px solid #ccc;padding:10px;border-radius:6px;background:#f9f9f9;margin-bottom:16px;">
+  <strong>Tax = (Amount × Tax Rate) ÷ 100</strong>
+</div>
+
+<p>
+Example:<br>
+GST on 1500 at 18% = <strong>270</strong><br>
+Total = <strong>1770</strong>
+</p>
+
+
+        `
+    },
+     {
+      type: "html",
+      title: "Why Would You Like to Use an Online Percentage Calculator?",
+      body: `
+<ul>
+<li>Timesaver relative to working out by hand.</li>
+<li>Eliminates calculation errors.</li>
+<li>An invaluable reference for students, professionals and business owners.</li>
+<li>Supports quick and accurate results.</li>
+<li>For mobile and desktop use.</li>
+</ul>
+
+        `
+    },
+     {
+      type: "html",
+      title: "",
+      body: `
+       <p>
+        <p> </p>
+<p><strong> </strong> </p>
+        </p>
+
+        `
+    },
+ 
+  ]
+},
 
 };
