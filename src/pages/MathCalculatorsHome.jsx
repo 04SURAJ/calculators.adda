@@ -7,7 +7,7 @@ const mathCategories = [
     calculators: [
       "Basic Calculator",
       "Percentage Calculator",
-      "Percentage Increase / Decrease Calculator",
+      
       "Ratio Calculator",
       "Average Calculator",
       "Mean Calculator",

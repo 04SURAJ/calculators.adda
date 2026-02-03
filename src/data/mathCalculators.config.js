@@ -2,7 +2,7 @@
 export const mathCalculatorsMap = {
   "Basic Calculator": "basic-calculator",
   "Percentage Calculator": "percentage-calculator",
-  "Percentage Increase / Decrease Calculator": "percentage-increase-decrease-calculator",
+
   "Ratio Calculator": "ratio-calculator",
   "Average Calculator": "average-calculator",
   "Mean Calculator": "mean-calculator",

@@ -4109,16 +4109,225 @@ Total = <strong>1770</strong>
 
         `
     },
-     {
+  ]
+},
+"ratio-calculator": {
+  sections: [
+    {
       type: "html",
-      title: "",
+      title: "What Is a Ratio?",
       body: `
-       <p>
-        <p> </p>
-<p><strong> </strong> </p>
-        </p>
+     <section>
+  <p>A ratio represents a comparison of two or more quantities by using how many times one value contains another. 6) What is Ratio : Ratio is an expression of the respect of one quantity to another. It takes the form a : b or a : b : c. Ratios help us find out how two values relate to each other not in terms of actual size and value but in terms of multiplication.</p>
+  <p>For instance, if two quantities are in the ratio of 4 : 2, it simplifies to 2 : 1 – which tells us that the first quantity is twice by the second. Ratios are found in many things that we use each day, because they are a way of comparing two quantities. You can find ratios from cooking recipes to business comparisons, map scales and financial planning.</p>
+  <p>This ratio calculator is a handy tool which allows you to enter the values for 3 variables and it will automatically produce the simplest form of the ratio. It also supports decimal places, so it is perfect for calculating the exact number when whole numbers alone are not enough.</p>
+</section>
 
-        `
+<section>
+  <h5>Basic Ratio Formula</h5>
+  <p>If two quantities are <strong>A</strong> and <strong>B</strong>, the ratio is:</p>
+
+  <div style="border:1px solid #ddd; padding:12px; border-radius:6px; background:#f9f9f9;">
+    <strong>Ratio = A : B</strong>
+  </div>
+
+  <p>
+    To simplify a ratio, divide all values by their
+    <strong>Greatest Common Divisor (GCD)</strong>.
+  </p>
+
+  <div style="border:1px solid #ddd; padding:12px; border-radius:6px; background:#f9f9f9;">
+    <strong>Simplified Ratio = (A ÷ GCD) : (B ÷ GCD)</strong>
+  </div>
+</section>
+
+<section>
+  <h5>Percentage to Ratio Formula</h5>
+  <p>When converting percentages into ratios:</p>
+
+  <div style="border:1px solid #ddd; padding:12px; border-radius:6px; background:#f9f9f9;">
+    <strong>Ratio = Percentage₁ : Percentage₂</strong>
+  </div>
+
+  <p><strong>Example:</strong></p>
+  <p>60% : 40% → 60 : 40 → <strong>3 : 2</strong></p>
+</section>
+
+<section>
+  <h5>Ratio to Fraction Formula</h5>
+  <p>
+    A ratio <strong>a : b</strong> can also be expressed as fractions. This method
+    is useful when dividing a total value proportionally.
+  </p>
+
+  <div style="border:1px solid #ddd; padding:12px; border-radius:6px; background:#f9f9f9;">
+    <strong>
+      a / (a + b)<br>
+      b / (a + b)
+    </strong>
+  </div>
+</section>
+
+<section>
+  <h5>Example 1: Simple Ratio</h5>
+  <p><strong>Values:</strong> 20 and 30</p>
+  <p>Ratio = 20 : 30</p>
+  <p>GCD = 10</p>
+  <p><strong>Simplified Ratio = 2 : 3</strong></p>
+  <p>
+    This means for every 2 units of the first quantity,
+    there are 3 units of the second.
+  </p>
+</section>
+
+<section>
+  <h5>Example 2: Ratio with Multiple Values</h5>
+  <p><strong>Values:</strong> 12 : 18 : 24</p>
+  <p>GCD = 6</p>
+  <p><strong>Simplified Ratio = 2 : 3 : 4</strong></p>
+</section>
+
+<section>
+  <h5>Example 3: Scaling a Ratio</h5>
+  <p><strong>Ratio:</strong> 2 : 3</p>
+  <p><strong>Total:</strong> 500</p>
+  <p>Sum of ratio parts = 2 + 3 = 5</p>
+
+  <ul>
+    <li>First value = (2 ÷ 5) × 500 = <strong>200</strong></li>
+    <li>Second value = (3 ÷ 5) × 500 = <strong>300</strong></li>
+  </ul>
+</section>
+
+<section>
+  <h5>Where Ratios Are Used</h5>
+  <ul>
+    <li>Business profit sharing</li>
+    <li>Mixing ingredients in recipes</li>
+    <li>Dividing money or resources</li>
+    <li>Comparing populations</li>
+    <li>Screen and image dimensions</li>
+  </ul>
+
+  <p>
+    This <strong>Ratio Calculator</strong> automates all of these steps by
+    simplifying ratios, handling decimal values, converting ratios into fractions,
+    and accurately scaling values based on a given total.
+  </p>
+</section>
+
+
+
+      `
+    },
+    {
+      type: "html",
+      title: "Typical Video and Screen Sizes and Aspect Ratios",
+      body: `
+     <p>Aspect ratio A specific type of ratio that compares of the width to the height screen or image. It is described as width : height and important for screens, videos, images or digital designs.
+       </p>
+<p><strong>Common Aspect Ratio Formula </strong> </p>
+<p><strong>Aspect Ratio = Width : Height </strong> </p>
+<p>In other words, clear the denominator by dividing both of them by their GCD. </p>
+<h5>Most Common Screen & Video Aspect Ratios</h5>
+
+<table style="width:100%; border-collapse:collapse; margin:20px 0; font-size:15px;">
+  <thead>
+    <tr style="background:#f1f5ff;">
+      <th style="border:1px solid #ddd; padding:10px;">Aspect Ratio</th>
+      <th style="border:1px solid #ddd; padding:10px;">Name / Type</th>
+      <th style="border:1px solid #ddd; padding:10px;">Orientation</th>
+      <th style="border:1px solid #ddd; padding:10px;">Common Uses</th>
+      <th style="border:1px solid #ddd; padding:10px;">Typical Resolutions</th>
+      <th style="border:1px solid #ddd; padding:10px;">Devices / Platforms</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td style="border:1px solid #ddd; padding:10px;"><strong>16 : 9</strong></td>
+      <td style="border:1px solid #ddd; padding:10px;">Standard Widescreen</td>
+      <td style="border:1px solid #ddd; padding:10px;">Landscape</td>
+      <td style="border:1px solid #ddd; padding:10px;">
+        Online videos, movies, presentations, gaming
+      </td>
+      <td style="border:1px solid #ddd; padding:10px;">
+        1920 × 1080 (Full HD)<br>
+        1280 × 720 (HD)<br>
+        3840 × 2160 (4K)
+      </td>
+      <td style="border:1px solid #ddd; padding:10px;">
+        YouTube, TVs, monitors, laptops, smartphones
+      </td>
+    </tr>
+
+    <tr>
+      <td style="border:1px solid #ddd; padding:10px;"><strong>4 : 3</strong></td>
+      <td style="border:1px solid #ddd; padding:10px;">Traditional Screen Ratio</td>
+      <td style="border:1px solid #ddd; padding:10px;">Landscape</td>
+      <td style="border:1px solid #ddd; padding:10px;">
+        Classic displays, slideshows, photography
+      </td>
+      <td style="border:1px solid #ddd; padding:10px;">
+        1024 × 768<br>
+        800 × 600
+      </td>
+      <td style="border:1px solid #ddd; padding:10px;">
+        Old TVs, projectors, PowerPoint presentations
+      </td>
+    </tr>
+
+    <tr>
+      <td style="border:1px solid #ddd; padding:10px;"><strong>1 : 1</strong></td>
+      <td style="border:1px solid #ddd; padding:10px;">Square Ratio</td>
+      <td style="border:1px solid #ddd; padding:10px;">Square</td>
+      <td style="border:1px solid #ddd; padding:10px;">
+        Social media posts, thumbnails, icons
+      </td>
+      <td style="border:1px solid #ddd; padding:10px;">
+        1080 × 1080<br>
+        1200 × 1200
+      </td>
+      <td style="border:1px solid #ddd; padding:10px;">
+        Instagram posts, profile pictures, ads
+      </td>
+    </tr>
+
+    <tr>
+      <td style="border:1px solid #ddd; padding:10px;"><strong>9 : 16</strong></td>
+      <td style="border:1px solid #ddd; padding:10px;">Vertical / Portrait Video</td>
+      <td style="border:1px solid #ddd; padding:10px;">Portrait</td>
+      <td style="border:1px solid #ddd; padding:10px;">
+        Short-form mobile videos
+      </td>
+      <td style="border:1px solid #ddd; padding:10px;">
+        1080 × 1920<br>
+        720 × 1280
+      </td>
+      <td style="border:1px solid #ddd; padding:10px;">
+        Instagram Reels, TikTok, YouTube Shorts
+      </td>
+    </tr>
+
+    <tr>
+      <td style="border:1px solid #ddd; padding:10px;"><strong>21 : 9</strong></td>
+      <td style="border:1px solid #ddd; padding:10px;">Ultra-Wide / Cinematic</td>
+      <td style="border:1px solid #ddd; padding:10px;">Landscape (Ultra-Wide)</td>
+      <td style="border:1px solid #ddd; padding:10px;">
+        Cinematic content, immersive viewing
+      </td>
+      <td style="border:1px solid #ddd; padding:10px;">
+        2560 × 1080<br>
+        3440 × 1440
+      </td>
+      <td style="border:1px solid #ddd; padding:10px;">
+        Cinemas, ultrawide monitors, video editing setups
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+      `
     },
  
   ]
