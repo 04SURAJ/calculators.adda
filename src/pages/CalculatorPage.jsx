@@ -54,11 +54,9 @@ const calculatorsMap = {
   "percentage-calculator": MathCalculators.PercentageCalculator,
     "percentage-increase-decrease-calculator": MathCalculators.PercentageIncreaseDecreaseCalculator,
     "ratio-calculator": MathCalculators.RatioCalculator,
-   "average-calculator": MathCalculators.AverageCalculator,
-     "mean-calculator": MathCalculators.MeanCalculator,
-   "median-calculator": MathCalculators.MedianCalculator,
-   "mode-calculator": MathCalculators.ModeCalculator,
-   
+   "average-mean-median-mode-calculator": MathCalculators.AvgMeanMedianModeCalculator,
+  
+
 
 
 };

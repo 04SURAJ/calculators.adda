@@ -263,11 +263,7 @@ export const calculatorsSeo = {
   description:
     "Use this free online percentage calculator to calculate percentage, find percentage value, percent increase and decrease, and solve percent problems instantly."
 }
-,
-"percentage-increase-decrease-calculator": {
-  title: "Percentage Increase / Decrease Calculator",
-  description: "Calculate the percentage increase or decrease between two values easily with this calculator."
-}
+
 ,
 "ratio-calculator": {
   title: "Ratio Calculator",
@@ -275,36 +271,13 @@ export const calculatorsSeo = {
     "Simplify ratios and compare proportional values instantly using this free online Ratio Calculator. Useful for math, percentages, finance, and measurements."
 }
 ,
- "average-calculator": {
-    title: "Average Calculator",
+ "average-mean-median-mode-calculator": {
+    title: "Average, Mean, Median and Mode Calculator",
     description:
-      "Free Average Calculator to find the mean of multiple numbers. Supports adding multiple values, auto calculation, and instant result summary.",
+      "Calculate average, mean, median, and mode instantly with this free statistics calculator. Enter multiple numbers to get accurate results with clear explanations.",
     
   }
 ,
-"mean-calculator": {
- 
-  title: "Mean Calculator",
-  description:
-    "Free Mean Calculator to find the mean (average) of two or more numbers. Supports multiple values, dynamic inputs, and instant calculation.",
-
-}
-,
-"median-calculator": {
-  title: "Median Calculator",
-  description:
-    "Free Median Calculator to find the median of a set of numbers. Supports multiple values, auto sorting, and even/odd median calculation.",
-
-}
-,
-"mode-calculator": {
-  title: "Mode Calculator",
-  description:
-    "Free Mode Calculator to find the mode(s) of a set of numbers. Supports multiple values, dynamic inputs, and frequency calculation.",
-
-}
-,
-
 
 
 };

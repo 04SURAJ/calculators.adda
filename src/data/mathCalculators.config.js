@@ -4,10 +4,8 @@ export const mathCalculatorsMap = {
   "Percentage Calculator": "percentage-calculator",
 
   "Ratio Calculator": "ratio-calculator",
-  "Average Calculator": "average-calculator",
-  "Mean Calculator": "mean-calculator",
-  "Median Calculator": "median-calculator",
-  "Mode Calculator": "mode-calculator",
+  "Average, Mean, Median & Mode Calculator": "average-mean-median-mode-calculator",
+ 
   
   // … add all your math calculators here
 };

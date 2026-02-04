@@ -7,12 +7,9 @@ const mathCategories = [
     calculators: [
       "Basic Calculator",
       "Percentage Calculator",
-      
       "Ratio Calculator",
-      "Average Calculator",
-      "Mean Calculator",
-      "Median Calculator",
-      "Mode Calculator",
+      "Average, Mean, Median & Mode Calculator",
+      
     
     ]
   },

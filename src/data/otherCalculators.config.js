@@ -300,10 +300,9 @@ export const otherCalculators = [
   { name: "Percentage Calculator", slug: "percentage-calculator" },
   
   { name: "Ratio Calculator", slug: "ratio-calculator" },
-  { name: "Average Calculator", slug: "average-calculator" },
-  { name: "Mean Calculator", slug: "mean-calculator" },
-  { name: "Median Calculator", slug: "median-calculator" },
-  { name: "Mode Calculator", slug: "mode-calculator" },
+  
+  { name: "Average, Mean, Median & Mode Calculator", slug: "average-mean-median-mode-calculator" },
+  
   
 
 

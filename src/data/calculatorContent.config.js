@@ -4332,5 +4332,139 @@ Total = <strong>1770</strong>
  
   ]
 },
+"average-mean-median-mode-calculator": {
+  sections: [
+    {
+      type: "html",
+      title: "",
+      body: `
+     
+<figure class="content-image">
+          <img
+            src="/public/images/average-mean-median-mode-statistics-illustration.png"
+            alt="Illustration showing average, mean, median, and mode concepts using numbers, charts, and statistical visuals"
+            loading="lazy"
+            width="800"
+            height="300"
+          />
+          <figcaption>
+Visual representation of statistical measures including average, mean, median, and mode using numerical data and charts.
+          </figcaption>
+        </figure>
+
+      `
+    },
+    {
+      type: "html",
+      title: "Average",
+      body: `
+        <p>
+          The <strong>average</strong> represents the central value of a group of numbers.
+          It is widely used in academics, finance, and everyday calculations to summarize data.
+        </p>
+
+        <div style="background:#f5f7ff;border:1px solid #dbe2ff;padding:12px;border-radius:8px;margin:12px 0;">
+          <strong>Formula:</strong><br>
+          Average = (Sum of all values) ÷ (Total number of values)
+        </div>
+
+        <p><strong>Example:</strong></p>
+        <p>
+          Numbers: 10, 20, 30, 40<br>
+          Sum = 100<br>
+          Average = 100 ÷ 4 = <strong>25</strong>
+        </p>
+
+        <p>
+          Average helps quickly understand overall performance, such as average marks,
+          average income, or average temperature.
+        </p>
+      `
+    },
+    {
+      type: "html",
+      title: "Mean",
+      body: `
+        <p>
+          The <strong>mean</strong> is a statistical term that represents the arithmetic
+          average of a dataset. In most cases, the terms <em>average</em> and <em>mean</em>
+          are used interchangeably.
+        </p>
+
+        <div style="background:#f5f7ff;border:1px solid #dbe2ff;padding:12px;border-radius:8px;margin:12px 0;">
+          <strong>Formula:</strong><br>
+          Mean = (Σx) ÷ n
+        </div>
+
+        <p><strong>Example:</strong></p>
+        <p>
+          Values: 5, 15, 25<br>
+          Mean = (5 + 15 + 25) ÷ 3 = <strong>15</strong>
+        </p>
+
+        <p>
+          Mean is commonly used in statistics, surveys, research analysis,
+          and data comparisons.
+        </p>
+      `
+    },
+    {
+      type: "html",
+      title: "Median",
+      body: `
+        <p>
+          The <strong>median</strong> is the middle value of a dataset when the numbers
+          are arranged in ascending or descending order. It is especially useful when
+          data contains extreme values.
+        </p>
+
+        <div style="background:#f5f7ff;border:1px solid #dbe2ff;padding:12px;border-radius:8px;margin:12px 0;">
+          <strong>Rules:</strong><br>
+          • If count is odd → middle value<br>
+          • If count is even → average of two middle values
+        </div>
+
+        <p><strong>Example:</strong></p>
+        <p>
+          Data: 2, 4, 6, 8, 10<br>
+          Median = <strong>6</strong>
+        </p>
+
+        <p>
+          Median is commonly used for income analysis, property prices,
+          and skewed datasets.
+        </p>
+      `
+    },
+    {
+      type: "html",
+      title: "Mode",
+      body: `
+        <p>
+          The <strong>mode</strong> is the value that appears most frequently in a dataset.
+          A dataset may have one mode, multiple modes, or no mode at all.
+        </p>
+
+        <div style="background:#f5f7ff;border:1px solid #dbe2ff;padding:12px;border-radius:8px;margin:12px 0;">
+          <strong>Definition:</strong><br>
+          Mode = Most frequently occurring value
+        </div>
+
+        <p><strong>Example:</strong></p>
+        <p>
+          Values: 4, 7, 7, 9, 10<br>
+          Mode = <strong>7</strong>
+        </p>
+
+        <p>
+          Mode is useful in finding popular choices, common sizes,
+          most-used values, and survey responses.
+        </p>
+
+         
+      `
+    }
+  ]
+},
 
 };
