@@ -4971,33 +4971,14 @@ You just need to enter the numbers, and the calculator instantly displays both L
   <li>Simplifying ratios and fractions</li>
   <li>Engineering and programming calculations</li>
 </ul>
+<hr>
+<h4>Conclusion</h4>
+<p>LCM & HCF Calculator is an indispensable mathematical program for anyone who also enjoys simplicity in one click. If you are a student studying a particular subject, or a teacher with lots of students to teach, this calculator app is free for you which make your life easier doing some calculations.</p>
 
       `
     },
-    {
-      type: "html",
-      title: "",
-      body: `
-     <p>
-      
-        </p>
-
-
-      `
-    },
-     {
-      type: "html",
-      title: "",
-      body: `
-       <p>
-        <p> </p>
-<p><strong> </strong> </p>
-        </p>
-
-       
-
-      `
-    },
+   
+     
  
   ]
 },
