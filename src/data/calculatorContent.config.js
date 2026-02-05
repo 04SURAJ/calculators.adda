@@ -4341,11 +4341,11 @@ Total = <strong>1770</strong>
      
 <figure class="content-image">
           <img
-            src="/public/images/average-mean-median-mode-statistics-illustration.png"
+            src="images/average-mean-median-mode-statistics-illustration.png"
             alt="Illustration showing average, mean, median, and mode concepts using numbers, charts, and statistical visuals"
             loading="lazy"
             width="800"
-            height="300"
+            height="350"
           />
           <figcaption>
 Visual representation of statistical measures including average, mean, median, and mode using numerical data and charts.
@@ -4464,6 +4464,541 @@ Visual representation of statistical measures including average, mean, median, a
          
       `
     }
+  ]
+},
+"scientific-calculator": {
+  sections: [
+    {
+      type: "html",
+      title: "Scientific Calculator",
+      body: `
+      <p>The Sci-Calculator is designed as tool that is made to allow everyone start their calculations straight away. Where a simple calculator like this is restricted to the four basic arithmetic operations (i.e., addition, subtraction, multiplication and division), scientific models let you operate with things like sine, cosine, logarithms, powers of 10 or roots. Such calculators are common among students, engineers, chemists, physicists and teachers as well as amongst professionals. </p>
+<p> This online scientific calculator offers functions similar to a regular calculator but has additional features for performing mathematical/scientific calculations, avoiding the hassle of manual calculations with pen & paper quickly and easily making it ideal for students.</p>
+
+      `
+    },
+    {
+      type: "html",
+      title: "What can you do with a scientific calculator?",
+      body: `
+     <p>Scientific calculators can do a countless number of thing, namely:
+<ul>
+<li>Trigonometric calculations (sin, cos, tan)</li>
+<li>Inverse trigonometric forms (sin⁻¹, cos⁻¹, tan⁻¹)</li>
+<li>Logarithmic and exponential functions</li>
+<li>Power and root calculations</li>
+<li>Factorials and percentages</li>
+<li>Numbers such as π (pi) and e</li>
+<li>Complex formulae in brackets and operators</li>
+</ul>   That's what makes it a must-have for algebra, trigonometry, calculus, physics, chemistry, statistics and engineering courses.
+        </p>
+
+
+      `
+    },
+     {
+      type: "html",
+      title: "Core Mathematical Functions",
+      body: `
+<section>
+  <h4>1. Trigonometric Functions</h4>
+  <p>
+    Trigonometric functions are used to calculate angles and sides of triangles.
+    These functions are widely used in geometry, physics, engineering, and navigation.
+  </p>
+
+  <ul>
+    <li><strong>sin(x)</strong> – Sine of an angle</li>
+    <li><strong>cos(x)</strong> – Cosine of an angle</li>
+    <li><strong>tan(x)</strong> – Tangent of an angle</li>
+  </ul>
+
+  <p>
+    These functions can work in <strong>Degree (Deg)</strong> or
+    <strong>Radian (Rad)</strong> mode, depending on your calculation needs.
+  </p>
+
+  <p><strong>Example:</strong></p>
+  <ul>
+    <li>sin(30°) = 0.5</li>
+    <li>cos(60°) = 0.5</li>
+  </ul>
+</section>
+
+<hr>
+
+<section>
+  <h4>2. Inverse Trigonometric Functions</h4>
+  <p>
+    Inverse trigonometric functions return the angle when the trigonometric ratio is known.
+    These are useful when solving triangles or finding angles from known values.
+  </p>
+
+  <ul>
+    <li><strong>sin<sup>−1</sup>(x)</strong> – Inverse sine</li>
+    <li><strong>cos<sup>−1</sup>(x)</strong> – Inverse cosine</li>
+    <li><strong>tan<sup>−1</sup>(x)</strong> – Inverse tangent</li>
+  </ul>
+
+  <p><strong>Example:</strong></p>
+  <ul>
+    <li>sin<sup>−1</sup>(0.5) = 30°</li>
+  </ul>
+</section>
+
+<hr>
+
+<section>
+  <h4>3. Logarithmic Functions</h4>
+  <p>
+    Logarithmic functions are commonly used in science, engineering,
+    data analysis, and exponential growth calculations.
+  </p>
+
+  <ul>
+    <li><strong>log(x)</strong> – Base-10 logarithm</li>
+    <li><strong>ln(x)</strong> – Natural logarithm (base <em>e</em>)</li>
+  </ul>
+
+  <p><strong>Examples:</strong></p>
+  <ul>
+    <li>log(100) = 2</li>
+    <li>ln(e) = 1</li>
+  </ul>
+</section>
+
+<hr>
+
+<section>
+  <h4>4. Exponents and Powers</h4>
+  <p>
+    Scientific calculators support various exponent and power operations,
+    which are essential in algebra, physics, and financial calculations.
+  </p>
+
+  <ul>
+    <li><strong>x²</strong> – Square of a number</li>
+    <li><strong>x³</strong> – Cube of a number</li>
+    <li><strong>xʸ</strong> – Raise x to the power y</li>
+    <li><strong>10ˣ</strong> – Powers of 10</li>
+    <li><strong>eˣ</strong> – Exponential growth</li>
+  </ul>
+
+  <p><strong>Examples:</strong></p>
+  <ul>
+    <li>2³ = 8</li>
+    <li>10² = 100</li>
+  </ul>
+</section>
+
+<hr>
+
+<section>
+  <h4>5. Roots and Radicals</h4>
+  <p>
+    Root calculations are essential in algebra, geometry, and engineering
+    for simplifying expressions and solving equations.
+  </p>
+
+  <ul>
+    <li><strong>√x</strong> – Square root</li>
+    <li><strong>³√x</strong> – Cube root</li>
+  </ul>
+
+  <p><strong>Examples:</strong></p>
+  <ul>
+    <li>√25 = 5</li>
+    <li>³√27 = 3</li>
+  </ul>
+</section>
+
+<hr>
+
+<section>
+  <h4>6. Factorial and Percentage</h4>
+  <p>
+    Factorials and percentages are frequently used in mathematics,
+    statistics, probability, finance, and real-life calculations.
+  </p>
+
+  <p>
+    <strong>n! (Factorial)</strong> is used in permutations and combinations.
+  </p>
+
+  <p><strong>Example:</strong></p>
+  <p>
+    5! = 5 × 4 × 3 × 2 × 1 = <strong>120</strong>
+  </p>
+
+  <p>
+    <strong>Percentage (%)</strong> is used in growth, discounts,
+    statistics, and finance-related calculations.
+  </p>
+</section>
+
+
+      `
+    },
+    
+    {
+      type: "html",
+      title: "Memory and Utility Functions",
+      body: `
+     <p>A scientific calculator also includes memory operations to store and reuse values:
+     <ul>
+     <li><strong>MC –</strong> Clear memory</li>
+     <li><strong>MR –</strong> Recall memory</li>
+     <li><strong>M+ / M- –</strong> Add or subtract from memory</li></ul>
+Additional utility buttons like ANS (previous answer), Backspace, EXP, and RND (rounding) help streamline complex calculations.
+     </p>
+
+
+      `
+    },
+ {
+      type: "html",
+      title: "Conclusion",
+      body: `
+     <p>A scientific calculator is a tool for students, teachers, and professionals that easily makes calculations. With trigonometry, logarithms and powers besides root functions and mathematical expression calculations this is a perfect calculator even for the most complicated of computations. This scientific calculator allows you to apply fast, reliable calculations at home or anywhere you go.
+      
+        </p>
+
+
+      `
+    },
+  ]
+},
+"lcm-hcf-calculator": {
+  sections: [
+    {
+      type: "html",
+      title: "LCM & HCF",
+      body: `
+<p>LCM and HCF (GCD) Calculator <strong>LCM (Least Common Multiple)</strong> and <strong>HCF (Highest Common Factor)</strong> are two most important concepts of the number system on which almost every question related to numbers depends. These notions are applied in <strong>school mathematics, competitive examinations, engineering applications, scheduling problems and real life calculations</strong>.</p>
+<p>It offers you with accurate digital temperature readings instantly and highlights rather than a lengthy calculation manually.</p>
+
+<h4>What is LCM (Least Common Multiple)?</h4>
+
+<p>
+The LCM of two or more numbers is the smallest positive number that is completely divisible by all the given numbers.
+</p>
+
+<strong>Example:</strong>
+
+<p>
+LCM of 4 and 6 = 12
+</p>
+
+<p>
+Because 12 is the smallest number divisible by both 4 and 6.
+</p>
+
+<h5>Where LCM is Used:</h5>
+<ul>
+  <li>Time and work problems</li>
+  <li>Scheduling events (e.g., repeating cycles)</li>
+  <li>Fractions (finding common denominators)</li>
+  <li>Real-life situations like traffic signals, machine cycles, etc.</li>
+</ul>
+
+<hr>
+
+<h4>Formula for LCM</h4>
+
+<h5>1. LCM using HCF Formula</h5>
+
+<p>
+For two numbers <strong>a</strong> and <strong>b</strong>:
+</p>
+
+<div style="
+  background:#f8f9fa;
+  border-left:5px solid #0d6efd;
+  padding:12px 16px;
+  margin:20px 0;
+  text-align:center;
+">
+  <div style="font-size:20px; font-weight:600;">
+    LCM ( a , b ) =
+    <span style="display:inline-block; vertical-align:middle; margin-left:8px;">
+      <span style="display:block; border-bottom:2px solid #000; padding:2px 10px;">
+        a × b
+      </span>
+      <span style="display:block; padding:2px 10px;">
+        HCF ( a , b )
+      </span>
+    </span>
+  </div>
+</div>
+
+
+
+<strong>Example:</strong>
+
+<p>
+a = 12 , b = 18
+</p>
+
+<p>
+HCF = 6
+</p>
+
+<div style="
+  background:#f8f9fa;
+  border-left:5px solid #0d6efd;
+  padding:14px 16px;
+  margin:20px 0;
+  text-align:center;
+">
+  <div style="font-size:20px; font-weight:600;">
+    LCM =
+    <span style="display:inline-block; vertical-align:middle; margin:0 6px;">
+      <span style="display:block; border-bottom:2px solid #000; padding:2px 12px;">
+        12 × 18
+      </span>
+      <span style="display:block; padding:2px 12px;">
+        6
+      </span>
+    </span>
+    = 36
+  </div>
+</div>
+
+
+
+<hr>
+
+<h4>What is HCF (Highest Common Factor)?</h4>
+
+<p>
+The HCF, also known as GCD (Greatest Common Divisor), is the largest number that divides all the given numbers without leaving a remainder.
+</p>
+
+<strong>Example:</strong>
+
+<p>
+HCF of 12 and 18 = 6
+</p>
+
+<h5>Where HCF is Used:</h5>
+<ul>
+  <li>Simplifying fractions</li>
+  <li>Dividing things into equal parts</li>
+  <li>Number theory</li>
+  <li>Algebra and factorization problems</li>
+</ul>
+
+<hr>
+
+<h4>Methods to Calculate HCF</h4>
+
+<h5>1. Prime Factorization Method</h5>
+
+<p>Steps:</p>
+<ul>
+  <li>Write prime factors of each number</li>
+  <li>Identify common prime factors</li>
+  <li>Multiply them to get HCF</li>
+</ul>
+
+<strong>Example:</strong>
+
+<p>
+18 = 2 × 3<sup>2</sup>
+</p>
+
+<p>
+24 = 2<sup>3</sup> × 3
+</p>
+
+<p>
+Common factors: 2 × 3 = 6
+</p>
+
+<p>
+👉 HCF = 6
+</p>
+
+<hr>
+
+<h5>2. Division (Euclidean) Method</h5>
+
+<p>Steps:</p>
+<ul>
+  <li>Divide the larger number by the smaller</li>
+  <li>Repeat until remainder becomes 0</li>
+  <li>The last divisor is the HCF</li>
+</ul>
+
+<strong>Example:</strong>
+
+<p>
+48 ÷ 18 = remainder 12
+</p>
+
+<p>
+18 ÷ 12 = remainder 6
+</p>
+
+<p>
+12 ÷ 6 = remainder 0
+</p>
+
+<p>
+👉 HCF = 6
+</p>
+
+<hr>
+
+<h4>Relationship Between LCM and HCF</h4>
+
+<p>
+For two numbers, the relationship is:
+</p>
+
+<div style="
+  background:#f8f9fa;
+  border-left:5px solid #0d6efd;
+  padding:16px;
+  margin:20px 0;
+  text-align:center;
+">
+  <div style="font-size:20px; margin-bottom:10px; font-weight:600;">
+    LCM×HCF=Product of the numbers
+  </div>
+  
+</div>
+
+
+<strong>Example:</strong>
+
+<p>
+Numbers: 8 and 12
+</p>
+
+<p>
+HCF = 4
+</p>
+
+<p>
+LCM = 24
+</p>
+
+<div style="
+  background:#f8f9fa;
+  border-left:5px solid #0d6efd;
+  padding:16px;
+  margin:20px 0;
+  text-align:center;
+">
+  <div style="font-size:20px; margin-bottom:10px; font-weight:600;">
+    4 × 24 = 8 × 12 = 96
+  </div>
+  
+</div>
+
+
+<p>
+This formula is extremely helpful for fast calculations in exams.
+</p>
+
+<hr>
+
+<h4>LCM &amp; HCF of More Than Two Numbers</h4>
+
+<p>
+HCF: Find HCF of first two numbers, then find HCF of the result with the third number, and so on.
+</p>
+
+<p>
+LCM: Same approach—calculate step by step.
+</p>
+
+<strong>Example:</strong>
+
+<p>
+Numbers: 6 , 12 , 18
+</p>
+
+<p>
+HCF ( 6 , 12 ) = 6
+</p>
+
+<p>
+HCF ( 6 , 18 ) = 6
+</p>
+
+<p>
+👉 Final HCF = 6
+</p>
+
+<hr>
+
+<h4>Why Use an Online LCM–HCF Calculator?</h4>
+
+<p>
+Manual calculation can be:
+</p>
+
+<ul>
+  <li>Time-consuming</li>
+  <li>Error-prone</li>
+  <li>Difficult for large numbers</li>
+</ul>
+
+<p>
+This calculator offers:
+</p>
+
+<ul>
+  <li>⚡ Instant results</li>
+  <li>✅ High accuracy</li>
+  <li>📱 Mobile-friendly interface</li>
+  <li>📘 Helpful for students &amp; professionals</li>
+</ul>
+
+<p>
+You just need to enter the numbers, and the calculator instantly displays both LCM and HCF.
+</p>
+
+<hr>
+
+<h4>Real-Life Applications</h4>
+
+<ul>
+  <li>Splitting items equally without leftovers</li>
+  <li>Synchronizing repeated events</li>
+  <li>Simplifying ratios and fractions</li>
+  <li>Engineering and programming calculations</li>
+</ul>
+
+      `
+    },
+    {
+      type: "html",
+      title: "",
+      body: `
+     <p>
+      
+        </p>
+
+
+      `
+    },
+     {
+      type: "html",
+      title: "",
+      body: `
+       <p>
+        <p> </p>
+<p><strong> </strong> </p>
+        </p>
+
+       
+
+      `
+    },
+ 
   ]
 },
 

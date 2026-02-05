@@ -300,8 +300,12 @@ export const otherCalculators = [
   { name: "Percentage Calculator", slug: "percentage-calculator" },
   
   { name: "Ratio Calculator", slug: "ratio-calculator" },
-  
+
   { name: "Average, Mean, Median & Mode Calculator", slug: "average-mean-median-mode-calculator" },
+
+   { name: "Scientific Calculator", slug: "scientific-calculator" },
+
+   { name: "LCM-HCF Calculator", slug: "lcm-hcf-calculator" },
   
   
 

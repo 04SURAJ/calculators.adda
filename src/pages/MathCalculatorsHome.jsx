@@ -9,8 +9,8 @@ const mathCategories = [
       "Percentage Calculator",
       "Ratio Calculator",
       "Average, Mean, Median & Mode Calculator",
-      
-    
+      "Scientific Calculator",
+       "LCM-HCF Calculator",
     ]
   },
   /*

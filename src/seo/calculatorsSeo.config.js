@@ -278,6 +278,16 @@ export const calculatorsSeo = {
     
   }
 ,
+"scientific-calculator": {
+  title: "Scientific Calculator ",
+  description:
+    "Use this free scientific calculator to solve complex mathematical problems including trigonometric functions, logarithms, powers, roots, factorials, and constants like π and e. Supports memory functions and accurate calculations instantly.",
+},
+"lcm-hcf-calculator": {
+  title: "LCM and HCF Calculator",
+  description:
+    "Calculate LCM (Least Common Multiple) and HCF (Highest Common Factor) of two or more numbers easily with this free online calculator. Get fast and accurate results with step-by-step logic.",
+},
 
 
 };

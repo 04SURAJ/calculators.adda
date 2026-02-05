@@ -56,6 +56,8 @@ const calculatorsMap = {
     "ratio-calculator": MathCalculators.RatioCalculator,
    "average-mean-median-mode-calculator": MathCalculators.AvgMeanMedianModeCalculator,
   
+   "scientific-calculator": MathCalculators.ScientificCalculator,
+   "lcm-hcf-calculator": MathCalculators.LCMHCFCalculator
 
 
 

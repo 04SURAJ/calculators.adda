@@ -3,7 +3,7 @@ export { default as PercentageCalculator } from "./PercentageCalculator";
 export { default as PercentageIncreaseDecreaseCalculator } from "./PercentageIncreaseDecreaseCalculator";
 export { default as RatioCalculator } from "./RatioCalculator";
 export { default as AvgMeanMedianModeCalculator } from "./AvgMeanMedianModeCalculator";
-export { default as MeanCalculator } from "./MeanCalculator";
-export { default as MedianCalculator } from "./MedianCalculator";
-export { default as ModeCalculator } from "./ModeCalculator";
+export { default as ScientificCalculator } from "./ScientificCalculator";
+export { default as LCMHCFCalculator } from "./LCMHCFCalculator";
+
 
