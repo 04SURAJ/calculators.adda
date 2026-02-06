@@ -4977,9 +4977,6 @@ You just need to enter the numbers, and the calculator instantly displays both L
 
       `
     },
-   
-     
- 
   ]
 },
 
