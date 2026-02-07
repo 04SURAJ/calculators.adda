@@ -1,27 +1,51 @@
 import { Link } from "react-router-dom";
 import SearchBar from "../components/SearchBar";
 import '../index.css';
+import HomeScientificCalculator from "../components/HomeScientificCalculator";
+
 
 export default function Home() {
   return (
     <div className="container py-4">
 
       {/* HERO SECTION */}
-      <section className="text-center py-4">
-        <h1 className="fw-bold">
-          Free Online Calculator Tools 
-        </h1>
+   <section className="text-center py-4">
 
-        <h5 >
-          A collection of smart, accurate, and easy-to-use calculators
-         
-        </h5>
-        <br/>
-      <SearchBar/>
-      </section>
+  {/* DESKTOP VIEW */}
+  <div className="d-none d-md-block">
+    <h1 className="fw-bold">
+      Free Online Calculator Tools
+    </h1>
+
+    <h5>
+      A collection of smart, accurate, and easy-to-use calculators
+    </h5>
+  </div>
+
+  {/* MOBILE VIEW */}
+  <div className="d-block d-md-none">
+    <h2 className="fw-bold">
+      Free Online Calculator Tools
+    </h2>
+
+    <h6>
+      A collection of smart, accurate, and easy-to-use calculators
+    </h6>
+  </div>
+
+  <br />
+  <SearchBar />
+
+</section>
 
 
-     
+
+  <section className="my-4">
+  <HomeScientificCalculator />
+</section>
+
+
+
       
 
 
@@ -61,7 +85,7 @@ export default function Home() {
         desc: "Estimate trip fuel cost based on mileage",
         link: "/fuel-cost-calculator"
       },
-        {
+      {
         title: "Tip Calculator",
         desc: "Quickly calculate restaurant tip & bill split",
         link: "/tip-calculator"
@@ -76,17 +100,17 @@ export default function Home() {
         desc: "Check body mass index using height & weight",
         link: "/weight-calculator"
       }
-
     ].map(tool => (
-      <div className="col-md-4 mb-3" key={tool.link}>
+      <div className="col-6 col-md-4 mb-3" key={tool.link}>
         <div className="card p-3 shadow-sm h-100">
           <h6>{tool.title}</h6>
-          <p className="text-muted small">{tool.desc}</p>
+        <p className="text-muted small desc-mobile text-truncate d-block w-100">
+  {tool.desc}
+</p>
 
-          <a
-            href={tool.link}
-            className="btn btn-sm btn-outline-primary"
-          >
+
+
+          <a href={tool.link} className="btn btn-sm btn-outline-primary">
             Open
           </a>
         </div>
@@ -94,6 +118,7 @@ export default function Home() {
     ))}
   </div>
 </section>
+
 
 
 

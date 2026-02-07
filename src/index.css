@@ -389,3 +389,83 @@ section.py-4.text-center a.btn-primary {
   color: #666;
   margin-top: 8px;
 }
+.sc-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.sc-box {
+  width: 100%;
+  max-width: 900px;
+  background: #f3f6fb;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.sc-display {
+  background: #2f5f8f;
+  color: #fff;
+  font-size: 24px;
+  padding: 10px;
+  text-align: right;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.sc-keys {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 10px;
+}
+
+/* LEFT */
+.sc-left {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 6px;
+}
+
+/* RIGHT */
+.sc-right {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 6px;
+}
+
+.sc-box button {
+  padding: 8px 0;
+  background: #dbe8f7;
+  border: 1px solid #9bbce3;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.sc-box button:hover {
+  background: #c7dcf5;
+}
+
+.deg-rad {
+  grid-column: span 2;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .sc-keys {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Mobile only: force single line description */
+@media (max-width: 576px) {
+  .desc-mobile {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
