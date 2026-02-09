@@ -13,21 +13,22 @@ const mathCategories = [
        "LCM-HCF Calculator",
     ]
   },
-  /*
+  
   {
     title: "Algebra Calculators",
     calculators: [
       "Linear Equation Solver",
-      "Quadratic Equation Calculator",
-      "Polynomial Calculator",
-      "Factoring Calculator",
-      "Simplifying Expressions Calculator",
-      "Inequality Calculator",
-      "System of Equations Calculator",
-      "FOIL Calculator",
-      "Algebraic Fraction Calculator"
+      // "Quadratic Equation Calculator",
+      // "Polynomial Calculator",
+      // "Factoring Calculator",
+      // "Simplifying Expressions Calculator",
+      // "Inequality Calculator",
+      // "System of Equations Calculator",
+      // "FOIL Calculator",
+      // "Algebraic Fraction Calculator"
     ]
   },
+  /*
   {
     title: "Statistics & Probability Calculators",
     calculators: [

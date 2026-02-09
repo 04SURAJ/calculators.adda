@@ -307,8 +307,12 @@ export const otherCalculators = [
 
    { name: "LCM-HCF Calculator", slug: "lcm-hcf-calculator" },
   
-  
-
+  {
+  name: "Linear Equation Solver",
+  slug: "linear-equation-solver",
+  description: "Solve linear equations of the form ax + b = 0 easily."
+}
+,
 
 
 

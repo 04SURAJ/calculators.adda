@@ -96,7 +96,7 @@ export default function Home() {
         link: "/speed-calculator"
       },
       {
-        title: "BMI Calculator",
+        title: "Weight Calculator",
         desc: "Check body mass index using height & weight",
         link: "/weight-calculator"
       }

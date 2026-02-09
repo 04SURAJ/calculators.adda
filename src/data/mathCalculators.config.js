@@ -8,5 +8,10 @@ export const mathCalculatorsMap = {
  "Scientific Calculator": "scientific-calculator",
   "LCM-HCF Calculator": "lcm-hcf-calculator",
   
+  
+   "Linear Equation Solver": "linear-equation-solver",
+  
+
+
   // … add all your math calculators here
 };

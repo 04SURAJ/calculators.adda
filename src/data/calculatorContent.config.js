@@ -4980,4 +4980,230 @@ You just need to enter the numbers, and the calculator instantly displays both L
   ]
 },
 
+
+"linear-equation-solver": {
+  sections: [
+    {
+      type: "html",
+      title: "",
+      body: `
+<h2>Linear Equation Solver</h2>
+
+<p>
+A <strong>Linear Equation Solver</strong> is a mathematical tool used to find the value of one or more variables that satisfy a linear equation.
+Linear equations are among the most fundamental concepts in algebra and are widely used in school mathematics, competitive exams,
+engineering, economics, and real-world problem solving.
+</p>
+
+<p>This calculator helps you solve:</p>
+<ul>
+  <li>Simple linear equations like <strong>ax + b = 0</strong></li>
+  <li>Linear equations entered in standard form</li>
+  <li>Two linear equations with two variables (<strong>x</strong> and <strong>y</strong>)</li>
+</ul>
+
+<h4>What Is a Linear Equation?</h4>
+
+<p>
+A <strong>linear equation</strong> is an algebraic equation in which the highest power of the variable is <strong>1</strong>.
+The graph of a linear equation always forms a <strong>straight line</strong>.
+</p>
+ <figure class="content-image">
+          <img
+            src="/images/linear-equation-graph.png"
+            alt="Graph of a linear equation showing straight line and solution point on x-y plane"
+            loading="lazy"
+            width="800"
+            height="300"
+          />
+          <figcaption>
+            Graphical representation of a linear equation on the x-y plane
+          </figcaption>
+        </figure>
+<h5>General Form (One Variable)</h5>
+<div class="formula-box">
+  ax + b = 0
+</div>
+
+
+<p>Where:</p>
+<ul>
+  <li><strong>a</strong> and <strong>b</strong> are real numbers</li>
+  <li><strong>a ≠ 0</strong></li>
+  <li><strong>x</strong> is the variable</li>
+</ul>
+
+<h5>General Form (Two Variables)</h5>
+
+<div class="formula-box">
+  ax + by = c
+</div>
+<p>Where:</p>
+<ul>
+  <li><strong>a, b, c</strong> are constants</li>
+  <li><strong>x</strong> and <strong>y</strong> are variables</li>
+</ul>
+
+<h4>How a Linear Equation Solver Works</h4>
+
+<p>
+The Linear Equation Solver simplifies the equation step by step and isolates the variable(s).
+</p>
+
+<h4>Case 1: One Variable Equation (ax + b = 0)</h4>
+
+<p>To solve:</p>
+<ul>
+  <li>Move the constant term to the other side</li>
+  <li>Divide both sides by the coefficient of <strong>x</strong></li>
+</ul>
+
+<h4>Formula</h4>
+<div class="formula-box">
+  x = −b / a
+</div>
+
+<h4>Special Cases in Linear Equations</h4>
+
+<h5>1️⃣ No Solution</h5>
+<p>
+If <strong>a = 0</strong> and <strong>b ≠ 0</strong>, the equation becomes:
+</p>
+
+<div class="formula-box">
+ 0x + b = 0
+</div>
+<p>
+This is impossible because a non-zero number cannot equal zero.
+</p>
+<p><strong>Result:</strong> No solution</p>
+
+<h5>2️⃣ Infinite Solutions</h5>
+<p>
+If <strong>a = 0</strong> and <strong>b = 0</strong>, the equation becomes:
+</p>
+
+<div class="formula-box">
+ 0x + 0 = 0
+</div>
+<p>
+This statement is always true for any value of <strong>x</strong>.
+</p>
+<p><strong>Result:</strong> Infinite solutions</p>
+
+<h4>Solving Two Linear Equations (x and y)</h4>
+
+<p>
+When two linear equations are given, the solution is the pair <strong>(x, y)</strong>
+that satisfies both equations simultaneously.
+</p>
+
+<h4>Standard Form</h4>
+
+<div class="formula-box">
+ a₁x + b₁y = c₁ </br>
+a₂x + b₂y = c₂
+</div>
+<h4>Determinant Method (Cramer’s Rule)</h4>
+
+<h5>Determinant</h4>
+
+<div class="formula-box">
+ D = a₁b₂ − a₂b₁
+</div>
+<ul>
+  <li>If <strong>D ≠ 0</strong>, a unique solution exists</li>
+  <li>If <strong>D = 0</strong>, there is either no solution or infinitely many solutions</li>
+</ul>
+
+<h4>Formulas</h4>
+
+<div class="formula-box">
+ x = (c₁b₂ − c₂b₁) / D  </br>
+y = (a₁c₂ − a₂c₁) / D
+</div>
+<h4>Examples</h4>
+
+<h5>Example 1: Solve ax + b = 0</h5>
+
+<div class="formula-box">
+2x + 6 = 0
+</div>
+
+<div class="formula-box">
+2x = −6      </br>
+x = −6 / 2    </br>
+x = −3
+</div>
+<h5>Example 2: No Solution Case</h4>
+
+<div class="formula-box">
+0x + 5 = 0
+</div>
+<p><strong>Result:</strong> No solution</p>
+
+<h5>Example 3: Infinite Solutions</h5>
+
+<div class="formula-box">
+0x + 0 = 0
+</div>
+<p><strong>Result:</strong> Infinite solutions</p>
+
+<h5>Example 4: Two Linear Equations</h4>
+
+<div class="formula-box">
+2x + y = 5   </br>
+x + y = 3
+</div>
+
+<div class="formula-box">
+D = (2 × 1) − (1 × 1) = 1
+</div>
+
+<div class="formula-box">
+x = (5 × 1 − 3 × 1) / 1 = 2    </br>
+y = (2 × 3 − 1 × 5) / 1 = 1
+</div
+<p><strong>Solution:</strong> x = 2, y = 1</p>
+
+<h4>Why Use an Online Linear Equation Solver?</h4>
+<ul>
+  <li>✅ Saves time on manual calculations</li>
+  <li>✅ Reduces chances of algebraic errors</li>
+  <li>✅ Provides instant and accurate results</li>
+  <li>✅ Useful for students, teachers, and professionals</li>
+  <li>✅ Helps verify exam answers quickly</li>
+</ul>
+
+<p>
+This calculator is especially helpful for school exams, competitive exams,
+and engineering entrance preparation.
+</p>
+
+<h4>Applications of Linear Equations</h4>
+<ul>
+  <li>Physics (motion equations)</li>
+  <li>Economics (cost and revenue analysis)</li>
+  <li>Engineering calculations</li>
+  <li>Statistics and data analysis</li>
+  <li>Everyday problems involving ratios and comparisons</li>
+</ul>
+
+<h4>Conclusion</h4>
+<p>
+A <strong>Linear Equation Solver</strong> is an essential mathematical tool that simplifies solving equations
+involving one or two variables. By using algebraic formulas and determinant methods,
+this calculator delivers fast, reliable solutions while handling special cases
+like no solution or infinite solutions.
+</p>
+
+<p>
+Whether you are learning algebra or solving real-world problems,
+this tool makes linear equations easy and efficient to solve.
+</p>
+      `
+    }
+  ]
+},
+
 };

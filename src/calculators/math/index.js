@@ -6,4 +6,6 @@ export { default as AvgMeanMedianModeCalculator } from "./AvgMeanMedianModeCalcu
 export { default as ScientificCalculator } from "./ScientificCalculator";
 export { default as LCMHCFCalculator } from "./LCMHCFCalculator";
 
+export { default as LinearEquationCalculator } from "./LinearEquationCalculator";
+
 

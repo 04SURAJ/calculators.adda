@@ -289,6 +289,12 @@ export const calculatorsSeo = {
     "Calculate LCM (Least Common Multiple) and HCF (Highest Common Factor) of two or more numbers easily with this free online calculator. Get fast and accurate results with step-by-step logic.",
 },
 
+"linear-equation-solver": {
+  title: "Linear Equation Solver",
+  description:
+    "Solve linear equations of the form ax + b = 0 easily with this free online Linear Equation Solver. Enter values of a and b to get instant and accurate results, including special cases like no solution or infinite solutions.",
+},
+
 
 };
 

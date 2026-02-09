@@ -1,12 +1,9 @@
 import { useParams, Navigate } from "react-router-dom";
-
 import * as OtherCalculators from "../calculators/other";
 import * as MathCalculators from "../calculators/math";
-
 import { calculatorsSeo } from "../seo/calculatorsSeo.config";
 import CalculatorLayout from "../layouts/CalculatorLayout";
 import { calculatorContent } from "../data/calculatorContent.config";
-
 import { mathCalculatorsMap } from "../data/mathCalculators.config";
 
 
@@ -57,8 +54,8 @@ const calculatorsMap = {
    "average-mean-median-mode-calculator": MathCalculators.AvgMeanMedianModeCalculator,
   
    "scientific-calculator": MathCalculators.ScientificCalculator,
-   "lcm-hcf-calculator": MathCalculators.LCMHCFCalculator
-
+   "lcm-hcf-calculator": MathCalculators.LCMHCFCalculator,
+    "linear-equation-solver":MathCalculators.LinearEquationCalculator,
 
 
 };
@@ -99,7 +96,6 @@ const relatedCalculators = Object.keys(calculatorsMap)
     slug: key,
     name: calculatorsSeo[key]?.title || key.replace(/-/g, " "),
   }));
-
 
 
 
