@@ -10,7 +10,7 @@ export const mathCalculatorsMap = {
   
   
    "Linear Equation Solver": "linear-equation-solver",
-  
+   "Quadratic Equation Calculator": "quadratic-equation-calculator"
 
 
   // … add all your math calculators here

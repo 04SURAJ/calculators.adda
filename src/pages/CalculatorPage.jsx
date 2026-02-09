@@ -56,6 +56,7 @@ const calculatorsMap = {
    "scientific-calculator": MathCalculators.ScientificCalculator,
    "lcm-hcf-calculator": MathCalculators.LCMHCFCalculator,
     "linear-equation-solver":MathCalculators.LinearEquationCalculator,
+     "quadratic-equation-calculator":MathCalculators.QuadraticEquationCalculator,
 
 
 };

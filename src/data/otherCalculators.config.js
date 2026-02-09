@@ -314,6 +314,12 @@ export const otherCalculators = [
 }
 ,
 
-
+{
+  name: "Quadratic Equation Calculator",
+  slug: "quadratic-equation-calculator",
+  description:
+    "Solve quadratic equations of the form ax² + bx + c = 0 easily. Calculate roots using the discriminant method and handle real, repeated, or no real solutions instantly."
+}
+,
 
 ];

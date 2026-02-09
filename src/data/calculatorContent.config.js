@@ -5205,5 +5205,308 @@ this tool makes linear equations easy and efficient to solve.
     }
   ]
 },
+"quadratic-equation-calculator": {
+  sections: [
+    {
+      type: "html",
+      title: "",
+      body: `
+<h2>Quadratic Equation Calculator</h2>
+
+<p>
+A <strong>Quadratic Equation Calculator</strong> is an online mathematical tool used to solve quadratic equations quickly and accurately.
+Quadratic equations are fundamental in algebra and appear frequently in school exams, competitive exams, engineering, physics, and real-life applications.
+</p>
+
+<h3>What Is a Quadratic Equation?</h3>
+
+<p>
+A quadratic equation is a polynomial equation of degree 2, meaning the highest power of the variable is 2.
+The graph of a quadratic equation always forms a <strong>parabola</strong>.
+</p>
+
+<p><strong>Standard Form:</strong></p>
+
+<div class="formula-box">
+ax² + bx + c = 0
+</div>
+<p>Where:</p>
+<ul>
+  <li><strong>a, b, c</strong> are real numbers</li>
+  <li><strong>a ≠ 0</strong> (otherwise it is not quadratic)</li>
+  <li><strong>x</strong> is the variable</li>
+</ul>
+
+<hr/>
+
+<h3>Quadratic Formula</h3>
+
+<p>
+The most common and reliable method to solve a quadratic equation is the <strong>quadratic formula</strong>.
+</p>
+
+<div class="bg-light border rounded p-3 my-3 text-center fw-semibold">
+  x =
+  <span style="display:inline-block; vertical-align:middle; text-align:center;">
+    <span style="display:block;">−b ± √(b² − 4ac)</span>
+    <span style="display:block; border-top:2px solid #000;">2a</span>
+  </span>
+</div>
+
+
+<p>
+The expression <strong>b² − 4ac</strong> is called the <strong>discriminant (D)</strong>.
+The value of the discriminant determines the nature of the roots.
+</p>
+
+<hr/>
+
+<h3>Nature of Roots Based on Discriminant</h3>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Discriminant (D)</th>
+      <th>Nature of Roots</th>
+      <th>Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>D &gt; 0</td>
+      <td>Two real and distinct roots</td>
+      <td>x₁ ≠ x₂</td>
+    </tr>
+    <tr>
+      <td>D = 0</td>
+      <td>One real and equal root</td>
+      <td>x₁ = x₂</td>
+    </tr>
+    <tr>
+      <td>D &lt; 0</td>
+      <td>No real roots</td>
+      <td>Complex roots</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr/>
+
+<h3>How This Quadratic Equation Calculator Works</h3>
+
+<p>
+This calculator automatically:
+</p>
+
+<ul>
+  <li>Identifies coefficients <strong>a, b, c</strong></li>
+  <li>Calculates the discriminant</li>
+  <li>Applies the quadratic formula</li>
+  <li>Displays a clear <strong>step-by-step solution</strong></li>
+</ul>
+
+<p>
+It supports both:
+</p>
+
+<ul>
+  <li>Coefficient-based input (a, b, c)</li>
+  <li>Typed quadratic equations</li>
+</ul>
+
+<hr/>
+
+<h3>Worked Examples</h3>
+
+<h4>Example 1: Two Real Roots</h4>
+
+<div class="formula-box">
+x² − 5x + 6 = 0
+</div>
+<p><strong>Step 1:</strong> Identify coefficients</p>
+
+<div class="formula-box">
+a = 1, b = −5, c = 6
+</div>
+<p><strong>Step 2:</strong> Calculate discriminant</p>
+
+<div class="formula-box">
+D = (−5)² − 4×1×6 = 25 − 24 = 1
+</div>
+<p><strong>Step 3:</strong> Apply quadratic formula</p>
+
+<div class="formula-box">
+x₁ = (5 + √1) / 2 = 3    </br>
+x₂ = (5 − √1) / 2 = 2
+</div>
+<p><strong>Final Answer:</strong> x = 2, 3</p>
+
+<hr/>
+
+<h4>Example 2: One Real Root</h4>
+
+<div class="formula-box">
+x² − 4x + 4 = 0
+</div>
+
+<div class="formula-box">
+D = (−4)² − 4×1×4 = 0
+</div>
+<p>
+Since D = 0, only one real root exists.
+</p>
+
+<pre>x = 2</pre>
+
+<hr/>
+
+<h4>Example 3: No Real Roots</h4>
+
+<div class="formula-box">
+x² + 4x + 5 = 0
+</div>
+<p>
+D = 16 − 20 = −4
+</p>
+
+<p>
+Since D &lt; 0, no real roots exist.
+</p>
+
+<hr/>
+
+  <h3>Parabola Graph of a Quadratic Equation</h2>
+
+  <p>
+    The graph of a quadratic equation always forms a <strong>parabola</strong>.
+    A parabola is a smooth, U-shaped curve that represents how the value of
+    <strong>y</strong> changes with respect to <strong>x</strong>.
+  </p>
+
+  <p>
+    A general quadratic equation is:
+  </p>
+
+  <div class="bg-light border rounded p-3 my-3 text-center fw-semibold">
+    y = ax² + bx + c
+  </div>
+
+ <figure class="content-image">
+          <img
+            src="/images/quadratic-parabola-graph.png"
+            alt="Parabola graph of a quadratic equation"
+            loading="lazy"
+            width="800"
+            height="300"
+          />
+          <figcaption>
+           Graph of a quadratic equation showing a parabola with its vertex and x-intercepts.
+          </figcaption>
+        </figure>
+
+  <h4>Direction of the Parabola</h3>
+  <p>
+    The value of <strong>a</strong> determines whether the parabola opens upward or downward:
+  </p>
+
+  <ul>
+    <li><strong>a &gt; 0</strong> → Parabola opens upward (U-shaped)</li>
+    <li><strong>a &lt; 0</strong> → Parabola opens downward (inverted U)</li>
+  </ul>
+
+  <h4>Vertex of the Parabola</h4>
+  <p>
+    The <strong>vertex</strong> is the highest or lowest point on the parabola.
+    It represents the maximum or minimum value of the quadratic function.
+  </p>
+
+  <p>
+    The x-coordinate of the vertex is calculated using:
+  </p>
+
+  <div class="bg-light border rounded p-3 my-3 text-center fw-semibold">
+    x = −b / (2a)
+  </div>
+
+  <h4>X-Intercepts (Roots)</h4>
+  <p>
+    The points where the parabola crosses the x-axis are called
+    <strong>x-intercepts</strong> or <strong>roots</strong>.
+    These values are obtained by solving the quadratic equation.
+  </p>
+
+  <p>
+    Depending on the discriminant value:
+  </p>
+
+  <table class="table table-bordered my-3">
+    <thead>
+      <tr>
+        <th>Discriminant (D)</th>
+        <th>Graph Behavior</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>D &gt; 0</td>
+        <td>Parabola intersects x-axis at two points</td>
+      </tr>
+      <tr>
+        <td>D = 0</td>
+        <td>Parabola touches x-axis at one point</td>
+      </tr>
+      <tr>
+        <td>D &lt; 0</td>
+        <td>Parabola does not intersect x-axis</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h4>Why the Parabola Graph Is Important</h4>
+  <p>
+    Understanding the parabola graph helps in visualizing quadratic equations,
+    predicting solutions, and solving real-world problems involving motion,
+    optimization, and geometry.
+  </p>
+</section>
+<hr>
+<h3>Applications of Quadratic Equations</h3>
+
+<ul>
+  <li>Physics (motion, projectile paths)</li>
+  <li>Engineering and construction</li>
+  <li>Economics (profit and loss analysis)</li>
+  <li>Statistics and curve fitting</li>
+  <li>Real-life word problems</li>
+</ul>
+
+<hr/>
+
+<h3>Why Use This Online Quadratic Equation Calculator?</h3>
+
+<ul>
+  <li>✔ Instant and accurate results</li>
+  <li>✔ Step-by-step explanations</li>
+  <li>✔ Reduces calculation errors</li>
+  <li>✔ Ideal for exams and practice</li>
+  <li>✔ Beginner-friendly interface</li>
+</ul>
+
+<hr/>
+
+<h3>Conclusion</h3>
+
+<p>
+The <strong>Quadratic Equation Calculator</strong> is a powerful algebra tool that simplifies solving second-degree equations.
+By using the quadratic formula and discriminant method, it provides fast, reliable, and easy-to-understand solutions.
+</p>
+
+<p>
+Whether you are a student, teacher, or professional, this calculator makes quadratic equations simple and efficient.
+</p>
+`
+    }
+  ]
+}
 
 };

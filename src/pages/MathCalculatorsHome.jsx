@@ -18,7 +18,7 @@ const mathCategories = [
     title: "Algebra Calculators",
     calculators: [
       "Linear Equation Solver",
-      // "Quadratic Equation Calculator",
+       "Quadratic Equation Calculator",
       // "Polynomial Calculator",
       // "Factoring Calculator",
       // "Simplifying Expressions Calculator",

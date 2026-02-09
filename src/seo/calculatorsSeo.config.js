@@ -294,7 +294,14 @@ export const calculatorsSeo = {
   description:
     "Solve linear equations of the form ax + b = 0 easily with this free online Linear Equation Solver. Enter values of a and b to get instant and accurate results, including special cases like no solution or infinite solutions.",
 },
+"quadratic-equation-calculator": {
 
+title: "Quadratic Equation Calculator",
+
+description:
+"Solve quadratic equations of the form ax² + bx + c = 0 easily with this free online Quadratic Equation Calculator. Enter values of a, b, and c to calculate roots instantly using the discriminant method, including cases with two real roots, one real root, or no real roots.",
+
+},
 
 };
 
