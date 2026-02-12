@@ -1,14 +1,28 @@
 import { useParams, Navigate } from "react-router-dom";
+
+// OTHER calculators
 import * as OtherCalculators from "../calculators/other";
+
+// MATH calculators
 import * as MathCalculators from "../calculators/math";
-import { calculatorsSeo } from "../seo/calculatorsSeo.config";
+
+// FITNESS & HEALTH calculators
+import * as FitnessHealthCalculators from "../calculators/fitness-health";
+
+// layout + data
 import CalculatorLayout from "../layouts/CalculatorLayout";
+import { calculatorsSeo } from "../seo/calculatorsSeo.config";
 import { calculatorContent } from "../data/calculatorContent.config";
+
+// category maps
 import { mathCalculatorsMap } from "../data/mathCalculators.config";
+import { fitnessHealthCalculatorsMap } from "../data/fitnessHealthCalculators.config";
 
-
+/* -------------------------------------------------- */
+/* ALL CALCULATORS MAP */
+/* -------------------------------------------------- */
 const calculatorsMap = {
-  // OTHER CATEGORY CALCULATORS
+   // OTHER CATEGORY CALCULATORS
   "age-calculator": OtherCalculators.AgeCalculator,
   "date-calculator": OtherCalculators.DateCalculator,
   "time-calculator": OtherCalculators.TimeCalculator,
@@ -59,57 +73,90 @@ const calculatorsMap = {
      "quadratic-equation-calculator":MathCalculators.QuadraticEquationCalculator,
 
 
+
+     
+"bmi-calculator": FitnessHealthCalculators.BmiCalculator,
+"calorie-calculator": FitnessHealthCalculators.CalorieCalculator,
+"bmr-calculator": FitnessHealthCalculators.BMRCalculator,
+"body-fat-calculator": FitnessHealthCalculators.BodyFatCalculator,
+"due-date-calculator": FitnessHealthCalculators.DueDateCalculator
 };
 
-
-
+/* -------------------------------------------------- */
+/* PAGE COMPONENT */
+/* -------------------------------------------------- */
 export default function CalculatorPage() {
   const { slug } = useParams();
+
   const CalculatorComponent = calculatorsMap[slug];
   const seoData = calculatorsSeo[slug];
-    const content = calculatorContent[slug];
+  const content = calculatorContent[slug];
 
   if (!CalculatorComponent) {
     return <Navigate to="*" replace />;
   }
 
-const mathSlugs = new Set(Object.values(mathCalculatorsMap));
-const isMathCalculator = mathSlugs.has(slug);
+  /* -------- CATEGORY DETECTION -------- */
+  const isFitnessHealth = Object.values(
+    fitnessHealthCalculatorsMap
+  ).includes(slug);
 
-// SAME CATEGORY ONLY
-const relatedCalculators = Object.keys(calculatorsMap)
-  .filter((key) => key !== slug)
-  .filter((key) =>
-    isMathCalculator
-      ? mathSlugs.has(key)
-      : !mathSlugs.has(key)
-  )
-  .sort((a, b) => a.localeCompare(b)) // stable base
-  .sort((a, b) => {
-    // deterministic pseudo-random based on slug
-    const hash = (str) =>
-      str.split("").reduce((acc, c) => acc + c.charCodeAt(0), 0);
+  const isMath = Object.values(mathCalculatorsMap).includes(slug);
 
-    return (hash(a + slug) % 10) - (hash(b + slug) % 10);
-  })
-  .slice(0, 4)
-  .map((key) => ({
-    slug: key,
-    name: calculatorsSeo[key]?.title || key.replace(/-/g, " "),
-  }));
+  const getCategory = () => {
+    if (isFitnessHealth) {
+      return {
+        label: "Fitness & Health",
+        path: "/fitness-health",
+      };
+    }
 
+    if (isMath) {
+      return {
+        label: "Math Calculators",
+        path: "/math-calculators",
+      };
+    }
 
+    return {
+      label: "Utility",
+      path: "/utility",
+    };
+  };
+
+  /* -------- BREADCRUMBS -------- */
+  const breadcrumbs = [
+    getCategory(),
+    { label: seoData?.title },
+  ];
+
+  /* -------- RELATED CALCULATORS (same category only) -------- */
+  const relatedCalculators = Object.keys(calculatorsMap)
+    .filter((key) => key !== slug)
+    .filter((key) =>
+      isFitnessHealth
+        ? Object.values(fitnessHealthCalculatorsMap).includes(key)
+        : isMath
+        ? Object.values(mathCalculatorsMap).includes(key)
+        : !Object.values(mathCalculatorsMap).includes(key) &&
+          !Object.values(fitnessHealthCalculatorsMap).includes(key)
+    )
+    .slice(0, 4)
+    .map((key) => ({
+      slug: key,
+      name: calculatorsSeo[key]?.title || key.replace(/-/g, " "),
+    }));
 
   return (
     <CalculatorLayout
       title={seoData?.title}
       subtitle={seoData?.subtitle}
       description={seoData?.description}
-       content={content}
-       relatedCalculators={relatedCalculators}
+      content={content}
+      relatedCalculators={relatedCalculators}
+      breadcrumbs={breadcrumbs}
     >
       <CalculatorComponent />
     </CalculatorLayout>
   );
 }
-

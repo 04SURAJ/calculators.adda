@@ -1,24 +1,38 @@
 import SeoMeta from "../seo/SeoMeta";
-import { FaHome } from "react-icons/fa";
+import { FaHome, FaChevronRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-export default function CalculatorLayout({ title, description, children,  content,  relatedCalculators
+export default function CalculatorLayout({ title,
+  
+  description,
+  breadcrumbs,
+  content,
+  relatedCalculators,
+  children,
  }) {
   return (
     <div className="container py-4">
       <SeoMeta title={title} description={description} />
 
-
-       <div className="mb-3">
-        <Link
-          to="/"
-          className="d-inline-flex align-items-center text-decoration-none text-secondary"
-        >
-          <FaHome className="me-2" />
-          <span>Home</span>
+  {/* ✅ BREADCRUMB */}
+      <nav className="mb-3 small text-muted">
+        <Link to="/" className="text-decoration-none me-2">
+          <FaHome /> Home
         </Link>
-      </div>
 
+        {breadcrumbs?.map((item, index) => (
+          <span key={index}>
+            {" > "}
+            {item.path ? (
+              <Link to={item.path} className="text-decoration-none">
+                {item.label}
+              </Link>
+            ) : (
+              <span>{item.label}</span>
+            )}
+          </span>
+        ))}
+      </nav>
       <h1 className="mb-2">{title}</h1>
       
 

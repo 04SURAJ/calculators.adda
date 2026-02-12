@@ -11,6 +11,9 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import MathCalculatorsHome from "./pages/MathCalculatorsHome";
+import FitnessHealthHome from "./pages/FitnessHealthHome";
+import Utility from "./pages/Utility";
+
 
 function App() {
   return (
@@ -31,6 +34,8 @@ function App() {
         <Route path="/*" element={<NotFound />} />
 
         <Route path="/math-calculators" element={<MathCalculatorsHome />} />
+ <Route path="/fitness-health" element={<FitnessHealthHome />} />
+ <Route path="/utility" element={<Utility />} />
 
       </Routes>
 

@@ -5507,6 +5507,1198 @@ Whether you are a student, teacher, or professional, this calculator makes quadr
 `
     }
   ]
-}
+},
+
+
+"bmi-calculator": {
+  sections: [
+    {
+      type: "html",
+      title: "What is a BMI Calculator?",
+      body: `
+<p> A <strong>BMI calculator</strong> is a handy online tool that will help you calculate BMI online through your height and weight. BMI is the abbreviation for <strong>Body Mass Index</strong>, a system that measures whether a person has an appropriate body size.</p>
+<p>The B.M.I. calculator compares your weight to the height. It is not a direct measure of body fat, but it gives a pretty good estimate of whether you are underweight, normal weight, overweight or obese.</p>
+<p>BMI is a simplistic formula using only height and weight. BMI is used widely, not only by doctors but also by fitness experts, health researchers and public health organizations around the world, partly because it is cheap and easy to use.</p>
+<p>It's important to track BMI for health monitoring as the too high or low values can pose risk to health. You should also monitor your BMI in order to keep track of your weight status and make preventative changes as necessary.</p>
+<figure class="content-image">
+          <img
+            src="/images/bmi-calculator-checking-results-on-smartphone.png"
+            alt="Healthy adult standing on digital weighing scale checking BMI calculator results on smartphone"
+            loading="lazy"
+            width="800"
+            height="325"
+          />
+          <figcaption>
+            Using an online BMI calculator to instantly check body mass index and weight category.
+          </figcaption>
+        </figure>
+
+      `
+    },
+    {
+      type: "html",
+      title: "BMI Formula & How It Works",
+      body: `
+     <p>To know how to calculate BMI accurately, it is useful to review the method for determining this number using the BMI formula.</p>
+
+     <p><strong>Metric Formula:</strong></p>
+<div class="bg-light border rounded p-3 my-3 text-center fw-semibold">
+  BMI=
+  <span style="display:inline-block; vertical-align:middle; text-align:center;">
+    <span style="display:block;">Weight (kg)      </span>
+    <span style="display:block; border-top:2px solid #000;">Height (m)<sup>2</span>
+  </span>
+</div>
+     <p>This means your weight in kilograms is divided by the square of your height in meters.</p>
+
+     <p><strong> Example Calculation:</strong> </p>
+
+     <p>If your weight is 72 kg and your height is 1.75 meters:
+     <ul><li>BMI = 72 ÷ (1.75 × 1.75)</li><li>BMI = 72 ÷ 3.06
+</li><li>BMI = 23.5</li></ul>A BMI of 23.5 falls within the normal BMI range.
+     </p>
+<p>If using the imperial system, the formula becomes:</p>
+<div class="bg-light border rounded p-3 my-3 text-center fw-semibold">
+    BMI = (Weight in pounds ÷ Height in inches²) × 703
+  </div>
+  <p>This formula multiplies (rather than divides) the result by height squared, as body mass grows in proportion to the square of height – resulting in a more accurate estimate for tall and short subjects. </p>
+  <p>Our BMI calculator which not only finds the answer to your body mass index but it does that in seconds.</p>
+
+      `
+    },
+     {
+      type: "html",
+      title: "BMI Categories (Weight Classification Table)",
+      body: `
+       <p>After calculating BMI, your result falls into one of the standard BMI categories:</p>
+
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead class="table-light">
+      <tr>
+        <th>BMI Range</th>
+        <th>Category</th>
+        <th>Health Meaning</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Below 18.5</td>
+        <td>Underweight</td>
+        <td>May indicate nutritional deficiency or health concerns</td>
+      </tr>
+      <tr>
+        <td>18.5 – 24.9</td>
+        <td>Normal Weight</td>
+        <td>Healthy BMI range for most adults</td>
+      </tr>
+      <tr>
+        <td>25 – 29.9</td>
+        <td>Overweight</td>
+        <td>Increased risk of lifestyle-related diseases</td>
+      </tr>
+      <tr>
+        <td>30 and above</td>
+        <td>Obese</td>
+        <td>High risk of serious health conditions</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h4>What Each Category Means</h5>
+<div class="mb-3">
+  <h5>Underweight:</h5>
+  <p>
+   If BMI is lower than 18.5, this may indicate unhealthy weight loss and other health problems. It can cause weakness, and it has a diminishing effect on our immune system.
+  </p>
+</div>
+
+<div class="mb-3">
+  <h5>Normal Weight:</h5>
+  <p>
+   For most adults, a BMI of 18.5 to 24.9 is ideal. It is linked to lower risk of those chronic diseases.
+  </p>
+</div>
+
+<div class="mb-3">
+  <h5>Overweight:</h5>
+  <p>
+  A BMI of 25 to 29.9 raises the risk for high blood pressure, cholesterol problems and diabetes.
+  </p>
+</div>
+
+<div class="mb-3">
+  <h5>Obesity:</h5>
+  <p>
+   A BMI of 30 or higher carries a significantly heightened risk for heart disease, stroke and metabolic conditions.
+  </p>
+</div>
+
+ `
+    },
+ {
+  type: "html",
+  title: "Why BMI is Important for Health",
+  body: `
+    
+    <p>
+      Maintaining a <strong>healthy BMI range</strong> is crucial for long-term well-being. 
+      Body Mass Index (BMI) helps identify potential health risks before they develop into serious medical conditions.
+    </p>
+
+    <h5>Risks of High BMI</h5>
+    <p>A high BMI is linked to several health problems, including:</p>
+    <ul>
+      <li>Type 2 diabetes</li>
+      <li>Heart disease</li>
+      <li>High blood pressure</li>
+      <li>Joint problems</li>
+      <li>Sleep apnea</li>
+    </ul>
+
+    <h5>Risks of Low BMI</h5>
+    <p>A very low BMI may lead to health concerns such as:</p>
+    <ul>
+      <li>Malnutrition</li>
+      <li>Fatigue and weakness</li>
+      <li>Decreased immune function</li>
+      <li>Bone density loss</li>
+    </ul>
+
+    <p>
+      By monitoring BMI regularly, individuals can take preventive measures such as 
+      improving diet, increasing physical activity, and maintaining a balanced lifestyle 
+      to support optimal long-term health.
+    </p>
+  `
+},
+{
+  type: "html",
+  title: "How to Use This BMI Calculator",
+  body: `
+    <p>
+      Understanding how to use a <strong>BMI calculator</strong> correctly ensures accurate results. 
+      Our tool is simple, fast, and designed for adults who want to monitor their health efficiently.
+    </p>
+
+    <p><strong>Follow these simple steps:</strong></p>
+    <ol>
+      <li>Enter your height (in cm, meters, or inches).</li>
+      <li>Enter your weight (in kg or pounds).</li>
+      <li>Click the <strong>“Calculate BMI”</strong> button.</li>
+      <li>Instantly view your BMI result along with your weight category.</li>
+    </ol>
+
+    <p>
+      This <strong>BMI calculator for men and women</strong> works the same way for all adults. 
+      It provides immediate feedback, making it convenient for regular tracking and maintaining a healthy lifestyle.
+    </p>
+  `
+},
+{
+      type: "html",
+      title: "BMI for Men vs Women",
+      body: `
+     <p>So the question many users, is <strong>“Is BMI different for men and women”?</strong></p>
+     <p>And the formula in a BMI calculator for men and women is identical. But body composition is gender-specific.</p>
+     <p>Women in general have a higher body fat percentage than men at the same BMI. That’s because men have more muscle. Therefore interpretation might be subtly different according to body wall intensity.</p>
+     <p>Despite these discrepancies, BMI continues to be an accurate screening tool in both genders.</p>
+ `
+    },
+    {
+  type: "html",
+  title: "BMI Limitations (Is BMI Accurate?)",
+  body: `
+
+    <p>
+      While <strong>BMI</strong> is a useful health screening tool, it does have certain limitations. 
+      Understanding these <strong>BMI limitations</strong> helps interpret results more accurately.
+    </p>
+
+    <ul>
+      <li>It does not measure muscle mass separately.</li>
+      <li>Athletes may show a high BMI due to greater muscle weight rather than excess body fat.</li>
+      <li>It does not account for fat distribution in the body.</li>
+      <li>It is not ideal for children and teenagers, as <strong>BMI-for-age charts</strong> are required for proper assessment.</li>
+    </ul>
+
+    <h5>So, Is BMI Accurate?</h5>
+    <p>
+      BMI is accurate as a general screening tool for identifying potential weight-related health risks. 
+      However, it should not replace professional medical evaluation.
+    </p>
+
+    <p>
+      For a more complete health assessment, additional measurements such as 
+      <strong>waist circumference</strong> or <strong>body fat percentage</strong> may be necessary.
+    </p>
+  `
+},
+{
+  type: "html",
+  title: "Tips to Maintain a Healthy BMI",
+  body: `
+
+
+    <p>
+      If your BMI is outside the <strong>normal BMI range</strong>, there are effective and natural ways 
+      to improve BMI and support long-term health. Small, consistent lifestyle changes can make a significant difference.
+    </p>
+
+    <div class="mb-3">
+      <h5>Balanced Diet</h5>
+      <p>
+        Focus on consuming whole foods, lean proteins, vegetables, fruits, and healthy fats. 
+        Limit processed foods, added sugars, and excessive saturated fats to maintain a healthy body weight.
+      </p>
+    </div>
+
+    <div class="mb-3">
+      <h5>Regular Exercise</h5>
+      <p>
+        Engage in at least 150 minutes of moderate physical activity per week. 
+        Include both cardiovascular exercises and strength training to improve metabolism and maintain muscle mass.
+      </p>
+    </div>
+
+    <div class="mb-3">
+      <h5>Proper Sleep</h5>
+      <p>
+        Aim for 7–9 hours of quality sleep each night. Adequate sleep helps regulate hormones, 
+        supports metabolism, and assists in maintaining a healthy BMI.
+      </p>
+    </div>
+
+    <div class="mb-3">
+      <h5>Stay Hydrated</h5>
+      <p>
+        Drinking enough water throughout the day helps regulate appetite, 
+        improve digestion, and support overall body function.
+      </p>
+    </div>
+
+    <p>
+      Small and sustainable lifestyle adjustments can significantly help you 
+      maintain a <strong>healthy BMI</strong> over time.
+    </p>
+  `
+},
+
+  ]
+},
+
+"calorie-calculator": {
+  sections: [
+    {
+  type: "html",
+  title: "Calorie Calculator – Calculate Your Daily Calorie Needs Accurately",
+  body: `
+
+    <p>
+     The <strong>calorie calculator</strong> is a precise and  meticulous tool for mapping out how many calories your body needs. Whether you're trying to lose weight, gain it or maintain it, knowing how many calories you need a day is an important first step.
+    </p>
+
+    <p>
+     This <strong>daily calorie calculator</strong> calculates your daily calorie intake by determining it with BMR and activity level. If you’re trying to figure out how many calories a day is enough or not enough, plugging your information into a reputable formula for calorie per day needs, such as the <strong>Mifflin-St Jeor</strong> equation, will give you good numbers.
+    </p>
+
+    <p>
+      Proper management of calorie intake leads to successful weight planning, enhanced metabolism and decrease in lifestyle-associated diseases.
+    </p>
+<figure class="content-image">
+          <img
+            src="/images/calorie-calculator-daily-calorie-intake-tracking.png"
+            alt="Person using a calorie calculator app on smartphone while tracking daily calorie intake with healthy balanced meal on table"
+            loading="lazy"
+            width="800"
+            height="300"
+          />
+          <figcaption>
+           Using an online calorie calculator to track daily calorie intake for weight loss and muscle gain goals.
+          </figcaption>
+        </figure>
+    <h4>What is BMR? (Basal Metabolic Rate)</h4>
+
+    <p>
+     Many people ask, <strong>what is BMR?</strong> Your basal metabolic rate is the amount of calories your body needs at rest to perform necessary life-sustaining functions like breathing, circulation, digestion and cell repair.
+    </p>
+
+    <p>
+      Even if you lay down all day doing nothing, your body still requires energy to exist. The brain, liver, heart and kidneys use most of this energy.
+    </p>
+
+    <p>
+      <strong>BMR calculator</strong> calculate the number of calories your body needs to sustain itself. It’s the cornerstone of any valid calorie estimate because BMR is adjusted to account for lifestyle and activity level to determine total daily calorie needs.
+    </p>
+
+    <h4>BMR Formula Used in This Calculator</h3>
+
+    <p>
+      This calculator uses the <strong>Mifflin-St Jeor equation</strong>, widely considered one of the most accurate formulas 
+      for estimating energy expenditure.
+    </p>
+
+    <h5>BMR Formula for Men</h5>
+   <div class="bg-light border rounded p-3 my-3 text-center fw-semibold">
+  BMR =
+  <span style="display:inline-block; vertical-align:middle; text-align:center;">
+    <span style="display:block;">
+      (10 × Weight (kg)) + (6.25 × Height (cm)) − (5 × Age) + 5
+    </span>
+  </span>
+</div>
+
+
+
+    <h5>BMR Formula for Women</h5>
+    
+<div class="bg-light border rounded p-3 my-3 text-center fw-semibold">
+  BMR =
+  <span style="display:inline-block; vertical-align:middle; text-align:center;">
+    <span style="display:block;">
+      (10 × weight in kg) + (6.25 × height in cm) − (5 × age) − 161
+    </span>
+  </span>
+</div>
+
+    <p>
+      The difference between the <strong>BMR formula for men</strong> and women accounts for natural variations 
+      in body composition and hormonal differences. Age reduces BMR because metabolism gradually slows 
+      over time due to loss of muscle mass and hormonal changes.
+    </p>
+
+    <p>
+      Because this formula is research-backed and clinically validated, it provides a strong scientific foundation 
+      for calculating daily calorie needs.
+    </p>
+
+    <h4>Activity Levels Explained</h4>
+
+    <p>
+      After calculating BMR, the next step is applying an <strong>activity level multiplier</strong>. 
+      This determines your Total Daily Energy Expenditure (TDEE).
+    </p>
+
+    <p><strong>TDEE = BMR × Activity Multiplier</strong></p>
+
+    <ul>
+      <li><strong>Sedentary (1.2):</strong> Little to no exercise</li>
+      <li><strong>Light Activity (1.375):</strong> Exercise 1–3 days per week</li>
+      <li><strong>Moderate Activity (1.55):</strong> Exercise 3–5 days per week</li>
+      <li><strong>Very Active (1.725):</strong> Exercise 6–7 days per week</li>
+      <li><strong>Extra Active (1.9):</strong> Intense training or physically demanding job</li>
+    </ul>
+
+    <p>
+      Choosing the correct multiplier ensures your calorie estimate reflects your real lifestyle. 
+      A sedentary individual burns significantly fewer calories than someone who trains regularly.
+    </p>
+
+    <h4>How to Use This Calorie Calculator</h4>
+
+    <p>
+      If you are wondering <strong>how to use calorie calculator tools</strong>, the process is simple:
+    </p>
+
+    <ol>
+      <li>Select your gender.</li>
+      <li>Enter your age.</li>
+      <li>Enter your weight in kilograms.</li>
+      <li>Enter your height in centimeters.</li>
+      <li>Choose your activity level.</li>
+      <li>Click the “Calculate Calories” button.</li>
+    </ol>
+
+    <p>
+      This <strong>online calorie calculator</strong> instantly provides:
+    </p>
+
+    <ul>
+      <li>Your Basal Metabolic Rate (BMR)</li>
+      <li>Calories needed to maintain weight</li>
+      <li>Calories for weight loss</li>
+      <li>Calories for weight gain</li>
+    </ul>
+
+    <p>
+      The calculator works effectively as a <strong>calorie calculator for men and women</strong>, 
+      offering quick and reliable results.
+    </p>
+
+    <h4>Calories for Weight Loss</h4>
+
+    <p>
+      To lose body fat, you must create a calorie deficit. A common strategy is a 
+      <strong>500 calorie deficit</strong> per day.
+    </p>
+
+    <p>
+      Reducing intake by 500 kcal daily may lead to approximately 0.5 kg of weight loss per week. 
+      This is considered a safe and sustainable fat loss rate.
+    </p>
+
+    <p>
+      Avoid extreme dieting, as very low calorie intake can slow metabolism, reduce energy levels, 
+      and increase the risk of nutrient deficiencies.
+    </p>
+
+    <h4>Calories for Weight Gain</h4>
+
+    <p>
+      If your goal is muscle growth, you need a calorie surplus. A <strong>calorie surplus calculator</strong> 
+      helps determine how many extra calories you should consume.
+    </p>
+
+    <p>
+      Increasing intake by around 500 kcal per day supports gradual weight gain. 
+      For best results, combine surplus calories with strength training and adequate protein intake.
+    </p>
+
+    <h4>Why Calorie Tracking is Important</h4>
+
+    <p>
+      Learning to <strong>track calories</strong> improves awareness of eating habits and supports long-term weight control.
+    </p>
+
+    <ul>
+      <li>Prevents obesity and excessive fat gain</li>
+      <li>Helps maintain weight effectively</li>
+      <li>Supports a healthy metabolism</li>
+      <li>Improves overall health outcomes</li>
+    </ul>
+
+    <p>
+      Calorie awareness allows better control over energy balance, reducing the risk of metabolic disorders.
+    </p>
+
+    <h4>Limitations of Calorie Calculators</h4>
+
+    <p>
+      Many users ask, <strong>is calorie calculator accurate?</strong> While it provides a reliable estimate, 
+      there are some calorie calculator limitations.
+    </p>
+
+    <ul>
+      <li>Results are estimates, not exact measurements.</li>
+      <li>Does not account for body fat percentage.</li>
+      <li>Metabolism varies between individuals.</li>
+      <li>Hormonal factors can affect energy expenditure.</li>
+      <li>Medical conditions may alter calorie needs.</li>
+    </ul>
+
+    <p>
+      For personalized nutrition advice, consult a healthcare professional.
+    </p>
+
+    <h4>Tips to Maintain Healthy Calorie Balance</h4>
+
+    <ul>
+      <li>Follow a balanced diet rich in whole foods.</li>
+      <li>Prioritize adequate protein intake.</li>
+      <li>Include resistance training to preserve muscle mass.</li>
+      <li>Get proper sleep to support hormonal balance.</li>
+      <li>Stay hydrated throughout the day.</li>
+    </ul>
+
+    <p>
+      Maintaining a <strong>healthy calorie intake</strong> through sustainable habits 
+      is the key to long-term weight management and improved overall health.
+    </p>
+  `
+},
+
+  ]
+},
+"bmr-calculator": {
+  sections: [
+    {
+      type: "html",
+      title: "What Is BMR?",
+      body: `
+<p><strong>BMR (Basal Metabolic Rate)</strong> is the number of calories your body burns at rest in order to maintain life. These activities include breathing, moving blood around the body, controlling our temperature, making cells and organs work.</p>
+
+<p>In simple terms: </p>
+<p><strong>BMR is your resting calorie burn — the minimum number of calories your body requires at rest to stay alive. </strong> </p>
+<p>It is measured in <strong>kilocalories per day (kcal/day)</strong> because it represents total daily energy expenditure under resting conditions. </p>
+<h5>BMR vs Total Daily Calorie Burn</h5>
+<p>A lot of individuals mix up BMR with Time and total calories burned in a day. They are not the same.
+<ul><li><strong>BMR = </strong>Amount of calories you burn when completely at rest</li>
+<li><strong>TDEE = </strong>BMR + activity level + digestion + movement</li></ul>
+</p>
+
+<p>BMR usually represents about <strong>60–70% of your total calories burned</strong> each day. Oddly, internal organs are responsible for most of this energy:
+<ul><li>Brain</li><li>Liver</li><li>Heart</li><li>Kidneys</li></ul>
+These organs are metabolically expensive tissues. That’s why your body burns a decent amount of calories even if you lie in bed all day.
+</p>
+<p><strong>Remember:</strong> BMR is not the calorie goal at which you should aim for weight loss. It’s your metabolic baseline — the beginning point for all calorie calculations.</p><hr>
+      `
+    },
+    {
+      type: "html",
+      title: "How This BMR Calculator Works ",
+      body: `
+
+  <p>
+    This online <strong>BMR calculator</strong> uses the scientifically validated 
+    <strong>Mifflin-St Jeor equation</strong>, developed in 1990. It is widely regarded 
+    as the most accurate predictive formula for estimating BMR in the general population.
+  </p>
+
+  <p>
+    Compared to the older <strong>Harris-Benedict equation</strong>, the 
+    Mifflin-St Jeor formula produces results closer to laboratory measurements 
+    in modern studies.
+  </p>
+
+  <h4>BMR Calculator Formula Used</h4>
+
+  <h5>For Men</h5>
+   <div class="bg-light border rounded p-3 my-3 text-center fw-semibold">
+  BMR =
+  <span style="display:inline-block; vertical-align:middle; text-align:center;">
+    <span style="display:block;">
+      (10 × Weight (kg)) + (6.25 × Height (cm)) − (5 × Age) + 5
+    </span>
+  </span>
+</div>
+
+
+
+    <h5>For Women</h5>
+    
+<div class="bg-light border rounded p-3 my-3 text-center fw-semibold">
+  BMR =
+  <span style="display:inline-block; vertical-align:middle; text-align:center;">
+    <span style="display:block;">
+      (10 × weight in kg) + (6.25 × height in cm) − (5 × age) − 161
+    </span>
+  </span>
+</div>
+
+  <h4>Step-by-Step Logic Behind the Formula</h4>
+
+  <ul>
+    <li>
+      <strong>Weight (×10):</strong> Body mass requires energy for maintenance.
+    </li>
+    <li>
+      <strong>Height (×6.25):</strong> Taller individuals generally have larger organ mass and higher metabolic demand.
+    </li>
+    <li>
+      <strong>Age (−5 × age):</strong> Metabolism slows with age, so the equation subtracts calories accordingly.
+    </li>
+    <li>
+      <strong>Gender Adjustment (+5 or −161):</strong> 
+      Men typically have more lean muscle mass, which increases metabolic rate. 
+      Women generally have higher essential fat levels, resulting in a slightly 
+      lower baseline energy requirement.
+    </li>
+  </ul>
+
+  <p>
+    The <strong>+5</strong> and <strong>−161</strong> values adjust for these biological differences.
+    This structured approach makes the calculator reliable for estimating 
+    <strong>Basal Metabolic Rate</strong> quickly and efficiently.
+  </p><hr>
+
+      `
+    },
+    {
+  type: "html",
+  title: "Why Does BMR Decrease With Age?",
+  body: `
+    <p>
+      One of the most searched questions is:
+      <strong>Does BMR decrease over time?</strong>
+    </p>
+
+    <p>
+      The answer is yes — and the reasons are biological.
+    </p>
+
+    <h5 class="fw-semibold mt-4">1. Lean Muscle Mass Decline</h5>
+    <p>
+      As we age, we gradually lose muscle tissue (sarcopenia). Muscle is metabolically active,
+      meaning it burns more calories at rest than fat tissue.
+    </p>
+
+    <h5 class="fw-semibold mt-4">2. Hormonal Shifts</h5>
+    <ul>
+      <li>Testosterone declines in men</li>
+      <li>Estrogen levels change in women</li>
+    </ul>
+    <p>
+      These hormonal shifts influence muscle preservation and metabolic rate.
+    </p>
+
+    <h5 class="fw-semibold mt-4">3. Reduced Mitochondrial Efficiency</h5>
+    <p>
+      Mitochondria are the “energy factories” of cells. Aging can reduce their efficiency,
+      lowering resting energy expenditure.
+    </p>
+
+    <h5 class="fw-semibold mt-4">4. Adaptive Thermogenesis</h5>
+    <p>
+      During prolonged dieting or aging, the body may reduce energy expenditure
+      as a protective mechanism.
+    </p>
+
+    <p>
+      The relationship between <strong>age and BMR</strong> is a core component of metabolic science
+      and explains why calorie needs change over time.
+    </p><hr>
+  `
+},
+{
+  type: "html",
+  title: "BMR vs RMR: What’s the Difference?",
+  body: `
+    <p>
+      Many users search for <strong>BMR vs RMR difference</strong>.
+    </p>
+
+    <p>
+      While the terms are often used interchangeably, they are technically different.
+    </p>
+
+    <div class="table-responsive my-4">
+      <table class="table table-bordered align-middle text-center">
+        <thead class="table-light">
+          <tr>
+            <th>BMR</th>
+            <th>RMR</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Measured in strict lab conditions</td>
+            <td>Measured under less controlled conditions</td>
+          </tr>
+          <tr>
+            <td>Requires fasting and complete rest</td>
+            <td>More practical and commonly tested</td>
+          </tr>
+          <tr>
+            <td>True baseline metabolism</td>
+            <td>Slightly higher (~10%)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>
+      Because laboratory BMR testing is impractical for most people, online calculators
+      estimate BMR using predictive equations like <strong>Mifflin-St Jeor</strong>.
+    </p>
+
+    <p>
+      Understanding this distinction increases confidence in how your 
+      <strong>online BMR calculator</strong> works.
+    </p><hr>
+  `
+},
+{
+  type: "html",
+  title: "Factors That Influence BMR",
+  body: `
+    <p>
+      Your metabolic rate is not determined by weight alone. Several biological and environmental factors affect <strong>BMR</strong>:
+    </p>
+
+    <h5 class="fw-semibold mt-4">Muscle Mass Percentage</h5>
+    <p>
+      More muscle = higher resting calorie burn. Lean muscle tissue is metabolically active and requires more energy to maintain than fat tissue.
+    </p>
+
+    <h5 class="fw-semibold mt-4">Genetics</h5>
+    <p>
+      Metabolic rate varies between individuals due to inherited traits. Some people naturally burn more calories at rest than others.
+    </p>
+
+    <h5 class="fw-semibold mt-4">Body Composition</h5>
+    <p>
+      Fat mass burns fewer calories than lean tissue. Two individuals with the same body weight but different body fat percentages may have different BMR values.
+    </p>
+
+    <h5 class="fw-semibold mt-4">Thyroid Function</h5>
+    <p>
+      Thyroid hormones regulate metabolic speed. Conditions like hypothyroidism can lower BMR, while hyperthyroidism can increase it.
+    </p>
+
+    <h5 class="fw-semibold mt-4">Fever or Illness</h5>
+    <p>
+      Elevated body temperature increases metabolic demand. During illness, the body requires additional energy to support immune function.
+    </p>
+
+    <h5 class="fw-semibold mt-4">Pregnancy</h5>
+    <p>
+      Metabolic needs increase to support fetal development, tissue growth, and physiological changes in the body.
+    </p>
+
+    <h5 class="fw-semibold mt-4">Climate Exposure</h5>
+    <p>
+      Cold environments can slightly elevate energy expenditure as the body works to maintain core temperature.
+    </p>
+
+    <p class="mt-4">
+      These variables explain why two people of the same age and weight may have different <strong>BMR values</strong>.
+    </p><hr>
+  `
+},
+{
+  type: "html",
+  title: "How to Increase BMR Naturally",
+  body: `
+    <p>
+      If your goal is to <strong>increase BMR naturally</strong>, focus on strategies backed by metabolic science.
+    </p>
+
+    <h5 class="fw-semibold mt-4">1. Resistance Training</h5>
+    <p>
+      Strength training increases lean muscle mass, which raises resting calorie burn over the long term. 
+      Because muscle tissue is metabolically active, building and maintaining it directly supports a higher metabolic rate.
+    </p>
+
+    <h5 class="fw-semibold mt-4">2. Protein Intake (Thermic Effect of Food – TEF)</h5>
+    <p>
+      Protein digestion requires more energy than fats or carbohydrates. 
+      This is known as the <strong>Thermic Effect of Food (TEF)</strong>, meaning higher protein intake can slightly increase daily calorie expenditure.
+    </p>
+
+    <h5 class="fw-semibold mt-4">3. NEAT (Non-Exercise Activity Thermogenesis)</h5>
+    <p>
+      Daily movement such as walking, standing, fidgeting, and household activities increases overall energy output. 
+      Improving NEAT levels can meaningfully enhance total calorie burn without formal exercise.
+    </p>
+
+    <h5 class="fw-semibold mt-4">4. Cold Exposure (Mild)</h5>
+    <p>
+      Mild cold exposure may stimulate brown fat activity, which can slightly boost metabolism as the body works to maintain core temperature.
+    </p>
+
+    <h5 class="fw-semibold mt-4">5. Sleep Optimization</h5>
+    <p>
+      Poor sleep disrupts hormones that regulate metabolism, appetite, and recovery. 
+      Consistent, high-quality sleep supports a stable and efficient metabolic rate.
+    </p>
+
+    <p class="mt-4">
+      Improving metabolic rate safely requires sustainable lifestyle adjustments rather than extreme dieting or short-term interventions.
+    </p><hr>
+  `
+},
+{
+  type: "html",
+  title: "Is This BMR Calculator Accurate?",
+  body: `
+    <p>
+      A common concern is: <strong>Is BMR calculator accurate?</strong>
+    </p>
+
+    <p>
+      The <strong>Mifflin-St Jeor equation</strong> is considered accurate within a 
+      <strong>5–10% margin of error</strong> for most individuals.
+    </p>
+
+    <p>
+      However, it is important to understand its limitations:
+    </p>
+
+    <ul>
+      <li>It does not measure body fat percentage</li>
+      <li>It does not account for hormonal disorders</li>
+      <li>It does not consider metabolic adaptation during dieting</li>
+      <li>It provides an estimate, not a laboratory measurement</li>
+    </ul>
+
+    <p class="mt-3">
+      Think of it as a <strong>scientifically informed starting point</strong> — 
+      not an exact metabolic reading.
+    </p><hr>
+  `
+},
+{
+  type: "html",
+  title: "How to Use Your BMR for Weight Goals",
+  body: `
+    <p>
+      Once you calculate your <strong>BMR</strong>, you can determine your calorie strategy based on your specific goal.
+    </p>
+
+    <h5 class="fw-semibold mt-4">Maintenance Calories</h5>
+
+    <div class="bg-light border rounded p-3 my-3 text-center fw-semibold">
+      Maintenance Calories =
+      <span style="display:inline-block; text-align:center;">
+        <span style="display:block;">BMR × Activity Factor</span>
+      </span>
+    </div>
+
+    <p>
+      Your maintenance calories represent the number of calories required to keep your weight stable.
+    </p>
+
+    <h5 class="fw-semibold mt-4">For Weight Loss</h5>
+    <ul>
+      <li>Create a <strong>500 calorie deficit</strong> per day</li>
+      <li>Approximate fat loss: <strong>0.5 kg per week</strong></li>
+      <li>Avoid eating below your <strong>BMR</strong> for extended periods</li>
+    </ul>
+
+    <h5 class="fw-semibold mt-4">For Weight Gain</h5>
+    <ul>
+      <li>Add <strong>300–500 calories</strong> per day</li>
+      <li>Combine with <strong>strength training</strong> for lean muscle growth</li>
+    </ul>
+
+    <p class="mt-4">
+      For more advanced calorie planning, you can use a dedicated 
+      <strong>Calorie Calculator</strong> to estimate your 
+      <strong>Total Daily Energy Expenditure (TDEE)</strong>.
+    </p><hr>
+  `
+},
+{
+  type: "html",
+  title: "Ideal BMR Range for Men and Women",
+  body: `
+    <p>
+      Average <strong>BMR values</strong> vary depending on body size, age, and composition.
+    </p>
+
+    <h5 class="fw-semibold mt-4">Adult Men</h5>
+    <p>
+      Approximately <strong>1,600–1,900 kcal/day</strong>
+    </p>
+
+    <h5 class="fw-semibold mt-4">Adult Women</h3>
+    <p>
+      Approximately <strong>1,200–1,500 kcal/day</strong>
+    </p>
+
+    <p class="mt-4">
+      These are general estimates. Taller, heavier, or more muscular individuals 
+      will typically have higher <strong>BMR values</strong>, while smaller or older 
+      individuals may fall on the lower end of the range.
+    </p><hr>
+  `
+},
+ 
+  ]
+},
+"body-fat-calculator": {
+  sections: [
+    {
+      type: "html",
+      title: "What is Body Fat Percentage?",
+      body: `
+<p>Body fat percentage is the amount of your total body weight that is made up of fat tissue. Unlike body weight alone, it gives you an idea of how much of your body is fat mass vs. lean mass.</p>
+
+<p>Your body weight consists of:
+<ul>
+<li><strong>Fat Mass – </strong>Stored body fat</li>
+<li><strong>Lean Body Mass – </strong>Muscles, bones and organs, water and tissues</li>
+</ul> It’s so important to understand the meaning of body fat percentage because the two can weight the same but have 100% opposite body compositions.</p>
+
+<p>For example:
+<ul>
+<li>If a 80 kg person is having 15% fat, it would have 68 kg lean mass and 12 kg of fat.</li>
+<li>As an example, a 80kg person who is of 30% Body fat would have a Body fat mass of 24kg and Lean body mass of 56kg.</li>
+</ul>But since they are both 80 kilograms, their health risk profile and body composition is quite different. This is why body fat % is a more meaningful number than your weight all by itself.
+</p><hr>
+      `
+    },
+{
+  type: "html",
+  title: "How This Body Fat Calculator Works",
+  body: `
+    <p>
+      This <strong>Body Fat Calculator</strong> uses the 
+      <strong>U.S. Navy body fat formula</strong>, a scientifically validated 
+      method that estimates body fat percentage using body circumference measurements.
+    </p>
+
+    <p>
+      Unlike <strong>BMI</strong>, it does not rely on body weight. Instead, 
+      it evaluates fat distribution patterns using:
+    </p>
+
+    <ul>
+      <li><strong>Height</strong></li>
+      <li><strong>Neck circumference</strong></li>
+      <li><strong>Waist circumference</strong></li>
+      <li><strong>Hip circumference (for women)</strong></li>
+    </ul>
+
+    <h4 class="fw-semibold mt-4">U.S. Navy Body Fat Formula</h4>
+
+    <h5 class="fw-semibold mt-3">For Men</h5>
+   <p class="bg-light p-3 rounded border text-center">
+  <strong>Body Fat %</strong> = 86.010 × log<sub>10</sub>(Waist − Neck) − 70.041 × log<sub>10</sub>(Height) + 36.76
+</p>
+
+
+
+    <h5 class="fw-semibold mt-4">For Women</h5>
+   <p class="bg-light p-3 rounded border text-center">
+  <strong>Body Fat %</strong> = 163.205 × log<sub>10</sub>(Waist + Hip − Neck) − 97.684 × log<sub>10</sub>(Height) − 78.387
+</p>
+
+
+    <p class="mt-4">
+      The formula uses logarithmic calculations because fat distribution follows 
+      non-linear biological patterns. Height is included to normalize body proportions, 
+      while weight is not required since circumference measurements already reflect 
+      fat storage.
+    </p>
+
+    <p>
+      This makes the <strong>body fat calculator formula</strong> more precise 
+      than BMI for most individuals.
+    </p><hr>
+  `
+},
+{
+  type: "html",
+  title: "Measuring Waist, Neck, and Hips the Right Way",
+  body: `
+    <p>
+      If you want accurate results from a <strong>Body Fat Calculator</strong>, 
+      correct measuring technique is essential. Many errors occur due to improper 
+      tape placement or pulling the tape too tightly.
+    </p>
+
+    <p class="fw-semibold mt-3">
+      Here’s how to measure your body fat percentage at home:
+    </p>
+
+    <ul>
+      <li>Use a <strong>flexible measuring tape</strong></li>
+      <li>Measure in <strong>centimeters (cm)</strong></li>
+      <li>Do not pull the tape too tight or compress the skin</li>
+    </ul>
+
+    <h5 class="fw-semibold mt-4">Measurement Guidelines</h5>
+
+    <ul>
+      <li>
+        <strong>Waist:</strong> Measure around the navel while standing relaxed, 
+        after gently exhaling.
+      </li>
+      <li>
+        <strong>Neck:</strong> Measure around the base of the neck, just below 
+        the Adam’s apple.
+      </li>
+      <li>
+        <strong>Hip (Women):</strong> Measure around the widest part of the hips.
+      </li>
+    </ul>
+
+    <p class="mt-3">
+      Stand upright and measure against bare skin or light clothing. 
+      Consistency is more important than perfection—especially when tracking 
+      body fat progress over time.
+    </p><hr>
+  `
+},
+{
+  type: "html",
+  title: "Healthy Body Fat Percentage Ranges",
+  body: `
+    <p>
+      The <strong>ideal body fat percentage</strong> varies based on gender, age, 
+      and activity level. These ranges provide general health and fitness benchmarks.
+    </p>
+
+    <h5 class="fw-semibold mt-4">For Men</h5>
+
+    <div class="table-responsive">
+      <table class="table table-bordered align-middle">
+        <thead class="table-light">
+          <tr>
+            <th>Category</th>
+            <th>Body Fat %</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Essential Fat</td>
+            <td>2–5%</td>
+          </tr>
+          <tr>
+            <td>Athletes</td>
+            <td>6–13%</td>
+          </tr>
+          <tr>
+            <td>Fitness</td>
+            <td>14–17%</td>
+          </tr>
+          <tr>
+            <td>Average</td>
+            <td>18–24%</td>
+          </tr>
+          <tr>
+            <td>Obese</td>
+            <td>25%+</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h5 class="fw-semibold mt-4">For Women</h3>
+
+    <div class="table-responsive">
+      <table class="table table-bordered align-middle">
+        <thead class="table-light">
+          <tr>
+            <th>Category</th>
+            <th>Body Fat %</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Essential Fat</td>
+            <td>10–13%</td>
+          </tr>
+          <tr>
+            <td>Athletes</td>
+            <td>14–20%</td>
+          </tr>
+          <tr>
+            <td>Fitness</td>
+            <td>21–24%</td>
+          </tr>
+          <tr>
+            <td>Average</td>
+            <td>25–31%</td>
+          </tr>
+          <tr>
+            <td>Obese</td>
+            <td>32%+</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="mt-3">
+      Women naturally require higher essential fat levels to support 
+      hormonal balance, reproductive health, and overall physiological function.
+    </p><hr>
+  `
+},
+{
+  type: "html",
+  title: "Body Fat vs BMI – What Should You Use?",
+  body: `
+    <p>
+      When comparing <strong>body fat vs BMI</strong>, body fat percentage 
+      provides significantly more meaningful insight into your overall health 
+      and physical composition.
+    </p>
+
+    <p>
+      <strong>Body Mass Index (BMI)</strong> uses only height and weight to 
+      classify individuals into categories such as underweight, normal, 
+      overweight, or obese. However, BMI does not distinguish between 
+      muscle mass and fat mass.
+    </p>
+
+    <p class="fw-semibold mt-3">As a result:</p>
+
+    <ul>
+      <li>
+        Athletes or bodybuilders with high muscle mass may appear 
+        overweight or obese according to BMI, even though they have 
+        low body fat levels.
+      </li>
+      <li>
+        Individuals with low muscle mass but high body fat may fall 
+        within the “normal” BMI range despite having poor body composition.
+      </li>
+    </ul>
+
+    <p class="mt-3">
+      <strong>Body fat percentage</strong> offers a clearer picture of 
+      actual body composition, making it a more accurate metric for 
+      fitness tracking, performance evaluation, and long-term health assessment.
+    </p><hr>
+  `
+},
+{
+  type: "html",
+  title: "Why Body Fat Matters More Than Weight",
+  body: `
+    <p>
+      Body fat is far more than just an aesthetic measurement. 
+      It has direct and measurable effects on overall health, 
+      metabolic function, and physical performance.
+    </p>
+
+    <ul class="mt-3">
+      <li>
+        <strong>High body fat levels</strong> increase the risk of 
+        diabetes, heart disease, high blood pressure, and other 
+        metabolic disorders.
+      </li>
+      <li>
+        <strong>Excessively low body fat</strong> can disrupt hormonal 
+        balance, weaken immune function, and negatively impact energy levels.
+      </li>
+      <li>
+        Maintaining an <strong>optimal body fat percentage</strong> 
+        supports better athletic performance, improved metabolic efficiency, 
+        and long-term health.
+      </li>
+    </ul>
+
+    <p class="mt-3">
+      Tracking <strong>body fat percentage</strong> instead of relying solely 
+      on scale weight provides a more accurate assessment of body composition 
+      and overall health status.
+    </p><hr>
+  `
+},
+
+    {
+  type: "html",
+  title: "How Accurate Is This Body Fat Calculator?",
+  body: `
+    <p>
+      One of the most frequently asked questions is: 
+      <strong>How accurate is a Body Fat Calculator?</strong>
+    </p>
+
+    <p>
+      The <strong>U.S. Navy method</strong> used in this calculator has an 
+      estimated margin of error of approximately <strong>3–4%</strong> 
+      under typical conditions.
+    </p>
+
+    <ul class="mt-3">
+      <li>
+        It is generally <strong>more accurate than BMI</strong> because it 
+        accounts for body fat distribution rather than just height and weight.
+      </li>
+      <li>
+        It is <strong>less precise than clinical methods</strong> such as 
+        DEXA scans or hydrostatic weighing.
+      </li>
+      <li>
+        Accuracy depends heavily on <strong>proper measurement technique</strong>.
+        Small errors in waist, neck, or hip measurements can affect results.
+      </li>
+    </ul>
+
+    <p class="mt-3">
+      For home use, this calculator provides a reliable and practical 
+      estimate of body fat percentage. While it is not a medical diagnosis, 
+      it is highly effective for tracking fitness progress over time.
+    </p>
+  `
+},
+
+  ]
+},
 
 };

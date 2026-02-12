@@ -480,3 +480,9 @@ section.py-4.text-center a.btn-primary {
   border-radius: 6px;
   color: #212529;
 }
+
+.breadcrumb {
+  --bs-breadcrumb-divider: '>';
+  font-weight: 500;
+}
+

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { mathCalculatorsMap } from "../data/mathCalculators.config";
+import Breadcrumbs from "../components/Breadcrumbs";
 
 const mathCategories = [
   {
@@ -24,6 +25,7 @@ const mathCategories = [
       // "Simplifying Expressions Calculator",
       // "Inequality Calculator",
       // "System of Equations Calculator",
+
       // "FOIL Calculator",
       // "Algebraic Fraction Calculator"
     ]
@@ -152,6 +154,14 @@ const mathCategories = [
 export default function MathCalculatorsHome() {
   return (
     <div className="container py-5">
+      <Breadcrumbs
+  items={[
+    { label: "All Calculators", path: "/calculators" },
+    { label: "Math" }
+  ]}
+/>
+
+
       <h1 className="mb-3">Math & General Calculators</h1>
       <h6 className="mb-4">
         Explore a complete collection of free online math calculators covering

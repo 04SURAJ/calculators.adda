@@ -76,7 +76,7 @@ function Navbar() {
                 }
                 to="/math-calculators"
               >
-                Math Calculators
+                Math 
               </NavLink>
             </li>
             <li className="nav-item">
@@ -84,9 +84,19 @@ function Navbar() {
                 className={({ isActive }) =>
                   `nav-link ${isActive ? "active-link" : ""}`
                 }
-                to="/calculators"
+                to="/fitness-health"
               >
-                All Calculators
+                Fitness & Health 
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                className={({ isActive }) =>
+                  `nav-link ${isActive ? "active-link" : ""}`
+                }
+                to="/utility"
+              >
+               Utility
               </NavLink>
             </li>
           </ul>

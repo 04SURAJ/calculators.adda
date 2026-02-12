@@ -303,5 +303,30 @@ description:
 
 },
 
+
+"bmi-calculator": {
+  title: "BMI Calculator",
+  
+  description:
+    "Calculate your Body Mass Index (BMI) using height and weight to check whether you are underweight, normal, overweight, or obese.",
+},
+"calorie-calculator": {
+  title: "Calorie Calculator",
+  description:
+    "Use this calorie calculator to estimate your daily calorie requirements using BMR and activity level. Ideal for weight loss, weight gain, and healthy maintenance.",
+},
+
+"bmr-calculator": {
+  title: "BMR Calculator",
+  description:
+    "Use this BMR calculator to estimate your Basal Metabolic Rate using the Mifflin-St Jeor equation. Calculate the number of calories your body burns at rest based on age, gender, height, and weight.",
+},
+
+"body-fat-calculator": {
+  title: "Body Fat Calculator",
+  description:
+    "Use this Body Fat Calculator to estimate your body fat percentage using the U.S. Navy method. Calculate body fat based on gender, height, neck, waist, and hip measurements to understand your body composition.",
+},
+
 };
 
