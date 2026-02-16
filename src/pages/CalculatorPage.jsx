@@ -79,7 +79,14 @@ const calculatorsMap = {
 "calorie-calculator": FitnessHealthCalculators.CalorieCalculator,
 "bmr-calculator": FitnessHealthCalculators.BMRCalculator,
 "body-fat-calculator": FitnessHealthCalculators.BodyFatCalculator,
-"due-date-calculator": FitnessHealthCalculators.DueDateCalculator
+"due-date-calculator": FitnessHealthCalculators.DueDateCalculator,
+"pregnancy-calculator": FitnessHealthCalculators.PregnancyCalculator,
+"pregnancy-conception-calculator": FitnessHealthCalculators.PregnancyConceptionCalculator,
+"pregnancy-weight-gain-calculator": FitnessHealthCalculators.PregnancyWeightGainCalculator,
+"ovulation-calculator": FitnessHealthCalculators.OvulationCalculator,
+"conception-calculator": FitnessHealthCalculators.ConceptionCalculator,
+"period-calculator": FitnessHealthCalculators.PeriodCalculator,
+
 };
 
 /* -------------------------------------------------- */

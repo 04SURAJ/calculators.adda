@@ -6700,5 +6700,1444 @@ These organs are metabolically expensive tissues. That’s why your body burns a
 
   ]
 },
+"pregnancy-calculator": {
+  sections: [
+    {
+      type: "html",
+      title: "",
+      body: `
+<p>A <strong>Pregnancy Calculator</strong> Is A Baby Tool An indispensable baby tool, a pregnancy calculator is today one thing that most expecting mom's simply couldn't get along without. So whether you’ve just learned that you’re pregnant (you can read more about this using the product links below!) or are looking for a way to chart your weekly growth, use our calculator to find an accurate estimate of how far along you are in your pregnancy journey. </p>
 
+<p> If you are looking for a <strong>pregnancy calculator with weeks</strong> or asking yourself “how many weeks am I?” This guide will help you understand how pregnancy dating works and precisely how accurate the measurements are.</p><hr>
+      `
+    },
+    {
+      type: "html",
+      title: "What Is a Pregnancy Calculator?",
+      body: `
+     <p>A Pregnancy Calculator online estimates the following details:
+<ul>
+<li>Your current pregnancy week</li>
+<li>Your estimated due date (EDD)</li>
+<li>Your trimester stage</li>
+<li>Your baby’s approximate development stage
+</li>
+</ul>Pregnancy is usually dated from the first day of your last period, not from conception. That means when you are 4 weeks pregnant, it’s been 2 weeks since conception.
+</p>
+<p>The majority of pregnancy due date calculators can provide a positive result based on: 
+<ul><li>First day of your last period</li>
+<li>Average cycle length</li>
+<li>Conception date (if known)</li>
+<li>IVF transfer date (if applicable)</li></ul>This means that the tool is useful for both natural conception or ART situations.
+</p><hr>
+
+      `
+    },
+     {
+      type: "html",
+      title: "How Pregnancy Is Calculated",
+      body: `
+<p>Typical pregnancies are around 40 weeks (or 280 days) from the first day of your last period to the birth. </p>
+
+<p>Here’s how it works:
+<ul>
+<li>Week 1–2: Your body readies for ovulation (you’re not actually pregnant yet).</li>
+<li>Week 2 or so: Ovulation and, potentially, fertilization takes place.</li>
+<li>Week 3–4: Implantation happens.</li>
+<li>Week 5+: Hormones surge and any symptoms may start showing.</li></ul>
+Physicians measure pregnancy in weeks rather than months because the development of the fetus can vary by a week between different females.
+</p>
+<p><strong>Why 40 Weeks?</strong></p>
+  <p>The 40-week model is derived for an ordinary medical reason, using a common medical technique:
+</p>     
+<div class="formula-box">
+First Day of LMP + 280 Days = Estimated Due Date
+</div>
+<p>But only 5% of babies are born on their due date. The majority of births happen between 37 and 42 weeks.</p><hr>
+      `
+    },
+   {
+      type: "html",
+      title: "How to Determine Pregnancy by LMP",
+      body: `
+<p>The primary way to estimate step of pregnancy is the first day of your last menstrual period (LMP).</p>
+
+<p><strong>Step-by-Step Process: </strong>
+<style>
+  ol.bold-numbers li::marker {
+    font-weight: 700;
+  }
+</style>
+
+<ol class="bold-numbers" start="1">
+  <li>The date of the first day of your last period.</li>
+  <li>Add 280 days (40 weeks).</li>
+  <li>Figure out what week number this is by today’s date.</li>
+</ol>
+
+</p>
+ <p>For example:
+ <ul><li>If your LMP was January 1</li><li>Your due date would be around October 7</li><li>If the date is March 1, today you are about 8 to 9 weeks pregnant</li></ul>
+ If you have a consistent 28-day cycle, this method can be pretty dependable. The calculator will adjust if your cycles are longer or shorter.
+ </p><hr>
+      `
+    },
+     {
+      type: "html",
+      title: "Pregnancy Trimester Breakdown",
+      body: `
+      <p>
+Pregnancy is separated into 3 trimesters, each utilizing its own special developing changes to the woman’s body and also her baby.
+</p>
+
+<h5>First Trimester (Week 1–12)</h5>
+<ul>
+  <li>Rapid organ development</li>
+  <li>Hormonal changes</li>
+  <li>Typical symptoms: Nausea, fatigue, breast tenderness</li>
+  <li>It is during this period that the risk of miscarriage is highest.</li>
+</ul>
+
+<h5>Second Trimester (Week 13–27)</h5>
+<ul>
+  <li>Baby growth accelerates</li>
+  <li>Energy levels often improve</li>
+  <li>Baby movements begin</li>
+  <li>Anatomy scan — usually around week 20</li>
+</ul>
+
+<h5>Third Trimester (Week 28–40)</h5>
+<ul>
+  <li>Significant fetal weight gain</li>
+  <li>Braxton Hicks contractions may occur</li>
+  <li>Preparation for labor and delivery</li>
+  <li>Baby moves into head-down position</li>
+</ul>
+
+<p>
+Receiving information on which trimester you are in will help you to know what symptoms and signs to expect in each stage.
+</p><hr>
+      `
+    },
+
+    {
+      type: "html",
+      title: "How precise is a pregnancy calculator?",
+      body: `
+     <p>
+A pregnancy calculator serves only an estimate, not a belief.
+</p>
+
+<p><strong>Accuracy depends on:</strong></p>
+<ul>
+  <li>Regular menstrual cycles</li>
+  <li>Correct recall of LMP</li>
+  <li>Consistent ovulation timing</li>
+</ul>
+
+<p><strong>When Accuracy May Vary</strong></p>
+<ul>
+  <li>Irregular periods</li>
+  <li>Late ovulation</li>
+  <li>PCOS or hormonal imbalance</li>
+  <li>Breastfeeding at conception</li>
+  <li>Recent birth control use</li>
+</ul>
+
+<p>
+Ultrasound dating (particularly during first trimester) is more accurate than LMP-based dating.
+</p>
+
+<p>
+If the date you arrive at using your ultrasound estimate varies so much from your LMP that it would significantly change your due date, your provider might revise the due date she is working with.
+</p><hr>
+      `
+    },
+
+    {
+      type: "html",
+      title: "Why Is It Important To Know Your Week Of Pregnancy",
+      body: `
+      <p>Knowing Your Pregnancy Stage is Helpful For:
+<ul>
+<li>Scheduling prenatal appointments</li>
+<li>Planning ultrasounds</li>
+<li>Monitoring fetal development</li>
+<li>Tracking weight gain</li>
+<li>Identifying warning signs</li>
+<li>Planning maternity leave</li></ul>
+</p>
+<p>It also addresses one of the most common questions:</p>
+<div class="formula-box">
+“How far along am I?”
+</div>
+<p>When you have a dependable pregnancy week calculator though, you are always in the driver's seat.</p>
+<table border="1" cellpadding="8" cellspacing="0">
+  <caption><strong>Pregnancy Week, Trimester & Key Milestones</strong></caption>
+  <thead>
+    <tr>
+      <th>Week</th>
+      <th>Trimester</th>
+      <th>Fetal Development / Milestones</th>
+      <th>Maternal Changes / Symptoms</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1–2</td>
+      <td>First</td>
+      <td>Ovulation preparation (not technically pregnant yet)</td>
+      <td>Mild premenstrual symptoms possible</td>
+    </tr>
+    <tr>
+      <td>3–4</td>
+      <td>First</td>
+      <td>Fertilization & implantation</td>
+      <td>Early signs: fatigue, breast tenderness</td>
+    </tr>
+    <tr>
+      <td>5–6</td>
+      <td>First</td>
+      <td>Heartbeat detectable; basic organs begin forming</td>
+      <td>Nausea, mood swings, frequent urination</td>
+    </tr>
+    <tr>
+      <td>7–8</td>
+      <td>First</td>
+      <td>Facial features form; limbs start to develop</td>
+      <td>Morning sickness peaks</td>
+    </tr>
+    <tr>
+      <td>9–12</td>
+      <td>First</td>
+      <td>Organs continue forming; fetus ~2–3 inches</td>
+      <td>Energy may improve; miscarriage risk highest</td>
+    </tr>
+    <tr>
+      <td>13–16</td>
+      <td>Second</td>
+      <td>Rapid growth; bones harden; baby may move slightly</td>
+      <td>Morning sickness usually subsides; belly starts showing</td>
+    </tr>
+    <tr>
+      <td>17–20</td>
+      <td>Second</td>
+      <td>Baby can hear sounds; anatomy scan around week 20</td>
+      <td>Feeling baby movements (quickening)</td>
+    </tr>
+    <tr>
+      <td>21–24</td>
+      <td>Second</td>
+      <td>Vernix and lanugo develop; lungs form</td>
+      <td>Increased appetite, weight gain noticeable</td>
+    </tr>
+    <tr>
+      <td>25–27</td>
+      <td>Second</td>
+      <td>Brain and nervous system develop rapidly</td>
+      <td>Breathing may become heavier; leg cramps</td>
+    </tr>
+    <tr>
+      <td>28–32</td>
+      <td>Third</td>
+      <td>Baby gains significant weight; eyes open</td>
+      <td>Braxton Hicks contractions may occur; swelling</td>
+    </tr>
+    <tr>
+      <td>33–36</td>
+      <td>Third</td>
+      <td>Lungs mature; baby assumes head-down position</td>
+      <td>Frequent urination; back pain; nesting instinct</td>
+    </tr>
+    <tr>
+      <td>37–40</td>
+      <td>Third</td>
+      <td>Considered full-term; ready for delivery</td>
+      <td>Contractions may intensify; fatigue; excitement/anxiety</td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+      `
+    },
+    {
+      type: "html",
+      title: "Signs You Should See a Doctor",
+      body: `
+<p>Although pregnancy calculators can be very useful, they are no substitute for medical attention.</p>
+<p>You should seek medical care if you have:
+<ul>
+<li>Severe abdominal pain</li>
+<li>Heavy bleeding</li>
+<li>Persistent vomiting</li>
+<li>High fever</li>
+<li>Sudden swelling or severe headaches</li>
+<li>Decreased baby movement (later pregnancy)</li></ul>
+Regular prenatal care is important in tracking the health of both mother and baby.
+</p><hr>
+
+      `
+    },
+    {
+      type: "html",
+      title: "Who Might Use a Pregnancy Calculator?",
+      body: `
+<p>This tool is useful for:
+<ul>
+<li>Women who recently tested positive</li>
+<li>Those planning prenatal visits</li>
+<li>Women with IVF pregnancies</li>
+<li>Anyone unsure of their pregnancy stage</li>
+<li>Expecting parents tracking weekly growth</li>
+</ul>It is particularly invaluable in early pregnancy, when symptoms can be confounding and timelines uncertain.
+</p>
+
+
+      `
+    },
+  ]
+},
+"pregnancy-weight-gain-calculator": {
+  sections: [
+    {
+      type: "html",
+      title: "",
+      body: `
+ <p>Healthy weight during pregnancy is important for maternal and fetal health. A <strong>Pregnancy Weight Gain Calculator</strong> tool allows mothers-to-be to track weight gain, learn about the recommended range and make it part of a healthy journey during this time. This calculator offers customized recommendations for weight gain during pregnancy based on your pre-pregnancy BMI and weekly weight gain goals for the remainder of your pregnancy to support a healthy growth.</p>
+<hr>
+      `
+    },
+    {
+      type: "html",
+      title: "Why Weight Gain Is Important During Pregnancy ",
+      body: `
+     <p>Weight gain during pregnancy is not just about adding pounds — it’s a reflection of your baby’s growth and development, the placenta, amniotic fluid and maternal tissues. Appropriate weight gain is necessary for fetal development, reduces pregnancy/labor complications and limits maternal/child morbidity.</p>
+<p>Obesity leads to:
+	<ul><li>Gestational diabetes</li><li>High blood pressure (preeclampsia)</li><li>Complications during delivery, including C-section</li></ul>
+</p>
+<p>Conversely, a failure to gain enough weight can put a mother at risk for:
+	<ul><li>Low birth weight</li><li>Preterm birth</li><li>Shortage of nutrients in both mother and fetus</li></ul>
+  A <strong>pregnancy weight gain chart</strong> or <strong>a weight gain calculator for pregnancy by week</strong> provides mothers with the opportunity to compare their current weeks of pregnancy and take corrective measures, if required.
+</p><hr>
+      `
+    },
+     {
+      type: "html",
+      title: "Recommended Weight Gain by BMI",
+      body: `
+<p>Your BMI before pregnancy is used to calculate your ideal weight gain during pregnancy. It is calculated as your weight in kilograms divided by height in meters squared (kg/m²). The amount of total weight gain during pregnancy will depend on which category of BMI you fall under: </p>
+<table class="table table-bordered table-striped" >
+  <caption><strong>Recommended Weight Gain by Pre-Pregnancy BMI</strong></caption>
+  <thead>
+    <tr>
+      <th>BMI Category</th>
+      <th>BMI Range (kg/m²)</th>
+      <th>Recommended Weight Gain (Singleton)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Underweight</td>
+      <td>&lt;18.5</td>
+      <td>28–40 lbs (12.5–18 kg)</td>
+    </tr>
+    <tr>
+      <td>Normal</td>
+      <td>18.5–24.9</td>
+      <td>25–35 lbs (11.5–16 kg)</td>
+    </tr>
+    <tr>
+      <td>Overweight</td>
+      <td>25–29.9</td>
+      <td>15–25 lbs (7–11.5 kg)</td>
+    </tr>
+    <tr>
+      <td>Obese</td>
+      <td>&ge;30</td>
+      <td>11–20 lbs (5–9 kg)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>These limits come from the recommendations of mainstream medical authorities, such as the American College of Obstetricians and Gynecologists (ACOG). There is a pregnancy BMI calculator that can assist you in quickly finding out what type of category you are and what your weight gain goals need to be. </p>
+       <hr>
+ `
+    },
+ {
+      type: "html",
+      title: "Weight Gain by Trimester",
+      body: `
+      <p>
+      Weight gain isn’t consistent, it fluctuates by trimester. Knowing how much weight to gain during each trimester is important for healthy fetal growth.
+        </p>
+<p><strong>First Trimester (Weeks 1–12) </strong>
+<ul>
+<li>Most women put on 1–5 pounds (0.5–2 kg).</li>
+<li>Fetal Organs develop at a rapid pace but, the mother's weight do not increase to high extent.</li>
+<li>We prioritize the quality of nutrition not quantity.</li>
+</ul>
+</p>
+
+<p><strong>Second Trimester (Weeks 13–27) </strong>
+<ul>
+<li>Women of normal BMI gain around 1 pound (0.45kg) per week.</li>
+<li>Fetus is growing rapidly—so what’s a little more blood?</li>
+<li>It is important to have a balanced diet that provides enough protein, iron and calcium.</li>
+</ul>
+</p>
+
+<p><strong>Third Trimester (Weeks 28–40) </strong>
+<ul>
+<li>Steady weight gain of about 1 pound per week.</li>
+<li>It is in these weeks that the fetus puts on the most weight.</li>
+<li>Staying at a healthy weight also can reduce risks such as gestational diabetes and high blood pressure.</li>
+</ul>
+</p>
+<p>A pregnancy weight gain by week chart lets pregnant women track their progress and make sure they’re within the recommended range for every week of their journey.</p><hr>
+      `
+    },
+    {
+      type: "html",
+      title: "Weight Gain for Twins",
+      body: `
+      <p>
+      Pregnancy weight gain targets differ for twin pregnancies. Gaining adequate weight is vital to support both babies and maternal health. According to guidelines:
+        </p>
+<table class="table table-bordered table-striped">
+  <caption><strong>Recommended Weight Gain for Twins by Pre-Pregnancy BMI</strong></caption>
+  <thead>
+    <tr>
+      <th>Pre-Pregnancy BMI</th>
+      <th>Recommended Gain for Twins</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Underweight</td>
+      <td>50–62 lbs (23–28 kg)</td>
+    </tr>
+    <tr>
+      <td>Normal</td>
+      <td>37–54 lbs (17–25 kg)</td>
+    </tr>
+    <tr>
+      <td>Overweight</td>
+      <td>31–50 lbs (14–23 kg)</td>
+    </tr>
+    <tr>
+      <td>Obese</td>
+      <td>25–42 lbs (11–19 kg)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>A twins pregnancy weight gain calculator can provide weekly targets to ensure both babies receive enough nutrients and growth remains on track.</p>
+<hr>
+      `
+    },
+
+    {
+      type: "html",
+      title: "Risks of Too Much or Too Little Weight Gain",
+      body: `
+<p><strong>Excessive Weight Gain</strong></br>Too much weight gain during pregnancy increases the risk of:
+<ul>
+<li>Gestational diabetes</li>
+<li>Preeclampsia and hypertension</li>
+<li>C-section delivery</li>
+<li>Postpartum weight retention</li>
+<li>Childhood obesity in the baby</li>
+</ul>
+</p>
+
+<p><strong>Insufficient Weight Gain</strong></br>Too little weight gain may cause:
+<ul>
+<li>Low birth weight</li>
+<li>Preterm delivery</li>
+<li>Small-for-gestational-age (SGA) babies</li>
+<li>Fiction</li>
+<li>Developmental delays in the fetus</li>
+</ul>
+</p>
+<p>Using a <strong>pregnancy weight gain calculator</strong> helps you monitor your progress and adjust your nutrition and lifestyle to avoid these risks.</p><hr>
+
+
+      `
+    },
+
+    {
+      type: "html",
+      title: "When to Talk to Your Doctor",
+      body: `
+<p>Even with a calculator, expert help is essential. Get in touch with your healthcare provider if:
+<ul>
+<li>Rapid or sudden weight gain</li>
+<li>Weight loss during pregnancy</li>
+<li>If you have swelling that doesn’t go away, headache or hypertension</li>
+<li>Symptoms of gestational diabetes (increased thirst, frequent urination)</li>
+</ul>Routine prenatal check-ups are important to track maternal weight gain, fetal growth, and maternal/pregnancy health overall. A healthy weight during pregnancy programme includes a weight gain for pregnancy chart, proper diet, regular workouts and with medical attendance.
+</p><hr>
+      `
+    },
+    
+    {
+      type: "html",
+      title: "Conclusion",
+      body: `
+      <p>
+Weight measurement in pregnancy is an essential part of maternal and fetal health care. The <strong>Pregnancy Weight Gain Calculator</strong> helps pregnant mothers:    
+        </p>
+<ul>
+<li>Keep a record of weekly weight gain</li>
+<li>Understand trimester-specific targets</li>
+<li>Adapt to singleton and twin pregnancies for nutrition</li>
+<li>Avoid health risks for you and your baby</li></ul>
+<p>Whether you're utilizing a pregnancy BMI calculator, a chart that shows weight gain during pregnancy by week or a twins pregnancy weight gain tool, reaching the right number on the scale is only one factor in maintaining safe and healthy capacity for your brand new baby.</p>
+<p>Gaining control of your pregnancy weight is a way to get better results, lower risks and help you feel comfortable and confident all along your journey.</p>
+      `
+    },
+  ]
+},
+"pregnancy-conception-calculator": {
+  sections: [
+    {
+      type: "html",
+      title: "",
+      body: `
+      <p>
+      It’s totally normal to have all sorts of questions about when you conceived and what it means in terms of the baby-to-be. <strong>Pregnancy Conception Calculator</strong> This calculator can help reverse a due date to estimate the possible conception date. This app can be helpful for both new parents and those who are interested in knowing the pregnancy timeline, following fetal development, or just curious about the timing of conception.
+        </p>
+<hr>
+
+      `
+    },
+    {
+      type: "html",
+      title: "How Conception Date Is Estimated",
+      body: `
+<p>A conception date calculator operates on the basis of medical formulas that calculate the possible date when fertilization took place. The generic computations rely on the following data: </p>
+<style>
+  ol.bold-numbers li::marker {
+    font-weight: 700;
+  }
+</style>
+
+<ol class="bold-numbers" start="1">
+  <li><strong>Estimated Due Date (EDD) –</strong> Your anticipated arrival date, which is calculated to be 40 weeks after the first day of your last menstrual period.</li>
+  <li><strong>Average Gestation Length –</strong> Normal human pregnancies last around 280 days or 40 weeks.</li>
+  <li><strong>Cycle Length –</strong> If your cycle length is different than 28 days, it can slightly affect the estimated day of conception.</li>
+</ol>
+<p>The calculator factors in that kind of variability and gives a conception window—it’s only three days long—and then assumes there’s another few days for the sperm to travel, etc.</p>
+
+      `
+    },
+     {
+      type: "html",
+      title: "Conception vs Implantation",
+      body: `
+        <p>As you see the difference between fertilization and implantation is what’s key here. </p>
+<ul>
+<li><strong>Conception</strong> occurs when a sperm fertilizes an egg in the fallopian tube. This marks the biological start of pregnancy.</li>
+<li><strong>Implantation</strong> happens 6–12 days after fertilization, when the fertilized egg attaches to the uterine lining and begins secreting pregnancy hormones.</li>
+</ul>
+<p>Most pregnancy tests work by detecting the hormone hCG that is released during implantation, which is typically around ten days after you ovulate (although it can be up to 20 or more days later). A <strong>calculate conception date from due date</strong> application provides a proper information where fertilization actually occurs and not only time of implantation or testa detected pregnancy. </p>
+<hr>
+      `
+    },
+ 
+
+    {
+      type: "html",
+      title: "How Doctors Estimate Conception",
+      body: `
+<p>Doctors frequently use a few different methods to measure conception:</p>
+<style>
+  ol.bold-numbers li::marker {
+    font-weight: 700;
+  }
+</style>
+
+<ol class="bold-numbers" start="1">
+  <li><strong>Last Menstrual Period (LMP) Method – </strong>This is the most popular. Doctors determine the EDD by taking the first day of the last menstrual period and adding 280 days, and then estimating the likely conception date.</li>
+  <li><strong>Ultrasound Dating – </strong>An early ultrasound can calculate the crown-rump length of the fetus which then can be used to estimate gestational age and thus, conception.</li>
+  <li><strong>IVF or Fertility Treatments – </strong>In artificial cases of reproduction, the egg collection date or embryo transfer date is known and that gives an accurate conception date.</li>
+</ol>
+<p>When taken together, these methods offer an educated guess for the date of ovulation that’s fairly accurate, although it's not possible to pinpoint exact accuracy on a day-to-day basis because natural factors play in role in when a woman ovulates.</p>
+<hr>
+      `
+    },
+    
+    {
+      type: "html",
+      title: "Conception Based on Due Date",
+      body: `
+      <p>A <strong>Pregnancy Conception Calculator</strong> uses the latter to count backward from your due date and approximate when you conceived. Here’s a typical example:</p>
+<style>
+  ol.bold-numbers li::marker {
+    font-weight: 700;
+  }
+</style>
+
+<ol class="bold-numbers" start="1">
+  <li><strong>Estimated Due Date (EDD) – </strong>Suppose your EDD is December 15.</li>
+  <li><strong>Subtract 280 days (40 weeks) – </strong>This gives you the approximate first day of your last menstrual period (March 10).</li>
+  <li><strong>Add ~14 days for ovulation – </strong>Assuming a 28-day cycle, conception likely occurred around March 24.</li>
+</ol>
+<p>This calculation depends on average cycles and ovulation patterns. If your cycle is not 28 days, the calculator will adjust the estimated date of conception according to the length of your cycle.</p>
+<div class="table-responsive my-4">
+<table class="table table-bordered align-middle">
+  <caption><strong>Estimated Conception Date Based on Due Date</strong></caption>
+  <thead>
+    <tr>
+      <th>Estimated Due Date (EDD)</th>
+      <th>Approx. First Day of Last Menstrual Period (LMP)</th>
+      <th>Estimated Conception Date Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>January 15</td>
+      <td>April 10</td>
+      <td>April 24 – April 28</td>
+    </tr>
+    <tr>
+      <td>February 20</td>
+      <td>May 15</td>
+      <td>May 29 – June 2</td>
+    </tr>
+    <tr>
+      <td>March 25</td>
+      <td>June 18</td>
+      <td>July 2 – July 6</td>
+    </tr>
+    <tr>
+      <td>April 30</td>
+      <td>July 24</td>
+      <td>August 7 – August 11</td>
+    </tr>
+    <tr>
+      <td>June 5</td>
+      <td>September 29</td>
+      <td>October 13 – October 17</td>
+    </tr>
+    <tr>
+      <td>July 10</td>
+      <td>November 5</td>
+      <td>November 19 – November 23</td>
+    </tr>
+    <tr>
+      <td>August 15</td>
+      <td>December 10</td>
+      <td>December 24 – December 28</td>
+    </tr>
+    <tr>
+      <td>September 20</td>
+      <td>January 15</td>
+      <td>January 29 – February 2</td>
+    </tr>
+    <tr>
+      <td>October 25</td>
+      <td>February 18</td>
+      <td>March 4 – March 8</td>
+    </tr>
+    <tr>
+      <td>December 1</td>
+      <td>March 26</td>
+      <td>April 9 – April 13</td>
+    </tr>
+  </tbody>
+</table>
+</div><hr>
+      `
+    },
+    
+    {
+      type: "html",
+      title: "Accuracy of Conception Calculations",
+      body: `
+      <p>Although an ovulation calculator provides you with the general timing, many other things come into play when it comes to how does one get pregnant: 14 Things To Consider -When Did I Conceive Here are a few features that can affect this calculation here.</p>
+<ul>
+<li><strong>Irregular Menstrual Cycles – </strong> Cycles not exactly 28 days could mean that the conception may be earlier or later than expected.</li>
+<li><strong>Late Ovulation – </strong>Some women later in their cycle and the window of opportunity is pushed back.</li>
+<li><strong>Cycle Variations – </strong>Stress, illness and anything that effects hormones can affect ovulation timing.</li>
+<li><strong>Assisted Reproductive Technologies – </strong>IVF or fertility treatments provide more accurate conception dates, but natural conception remains variable.</li>
+</ul>
+<p>In most calculators, a 3 to 5 day range is given based on these uncertainties. An early ultrasound is recommended for the most accurate dating.</p><hr>
+      `
+    },
+    
+    {
+      type: "html",
+      title: "Why Your Conception Date Matters",
+      body: `
+      <p>Knowing your conception date is more than mere curiosity — it has a number of practical applications:</p>
+<ul>
+<li><strong>Follow Fetal Development – </strong>Keeping track of the potential conception date will give you an estimate on how old your baby is throughout pregnancy and making it easier to follow fetal development.</li>
+<li><strong>Schedule Appointments – </strong> Many tests, like the nuchal translucency scan or anatomy scan, are scheduled based on gestational age calculated from conception.</li>
+<li><strong>Answer Personal Questions – </strong>Couples may be interested in timing of conception due to family planning or record-keeping reasons.</li>
+<li><strong>Health and Lifestyle Changes – </strong>Knowing about early pregnancy time helps mothers take medication precautions, diet changes and lifestyle adjustments.</li>
+</ul><hr>
+
+      `
+    },
+    {
+      type: "html",
+      title: "Conclusion",
+      body: `
+      <p>A <strong>Pregnancy Conception Calculator</strong> is a very useful tool for couples who are trying to conceive as they will be able to determine when the woman is most fertile and could conceive easily. Use this calculator as a gestation or pregnancy calendar, designed to clearly tell you your conception window and all information related, so that you can better understand the timeline of your pregnancies.</p>
+      <p>For monitoring fetal development, for preparing prenatal care or just to satisfy your curiosity throughout this exciting time, a conception date calculator can be useful.</p>
+
+
+      `
+    },
+  ]
+},
+"due-date-calculator": {
+  sections: [
+    {
+      type: "html",
+      title: "",
+      body: `
+      <p>Pregnancy is an amazing experience, a beautiful journey that leads to many questions and one of those most common one being: <strong>“When will my baby come? Due Date Calculator</strong> Calculate when your baby will be due with our due date calculator below. Get started and find out when you’re due! How is my pregnancy due date calculated? New dad or experienced, learning your due date tells you what to expect of your pregnancy and fetal development.</p>
+
+<hr>
+      `
+    },
+    {
+      type: "html",
+      title: "How Due Dates Are Calculated",
+      body: `
+     <p>
+      Estimating researchers calculate a woman's pregnancy due date by having added 280 days (40 weeks) to the first day of your last menstrual period. The average length of a pregnancy is 40 weeks, or 280 days, from the first day of your last menstrual period (LMP).
+        </p>
+<p>A calculate my due date tool considers:</p>
+<style>
+  ol.bold-numbers li::marker {
+    font-weight: 700;
+  }
+</style>
+
+<ol class="bold-numbers" start="2">
+  <li><strong>Last Menstrual Period (LMP) – </strong>The most common starting point for calculation.</li>
+  <li><strong>Average Cycle Length – </strong>Typically 28 days, though variations may adjust the due date slightly.</li>
+  <li><strong>Ultrasound Measurements – </strong>Especially useful in the first trimester for more accurate dating.</li>
+</ol>
+<p>Using these factors, the calculator provides an estimated due date, helping parents plan prenatal visits, monitor fetal growth, and anticipate important pregnancy milestones.</p><hr>
+      `
+    },
+     {
+      type: "html",
+      title: "Naegele’s Rule Explained",
+      body: `
+      
+        <p>The most widely used method for estimating due dates is <strong>Naegele’s Rule</strong>, named after German obstetrician Franz Naegele. This formula calculates the due date based on the <strong>first day of your last menstrual period (LMP)</strong>: </p>
+        <style>
+  ol.bold-numbers li::marker {
+    font-weight: 700;
+  }
+</style>
+
+<ol class="bold-numbers" start="2">
+  <li> Start with the first day of your last period.</li>
+  <li> Add 1 year.</li>
+  <li> Subtract 3 months.</li>
+  <li> Add 7 days.</li>
+</ol>
+
+<p>For example, if your LMP was <strong>March 1, 2026: </strong> </p>
+     <ul>
+     <li>Add 1 year → March 1, 2027</li><li>Subtract 3 months → December 1, 2026</li><li>Add 7 days → December 8, 2026</li></ul>   
+       
+<p>This method assumes a 28-day menstrual cycle and regular ovulation. While it provides a solid estimate, natural variations in cycle length or ovulation timing can slightly adjust the actual delivery date.</p><hr>
+      `
+    },
+  {
+      type: "html",
+      title: "Due Date by LMP vs Ultrasound",
+      body: ` <p>
+     Most calculators use an average 38 weeks from LMP. It is straightforward, uses information that is easily remembered and applies well to women with regular cycles. 
+        </p>
+<p>But early ultrasound dating offers better estimates, particularly if:</p>
+<ul><li>LMP is uncertain or forgotten</li><li>Menstrual cycles are irregular</li><li>Pregnancy follows medical treatments for birth control or fertility therapies</li></ul>
+<p>First trimester ultrasounds are an accurate measurement of the crown-rump length (CRL) of the fetus, which can be more reliable than LMP for the determination gestational age. Some doctors may change the due date based on this ultrasound measurement if LMP is not consistent with it.</p><hr>
+      `
+    },
+     {
+      type: "html",
+      title: "Can Due Date Change?",
+      body: `
+      <p>
+Even though a due date is useful as a guidance tool, keep in mind it's an estimate, not Destiny. It’s estimated that only 5% of babies are born on their due date; 50% arrive within a week, and the remaining 40% are spread out over several weeks. Between 37 and 42 weeks is considered normal for delivery.
+        </p>
+<p>Things that could determine the real birth date are:</p>
+<ul>
+<li><strong>First-time pregnancies – </strong>Tend to go slightly longer. </li>
+<li><strong>Maternal health status – </strong>Such as hypertension or diabetes. </li>
+<li><strong>Fetal factors – </strong> </li>Position, growth rate, or multiples (twins or triplets).</ul>
+<p>Pregnancy progression is closely tracked by medical professionals who can modify expectations in light of fetal development, maternal health and ultrasound results.</p><hr>
+      `
+    },
+     {
+      type: "html",
+      title: "What Happens at 40 Weeks?",
+      body: `
+      <p>
+      At 40 weeks, a pregnancy is considered full term. By this stage:
+        </p>
+<ul><li>Baby is usually 18 to 20 inches long and weighs approximately 6 to 9 pounds.</li><li>The majority of organ systems are developed.
+
+</li><li>Labour might start on its own, even though some babies are a week or two early or late.
+</li></ul>
+<p>Maternal and fetal well-being is checked more frequently in the last weeks of pregnancy. Using a due date calculator to calculate the due date is beneficial for parents as they get to plan labor, decide when to start or end maternity leave and keep on the lookout for any impending complications.</p><hr>
+      `
+    },
+  ]
+},
+"ovulation-calculator": {
+  sections: [
+    {
+      type: "html",
+      title: "What Is Ovulation?",
+      body: `
+  <p>Ovulation is the process where a mature ovum, or egg, is released from the ovary. It usually happens only once during the course of a menstrual cycle.</p>
+<p>In a standard 28-day cycle:
+<ul><li>Ovulation is generally around <strong>day 14</strong></li><li>The egg is viable for <strong>12–24 hours</strong></li><li>sperm can survive in the female reproductive tract for <strong>3-5 days</strong></li></ul>
+</p>
+<p>Pregnancy can thus occur if intercourse takes place during the 5 days before and including ovulation day.</p>
+<p>The window when pregnancy is possible is called the <strong>fertile window</strong>.</p>
+<p>The key to an effective <strong>ovulation calculator</strong> is accurate information as it relates to your ovulation cycle.</p>
+<hr>
+      `
+    },
+    {
+      type: "html",
+      title: "Signs of Ovulation ",
+      body: `
+     <p>
+While calculators estimate dates mathematically, your body also provides physical signs.
+Recognizing these signs increases prediction accuracy.
+</p>
+
+<p>Common Ovulation Symptoms:</p>
+
+<ul>
+  <li>
+    <strong>Cervical mucus changes:</strong>
+    Becomes clear, stretchy, and egg-white in consistency.
+  </li>
+
+  <li>
+    <strong>Mild lower abdominal pain (Mittelschmerz):</strong>
+    One-sided discomfort near the ovary.
+  </li>
+
+  <li>
+    <strong>Slight increase in basal body temperature (BBT):</strong>
+    Rises 0.3–0.5°C after ovulation.
+  </li>
+
+  <li>
+    <strong>Increased libido</strong>
+  </li>
+
+  <li>
+    <strong>Breast tenderness</strong>
+  </li>
+
+  <li>
+    <strong>Light spotting (rare)</strong>
+  </li>
+</ul>
+
+<p>
+Tracking these biological markers alongside an ovulation calculator improves precision.
+</p>
+
+
+<hr>
+      `
+    },
+     {
+      type: "html",
+      title: "How to Calculate Fertile Window",
+      body: `
+       <p>
+The fertile window calculator works using menstrual cycle data.
+</p>
+
+<h5>Step 1: Identify Cycle Length</h5>
+<p>
+Cycle length = Days from the first day of one period to the first day of the next.
+</p>
+
+<h5>Step 2: Estimate Ovulation Day</h5>
+<p>
+Ovulation usually occurs <strong>14 days before your next period</strong>, 
+not 14 days after your last period.
+</p>
+
+<p><strong>For example:</strong></p>
+
+<ul>
+  <li><strong>28-day cycle:</strong> Ovulation around Day 14</li>
+  <li><strong>30-day cycle:</strong> Ovulation around Day 16</li>
+  <li><strong>26-day cycle:</strong> Ovulation around Day 12</li>
+</ul>
+
+<h5>Step 3: Calculate Fertile Window</h5>
+<p>
+Fertile window = <strong>5 days before ovulation + ovulation day</strong>
+</p>
+
+<p>
+So if ovulation is Day 14:
+</p>
+
+<p>
+<strong>Fertile window = Day 9 to Day 14</strong>
+</p>
+
+<p>
+That is your <strong>best days to conceive</strong>.
+</p>
+
+<p>
+An accurate ovulation calculator automates this math instantly and reduces guesswork.
+</p>
+<hr>
+ `
+    },
+ {
+      type: "html",
+      title: "Best Days to Get Pregnant",
+      body: `
+      <p>
+The highest conception probability occurs:
+</p>
+
+<ul>
+  <li><strong>2 days before ovulation</strong></li>
+  <li><strong>1 day before ovulation</strong></li>
+  <li><strong>Ovulation day</strong></li>
+</ul>
+
+<p>
+Research shows that intercourse during these peak days maximizes pregnancy chances 
+because sperm are already present when the egg is released.
+</p>
+
+<h5>Conception Probability Breakdown (Approximate)</h3>
+
+<table class="table table-bordered align-middle">
+  <thead>
+    <tr>
+      <th>Timing Before Ovulation</th>
+      <th>Pregnancy Chance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>5 days before</td>
+      <td>~10%</td>
+    </tr>
+    <tr>
+      <td>3 days before</td>
+      <td>~15%</td>
+    </tr>
+    <tr>
+      <td>2 days before</td>
+      <td>~25–30%</td>
+    </tr>
+    <tr>
+      <td>1 day before</td>
+      <td>~30–35%</td>
+    </tr>
+    <tr>
+      <td>Ovulation day</td>
+      <td>~20–25%</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>
+After ovulation, fertility drops rapidly because the egg survives only about 24 hours.
+</p>
+
+<p>
+Using a <strong>fertile window calculator</strong> helps target these optimal days.
+</p>
+
+<hr>
+
+      `
+    },
+    {
+      type: "html",
+      title: "Ovulation Tracking Methods",
+      body: `
+      <p>
+An ovulation calculator gives an estimate, but combining it with biological tracking improves reliability.
+</p>
+
+<h5>1. Calendar Method</h5>
+<p><strong>Best for women with regular cycles.</strong></p>
+<ul>
+  <li>Uses cycle history</li>
+  <li>Quick and simple</li>
+  <li>Less accurate with irregular periods</li>
+</ul>
+
+<h5>2. Basal Body Temperature (BBT)</h5>
+<ul>
+  <li>Measure temperature daily before getting out of bed</li>
+  <li>Rise indicates ovulation has already occurred</li>
+  <li>Best for confirming, not predicting</li>
+</ul>
+
+<h5>3. Ovulation Predictor Kits (OPKs)</h5>
+<ul>
+  <li>Detect luteinizing hormone (LH) surge in urine</li>
+  <li>LH surge occurs 24–36 hours before ovulation</li>
+  <li>Highly accurate</li>
+</ul>
+
+<h5>4. Cervical Mucus Tracking</h5>
+<ul>
+  <li>Observe daily changes</li>
+  <li>Egg-white consistency indicates peak fertility</li>
+</ul>
+
+<h5>5. Fertility Apps + Calculator</h5>
+<p>
+Combining cycle tracking apps with an <strong>ovulation calculator</strong> provides trend-based predictions over time.
+</p><hr>
+
+      `
+    },
+    {
+      type: "html",
+      title: "Irregular Cycle Ovulation",
+      body: `
+      <p>
+If your cycle length varies each month, ovulation prediction becomes more complex.
+</p>
+
+<h5>Why Cycles Become Irregular:</h5>
+<ul>
+  <li>Polycystic Ovary Syndrome (PCOS)</li>
+  <li>Thyroid disorders</li>
+  <li>Stress</li>
+  <li>Weight changes</li>
+  <li>Postpartum hormonal shifts</li>
+  <li>Perimenopause</li>
+</ul>
+
+<h5>For Irregular Cycles:</h5>
+<ol>
+  <li>Track cycles for at least <strong>3–6 months</strong>.</li>
+  <li>Identify the shortest and longest cycles.</li>
+  <li>Subtract <strong>18 days</strong> from the shortest cycle → <strong>First fertile day</strong>.</li>
+  <li>Subtract <strong>11 days</strong> from the longest cycle → <strong>Last fertile day</strong>.</li>
+</ol>
+
+<p>Example:</p>
+<ul>
+  <li>Shortest cycle = 26 days → 26 – 18 = <strong>Day 8</strong></li>
+  <li>Longest cycle = 32 days → 32 – 11 = <strong>Day 21</strong></li>
+</ul>
+
+<p>
+<strong>Fertile window range = Day 8 to Day 21</strong>
+</p>
+
+<p>
+This wider window requires more careful timing.
+</p>
+
+<p>
+In such cases, combining an <strong>ovulation calculator</strong> with <strong>OPKs</strong> is strongly recommended.
+</p>
+ `
+    },
+  ]
+},
+"conception-calculator": {
+  sections: [
+    {
+      type: "html",
+      title: "Ovulation vs Conception",
+      body: `
+      <p>Understanding this distinction is essential. </p>
+<ul>
+<li><strong>Ovulation → Future fertility prediction </strong></br>Predicts when an egg will be released so you can time intercourse.
+</li>
+<li><strong>Conception → Past pregnancy estimate </strong></br>Estimates of days when fertilization most probably took place.
+</li>
+</ul>
+<p>Ovulation is the process that occurs when the egg is released.</p>
+<p>Conception occurs when one of the millions of sperm that are ejaculated during sex and swim their way through a woman’s reproductive system fertilizes that egg — within 12 to 24 hours of ovulation.</p>
+<p>That is because sperm can live as long as 5 days and intercourse that occurs before you ovulate might possibly result in a pregnancy. That is why a conception calculator gives you a range of days and not only an exact day.</p>
+<hr>
+      `
+    },
+    {
+      type: "html",
+      title: "Most Probable Conception Days ",
+      body: `
+     <p><strong>In a typical 28-day menstrual cycle:</strong></p>
+
+<ul>
+  <li>Ovulation occurs around <strong>Day 14</strong></li>
+</ul>
+
+<p><strong>Conception most likely happens:</strong></p>
+
+<ul>
+  <li>2 days before ovulation</li>
+  <li>1 day before ovulation</li>
+  <li>Ovulation day</li>
+</ul>
+
+<p>
+If your cycle length differs, ovulation typically occurs 
+<strong>14 days before your next period</strong>, not 14 days after your last one.
+</p>
+
+<p><strong>For example:</strong></p>
+
+<ul>
+  <li>30-day cycle → Ovulation around <strong>Day 16</strong></li>
+  <li>26-day cycle → Ovulation around <strong>Day 12</strong></li>
+</ul>
+
+<p>
+The most probable conception date falls within <strong>24 hours of ovulation</strong>.
+</p>
+
+<p>
+A pregnancy conception date estimate often works backward from:
+</p>
+
+<ul>
+  <li>Due date (EDD)</li>
+  <li>Last menstrual period (LMP)</li>
+  <li>Ultrasound dating</li>
+</ul>
+
+<p>
+Because a full-term pregnancy averages <strong>40 weeks (280 days) from LMP</strong>, 
+conception usually occurs about <strong>38 weeks before the due date</strong>.
+</p>
+
+
+<hr>
+      `
+    },
+     {
+      type: "html",
+      title: "Intercourse Window for Pregnancy",
+      body: `
+       <p>
+Pregnancy does not require intercourse on the exact ovulation day. 
+The fertile window spans:
+</p>
+
+<ul>
+  <li>5 days before ovulation</li>
+  <li>Ovulation day</li>
+</ul>
+
+<p>Why?</p>
+
+<ul>
+  <li><strong>Sperm lifespan:</strong> Up to 5 days</li>
+  <li><strong>Egg lifespan:</strong> About 24 hours</li>
+</ul>
+
+<p>
+Therefore, if intercourse occurred within that window, pregnancy is biologically possible.
+</p>
+
+<p>
+If you are asking, <strong>“When did I get pregnant?”</strong>, the conception calculator 
+will estimate a date range that aligns with:
+</p>
+
+<ul>
+  <li>Ovulation timing</li>
+  <li>Sperm survival window</li>
+  <li>Implantation timeline</li>
+</ul>
+
+<p>
+The highest probability typically falls within 
+<strong>1–2 days before ovulation</strong>.
+</p><hr>
+      `
+    },
+ {
+      type: "html",
+      title: "Early Pregnancy Timeline",
+      body: `
+      
+
+<p>
+After conception, the body begins a series of rapid biological events.
+</p>
+
+<ul>
+  <li>
+    <strong>Day 0: Fertilization</strong><br>
+    Sperm meets egg in the fallopian tube.
+  </li>
+
+  <li>
+    <strong>Day 3–5: Cell Division</strong><br>
+    The fertilized egg (zygote) divides while traveling to the uterus.
+  </li>
+
+  <li>
+    <strong>Day 6–10: Implantation</strong><br>
+    The embryo implants into the uterine lining. 
+    This is when pregnancy officially begins biologically.
+  </li>
+
+  <li>
+    <strong>Day 10–14 After Ovulation: hCG Production</strong><br>
+    The hormone human chorionic gonadotropin (hCG) begins rising.
+  </li>
+
+  <li>
+    <strong>Week 4 (Missed Period)</strong><br>
+    Most women notice the first sign — a missed period.
+  </li>
+</ul>
+
+<p>
+Understanding this timeline helps interpret conception estimates correctly. 
+Conception and implantation are not the same event.
+</p>
+  `
+    },
+    
+  ]
+},
+"period-calculator": {
+  sections: [
+    {
+      type: "html",
+      title: "How the Menstrual Cycle Works",
+      body: `
+     <p>
+The menstrual cycle is a hormone-regulated process that prepares the body for pregnancy each month. 
+The average cycle lasts <strong>28 days</strong>, but normal cycles range between 
+<strong>21 to 35 days</strong> in adults.
+</p>
+
+<h5>The cycle has four key phases:</h5>
+
+<ol>
+  <li>
+    <strong>Menstrual Phase (Days 1–5)</strong>
+    <ul>
+      <li>Shedding of the uterine lining</li>
+      <li>Bleeding begins</li>
+      <li>Hormone levels are low</li>
+    </ul>
+  </li>
+
+  <li>
+    <strong>Follicular Phase (Days 1–13)</strong>
+    <ul>
+      <li>Overlaps with menstruation initially</li>
+      <li>Follicle-stimulating hormone (FSH) stimulates egg development</li>
+      <li>Estrogen levels rise</li>
+    </ul>
+  </li>
+
+  <li>
+    <strong>Ovulation (Around Day 14 in a 28-day cycle)</strong>
+    <ul>
+      <li>Luteinizing hormone (LH) triggers egg release</li>
+      <li>Most fertile time of the cycle</li>
+    </ul>
+  </li>
+
+  <li>
+    <strong>Luteal Phase (Days 15–28)</strong>
+    <ul>
+      <li>Progesterone rises</li>
+      <li>Uterus prepares for implantation</li>
+      <li>If no pregnancy occurs, hormone levels drop → next period starts</li>
+    </ul>
+  </li>
+</ol>
+
+<p>
+A <strong>menstrual cycle calculator</strong> estimates your next period by analyzing 
+the length of these phases, particularly your average cycle length.
+</p>
+<hr>
+      `
+    },
+    {
+      type: "html",
+      title: "How to Predict Your Next Period ",
+      body: `
+     <p>
+A <strong>next period calculator</strong> uses this simple formula:
+</p>
+
+<p>
+<strong>Next Period Date = First Day of Last Period + Average Cycle Length</strong>
+</p>
+
+<h5>For example:</h5>
+
+<ul>
+  <li><strong>Last period started:</strong> March 1</li>
+  <li><strong>Cycle length:</strong> 28 days</li>
+  <li><strong>Predicted next period:</strong> March 29</li>
+</ul>
+
+<h5>For better accuracy:</h5>
+
+<ul>
+  <li>Track at least <strong>3–6 cycles</strong></li>
+  <li>Calculate your average cycle length</li>
+  <li>Note any unusual delays</li>
+</ul>
+
+<p>
+The more historical data you enter, the more reliable the 
+<strong>period calculator</strong> becomes.
+</p>
+<hr>
+      `
+    },
+     {
+      type: "html",
+      title: "Period Length vs Cycle Length – Important Difference",
+      body: `
+       <p>
+Many people confuse these two terms.
+</p>
+
+<p>Period Length</p>
+<ul>
+  <li>Number of days you bleed</li>
+  <li>Typically <strong>3–7 days</strong></li>
+</ul>
+
+<p>Cycle Length</p>
+<ul>
+  <li>Days from the first day of one period to the first day of the next</li>
+  <li>Usually <strong>21–35 days</strong></li>
+</ul>
+
+<p>Example:</p>
+<ul>
+  <li>Period lasts <strong>5 days</strong></li>
+  <li>
+    Next period begins <strong>28 days</strong> after Day 1<br>
+    → <strong>Cycle length = 28 days (not 5 days)</strong>
+  </li>
+</ul>
+
+<p>
+A <strong>menstrual cycle calculator</strong> always uses 
+<strong>cycle length</strong> — not period length — to predict future dates.
+</p>
+
+<p>
+Understanding this difference improves tracking accuracy significantly.
+</p>
+<hr>
+ `
+    },
+ 
+    {
+      type: "html",
+      title: "Irregular Period Tracking",
+      body: `
+      <p>
+An irregular period means your cycle length varies significantly month to month.
+</p>
+
+<h5>Common causes include:</h5>
+<ul>
+  <li>Stress</li>
+  <li>Polycystic Ovary Syndrome (PCOS)</li>
+  <li>Thyroid imbalance</li>
+  <li>Sudden weight change</li>
+  <li>Excessive exercise</li>
+  <li>Postpartum hormonal shifts</li>
+  <li>Perimenopause</li>
+</ul>
+
+<h5>For irregular cycles:</h5>
+<ol>
+  <li>Track cycle length for at least <strong>6 months</strong>.</li>
+  <li>Identify shortest and longest cycles.</li>
+  <li>Calculate average range.</li>
+</ol>
+
+<p>
+If cycles vary between <strong>26–34 days</strong>:
+</p>
+
+<ul>
+  <li>Prediction becomes a range, not a fixed date.</li>
+  <li>Your next period may arrive within that window.</li>
+</ul>
+
+<p>
+A <strong>menstrual cycle calculator</strong> can still provide estimates, 
+but variability reduces precision.
+</p>
+
+<p>
+If irregularity persists for several months, 
+<strong>medical consultation is recommended</strong>.
+</p>
+<hr>
+      `
+    },
+    
+    {
+      type: "html",
+      title: "When Your Period Is Late",
+      body: `
+     <p>
+A late period can cause anxiety, but a delay does not automatically mean pregnancy.
+</p>
+
+<h5>Common Reasons for a Late Period:</h5>
+<ul>
+  <li>Stress</li>
+  <li>Travel or sleep disruption</li>
+  <li>Illness</li>
+  <li>Hormonal imbalance</li>
+  <li>Recent emergency contraception</li>
+  <li>Thyroid disorders</li>
+  <li>PCOS</li>
+  <li>Early pregnancy</li>
+</ul>
+
+<h5>If your period is:</h5>
+<ul>
+  <li><strong>Less than 7 days late</strong> → Often normal variation</li>
+  <li><strong>More than 7 days late</strong> → Consider a pregnancy test</li>
+  <li><strong>Frequently delayed</strong> → Medical evaluation advised</li>
+</ul>
+
+<p>
+A <strong>next period calculator</strong> provides an estimate, not a guarantee. 
+Ovulation can shift due to stress or health changes, which directly affects your period date.
+</p>
+
+      `
+    },
+  ]
+},
 };

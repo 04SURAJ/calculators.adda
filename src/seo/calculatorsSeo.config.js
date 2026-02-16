@@ -327,6 +327,42 @@ description:
   description:
     "Use this Body Fat Calculator to estimate your body fat percentage using the U.S. Navy method. Calculate body fat based on gender, height, neck, waist, and hip measurements to understand your body composition.",
 },
+"due-date-calculator": {
+  title: "Due Date Calculator",
+  description:
+    "Use this Due Date Calculator to estimate your baby's expected delivery date based on the first day of your last period. Calculate pregnancy week, trimester, conception date, baby growth estimates, and track week-by-week milestones.",
+},
+"pregnancy-calculator": {
+  title: "Pregnancy Calculator",
+  description:
+    "Use this Pregnancy Calculator to estimate your baby's due date based on last period, conception date, ultrasound, or IVF transfer. Track your current pregnancy week, trimester, pregnancy progress, and view detailed week-by-week milestones.",
+},
+
+"pregnancy-conception-calculator": {
+  title: "Pregnancy Conception Calculator",
+  description:
+    "Use this Pregnancy Conception Calculator to estimate the most probable and possible conception dates based on due date, last period, or ultrasound. It also provides likely dates of sexual intercourse that may have led to pregnancy. Results are estimates for informational purposes only.",
+},
+"pregnancy-weight-gain-calculator": {
+  title: "Pregnancy Weight Gain Calculator",
+  description:
+    "Use this Pregnancy Weight Gain Calculator to determine healthy weight gain during pregnancy based on your current week, height, pre-pregnancy weight, and whether you are carrying twins. It calculates your BMI before pregnancy and shows the recommended weight range for your current week and at delivery.",
+},
+"ovulation-calculator": {
+  title: "Ovulation Calculator",
+  description:
+    "Use this Ovulation Calculator to estimate your ovulation date and fertile window based on the first day of your last period and average cycle length. It also predicts your next period and highlights your most fertile days to help you plan pregnancy or track your cycle.",
+},
+"conception-calculator": {
+  title: "Conception Calculator",
+  description:
+    "Use this Conception Calculator to estimate your most probable conception days based on the first day of your last period and average cycle length. It calculates your ovulation window, best intercourse days for pregnancy, next expected period, pregnancy test timing, and estimated due date if pregnant.",
+},
+"period-calculator": {
+  title: "Period Calculator",
+  description:
+    "Use this Period Calculator to predict your upcoming periods and most probable ovulation days for the next 6 cycles based on the first day of your last period, cycle length, and period duration. It helps you track your menstrual cycle and plan ahead with estimated fertile windows.",
+},
 
 };
 

@@ -28,18 +28,18 @@ const fitnessCategories = [
   //   ]
   // }
   
-  // {
-  //   title: "Pregnancy Calculators",
-  //   calculators: [
-  //     "Pregnancy Calculator",
-  //     "Pregnancy Weight Gain Calculator",
-  //     "Pregnancy Conception Calculator",
-  //     "Due Date Calculator",
-  //     "Ovulation Calculator",
-  //     "Conception Calculator",
-  //     "Period Calculator"   
-  //   ]
-  // },
+  {
+    title: "Pregnancy Calculators",
+    calculators: [
+      "Pregnancy Calculator",
+      "Pregnancy Weight Gain Calculator",
+      "Pregnancy Conception Calculator",
+      "Due Date Calculator",
+      "Ovulation Calculator",
+      "Conception Calculator",
+      "Period Calculator"   
+    ]
+  },
 ];
 
 export default function FitnessHealthHome() {
