@@ -4,7 +4,7 @@ import { otherCalculators } from "../data/otherCalculators.config";
 export default function OtherCalculatorsHome() {
   return (
     <div className="container py-5">
-      <h1 className="mb-4">Calculators</h1>
+      <h1 className="mb-4">All Calculators</h1>
       <div className="row g-3">
         {otherCalculators.map(calc => (
           <div key={calc.slug} className="col-6 col-md-4 col-lg-3">
