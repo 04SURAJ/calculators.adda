@@ -17,6 +17,8 @@ import { calculatorContent } from "../data/calculatorContent.config";
 // category maps
 import { mathCalculatorsMap } from "../data/mathCalculators.config";
 import { fitnessHealthCalculatorsMap } from "../data/fitnessHealthCalculators.config";
+import { calculatorFaq } from "../data/calculatorFaq.config";
+
 
 /* -------------------------------------------------- */
 /* ALL CALCULATORS MAP */
@@ -94,6 +96,7 @@ const calculatorsMap = {
 /* -------------------------------------------------- */
 export default function CalculatorPage() {
   const { slug } = useParams();
+const faqData = calculatorFaq[slug];
 
   const CalculatorComponent = calculatorsMap[slug];
   const seoData = calculatorsSeo[slug];
@@ -162,6 +165,8 @@ export default function CalculatorPage() {
       content={content}
       relatedCalculators={relatedCalculators}
       breadcrumbs={breadcrumbs}
+        faq={faqData}
+
     >
       <CalculatorComponent />
     </CalculatorLayout>
