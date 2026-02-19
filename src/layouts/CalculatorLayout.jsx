@@ -1,18 +1,26 @@
 import SeoMeta from "../seo/SeoMeta";
 import { FaHome, FaChevronRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 export default function CalculatorLayout({ title,
-  
   description,
   breadcrumbs,
   content,
   relatedCalculators,
   children,
  }) {
+  const location = useLocation();
+const canonicalUrl = `https://www.calculatorsadda.com${location.pathname}`;
+
   return (
     <div className="container py-4">
-      <SeoMeta title={title} description={description} />
+      <SeoMeta
+  title={title}
+  description={description}
+  canonical={canonicalUrl}
+/>
+
 
   {/* ✅ BREADCRUMB */}
       <nav className="mb-3 small text-muted">

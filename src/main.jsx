@@ -7,6 +7,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 import "./index.css";
+import { HelmetProvider } from "react-helmet-async";
 
 
 
@@ -16,8 +17,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     
 
   <React.StrictMode>
-    <App />
-   
+    <HelmetProvider>
+      <App />
+    </HelmetProvider>
   </React.StrictMode>
 
   
