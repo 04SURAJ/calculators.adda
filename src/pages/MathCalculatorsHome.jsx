@@ -157,7 +157,7 @@ export default function MathCalculatorsHome() {
       <Breadcrumbs
   items={[
     { label: "All Calculators", path: "/calculators" },
-    { label: "Math" }
+    { label: "Math", path: "/math-calculators" }
   ]}
 />
 

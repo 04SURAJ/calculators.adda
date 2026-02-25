@@ -113,8 +113,8 @@ export default function Utility() {
           <li className="breadcrumb-item">
             <Link to="/calculators">All Calculators</Link>
           </li>
-          <li className="breadcrumb-item active" aria-current="page">
-            Utility
+          <li className="breadcrumb-item">
+            <Link to="/utility">Utility</Link>
           </li>
         </ol>
       </nav>

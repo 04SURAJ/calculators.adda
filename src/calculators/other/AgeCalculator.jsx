@@ -1,4 +1,5 @@
 import { useState } from "react";
+import CustomDateInput from "./CustomDateInput";
 
 function AgeCalculator() {
   const todayISO = new Date().toISOString().split("T")[0];
@@ -79,43 +80,43 @@ function AgeCalculator() {
 
   return (
     <div className="container-fluid px-0">
-      {/* Date of Birth */}
-      <div className="mb-3">
-        <label htmlFor="dob" className="form-label fw-semibold">
-          Date of Birth
-        </label>
-        <input
-          id="dob"
-          type="date"
-          className="form-control form-control-lg"
-          value={dob}
-          max={todayISO}
-          onChange={(e) => setDob(e.target.value)}
-          style={{ cursor: "pointer" }}
-        />
-        <small className="text-muted">
-          Tap to open date picker
-        </small>
-      </div>
+     
+        {/* Date of Birth */}
+<div className="mb-3">
+  <label className="form-label fw-semibold">
+    Date of Birth
+  </label>
+
+  <CustomDateInput
+    value={dob}
+    onChange={setDob}
+    className="d-flex align-items-center"
+  />
+
+  <small className="text-muted">
+    Select your birth date
+  </small>
+</div>
+        
 
       {/* Age at the Date of */}
-      <div className="mb-3">
-        <label htmlFor="targetDate" className="form-label fw-semibold">
-          Age at the Date of
-        </label>
-        <input
-          id="targetDate"
-          type="date"
-          className="form-control form-control-lg"
-          value={targetDate}
-          onChange={(e) => setTargetDate(e.target.value)}
-          style={{ cursor: "pointer" }}
-          {...(dob ? { min: dob } : {})}
-        />
-        <small className="text-muted">
-          Select any past or future date
-        </small>
-      </div>
+      
+<div className="mb-3">
+  <label className="form-label fw-semibold">
+    Age at the Date of
+  </label>
+
+  <CustomDateInput
+    value={targetDate}
+    onChange={setTargetDate}
+    className="d-flex align-items-center"
+  />
+
+  <small className="text-muted">
+    Select any past or future date
+  </small>
+</div>
+       
 
       {/* Error */}
       {error && (

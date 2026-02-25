@@ -135,10 +135,17 @@ const faqData = calculatorFaq[slug];
   };
 
   /* -------- BREADCRUMBS -------- */
-  const breadcrumbs = [
-    getCategory(),
-    { label: seoData?.title },
-  ];
+ /* -------- BREADCRUMBS -------- */
+const breadcrumbs = [
+  getCategory(),
+  {
+    label: slug
+      .split("-")
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(" "),
+    path: `/${slug}`,   // ← THIS makes it clickable
+  },
+];
 
   /* -------- RELATED CALCULATORS (same category only) -------- */
   const relatedCalculators = Object.keys(calculatorsMap)

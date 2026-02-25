@@ -11,12 +11,9 @@ export default function Breadcrumbs({ items = [] }) {
         {items.map((item, index) => (
           <li
             key={index}
-            className={`breadcrumb-item ${
-              index === items.length - 1 ? "active" : ""
-            }`}
-            aria-current={index === items.length - 1 ? "page" : undefined}
+            className="breadcrumb-item"
           >
-            {item.path && index !== items.length - 1 ? (
+            {item.path ? (
               <Link to={item.path}>{item.label}</Link>
             ) : (
               item.label

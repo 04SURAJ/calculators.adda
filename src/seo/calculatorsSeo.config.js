@@ -1,6 +1,6 @@
 export const calculatorsSeo = {
   "age-calculator": {
-    title: "Age Calculator",
+    title: "Age Calculator – Calculate Your Exact Age by Date of Birth",
     subtitle: "Calculate Exact Age in Years, Months & Days Online",
     description:
       "Use this free age calculator to calculate your exact age based on your date of birth, including years, months, and days."

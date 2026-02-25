@@ -53,9 +53,10 @@ export default function FitnessHealthHome() {
     <li className="breadcrumb-item">
       <Link to="/calculators">All Calculators</Link>
     </li>
-    <li className="breadcrumb-item active" aria-current="page">
-      Fitness & Health
+    <li className="breadcrumb-item">
+      <Link to="/fitness-health"> Fitness & Health</Link>
     </li>
+    
   </ol>
 </nav>
 
