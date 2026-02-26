@@ -1,4 +1,5 @@
 import { useState } from "react";
+import CustomDateInput from "./CustomDateInput";
 
 function DateCalculator() {
 
@@ -121,6 +122,7 @@ function DateCalculator() {
     setValue("");
     setResult(null);
     setError("");
+    
   };
 
   return (
@@ -141,26 +143,22 @@ function DateCalculator() {
       {/* Start Date */}
       <div className="mb-3">
         <label className="form-label fw-semibold">Start Date</label>
-        <input
-          type="date"
-          className="form-control form-control-lg"
-          value={startDate}
-          onChange={(e) => setStartDate(e.target.value)}
-          style={{ cursor: "pointer" }}
-        />
+        <CustomDateInput
+  value={startDate}
+  onChange={(val) => setStartDate(val)}
+  className="d-flex align-items-center"
+/>
       </div>
 
       {/* End Date */}
       {operation === "difference" && (
         <div className="mb-3">
           <label className="form-label fw-semibold">End Date</label>
-          <input
-            type="date"
-            className="form-control form-control-lg"
-            value={endDate}
-            onChange={(e) => setEndDate(e.target.value)}
-            style={{ cursor: "pointer" }}
-          />
+          <CustomDateInput
+  value={endDate}
+  onChange={(val) => setEndDate(val)}
+  className="d-flex align-items-center"
+/>
         </div>
       )}
 
