@@ -103,9 +103,9 @@ export default function CalculatorLayout({
           key={`${section.type}-${index}`}
         >
           {section.title && (
-            <h3 className="section-title">
+            <h2 className="section-title">
               {section.title}
-            </h3>
+            </h2>
           )}
 
           {section.type === "html" && section.body && (

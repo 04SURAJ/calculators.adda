@@ -63,7 +63,7 @@ const utilityCategories = [
   {
     title: "Weather",
     calculators: [
-     " Wind Chill Calculator",
+     "Wind Chill Calculator",
 "Heat Index Calculator",
 "Dew Point Calculator",
 
@@ -120,14 +120,14 @@ export default function Utility() {
       </nav>
 
       <h1 className="mb-3">Utility Calculators</h1>
-      <h6 className="mb-4 text-muted">
+      <p className="mb-4 text-muted">
         Everyday useful calculators for date, time, finance, health, and general
         purposes.
-      </h6>
+      </p>
 
       {utilityCategories.map((category, index) => (
         <div key={index} className="mb-5">
-          <h3 className="mb-3">{category.title}</h3>
+          <h2 className="mb-3">{category.title}</h2>
 
           <div className="row g-3">
             {category.calculators.map((calc, i) => (

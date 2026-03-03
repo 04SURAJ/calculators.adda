@@ -61,14 +61,14 @@ export default function FitnessHealthHome() {
 </nav>
 
       <h1 className="mb-3">Fitness & Health Calculators</h1>
-      <h6 className="mb-4 text-muted">
+      <p className="mb-4 text-muted">
         Track your fitness, nutrition, and health metrics using our free and
         accurate calculators.
-      </h6>
+      </p>
 
       {fitnessCategories.map((category, index) => (
         <div key={index} className="mb-5">
-          <h3 className="mb-3">{category.title}</h3>
+          <h2 className="mb-3">{category.title}</h2>
 
           <div className="row g-3">
             {category.calculators.map((calc, i) => (

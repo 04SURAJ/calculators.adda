@@ -161,7 +161,12 @@ const breadcrumbs = [
     .slice(0, 4)
     .map((key) => ({
       slug: key,
-      name: calculatorsSeo[key]?.title || key.replace(/-/g, " "),
+      name:
+  calculatorsSeo[key]?.shortTitle ||
+  key
+    .split("-")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" "),
     }));
 
   return (

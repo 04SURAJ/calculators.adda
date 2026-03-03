@@ -181,7 +181,7 @@ export const otherCalculators = [
 },
 
 {
-  name: "Weight Converter",
+  name: "Weight Calculator",
   slug: "weight-calculator",
   component: WeightCalculator,
   description: "Convert weight between kilograms (kg) and pounds (lbs)."

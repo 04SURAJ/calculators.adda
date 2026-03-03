@@ -37,8 +37,6 @@ function WeightCalculator() {
 
   return (
     
-
-      
 <>
 <div className="row g-2 mb-3">
   {/* Weight Input */}

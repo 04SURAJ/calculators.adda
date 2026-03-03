@@ -1,264 +1,264 @@
 export const calculatorsSeo = {
   "age-calculator": {
-    title: "Age Calculator – Calculate Your Exact Age by Date of Birth",
+    title: "Age Calculator | Calculate Your Exact Age by Date of Birth",
     subtitle: "Calculate Exact Age in Years, Months & Days Online",
     description:
       "Use this free age calculator to calculate your exact age based on your date of birth, including years, months, and days."
   },
 
   "date-calculator": {
-    title: "Date Calculator",
+    title: "Date Calculator | Add or Subtract Dates & Calculate Date Difference",
     subtitle: "Add or Subtract Dates & Calculate Date Difference",
     description:
       "Calculate the difference between two dates or add and subtract days, weeks, months, and years using this date calculator."
   },
 
   "time-calculator": {
-    title: "Time Calculator",
+    title: "Time Calculator | Add or Subtract Hours, Minutes & Seconds",
     subtitle: "Add or Subtract Hours, Minutes & Seconds",
     description:
       "Use this time calculator to add or subtract hours, minutes, and seconds accurately."
   },
 
   "hours-calculator": {
-    title: "Hours Calculator",
+    title: "Hours Calculator | Calculate Total Working Hours Between Two Times",
     subtitle: "Calculate Total Working Hours Between Two Times",
     description:
       "Calculate total hours and minutes between two times using this easy-to-use hours calculator."
   },
 
   "gpa-calculator": {
-    title: "GPA Calculator",
+    title: "GPA Calculator | Calculate Grade Point Average Instantly",
     subtitle: "Calculate Grade Point Average Instantly",
     description:
       "Calculate your GPA quickly by entering grades and credit hours with this free GPA calculator."
   },
 
   "grade-calculator": {
-    title: "Grade Calculator",
+    title: "Grade Calculator | Calculate Final Grade Percentage & Letter Grade",
     subtitle: "Calculate Final Grade Percentage & Letter Grade",
     description:
       "Determine your final grade percentage and letter grade using this online grade calculator."
   },
 
   "height-calculator": {
-    title: "Height Calculator",
+    title: "Height Calculator | Convert Height Between Feet, Inches & CM",
     subtitle: "Convert Height Between Feet, Inches & CM",
     description:
       "Convert height between feet, inches, centimeters, and meters using this height calculator."
   },
 
   "concrete-calculator": {
-    title: "Concrete Calculator",
+    title: "Concrete Calculator | Estimate Concrete Volume for Construction",
     subtitle: "Estimate Concrete Volume for Construction",
     description:
       "Estimate how much concrete you need for slabs, walls, and footings using this concrete calculator."
   },
 
   "ip-subnet-calculator": {
-    title: "IP Subnet Calculator",
+    title: "IP Subnet Calculator | Find Network Address, Hosts & Subnet Details",
     subtitle: "Find Network Address, Hosts & Subnet Details",
     description:
       "Calculate IP subnet details including network address, broadcast address, and usable hosts."
   },
 
   "password-generator": {
-    title: "Password Generator",
+    title: "Password Generator | Generate Strong & Secure Random Passwords",
     subtitle: "Generate Strong & Secure Random Passwords",
     description:
       "Generate strong and secure passwords instantly using this free password generator."
   },
 
   "dice-roller": {
-    title: "Dice Roller",
+    title: "Dice Roller | Roll Virtual Dice Online for Games & Fun",
     subtitle: "Roll Virtual Dice Online for Games & Fun",
     description:
       "Roll virtual dice online for games, learning, or fun with this dice roller tool."
   },
 
   "fuel-cost-calculator": {
-    title: "Fuel Cost Calculator",
+    title: "Fuel Cost Calculator | Estimate Trip Fuel Cost & Mileage Expense",
     subtitle: "Estimate Trip Fuel Cost & Mileage Expense",
     description:
       "Estimate fuel cost for your trip based on distance, fuel efficiency, and fuel price."
   },
 
   "voltage-drop-calculator": {
-    title: "Voltage Drop Calculator",
+    title: "Voltage Drop Calculator | Calculate Electrical Voltage Loss in Wires",
     subtitle: "Calculate Electrical Voltage Loss in Wires",
     description:
       "Calculate voltage drop in electrical circuits based on wire size, length, and current."
   },
 
   "square-footage-calculator": {
-    title: "Square Footage Calculator",
+    title: "Square Footage Calculator | Calculate Area in Square Feet & Square Meters",
     subtitle: "Calculate Area in Square Feet & Square Meters",
     description:
       "Calculate square footage for rooms, floors, and spaces using this area calculator."
   },
 
   "time-card-calculator": {
-    title: "Time Card Calculator",
+    title: "Time Card Calculator | Calculate Work Hours & Employee Timesheets",
     subtitle: "Calculate Work Hours & Employee Timesheets",
     description:
       "Calculate work hours and total pay using this time card calculator."
   },
 
   "time-zone-calculator": {
-    title: "Time Zone Calculator",
+    title: "Time Zone Calculator | Convert Time Between Different Time Zones",
     subtitle: "Convert Time Between Different Time Zones",
     description:
       "Convert time between different time zones worldwide with this time zone calculator."
   },
 
   "love-calculator": {
-    title: "Love Calculator",
+    title: "Love Calculator | Fun Name Compatibility Percentage Calculator",
     subtitle: "Fun Name Compatibility Percentage Calculator",
     description:
       "Check compatibility between two names using this fun love calculator."
   },
 
   "gas-mileage-calculator": {
-    title: "Gas Mileage Calculator",
+    title: "Gas Mileage Calculator | Calculate Fuel Efficiency & Mileage (MPG / KMPL)",
     subtitle: "Calculate Fuel Efficiency & Mileage (MPG / KMPL)",
     description:
       "Calculate your vehicle’s gas mileage and fuel efficiency accurately."
   },
 
   "tip-calculator": {
-    title: "Tip Calculator",
+    title: "Tip Calculator | Calculate Tip Amount & Split Bill Easily",
     subtitle: "Calculate Tip Amount & Split Bill Easily",
     description:
       "Calculate tip amount and split bills easily using this tip calculator."
   },
 
   "density-calculator": {
-    title: "Density Calculator",
+    title: "Density Calculator | Calculate Density from Mass and Volume",
     subtitle: "Calculate Density from Mass and Volume",
     description:
       "Calculate density based on mass and volume using this density calculator."
   },
 
   "weight-calculator": {
-    title: "Weight Calculator",
+    title: "Weight Calculator | Convert Weight Between Multiple Units",
     subtitle: "Convert Weight Between Multiple Units",
     description:
       "Convert and calculate weight in different units using this weight calculator."
   },
 
   "speed-calculator": {
-    title: "Speed Calculator",
+    title: "Speed Calculator | Calculate Speed, Distance, and Time Online",
     subtitle: "Calculate Speed, Distance, and Time Online",
     description:
       "Calculate speed, distance, or time using this speed calculator."
   },
 
   "roman-numeral-converter": {
-    title: "Roman Numeral Converter",
+    title: "Roman Numeral Converter | Convert Numbers to Roman Numerals & Back",
     subtitle: "Convert Numbers to Roman Numerals & Back",
     description:
       "Convert numbers to Roman numerals and vice versa using this converter."
   },
 
   "sleep-calculator": {
-    title: "Sleep Calculator",
+    title: "Sleep Calculator | Find Ideal Sleep and Wake-Up Time",
     subtitle: "Find Ideal Sleep and Wake-Up Time",
     description:
       "Calculate ideal sleep and wake-up times based on sleep cycles."
   },
 
   "tire-size-calculator": {
-    title: "Tire Size Calculator",
+    title: "Tire Size Calculator | Compare Tire Dimensions & Size Difference",
     subtitle: "Compare Tire Dimensions & Size Difference",
     description:
       "Compare tire sizes and calculate tire dimensions using this tire size calculator."
   },
 
   "roofing-calculator": {
-    title: "Roofing Calculator",
+    title: "Roofing Calculator | Estimate Roofing Material & Coverage Area",
     subtitle: "Estimate Roofing Material & Coverage Area",
     description:
       "Estimate roofing materials and costs using this roofing calculator."
   },
 
   "tile-calculator": {
-    title: "Tile Calculator",
+    title: "Tile Calculator | Calculate Number of Tiles Needed for Area",
     subtitle: "Calculate Number of Tiles Needed for Area",
     description:
       "Calculate how many tiles you need for floors and walls using this tile calculator."
   },
 
   "mulch-calculator": {
-    title: "Mulch Calculator",
+    title: "Mulch Calculator | Estimate Mulch Volume for Landscaping",
     subtitle: "Estimate Mulch Volume for Landscaping",
     description:
       "Estimate the amount of mulch required for landscaping projects."
   },
 
   "gravel-calculator": {
-    title: "Gravel Calculator",
+    title: "Gravel Calculator | Calculate Gravel Volume & Weight Required",
     subtitle: "Calculate Gravel Volume & Weight Required",
     description:
       "Calculate gravel volume and weight needed for construction and landscaping."
   },
 
   "heat-index-calculator": {
-    title: "Heat Index Calculator",
+    title: "Heat Index Calculator | Calculate Feels Like Temperature Outdoors",
     subtitle: "Calculate Feels Like Temperature Outdoors",
     description:
       "Calculate heat index based on temperature and humidity."
   },
 
   "dew-point-calculator": {
-    title: "Dew Point Calculator",
+    title: "Dew Point Calculator | Calculate Dew Point Temperature & Humidity",
     subtitle: "Calculate Dew Point Temperature & Humidity",
     description:
       "Calculate dew point temperature based on air temperature and humidity."
   },
 
   "bandwidth-calculator": {
-    title: "Bandwidth Calculator",
+    title: "Bandwidth Calculator | Calculate Data Transfer Rate & Bandwidth",
     subtitle: "Calculate Data Transfer Rate & Bandwidth",
     description:
       "Calculate bandwidth requirements and data transfer speed using this calculator."
   },
 
   "time-duration-calculator": {
-    title: "Time Duration Calculator",
+    title: "Time Duration Calculator | Calculate Time Difference Between Two Dates",
     subtitle: "Calculate Time Difference Between Two Dates",
     description:
       "Calculate duration between two times or dates accurately."
   },
 
   "day-counter": {
-    title: "Day Counter",
+    title: "Day Counter | Count Days Between Dates",
     subtitle: "Count Total Days Between Two Dates",
     description:
       "Count total days between two dates using this day counter tool."
   },
 
   "day-of-week-calculator": {
-    title: "Day of Week Calculator",
+    title: "Day of Week Calculator | Find Weekday for Any Date Instantly",
     subtitle: "Find Weekday for Any Date Instantly",
     description:
       "Find which day of the week a specific date falls on using this calculator."
   },
 
   "wind-chill-calculator": {
-    title: "Wind Chill Calculator",
+    title: "Wind Chill Calculator | Calculate Real Feel Cold Temperature",
     subtitle: "Calculate Real Feel Cold Temperature",
     description:
       "Calculate wind chill temperature based on air temperature and wind speed to understand how cold it really feels."
   },
 
 "basic-calculator": {
-  title: "Basic Calculator",
+  title: "Basic Calculator | Perform Quick Arithmetic Operations Online",
   subtitle: "Perform Quick Arithmetic Operations Online",
   description:
     "Use this free online basic calculator to perform addition, subtraction, multiplication, and division instantly. Mobile-friendly and easy-to-use interface for fast calculations."
 },
 "percentage-calculator": {
-  title: "Percentage Calculator",
+  title: "Percentage Calculator | Find Percentage of a Number",
    subtitle: "Find Percentage of a Number",
   description:
     "Use this free online percentage calculator to calculate percentage, find percentage value, percent increase and decrease, and solve percent problems instantly."

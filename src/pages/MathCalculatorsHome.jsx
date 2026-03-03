@@ -163,14 +163,14 @@ export default function MathCalculatorsHome() {
 
 
       <h1 className="mb-3">Math & General Calculators</h1>
-      <h6 className="mb-4">
+      <p className="mb-4">
         Explore a complete collection of free online math calculators covering
         arithmetic, algebra, statistics, geometry, trigonometry, and more.
-      </h6>
+      </p>
 
       {mathCategories.map((category, index) => (
         <div key={index} className="mb-5">
-          <h3 className="mb-3">{category.title}</h3>
+          <h2 className="mb-3">{category.title}</h2>
 
           <div className="row g-3">
             {category.calculators.map((calc, i) => (
