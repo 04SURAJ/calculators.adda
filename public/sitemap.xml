@@ -49,6 +49,13 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+    <url>
+    <loc>https://www.calculatorsadda.com/utility</loc>
+    <lastmod>2026-01-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 
   <!-- Other Calculators -->
   <url><loc>https://www.calculatorsadda.com/age-calculator</loc><lastmod>2026-01-08</lastmod><priority>0.7</priority></url>
