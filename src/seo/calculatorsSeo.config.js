@@ -305,61 +305,61 @@ description:
 
 
 "bmi-calculator": {
-  title: "BMI Calculator",
+  title: "BMI Calculator for Men & Women",
   
   description:
     "Calculate your Body Mass Index (BMI) using height and weight to check whether you are underweight, normal, overweight, or obese.",
 },
 "calorie-calculator": {
-  title: "Calorie Calculator",
+  title: "Calorie Calculator for Weight Loss & TDEE",
   description:
     "Use this calorie calculator to estimate your daily calorie requirements using BMR and activity level. Ideal for weight loss, weight gain, and healthy maintenance.",
 },
 
 "bmr-calculator": {
-  title: "BMR Calculator",
+  title: "BMR Calculator (Mifflin-St Jeor Method)",
   description:
     "Use this BMR calculator to estimate your Basal Metabolic Rate using the Mifflin-St Jeor equation. Calculate the number of calories your body burns at rest based on age, gender, height, and weight.",
 },
 
 "body-fat-calculator": {
-  title: "Body Fat Calculator",
+  title: "Body Fat Calculator (US Navy Formula)",
   description:
     "Use this Body Fat Calculator to estimate your body fat percentage using the U.S. Navy method. Calculate body fat based on gender, height, neck, waist, and hip measurements to understand your body composition.",
 },
 "due-date-calculator": {
-  title: "Due Date Calculator",
+  title: "Due Date Calculator by LMP & Conception",
   description:
     "Use this Due Date Calculator to estimate your baby's expected delivery date based on the first day of your last period. Calculate pregnancy week, trimester, conception date, baby growth estimates, and track week-by-week milestones.",
 },
 "pregnancy-calculator": {
-  title: "Pregnancy Calculator",
+  title: "Pregnancy Calculator by Week & Due Date",
   description:
     "Use this Pregnancy Calculator to estimate your baby's due date based on last period, conception date, ultrasound, or IVF transfer. Track your current pregnancy week, trimester, pregnancy progress, and view detailed week-by-week milestones.",
 },
 
 "pregnancy-conception-calculator": {
-  title: "Pregnancy Conception Calculator",
+  title: "Conception Date Calculator from Due Date",
   description:
     "Use this Pregnancy Conception Calculator to estimate the most probable and possible conception dates based on due date, last period, or ultrasound. It also provides likely dates of sexual intercourse that may have led to pregnancy. Results are estimates for informational purposes only.",
 },
 "pregnancy-weight-gain-calculator": {
-  title: "Pregnancy Weight Gain Calculator",
+  title: "Pregnancy Weight Gain Calculator by BMI",
   description:
     "Use this Pregnancy Weight Gain Calculator to determine healthy weight gain during pregnancy based on your current week, height, pre-pregnancy weight, and whether you are carrying twins. It calculates your BMI before pregnancy and shows the recommended weight range for your current week and at delivery.",
 },
 "ovulation-calculator": {
-  title: "Ovulation Calculator",
+  title: "Ovulation Calculator & Fertile Window",
   description:
     "Use this Ovulation Calculator to estimate your ovulation date and fertile window based on the first day of your last period and average cycle length. It also predicts your next period and highlights your most fertile days to help you plan pregnancy or track your cycle.",
 },
 "conception-calculator": {
-  title: "Conception Calculator",
+  title: "Conception Calculator from Due Date",
   description:
     "Use this Conception Calculator to estimate your most probable conception days based on the first day of your last period and average cycle length. It calculates your ovulation window, best intercourse days for pregnancy, next expected period, pregnancy test timing, and estimated due date if pregnant.",
 },
 "period-calculator": {
-  title: "Period Calculator",
+  title: "Next Period Date Calculator by Cycle",
   description:
     "Use this Period Calculator to predict your upcoming periods and most probable ovulation days for the next 6 cycles based on the first day of your last period, cycle length, and period duration. It helps you track your menstrual cycle and plan ahead with estimated fertile windows.",
 },
